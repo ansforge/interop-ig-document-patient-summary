@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG # Should be an acronym
-title: ANS IG Example
+id: ans.document.fr.cr-bio
+canonical: https://interop.esante.gouv.fr/ig/document/cr-bio # the last part of canonical and id must be the same
+name: FR-CR-BIO # Should be an acronym
+title: ANS IG Document CR-BIO
 description: Description du projet
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
@@ -13,63 +13,99 @@ version: 0.1.0 # shall conforms to Semantic Versioning https://fr.wiktionary.org
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build # le release label doit être conforme au cycle de vie de la doctrine du ci-sis
-jurisdiction: urn:iso:std:iso:3166#FR "France"
+jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
-    shownav: 'true'
-    path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-    i18n-default-lang: fr-FR # Default language
-    pin-canonicals: pin-all
-    apply-contact: true
-    apply-jurisdiction: true
-    logging:
-      - tx #tx: Messages describing the use of the terminology server (for debugging)
-      - html #html: Log when validating an html page (troubleshooting only - leave off)
-      - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
-      - init #init: Messages describing the start up process (for debugging)
-      - progress #progress: Overall progress messages
+  shownav: 'true'
+  excludettl: 'true'
+  generate-turtle: 'false'
+  generate-json: 'false'
 
-
+dependencies:
+  hl7.cda.uv.core: 2.0.1-sd
+  ans.fr.terminologies: latest
+  hl7.fhir.fr.core: 2.1.0
+  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.extensions.r4: 5.2.0
+  ans.fhir.fr.annuaire: 1.1.0
+  hl7.fhir.uv.fhir-clinical-document: latest
+  ihe.pharm.mpd: 1.0.0-comment-2 
+  ans.document.fr.core: 0.1.0
 
 pages:
     index.md:
         title: Accueil
-    spec-fonctionnelle-intro.md:
-        title: Vue d'ensemble
-        spec-fonctionnelle-alimentation.md:
-            title: Alimentation
-    spec-technique-intro.md:
-        title: Introduction
-        spec-technique-vue-ensemble.md:
-            title: Vue d'ensemble
-        spec-technique-flux-alimentation.md:
-            title: Flux d'alimentation
-        spec-technique-flux-consommation.md:
-            title: Flux de consommation
-    change-log.md:
-        title: Historique des versions
+    structureGenerale.md:
+        title: Structure générale document
+        introduction.md:
+            title: Introduction
+        exigencesSpecifiques.md:
+            title: Exigences spécifiques
+        ressourcesCDA-struc-gen.md:
+            title: CDA
+        ressourcesFHIR-struc-gen.md:
+            title: FHIR
+        mappingCDA-FHIR-struc-gen.md:
+            title: Mapping CDA / FHIR
+    enteteDocument.md: 
+        title: Entête document
+        ressourcesCDA-entete.md:
+            title: CDA
+        ressourcesFHIR-entete.md:
+            title: FHIR
+        mappingCDA-FHIR-entete.md:
+            title: Mapping Métier/CDA/FHIR
+    corpsDocument.md:
+        title: Corps d'un document  
+        ressourcesCDA-corps.md:
+            title: CDA
+        ressourcesFHIR-corps.md:
+            title: FHIR
+        mappingCDA-FHIR-corps.md:
+            title: Mapping Métier/CDA/FHIR
     autres_ressources.md:
         title: Autres Ressources
-        annexe-securite.md:
+        securite.md:
             title: Sécurité
-        annexe-downloads.md:
-            title: Téléchargements et usages
+        downloads.md:
+            title: Téléchargements et usages      
 
 menu:
     Accueil: index.html
-    Vol. 1 - Etude fonctionnelle: 
-        Introduction: spec-fonctionnelle-intro.html
-        Alimentation: spec-fonctionnelle-alimentation.html
-    Vol. 2 - Détail des transactions: 
-        Introduction: spec-technique-intro.html
-        Vue d'ensemble: spec-technique-vue-ensemble.html
-        Flux d'alimentation: spec-technique-flux-alimentation.html
-        Flux de consommation: spec-technique-flux-consommation.html
-    Vol. 3 - Annexes:
-        Sécurité: securite.html
-        Téléchargements et usage: downloads.html
-        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
-        "Site de l'ANS ": new-tab https://esante.gouv.fr/
+    Structure générale document:
+        Introduction: introduction.html
+        Exigences spécifiques: exigencesSpecifiques.html
+        CDA: ressourcesCDA-struc-gen.html
+        FHIR: ressourcesFHIR-struc-gen.html
+        Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
+    Entête document:
+        Modèle logique métier: StructureDefinition-fr-lm-entete-document.html
+        CDA: ressourcesCDA-entete.html
+        FHIR: ressourcesFHIR-entete.html
+        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
+    Corps d'un document:
+        Modèle logique métier: StructureDefinition-fr-lm-corps-document.html
+        CDA: ressourcesCDA-corps.html
+        FHIR: ressourcesFHIR-corps.html
+        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-corps.html
     Ressources de conformité: artifacts.html
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
-    Historique: change-log.html
+    Autres ressources:
+        "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
+        "Serveur Multi-terminologies": new-tab https://smt.esante.gouv.fr/
+        "Serveur Multi-terminologies / FHIR": new-tab https://smt.esante.gouv.fr/fhir
+        "IG terminologies et jeux de valeurs du CI-SIS": new-tab https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html 
+        "Espace de tests du CI-SIS": new-tab https://interop.esante.gouv.fr/
+        "testContenuCDA": new-tab https://github.com/ansforge/TestContenuCDA-3-0
+        Sécurité: securite.html
+        "Standard CDA": new-tab https://hl7.org/cda/stds/online-navigation/index.html
+        "Standard FHIR": new-tab https://hl7.org/fhir/R4/index.html
+        "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html 
+        Téléchargements et usage: downloads.html
+        
+groups:
+  PatientSummary:
+    name: International Patient Summary (IPS)
+    description: Profils de la synthèse médicale.
+    resources:
+        - StructureDefinition/fr-bundle-document-ips
+        - StructureDefinition/fr-composition-document-ips
