@@ -35,34 +35,22 @@ dependencies:
 pages:
     index.md:
         title: Accueil
-    structureGenerale.md:
-        title: Structure générale document
-        introduction.md:
-            title: Introduction
-        exigencesSpecifiques.md:
-            title: Exigences spécifiques
-        ressourcesCDA-struc-gen.md:
+    fonctionnel.md:
+        title: Fonctionnel
+        cas-usage.md:
+            title: Cas d'usage
+        modele-logique-metier.md:
+            title: Modèle logique métier
+    Implementations.md: 
+        title: Implémentations
+        CDA.md:
             title: CDA
-        ressourcesFHIR-struc-gen.md:
+        FHIR.md:
             title: FHIR
-        mappingCDA-FHIR-struc-gen.md:
-            title: Mapping CDA / FHIR
-    enteteDocument.md: 
-        title: Entête document
-        ressourcesCDA-entete.md:
-            title: CDA
-        ressourcesFHIR-entete.md:
-            title: FHIR
-        mappingCDA-FHIR-entete.md:
+        mapping.md:
             title: Mapping Métier/CDA/FHIR
-    corpsDocument.md:
-        title: Corps d'un document  
-        ressourcesCDA-corps.md:
-            title: CDA
-        ressourcesFHIR-corps.md:
-            title: FHIR
-        mappingCDA-FHIR-corps.md:
-            title: Mapping Métier/CDA/FHIR
+        exemples.md:
+            title: Exemples IPS
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -72,22 +60,14 @@ pages:
 
 menu:
     Accueil: index.html
-    Structure générale document:
-        Introduction: introduction.html
-        Exigences spécifiques: exigencesSpecifiques.html
-        CDA: ressourcesCDA-struc-gen.html
-        FHIR: ressourcesFHIR-struc-gen.html
-        Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
-    Entête document:
-        Modèle logique métier: StructureDefinition-fr-lm-entete-document.html
-        CDA: ressourcesCDA-entete.html
-        FHIR: ressourcesFHIR-entete.html
-        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
-    Corps d'un document:
-        Modèle logique métier: StructureDefinition-fr-lm-corps-document.html
-        CDA: ressourcesCDA-corps.html
-        FHIR: ressourcesFHIR-corps.html
-        Mapping Métier/CDA/FHIR: mappingCDA-FHIR-corps.html
+    Fonctionnel:
+         Cas d'usage: cas-usage.html
+         Modèle logique métier: modele-logique-metier.html
+    Implémentations:
+        CDA: ressourcesCDA.html
+        FHIR: ressourcesFHIR.html
+        Mapping Métier/CDA/FHIR: mapping.html
+        Exemples IPS: exemples.html
     Ressources de conformité: artifacts.html
     Autres ressources:
         "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
@@ -103,9 +83,433 @@ menu:
         Téléchargements et usage: downloads.html
         
 groups:
-  PatientSummary:
-    name: International Patient Summary (IPS)
-    description: Profils de la synthèse médicale.
+#   Modèles logiques métier de l'entête IPS:
+#     name: Modèles logiques métier de l'entête d'un document IPS
+#     resources:
+#       - FRLMEnteteDocument	
+#       - FRLMPatientUsager
+#       - FRLMAuteur
+#       - FRLMPersonneStructure
+#       - FRLMPersonneStructureAuteur
+#       - FRLMSystemeStructureAuteur
+#       - FRLMInformateur
+#       - FRLMStructureConservation
+#       - FRLMDestinatairePrevu
+#       - FRLMResponsable
+#       - FRLMValidateur
+#       - FRLMOperateurSaisie
+#       - FRLMParticipant
+#       - FRLMPrescription
+#       - FRLMEvenement
+#       - FRLMDocumentDeReference
+#       - FRLMConsentement
+#       - FRLMPriseEncharge
+
+#   Modèles logiques métier des sections IPS: 
+#     name: Modèles logiques métier des sections d'un document IPS
+#     resources:
+#       - StructureDefinition/fr-lm-corps-document
+#       - StructureDefinition/fr-lm-section
+#       - StructureDefinition/fr-lm-allergies-et-hypersensibilites
+#       - StructureDefinition/fr-lm-antecedents-familiaux
+#       - StructureDefinition/fr-lm-antecedents-medicaux
+#       - StructureDefinition/fr-lm-codes-a-barres
+#       - StructureDefinition/fr-lm-commentaire-non-code
+#       - StructureDefinition/fr-lm-cr-bio-chapitre
+#       - StructureDefinition/fr-lm-cr-bio-sous-chapitre
+#       - StructureDefinition/fr-lm-acte-imagerie
+#       - StructureDefinition/fr-lm-addendum
+#       - StructureDefinition/fr-lm-conclusion-examen-imagerie
+#       - StructureDefinition/fr-lm-demande-examen-imagerie
+#       - StructureDefinition/fr-lm-comparaison-examens-imagerie
+#       - StructureDefinition/fr-lm-resultats
+#       - StructureDefinition/fr-lm-exposition-radiations
+#       - StructureDefinition/fr-lm-informations-cliniques
+#       - StructureDefinition/fr-lm-object-catalog
+#       - StructureDefinition/fr-lm-complications-acte
+#       - StructureDefinition/fr-lm-directives-anticipees
+#       - StructureDefinition/fr-lm-dispensation-medicaments
+#       - StructureDefinition/fr-lm-dispositifs-medicaux
+#       - StructureDefinition/fr-lm-document-pdf-copie
+#       - StructureDefinition/fr-lm-documents-ajoutes
+#       - StructureDefinition/fr-lm-education-patient
+#       - StructureDefinition/fr-lm-effets-indesirables
+#       - StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code
+#       - StructureDefinition/fr-lm-fonctions-physiques
+#       - StructureDefinition/fr-lm-habitus-mode-de-vie
+#       - StructureDefinition/fr-lm-historique-des-actes
+#       - StructureDefinition/fr-lm-historique-des-grossesses
+#       - StructureDefinition/fr-lm-plan-soins
+#       - StructureDefinition/fr-lm-points-de-vigilances-non-code
+#       - StructureDefinition/fr-lm-prescription-dispositifs-medicaux
+#       - StructureDefinition/fr-lm-prescription-medicaments
+#       - StructureDefinition/fr-lm-problemes-actifs
+#       - StructureDefinition/fr-lm-raison-recommandation-non-code
+#       - StructureDefinition/fr-lm-raison-recommandation
+#       - StructureDefinition/fr-lm-resultats-laboratoire-biologie-seconde-intention
+#       - StructureDefinition/fr-lm-resultats-evenements
+#       - StructureDefinition/fr-lm-resultats-examens-non-code
+#       - StructureDefinition/fr-lm-resultats-examens
+#       - StructureDefinition/fr-lm-signes-vitaux
+#       - StructureDefinition/fr-lm-statut-document
+#       - StructureDefinition/fr-lm-statut-fonctionnel
+#       - StructureDefinition/fr-lm-traitements
+#       - StructureDefinition/fr-lm-traitement-sortie 
+#       - StructureDefinition/fr-lm-traitements-administres
+#       - StructureDefinition/fr-lm-vaccinations
+#       - StructureDefinition/fr-lm-resultats-examen-imagerie
+
+#   #Entrées et éléments transversaux
+#   Modèles logiques métier des composants élémentaires IPS: 
+#     name: Modèles logiques métier des composants élémentaires IPS
+#     description: Modèles de données métier représentant les concepts élémentaires IPS, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
+#     resources:
+#       - StructureDefinition/fr-lm-acte
+#       - StructureDefinition/fr-lm-antecedent-familial-observe
+#       - StructureDefinition/fr-lm-antecedents-familiaux-entree
+#       - StructureDefinition/fr-lm-certitude
+#       - StructureDefinition/fr-lm-criticite
+#       - StructureDefinition/fr-lm-commentaire-er
+#       - StructureDefinition/fr-lm-demande-examen-ou-suivi
+#       - StructureDefinition/fr-lm-probleme
+#       - StructureDefinition/fr-lm-rencontre
+#       - StructureDefinition/fr-lm-reference-interne
+#       - StructureDefinition/fr-lm-references-externes
+#       - StructureDefinition/fr-lm-observation
+#       - StructureDefinition/fr-lm-statut-clinique-patient
+#       - StructureDefinition/fr-lm-statut-probleme
+#       - StructureDefinition/fr-lm-severite
+#       - StructureDefinition/fr-lm-acte-substitution
+#       - StructureDefinition/fr-lm-allergie-ou-hypersensibilite
+#       - StructureDefinition/fr-lm-directive-anticipee
+#       - StructureDefinition/fr-lm-dispositif-medical-entree
+#       - StructureDefinition/fr-lm-document-attache
+#       - StructureDefinition/fr-lm-dose-antigene
+#       - StructureDefinition/fr-lm-effet-indesirable
+#       - StructureDefinition/fr-lm-en-rapport-avec-la-prevention
+#       - StructureDefinition/fr-lm-en-rapport-avec-accident-travail
+#       - StructureDefinition/fr-lm-en-rapport-avec-ald
+#       - StructureDefinition/fr-lm-traitement-subordonne
+#       - StructureDefinition/fr-lm-evaluation
+#       - StructureDefinition/fr-lm-evaluation-composant
+#       - StructureDefinition/fr-lm-evaluation-composant-n2
+#       - StructureDefinition/fr-lm-evolution-effet-indesirable
+#       - StructureDefinition/fr-lm-gravite-effet-indesirable
+#       - StructureDefinition/fr-lm-group-de-questionnaires-devaluation
+#       - StructureDefinition/fr-lm-habitus-mode-de-vie-entree
+#       - StructureDefinition/fr-lm-historique-grossesse
+#       - StructureDefinition/fr-lm-hors-amm
+#       - StructureDefinition/fr-lm-image-illustrative
+#       - StructureDefinition/fr-lm-imputabilite-effet-indesirable
+#       - StructureDefinition/fr-lm-instruction-au-patient
+#       - StructureDefinition/fr-lm-instructions-au-dispensateur
+#       - StructureDefinition/fr-lm-instructions-patient
+#       - StructureDefinition/fr-lm-naissance
+#       - StructureDefinition/fr-lm-non-remboursable
+#       - StructureDefinition/fr-lm-observation-grossesse
+#       - StructureDefinition/fr-lm-prescription-entree
+#       - StructureDefinition/fr-lm-produit-sante
+#       - StructureDefinition/fr-lm-periode-de-renouvellement
+#       - StructureDefinition/fr-lm-rang-vaccination
+#       - StructureDefinition/fr-lm-resultats-entree
+#       - StructureDefinition/fr-lm-resultats-examens-biologie-medicale
+#       - StructureDefinition/fr-lm-signe-vital
+#       - StructureDefinition/fr-lm-signe-vital-observe
+#       - StructureDefinition/fr-lm-statut
+#       - StructureDefinition/fr-lm-traitement
+#       - StructureDefinition/fr-lm-vaccin-recommande
+#       - StructureDefinition/fr-lm-vaccination
+#       - StructureDefinition/fr-lm-notes-dispensateur
+#       - StructureDefinition/fr-lm-traitement-dispense
+#       - StructureDefinition/fr-lm-reference-item-prescription
+#       - StructureDefinition/fr-lm-prelevement
+#       - StructureDefinition/fr-lm-administration-produit-de-sante
+#       - StructureDefinition/fr-lm-batterie-examens-biologie-medicale
+#       - StructureDefinition/fr-lm-isolat-microbiologique
+#       - StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent
+#       - StructureDefinition/fr-lm-examen-imagerie
+#       - StructureDefinition/fr-lm-autorisation-exposition
+#       - StructureDefinition/fr-lm-serie-imagerie
+#       - StructureDefinition/fr-lm-sop-instance
+#       - StructureDefinition/fr-lm-technique-imagerie
+#       - StructureDefinition/fr-lm-traitement-prescrit
+#       - StructureDefinition/fr-lm-traitement-prescrit-subordonne
+#       - StructureDefinition/fr-lm-reference-item-plan-traitement
+#       - StructureDefinition/fr-lm-autorisation-substitution
+#       - StructureDefinition/fr-lm-quantite-exposition
+#       - StructureDefinition/fr-lm-quantite-produit
+#       - StructureDefinition/fr-lm-statut-document-entree
+#       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
+#       - StructureDefinition/fr-lm-synthese-medicale-sejour
+#       - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants
+#       - StructureDefinition/fr-lm-modalite-sortie
+#       - StructureDefinition/fr-lm-modalite-entree
+#       - StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang
+#       - StructureDefinition/fr-lm-evenement-indesirable-pendant-hospitalisation
+#       - StructureDefinition/fr-lm-administration-de-derives-du-sang
+#       - StructureDefinition/fr-lm-accidents-transfusionnels
+#       - StructureDefinition/fr-lm-transfert-du-patient
+#       - StructureDefinition/fr-lm-recherche-de-micro-organismes
+#       - StructureDefinition/fr-lm-sujet
+#       - StructureDefinition/fr-lm-participant-corps
+#       - StructureDefinition/fr-lm-sujet-non-humain
+#       - StructureDefinition/fr-lm-patient-sujet-non-humain
+#       - StructureDefinition/fr-lm-laboratoire-executant
+#       - StructureDefinition/fr-lm-performer
+#       - StructureDefinition/fr-lm-participant-apsr
+#       - StructureDefinition/fr-lm-auteur-apsr
+#       - StructureDefinition/fr-lm-informant-apsr
+#       - StructureDefinition/fr-lm-dispositif-medical
+#       - StructureDefinition/fr-lm-echantillon-preleve
+  
+  Ressources CDA IPS:
+    name: Eléments CDA d'un document IPS
+    #description: Profils CDA
     resources:
-        - StructureDefinition/fr-bundle-document-ips
-        - StructureDefinition/fr-composition-document-ips
+      - StructureDefinition/fr-cda-clinical-document-ips
+#       - StructureDefinition/fr-cda-assigned-entity
+#       - StructureDefinition/fr-cda-associated-entity
+#       - StructureDefinition/fr-cda-record-target
+#       - StructureDefinition/fr-cda-author
+#       - StructureDefinition/fr-cda-data-enterer
+#       - StructureDefinition/fr-cda-assigned-author
+#       - StructureDefinition/fr-cda-informant
+#       - StructureDefinition/fr-cda-related-entity
+#       - StructureDefinition/fr-cda-custodian
+#       - StructureDefinition/fr-cda-information-recipient
+#       - StructureDefinition/fr-cda-assigned-custodian
+#       - StructureDefinition/fr-cda-legal-authenticator
+#       - StructureDefinition/fr-cda-authorization
+#       - StructureDefinition/fr-cda-inFulfillment-of
+#       - StructureDefinition/fr-cda-documentation-of
+#       - StructureDefinition/fr-cda-performer
+#       - StructureDefinition/fr-cda-related-document
+#       - StructureDefinition/fr-cda-component-of
+#       - StructureDefinition/fr-cda-intended-recipient
+#       - StructureDefinition/fr-cda-patient-role
+#       - StructureDefinition/fr-cda-assigned-person
+#       - StructureDefinition/fr-cda-authenticator
+#       - StructureDefinition/fr-cda-authoring-device
+#       - StructureDefinition/fr-cda-participant-entete
+#       - StructureDefinition/fr-cda-patient
+#       - StructureDefinition/fr-cda-represented-custodian-organization
+#       - StructureDefinition/fr-cda-represented-organization
+#       - StructureDefinition/fr-cda-service-event
+#       - StructureDefinition/fr-cda-order
+#       - StructureDefinition/fr-cda-parent-document
+#       - FRCDAName
+#       - StructureDefinition/fr-cda-encompassing-encounter
+#       - StructureDefinition/fr-cda-encounter-participant
+#       - StructureDefinition/fr-cda-health-care-facility
+
+  Ressources FHIR IPS:
+    name: Profils FHIR IPS
+    resources:
+      - StructureDefinition/fr-bundle-document-ips
+      - StructureDefinition/fr-composition-document-ips
+#       - StructureDefinition/fr-patient-document
+#       - StructureDefinition/fr-patient-ins-document
+#       - StructureDefinition/fr-practitionerRole-document
+#       - StructureDefinition/fr-practitioner-document
+#       - StructureDefinition/fr-organization-document
+#       - StructureDefinition/fr-device-auteur-document
+#       - StructureDefinition/fr-encounter-care-document
+#       - StructureDefinition/fr-location-document
+#       - StructureDefinition/fr-related-person-document
+     
+#   Ressources FHIR corps IPS:
+#       name: Profils FHIR corps IPS
+#       resources:
+#         - StructureDefinition/fr-advance-directive-document
+#         - StructureDefinition/fr-adverse-event-document
+#         - StructureDefinition/fr-allergie-intolerance-document
+#         - StructureDefinition/fr-care-plan-document
+#         - StructureDefinition/fr-condition-document
+#         - StructureDefinition/fr-device-request-document
+#         - StructureDefinition/fr-device-use-statement-document
+#         - StructureDefinition/fr-diagnostic-report-document
+#         - StructureDefinition/fr-diagnostic-report-bio-chapter-document
+#         - StructureDefinition/fr-diagnostic-report-imaging-document
+#         - StructureDefinition/fr-document-reference-document
+#         - StructureDefinition/fr-encounter-document
+#         - StructureDefinition/fr-endpoint-wado-document
+#         - StructureDefinition/fr-family-member-history-document
+#         - StructureDefinition/fr-imaging-study-document
+#         - StructureDefinition/fr-immunization-document
+#         - StructureDefinition/fr-immunization-recommendation-document
+#         - StructureDefinition/fr-media-document
+#         - StructureDefinition/fr-medication-document
+#         - StructureDefinition/fr-medication-administration-document
+#         - StructureDefinition/fr-medication-statement-document
+#         - StructureDefinition/fr-service-request-document
+#         - StructureDefinition/fr-medication-dispense-document
+#         - StructureDefinition/fr-medication-request-document
+#         - StructureDefinition/fr-medications-combinaison-document
+#         - StructureDefinition/fr-observation-administration-blood-derivatives-document
+#         - StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document
+#         - StructureDefinition/fr-observation-birth-event-document
+#         - StructureDefinition/fr-observation-blood-product-transfusion-document
+#         - StructureDefinition/fr-observation-contra-indications-document
+#         - StructureDefinition/fr-observation-laboratory-report-results-document
+#         - StructureDefinition/fr-observation-medical-summary-document
+#         - StructureDefinition/fr-observation-microorganism-detection-document
+#         - StructureDefinition/fr-observation-pregnancy-history-document
+#         - StructureDefinition/fr-observation-pain-score-document
+#         - StructureDefinition/fr-observation-pregnancy-document
+#         - StructureDefinition/fr-observation-radiation-exposure-document
+#         - StructureDefinition/fr-observation-transfusion-accidents-document
+#         - StructureDefinition/fr-observation-work-related-accident-document
+#         - StructureDefinition/fr-observation-survey-document
+#         - StructureDefinition/fr-observation-survey-pannel-document
+#         - StructureDefinition/fr-observation-social-history-document
+#         - StructureDefinition/fr-procedure-imaging-document
+#         - StructureDefinition/fr-procedure-act-document
+#         - StructureDefinition/fr-specimen-document
+#         - StructureDefinition/fr-pregnancy-history-document
+#         - StructureDefinition/fr-observation-result-document
+#         - StructureDefinition/fr-task-patient-transport-document
+#         - StructureDefinition/fr-Observation-vital-signs-panel-document
+#         - StructureDefinition/fr-observation-vital-signs-document
+#         - StructureDefinition/fr-body-structure-document
+#         - StructureDefinition/fr-observation-multiresistant-microorganism-document
+  
+#   Mapping ML-CDA-FHIR entête IPS:
+#     name: Concept Maps de l'entête du document IPS
+#     resources:
+#       - mappingmodelemetierCDAFHIR
+#       - mappingPatientCDAFHIR
+#       - mappingAuteurCDAFHIR
+#       - mappingOperateurSaisieCDAFHIR	
+#       - mappingInformateurCDAFHIR
+#       - mappingStructureConservationCDAFHIR
+#       - mappingDestinatairePrevuCDAFHIR
+#       - mappingResponsableCDAFHIR
+#       - mappingValidateurCDAFHIR
+#       - mappingParticipantCDAFHIR
+#       - mappingPrescriptionCDAFHIR
+#       - mappingEvenementCDAFHIR
+#       - mappingDocumentDeReferenceCDAFHIR
+#       - mappingConsentementCDAFHIR
+#       - mappingPriseEnchargeCDAFHIR
+#       - mappingPersonneStructureAssignedEntityFHIR
+#       - mappingPersonneStructureRelatedEntityFHIR
+#       - mappingPersonneStructureAuteurFHIR
+#       - mappingSystemeFHIR
+
+#   Mapping ML-CDA-FHIR des sections d'un document IPS:
+#     name: Concept Maps des sections d'un document IPS
+#     resources:
+#       - FRSectionImagingResultsLMCDAFHIR
+#       - FRSectionImagingClinicalInformationLMCDAFHIR
+#       - FRSectionImagingServiceRequestLMCDAFHIR
+#       - FRSectionImagingRadiationExposureLMCDAFHIR
+#       - FRSectionImagingActLMCDAFHIR
+#       - FRSectionImagingAddendumLMCDAFHIR
+#       - FRSectionSocialHistoryLMCDAFHIR
+#       - FRSectionFunctionalStatusLMCDAFHIR
+#       - FRSectionPhysicalFunctionsLMCDAFHIR
+#       - FRSectionAllergyIntoleranceLMCDAFHIR
+#       - FRSectionFamilyHistoryLMCDAFHIR
+#       - FRSectionBarCodesLMCDAFHIR
+#       - FRSectionNoteLMCDAFHIR
+#       - FRSectionImagingComparisonLMCDAFHIR
+#       - FRSectionImagingComplicationsLMCDAFHIR
+#       - FRSectionImagingConclusionLMCDAFHIR
+#       - FRSectionMedicalHistoryLMCDAFHIR
+#       - FRSectionLaboratoryChapterLMCDAFHIR
+#       - FRSectionLaboratorySubChapterLMCDAFHIR
+#       - FRSectionAdvanceDirectiveLMCDAFHIR
+#       - FRSectionMedicalDeviceLMCDAFHIR
+#       - FRSectionPDFDocumentCopyLMCDAFHIR
+#       - FRSectionAddedDocumentsLMCDAFHIR
+#       - FRSectionPatientEducationLMCDAFHIR
+#       - FRSectionAdverseEventLMCDAFHIR
+#       - FRSectionExposureRadiationLMCDAFHIR
+#       - FRSectionUncodedOccupationalRiskFactorsLMCDAFHIR
+#       - FRSectionHistoryActsLMCDAFHIR
+#       - FRSectionPregnancyHistoryLMCDAFHIR
+#       - FRSectionImagingObjectCatalogLMCDAFHIR
+#       - FRSectionCarePlanLMCDAFHIR
+#       - FRSectionUncodedPointsOfVigilanceLMCDAFHIR
+#       - FRSectionPrescriptionOfMedicalDevicesLMCDAFHIR
+#       - FRSectionMedicationRequestLMCDAFHIR
+#       - FRSectionActiveProblemsLMCDAFHIR
+#       - FRSectionReasonForRecommendationLMCDAFHIR
+#       - FRSectionUncodedReasonForRecommendationLMCDAFHIR
+#       - FRSectionResultsLMCDAFHIR
+#       - FRSectionExaminationResultsLMCDAFHIR
+#       - FRSectionUncodedExaminationResultsLMCDAFHIR
+#       - FRSectionLaboratorySecondIntentionResultsLMCDAFHIR
+#       - FRSectionVitalSignsLMCDAFHIR
+#       - FRSectionDocumentStatusLMCDAFHIR
+#       - FRSectionMedicationsLMCDAFHIR
+#       - FRSectionMedicationAdministrationLMCDAFHIR
+#       - FRSectionHospitalDischargeMedicationsLMCDAFHIR
+#       - FRSectionImmunizationsLMCDAFHIR
+
+#   Mapping ML-CDA-FHIR des composants élémentaires d'un document IPS:
+#     name: Concept Maps des composants élémentaires d'un Document IPS
+#     resources:
+    #   - FRActLMCDAFHIR
+    #   - FRAdvanceDirectiveLMCDAFHIR
+    #   - FRAdverseEventLMCDAFHIR
+    #   - FRAllergyIntoleranceLMCDAFHIR
+    #   - FRCarePlanLMCDAFHIR
+    #   - FRConditionLMCDAFHIR
+    #   - FRDeviceRequestLMCDAFHIR
+    #   - FRDeviceUseStatementLMCDAFHIR
+    #   - FRDiagnosticReportLMCDAFHIR
+    #   - FRDocumentReferenceLMCDAFHIR
+    #   - FREncounterLMCDAFHIR
+    #   - FRFamilyMemberHistoriesLMCDAFHIR
+    #   - FRFamilyMemberHistoryLMCDAFHIR
+    #   - FRImagingStudyLMCDAFHIR
+    #   - FRImmunizationLMCDAFHIR
+    #   - FRImmunizationRecommendationLMCDAFHIR
+    #   - FRObservationBirthEventLMCDAFHIR
+    #   - FRMediaLMCDAFHIR
+    #   - FRMedicationAdministrationLMCDAFHIR
+    #   - FRMedicationDispenseLMCDAFHIR
+    #   - FRMedicationLMCDAFHIR
+    #   - FRMedicationRequestLMCDAFHIR
+    #   - FRMedicationsCombinaisonRequestLMCDAFHIR
+    #   - FRMedicationsCombinaisonLMCDAFHIR
+    #   - FRMedicationStatementLMCDAFHIR
+    #   - FRObservationAdministrationBloodDerivativesLMCDAFHIR
+    #   - FRObservationBloodProductTransfusionLMCDAFHIR
+    #   - FRLaboratoryIsolateResultsLMCDAFHIR
+    #   - FRLaboratoryBatteryResultsLMCDAFHIR
+    #   - FRLaboratoryResultsLMCDAFHIR
+    #   - FRLaboratoryResultClinicalElementLMCDAFHIR
+    #   - FRObservationMedicalSummaryLMCDAFHIR
+    #   - FRObservationMicroorganismDetectionLMCDAFHIR
+    #   - FRObservationMultiresistantMicroorganismsIdentificationLMCDAFHIR
+    #   - FRObservationPregnancyLMCDAFHIR
+    #   - FRObservationPregnancyHistoryLMCDAFHIR
+    #   - FRImagingQuantityLMCDAFHIR
+    #   - FRResultsLMCDAFHIR
+    #   - FRObservationResultLMCDAFHIR
+    #   - FRObservationSocialHistoryLMCDAFHIR
+    #   - FRObservationSurveyPannelLMCDAFHIR
+    #   - FRObservationSurveyLMCDAFHIR
+    #   - FRObservationSurveyComponentLMCDAFHIR
+    #   - FRObservationSurveyComponentN2LMCDAFHIR
+    #   - FRObservationTransfusionAccidentsLMCDAFHIR
+    #   - FRObservationVitalSignsLMCDAFHIR
+    #   - FRObservationVitalSignsPanelLMCDAFHIR
+    #   - FRObservationWorkRelatedAccidentLMCDAFHIR
+    #   - FRPregnancyHistoryLMCDAFHIR
+    #   - FRImagingProcedureLMCDAFHIR
+    #   - FRServiceRequestLMCDAFHIR
+    #   - FRSpecimenLMCDAFHIR
+    #   - FRImagingMedicationAministrationLMCDAFHIR
+    #   - FRImagingRadiationExposureAuthorizationLMCDAFHIR
+    #   - FRAllowedSubstitutionLMCDAFHIR
+    #   - FRActSubstitutionLMCDAFHIR
+    #   - FRCertitudeLMCDAFHIR
+    #   - FRCriticiteLMCDAFHIR
+    #   - FRNoteLMCDAFHIR
+    #   - FRParticipantCorpsLMCDAFHIR
+    #   - FRObservationLMCDAFHIR
+    #   - FRPatientWithNonHumanSubjectLMCDAFHIR
+    #   - FRNonHumanSubjectLMCDAFHIR
