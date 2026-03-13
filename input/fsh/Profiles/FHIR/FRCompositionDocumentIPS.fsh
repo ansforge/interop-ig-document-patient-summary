@@ -79,88 +79,112 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
     sectionDocumentsAjoutes 0..1 
 
 // Section Problèmes actifs
-* insert IPSSection(sectionProblemesActifs, Section Problèmes actifs, http://loinc.org#11450-4)
-// == Entrée Liste des problèmes ==
-* insert IPSSectionEntrySlice(sectionProblemesActifs, probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
+* section[sectionProblemesActifs]
+  * insert IPSSection(Section Problèmes actifs, http://loinc.org#11450-4)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
 
 // Section Antécédents médicaux
-* insert IPSSection(sectionAntecedentsMedicaux, Section Antécédents médicaux, http://loinc.org#11348-0)
-// == Entrée Liste des problèmes ==
-* insert IPSSectionEntrySlice(sectionAntecedentsMedicaux, probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
+* section[sectionAntecedentsMedicaux]
+  * insert IPSSection(Section Antécédents médicaux, http://loinc.org#11348-0)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
 
 // Section Historique des actes
-* insert IPSSection(sectionHistoriqueDesActes, Section Historique des actes, http://loinc.org#47519-4)
-// == Entrée Actes ==
-* insert IPSSectionEntrySlice(sectionHistoriqueDesActes, acte, FRProcedureActDocument, 1, *, Entrée Actes)
-// == Entrée Références externes ==
-* insert IPSSectionEntrySlice(sectionHistoriqueDesActes, referenceExterne, FRDocumentReferenceDocument, 0, *, Entrée Références externes)
+* section[sectionHistoriqueDesActes]
+  * insert IPSSection(Section Historique des actes, http://loinc.org#47519-4)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionHistoriqueDesActesSlices
 
 // Section Allergies et hypersensibilités
-* insert IPSSection(sectionAllergiesEtHypersensibilites, Section Allergies et hypersensibilités, http://loinc.org#48765-2)
-// == Entrée Liste des allergies et hypersensibilités ==
-* insert IPSSectionEntrySlice(sectionAllergiesEtHypersensibilites, allergie, FRAllergyIntoleranceDocument, 1, *, Entrée Liste des allergies et hypersensibilités)
+* section[sectionAllergiesEtHypersensibilites]
+  * insert IPSSection(Section Allergies et hypersensibilités, http://loinc.org#48765-2)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(allergie, FRAllergyIntoleranceDocument, 1, *, Entrée Liste des allergies et hypersensibilités)
 
 // Section Effets indésirables
-* insert IPSSection(sectionEffetsIndesirables, Section Effets indésirables, http://loinc.org#44939-7)
-// == Entrée Effets indésirables ==
-* insert IPSSectionEntrySlice(sectionEffetsIndesirables, effetIndesirable, FRAdverseEventDocument, 1, *, Entrée Effets indésirables)
+* section[sectionEffetsIndesirables]
+  * insert IPSSection(Section Effets indésirables, http://loinc.org#44939-7)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(effetIndesirable, FRAdverseEventDocument, 1, *, Entrée Effets indésirables)
 
 // Section Traitements
-* insert IPSSection(sectionTraitements, Section Traitements, http://loinc.org#10160-0)
-// == Entrée Liste des traitements ==
-* insert IPSSectionEntrySlice(sectionTraitements, traitement, FRMedicationAdministrationDocument, 1, *, Entrée Traitements)
+* section[sectionTraitements]
+  * insert IPSSection(Section Traitements, http://loinc.org#10160-0)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(traitement, FRMedicationAdministrationDocument, 1, *, Entrée Traitements)
 
 // Section Dispositifs médicaux
-* insert IPSSection(sectionDispositifsMedicaux, Section Dispositifs médicaux, http://loinc.org#46264-8)
-// == Entrée Liste des dispositifs médicaux ==
-* insert IPSSectionEntrySlice(sectionDispositifsMedicaux, dispositifMedical, FRDeviceUseStatementDocument or FRDeviceRequestDocument, 1, *, Entrée Dispositifs médicaux)
+* section[sectionDispositifsMedicaux]
+  * insert IPSSection(Section Dispositifs médicaux, http://loinc.org#46264-8)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(dispositifMedical, FRDeviceUseStatementDocument or FRDeviceRequestDocument, 1, *, Entrée Dispositifs médicaux)
 
 // Section Points de vigilances non codés
-* insert IPSSectionNoEntry(sectionPointsDeVigilancesNonCode, Section Points de vigilances non codés, http://loinc.org#44944-7)
+* section[sectionPointsDeVigilancesNonCode]
+  * insert IPSSectionNoEntry(Section Points de vigilances non codés, http://loinc.org#44944-7)
 
 // Section Statut fonctionnel
-* insert IPSSection(sectionStatutFonctionnel, Section Statut fonctionnel, http://loinc.org#47420-5)
-* insert IPSSectionEntrySlice(sectionStatutFonctionnel, groupeQuestionnairesEvaluation, FRObservationSurveyPannelDocument, 0, *, Entrée Groupe de questionnaires d'évaluation)
+* section[sectionStatutFonctionnel]
+  * insert IPSSection(Section Statut fonctionnel, http://loinc.org#47420-5)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(groupeQuestionnairesEvaluation, FRObservationSurveyPannelDocument, 0, *, Entrée Groupe de questionnaires d'évaluation)
 
 // Section Signes vitaux
-* insert IPSSection(sectionSignesVitaux, Section Signes vitaux, http://loinc.org#8716-3)
-* insert IPSSectionEntrySlice(sectionSignesVitaux, signeVital, FRObservationVitalSignsPanelDocument, 1, *, Entrée Signes vitaux)
+* section[sectionSignesVitaux]
+  * insert IPSSection(Section Signes vitaux, http://loinc.org#8716-3)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(signeVital, FRObservationVitalSignsPanelDocument, 1, *, Entrée Signes vitaux)
 
 // Section Habitus, mode de vie
-* insert IPSSection(sectionHabitusModeDeVie, Section Habitus\, mode de vie, http://loinc.org#29762-2)
-* insert IPSSectionEntrySlice(sectionHabitusModeDeVie, habitusModeDeVie, FRObservationSocialHistoryDocument, 1, *, Entrée Habitus mode de vie)
+* section[sectionHabitusModeDeVie]
+  * insert IPSSection(Section Habitus\, mode de vie, http://loinc.org#29762-2)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(habitusModeDeVie, FRObservationSocialHistoryDocument, 1, *, Entrée Habitus mode de vie)
 
 // Section Antécédents familiaux
-* insert IPSSection(sectionAntecedentFamiliaux, Section Antécédents familiaux, http://loinc.org#10157-6)
-* insert IPSSectionEntrySlice(sectionAntecedentFamiliaux, antecedentFamilial, FRFamilyMemberHistoryDocument, 1, *, Entrée Liste des antecedents familiaux)
+* section[sectionAntecedentFamiliaux]
+  * insert IPSSection(Section Antécédents familiaux, http://loinc.org#10157-6)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(antecedentFamilial, FRFamilyMemberHistoryDocument, 1, *, Entrée Liste des antecedents familiaux)
 
 // Section Facteurs de risque professionnels non codés
-* insert IPSSectionNoEntry(sectionFacteursDeRisqueProfessionnelsNonCode, Section Facteurs de risque professionnels non codés, http://loinc.org#10161-8)
+* section[sectionFacteursDeRisqueProfessionnelsNonCode]
+  * insert IPSSectionNoEntry(Section Facteurs de risque professionnels non codés, http://loinc.org#10161-8)
 
 // Section Vaccinations
-* insert IPSSection(sectionVaccinations, Section Vaccinations, http://loinc.org#11369-9)
-* insert IPSSectionEntrySlice(sectionVaccinations, vaccination, FRImmunizationDocument, 1, *, Entrée Vaccinations)
+* section[sectionVaccinations]
+  * insert IPSSection(Section Vaccinations, http://loinc.org#11369-9)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(vaccination, FRImmunizationDocument, 1, *, Entrée Vaccinations)
 
 // Section Historique des grossesses
-* insert IPSSection(sectionHistoriqueDesGrossesses, Section Historique des grossesses, http://loinc.org#10162-6)
-* insert IPSSectionEntrySlice(sectionHistoriqueDesGrossesses, historiqueGrossesse, FRObservationPregnancyDocument or FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses ou Observation sur la grossesse)
+* section[sectionHistoriqueDesGrossesses]
+  * insert IPSSection(Section Historique des grossesses, http://loinc.org#10162-6)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(historiqueGrossesse, FRObservationPregnancyDocument or FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses ou Observation sur la grossesse)
 
 // Section Plan de soins
-* insert IPSSection(sectionPlanDeSoins, Section Plan de soins, http://loinc.org#18776-5)
-* insert IPSSectionEntrySlice(sectionPlanDeSoins, acte, FRProcedureActDocument, 0, *, Entrée Acte)
-* insert IPSSectionEntrySlice(sectionPlanDeSoins, demandeDexamenOuDeSuivi, FRServiceRequestDocument, 0, *, Entrée Demande d examen ou de suivi)
-* insert IPSSectionEntrySlice(sectionPlanDeSoins, traitement, FRMedicationAdministrationDocument, 0, *, Entrée Traitement)
-* insert IPSSectionEntrySlice(sectionPlanDeSoins, vaccinRecommande, FRImmunizationRecommendationDocument, 0, *, Entrée Vaccin recommandé)
+* section[sectionPlanDeSoins]
+  * insert IPSSection(Section Plan de soins, http://loinc.org#18776-5)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionPlanDeSoinsSlices
 
 // Section Directives anticipées
-* insert IPSSection(sectionDirectivesAnticipees, Section Directives anticipées, http://loinc.org#42348-3)
-* insert IPSSectionEntrySlice(sectionDirectivesAnticipees, directiveAnticipee, FRAdvanceDirectiveDocument, 0, *, Entrée Directive anticipée)
+* section[sectionDirectivesAnticipees]
+  * insert IPSSection(Section Directives anticipées, http://loinc.org#42348-3)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(directiveAnticipee, FRAdvanceDirectiveDocument, 0, *, Entrée Directive anticipée)
 
 // Section Résultats
-* insert IPSSection(sectionResultats, Section Résultats, http://loinc.org#30954-2)
-* insert IPSSectionEntrySlice(sectionResultats, resultat, FRDiagnosticReportDocument, 0, *, Entrée Liste des résultats)
+* section[sectionResultats]
+  * insert IPSSection(Section Résultats, http://loinc.org#30954-2)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(resultat, FRDiagnosticReportDocument, 0, *, Entrée Liste des résultats)
 
 // Section Documents ajoutés
-* insert IPSSection(sectionDocumentsAjoutes, Section Documents ajoutés, http://loinc.org#55107-7)
-* insert IPSSectionEntrySlice(sectionDocumentsAjoutes, documentAjoute, FRCompositionDocument, 1, *, Entrée Document attaché) 
+* section[sectionDocumentsAjoutes]
+  * insert IPSSection(Section Documents ajoutés, http://loinc.org#55107-7)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(documentAjoute, FRCompositionDocument, 1, *, Entrée Document attaché) 
 

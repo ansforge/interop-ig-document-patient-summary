@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.document.fr.cr-bio
-canonical: https://interop.esante.gouv.fr/ig/document/cr-bio # the last part of canonical and id must be the same
-name: FR-CR-BIO # Should be an acronym
-title: ANS IG Document CR-BIO
+id: ans.document.fr.ips
+canonical: https://interop.esante.gouv.fr/ig/document/ips # the last part of canonical and id must be the same
+name: FR-IPS # Should be an acronym
+title: ANS IG Document IPS
 description: Description du projet
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
@@ -43,10 +43,6 @@ pages:
             title: Modèle logique métier
     Implementations.md: 
         title: Implémentations
-        CDA.md:
-            title: CDA
-        FHIR.md:
-            title: FHIR
         mapping.md:
             title: Mapping Métier/CDA/FHIR
         exemples.md:
@@ -64,8 +60,8 @@ menu:
          Cas d'usage: cas-usage.html
          Modèle logique métier: modele-logique-metier.html
     Implémentations:
-        CDA: ressourcesCDA.html
-        FHIR: ressourcesFHIR.html
+        CDA: StructureDefinition-fr-cda-clinical-document-ips.html
+        FHIR: StructureDefinition-fr-bundle-document-ips.html
         Mapping Métier/CDA/FHIR: mapping.html
         Exemples IPS: exemples.html
     Ressources de conformité: artifacts.html

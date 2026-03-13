@@ -1,23 +1,3 @@
-### Liste des profils
+### Ressource CDA
 
-Cette page contient la liste des profils CDA définis dans le guide **ANS IG Document Core**, utilisés pour l'implémentation de la partie corps des documents médicaux et médico-sociaux.
-
-{% sql {
-  "query": "
-    SELECT title AS Title, Description, Web
-    FROM Resources
-    WHERE Type = 'StructureDefinition'
-      AND (
-        Title LIKE '%CDA%'
-      )
-      AND (
-       Description LIKE '%Entrée%'
-OR Description LIKE '%Section%'
-  )
-  ",
-  "class": "lines",
-  "columns": [
-    { "title": "Titre du profil", "type": "link", "source": "Title", "target": "Web" },
-    { "title": "Description", "type": "markdown", "source": "Description" }
-  ]
-} %}
+Cette page contient la ressource CDA principale [**StructureDefinition/fr-cda-clinical-document-ips**](StructureDefinition-fr-cda-clinical-document-ips.html) qui définit l'ensemble des éléments de l'en-tête et du corps du volet Synthèse médicale conforme à l'International Patient Summary (IPS).
