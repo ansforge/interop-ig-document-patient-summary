@@ -35,18 +35,40 @@ dependencies:
 pages:
     index.md:
         title: Accueil
+        introduction.md:
+            title: Introduction
+        gouvernance.md:
+            title: Gouvernance
+        droits-propriete-intellectuelle.md:
+            title: Droits de propriété intellectuelle
+        dependances.md:
+            title: Dépendances
     fonctionnel.md:
         title: Fonctionnel
         cas-usage.md:
             title: Cas d'usage
         modele-logique-metier.md:
             title: Modèle logique métier
-    Implementations.md: 
+        exigences-specifiques.md:
+            title: Exigences spécifiques
+    implementations.md: 
         title: Implémentations
+        cda.md:
+            title: CDA
+            structureCDA.md:
+                title: Structure du document IPS en CDA
+            exemplesCDA.md:
+                title: Exemples CDA
+            exempleIHE-XDM.md:
+                title: Exemples IHE XDM
+        fhir.md:
+            title: FHIR
+            structureFHIR.md:
+                title: Structure du document IPS en FHIR
+            exemplesFHIR.md:
+                title: Exemples FHIR
         mapping.md:
-            title: Mapping Métier/CDA/FHIR
-        exemples.md:
-            title: Exemples IPS
+            title: Mapping ML/CDA/FHIR
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -55,17 +77,23 @@ pages:
             title: Téléchargements et usages      
 
 menu:
-    Accueil: index.html
+    Accueil:
+        Introduction: introduction.html
+        Gouvernance: gouvernance.html
+        Droits de propriété intellectuelle: droits-propriete-intellectuelle.html
+        Dépendances: dependances.html
     Fonctionnel:
-         Cas d'usage: cas-usage.html
-         Modèle logique métier: modele-logique-metier.html
+        Cas d'usage: cas-usage.html
+        Modèle logique métier: modele-logique-metier.html
+        Exigences spécifiques: exigences-specifiques.html
     Implémentations:
-        CDA: StructureDefinition-fr-cda-clinical-document-ips.html
-        FHIR: StructureDefinition-fr-bundle-document-ips.html
-        Mapping Métier/CDA/FHIR: mapping.html
-        Exemples IPS: exemples.html
+        CDA: cda.html
+        FHIR: fhir.html
+        Mapping ML/CDA/FHIR: mapping.html
     Ressources de conformité: artifacts.html
     Autres ressources:
+        # à modifier par le bon lien après publication de l'IG Document Core de l'ANS
+        "IG Document core": new-tab https://ansforge.github.io/IG-Document-Core-ANS/ig/main/index.html
         "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
         "Serveur Multi-terminologies": new-tab https://smt.esante.gouv.fr/
         "Serveur Multi-terminologies / FHIR": new-tab https://smt.esante.gouv.fr/fhir
