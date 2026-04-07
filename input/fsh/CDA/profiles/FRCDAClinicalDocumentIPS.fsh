@@ -84,5 +84,4 @@ contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..
     sectionDirectivesAnticipees 0..1 and
     sectionResultats 0..1 and
     sectionDocumentsAjoutes 0..1 
-
  */

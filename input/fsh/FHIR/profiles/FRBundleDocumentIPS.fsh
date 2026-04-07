@@ -57,7 +57,7 @@ Description: "Synthèse médicale française, basée sur le modèle Internationa
 * entry[antecedentfamilial].resource only FRFamilyMemberHistoryDocument
 * entry[demandedexamenoudesuivi].resource only FRServiceRequestDocument
 * entry[directiveanticipee].resource only FRAdvanceDirectiveDocument
-* entry[dispositifmedical].resource only FRDeviceUseStatementDocument
+* entry[dispositifmedical].resource only FRDeviceUseStatementDocument or Device
 * entry[documentattache].resource only FRDocumentReferenceDocument
 * entry[effetindesirable].resource only FRAdverseEventDocument
 * entry[evaluation].resource only FRObservationSurveyDocument
