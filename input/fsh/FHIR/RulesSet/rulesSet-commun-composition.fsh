@@ -23,7 +23,7 @@ RuleSet: IPSSectionEntrySlice(sliceName, profile, min, max, shortText)
 // RuleSet pour sectionHistoriqueDesActes avec 2 slices
 RuleSet: IPSSectionHistoriqueDesActesSlices
 * entry contains acte 1..* and referenceExterne 0..*
-* entry[acte] only Reference(FRProcedureActDocument)
+* entry[acte] only Reference(FRProcedureDocument)
 * entry[acte] ^short = "Entrée Actes"
 * entry[referenceExterne] only Reference(FRDocumentReferenceDocument)
 * entry[referenceExterne] ^short = "Entrée Références externes"
@@ -31,7 +31,7 @@ RuleSet: IPSSectionHistoriqueDesActesSlices
 // RuleSet pour sectionPlanDeSoins avec 4 slices
 RuleSet: IPSSectionPlanDeSoinsSlices
 * entry contains acte 0..* and demandeDexamenOuDeSuivi 0..* and traitement 0..* and vaccinRecommande 0..*
-* entry[acte] only Reference(FRProcedureActDocument)
+* entry[acte] only Reference(FRProcedureDocument)
 * entry[acte] ^short = "Entrée Acte"
 * entry[demandeDexamenOuDeSuivi] only Reference(FRServiceRequestDocument)
 * entry[demandeDexamenOuDeSuivi] ^short = "Entrée Demande d examen ou de suivi"

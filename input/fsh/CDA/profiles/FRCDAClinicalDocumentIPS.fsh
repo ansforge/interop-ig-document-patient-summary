@@ -57,14 +57,15 @@ contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..
 // Autre correspondant
 * participant[autreCorrespondant].typeCode = #CON
 * participant[autreCorrespondant].functionCode.code = #CORRE
-/* 
-* component.structuredBody ^short = "Structure du document IPS."
-* component.structuredBody.component.section ^short = "Section du document IPS."
-* component.structuredBody.component.section ^slicing.discriminator[0].type = #profile
-* component.structuredBody.component.section ^slicing.discriminator[0].path = "resolve()"
-* component.structuredBody.component.section ^slicing.rules = #open
 
-* component.structuredBody.component.section contains
+* component.structuredBody ^short = "Structure du document IPS."
+* component.structuredBody.component ^short = "Composants contenant les sections du document IPS."
+* component.structuredBody.component ^slicing.discriminator[0].type = #value
+* component.structuredBody.component ^slicing.discriminator[0].path = "section.templateId/root"
+* component.structuredBody.component ^slicing.rules = #open
+* component.structuredBody.component ^slicing.ordered = false
+
+* component.structuredBody.component contains
     sectionProblemesActifs 1..1 and
     sectionAntecedentsMedicaux 0..1 and
     sectionHistoriqueDesActes 1..1 and
@@ -84,4 +85,24 @@ contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..
     sectionDirectivesAnticipees 0..1 and
     sectionResultats 0..1 and
     sectionDocumentsAjoutes 0..1 
- */
+ 
+* component.structuredBody.component[sectionProblemesActifs].section only FRCDASectionProblemesActifs
+* component.structuredBody.component[sectionAntecedentsMedicaux].section only FRCDASectionAntecedentsMedicaux
+* component.structuredBody.component[sectionHistoriqueDesActes].section only FRCDASectionHistoriqueDesActes
+* component.structuredBody.component[sectionAllergiesEtHypersensibilites].section only FRCDASectionAllergiesEtHypersensibilites
+* component.structuredBody.component[sectionEffetsIndesirables].section only FRCDASectionEffetsIndesirables
+* component.structuredBody.component[sectionTraitements].section only FRCDASectionTraitements
+* component.structuredBody.component[sectionDispositifsMedicaux].section only FRCDASectionDispositifsMedicaux
+* component.structuredBody.component[sectionPointsDeVigilancesNonCode].section only FRCDASectionPointsDeVigilancesNonCode
+* component.structuredBody.component[sectionStatutFonctionnel].section only FRCDASectionStatutFonctionnel
+* component.structuredBody.component[sectionSignesVitaux].section only FRCDASectionSignesVitaux
+* component.structuredBody.component[sectionHabitusModeDeVie].section only FRCDASectionHabitusModeDeVie
+* component.structuredBody.component[sectionAntecedentFamiliaux].section only FRCDASectionAntecedentFamiliaux
+* component.structuredBody.component[sectionFacteursDeRisqueProfessionnelsNonCode].section only FRCDASectionFacteursDeRisqueProfessionnelsNonCode
+* component.structuredBody.component[sectionVaccinations].section only FRCDASectionVaccinations
+* component.structuredBody.component[sectionHistoriqueDesGrossesses].section only FRCDASectionHistoriqueDesGrossesses
+* component.structuredBody.component[sectionPlanDeSoins].section only FRCDASectionPlanDeSoins
+* component.structuredBody.component[sectionDirectivesAnticipees].section only FRCDASectionDirectivesAnticipees
+* component.structuredBody.component[sectionResultats].section only FRCDASectionResultats
+* component.structuredBody.component[sectionDocumentsAjoutes].section only FRCDASectionDocumentsAjoutes
+

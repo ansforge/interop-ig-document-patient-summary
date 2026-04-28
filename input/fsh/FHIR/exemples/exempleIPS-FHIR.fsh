@@ -1,8 +1,8 @@
-/* Instance: Bundle-IPS-FR
-InstanceOf: Bundle
+Instance: Bundle-IPS-FR
+InstanceOf: FRBundleDocumentIPS
 Usage: #example
 * meta.lastUpdated = "2025-10-09T13:28:17.000+00:00"
-* meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document"
+* meta.profile = "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips"
 * identifier.system = "1.2.250.1.213.1.1.1.51.2024.1.1"
 * identifier.value = "2024.01"
 * type = #document
@@ -119,13 +119,13 @@ Usage: #example
 * entry[=].resource = Medication-Exemple-4
 
 Instance: Composition-IPS-FR
-InstanceOf: Composition
+InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
 * meta.lastUpdated = "2025-09-09T13:28:17.000+00:00"
-* meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"
+* meta.profile = "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"
 * language = #fr-FR
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
-* extension.valueString = "2"
+* extension[R5-Composition-version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
+* extension[R5-Composition-version].valueString = "2"
 * identifier.value = "1.2.250.1.213.1.1.1.51.2024.1"
 * status = #final
 * type = $LNC#60591-5 "Synthèse médicale"
@@ -137,112 +137,112 @@ Usage: #inline
 * author = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
-* attester.mode = #legal
-* attester.time = "2024-01-04T15:00:00+01:00"
-* attester.party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* attester[legal_attester].mode = #legal
+* attester[legal_attester].time = "2024-01-04T15:00:00+01:00"
+* attester[legal_attester].party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * custodian = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5) "Centre de soins le Belvédère"
 * relatesTo.code = #replaces
 * relatesTo.targetIdentifier.type = $v2-0203#RI "Relates to Identifier"
 * relatesTo.targetIdentifier.system = "urn:ietf:rfc:3986"
 * relatesTo.targetIdentifier.value = "urn:uuid:8D5E778C-E155-4685-95C6-5FF65A362964"
+* extension[basedOn].valueReference = Reference(ServiceRequest/prescription-reference) "Ordonnance médicale"
 * event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
 * event.extension.valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * event.period.start = "2024-04-21T08:00:00+01:00"
-* section[0].title = "Problèmes actifs"
-* section[=].code = $LNC#11450-4 "Liste des problèmes actifs"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>2023-07-05</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-07-05</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Épilepsie</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Causes inconnues et non précisées de morbidité</td><td>léger</td><td>Récurrent</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td><td/></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
-* section[=].entry[+] = Reference(urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916)
-* section[=].entry[+] = Reference(urn:uuid:af0e13e5-d0a2-4dbc-b892-7328eca72ff4)
-* section[=].entry[+] = Reference(urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad)
-* section[=].entry[+] = Reference(urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63)
-* section[+].title = "Antécédents"
-* section[=].code = $LNC#11348-0 "Antécédents médicaux"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th></tr></thead><tbody><tr><td>2018-05-21</td><td>interprétation diagnostique</td><td>Accident Ischémique Cérébral Transitoire</td><td>modéré</td><td>Résolu</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td></tr><tr><td>2018-05-21</td><td>interprétation diagnostique</td><td>Pyélonéphrite aiguë</td><td>modéré</td><td>Résolu</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:effd6c8a-6122-46cb-82ed-ef3f300ec17b)
-* section[=].entry[+] = Reference(urn:uuid:18492799-4e37-47a7-b79b-18a4d0597963)
-* section[+].title = "Historique des actes"
-* section[=].code = $LNC#47519-4 "Historique des actes"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Acte</th><th>Voie d'abord</th><th>Localisation anatomique</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td><td>Voie intraartérielle</td><td>artère coronaire</td><td>Infarctus inférieur transmural</td><td>(texte libre)</td></tr><tr><td>08/12/2016</td><td>Autre acte (texte libre)</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad)
-* section[=].entry[+] = Reference(urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51)
-* section[+].title = "Allergies, hypersensibilités non allergiques, intolérances, idiosyncrasie"
-* section[=].code = $LNC#48765-2 "Allergies et hypersensibilités"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Statut</th><th>Criticité</th><th>Certitude</th><th>Réaction(s)</th><th>Sévérité réaction(s)</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>Paracétamol</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Bronchospasme d'origine médicamenteuse<br/>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>modéré<br/>léger</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry = Reference(urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f)
-* section[+].title = "Effets indésirables prévisibles liés aux médicaments"
-* section[=].code = $LNC#44939-7 "Effets indésirables prévisibles liés aux médicaments"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d’administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry = Reference(urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d)
-* section[+].title = "Traitements"
-* section[=].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
-* section[=].entry = Reference(urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230)
-* section[+].title = "Dispositifs médicaux"
-* section[=].code = $LNC#46264-8 "Dispositifs médicaux"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3)
-* section[=].entry[+] = Reference(urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9)
-* section[+].title = "Points de vigilance"
-* section[=].code = $LNC#44944-7 "Autres alertes"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><p>Surveiller tension artérielle</p></div>"
-* section[+].title = "Statut fonctionnel"
-* section[=].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b)
-* section[=].entry[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
-* section[+].title = "Constantes"
-* section[=].code = $LNC#8716-3 "Signes vitaux"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229)
-* section[=].entry[+] = Reference(urn:uuid:44da5856-6555-4b43-b03f-176f45c29432)
-* section[+].title = "Mode de vie"
-* section[=].code = $LNC#29762-2 "Habitus, Mode de vie"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4)
-* section[=].entry[+] = Reference(urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b)
-* section[=].entry[+] = Reference(urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9)
-* section[=].entry[+] = Reference(urn:uuid:3799b968-d637-4a16-ad7b-5f79987dcdb1)
-* section[+].title = "Facteurs de risques professionnels"
-* section[=].code = $LNC#10161-8 "Facteurs de risques professionnels"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
-* section[+].title = "Facteurs de risques professionnels"
-* section[=].code = $LNC#10157-6 "Historique des pathologies familiales"
-* section[=].text.status = #generated
-* section[=].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[=].entry = Reference(urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e)
-* section[+].title = "Vaccinations"
-* section[=].code = $LNC#11369-6 "Historique des vaccinations"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Maladie(s) prévenue(s)</th><th>Vaccin</th><th>Lot n°</th><th>Type / Rang</th><th>Voie</th><th>Région d'administration</th><th>Réaction observée</th><th>Vaccinateur</th><th>Commentaire</th></tr></thead><tbody><tr><td>28/09/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456672</td><td>1ère série vaccinante / 2</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td></tr><tr><td>25/08/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456668</td><td>1ère série vaccinante / 1</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>-</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563)
-* section[=].entry[+] = Reference(urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874)
-* section[+].title = "Historique des grossesses"
-* section[=].code = $LNC#10162-6 "Historique des grossesses"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Observation</th><th>Précision</th></tr></thead><tbody><tr><td>Statut de grossesse</td><td>patiente actuellement enceinte</td></tr><tr><td>Date prévisionnelle d'accouchement</td><td>03/09/2024</td></tr><tr><td>Nb d'enfants vivants</td><td>1</td></tr><tr><td>Nombre d'interruptions de grossesse</td><td>1</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:bea6c387-6dca-4f55-93b7-7079e1c88dfb)
-* section[=].entry[+] = Reference(urn:uuid:bdc0e3ae-128b-46de-b1a7-1c564cca6a61)
-* section[=].entry[+] = Reference(urn:uuid:e4299828-2563-4265-9297-c27a8240b6ba)
-* section[=].entry[+] = Reference(urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b)
-* section[+].title = "Plan de soins"
-* section[=].code = $LNC#18776-5 "Plan de soins"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
-* section[=].entry[+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
+* section[sectionProblemesActifs].title = "Problèmes actifs"
+* section[sectionProblemesActifs].code = $LNC#11450-4 "Liste des problèmes actifs"
+* section[sectionProblemesActifs].text.status = #generated
+* section[sectionProblemesActifs].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>2023-07-05</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-07-05</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Épilepsie</td><td>modéré</td><td>Actif</td><td>en forme</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td/><td/></tr><tr><td>2023-05-21</td><td>interprétation diagnostique</td><td>Causes inconnues et non précisées de morbidité</td><td>léger</td><td>Récurrent</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td><td/></tr></tbody></table></div>"
+* section[sectionProblemesActifs].entry[0] = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
+* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916)
+* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:af0e13e5-d0a2-4dbc-b892-7328eca72ff4)
+* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad)
+* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63)
+* section[sectionAntecedentsMedicaux].title = "Antécédents"
+* section[sectionAntecedentsMedicaux].code = $LNC#11348-0 "Antécédents médicaux"
+* section[sectionAntecedentsMedicaux].text.status = #generated
+* section[sectionAntecedentsMedicaux].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th></tr></thead><tbody><tr><td>2018-05-21</td><td>interprétation diagnostique</td><td>Accident Ischémique Cérébral Transitoire</td><td>modéré</td><td>Résolu</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td></tr><tr><td>2018-05-21</td><td>interprétation diagnostique</td><td>Pyélonéphrite aiguë</td><td>modéré</td><td>Résolu</td><td>en forme</td><td>Non confirmé</td><td>texte libre</td></tr></tbody></table></div>"
+* section[sectionAntecedentsMedicaux].entry[0] = Reference(urn:uuid:effd6c8a-6122-46cb-82ed-ef3f300ec17b)
+* section[sectionAntecedentsMedicaux].entry[+] = Reference(urn:uuid:18492799-4e37-47a7-b79b-18a4d0597963)
+* section[sectionHistoriqueDesActes].title = "Historique des actes"
+* section[sectionHistoriqueDesActes].code = $LNC#47519-4 "Historique des actes"
+* section[sectionHistoriqueDesActes].text.status = #generated
+* section[sectionHistoriqueDesActes].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Acte</th><th>Voie d'abord</th><th>Localisation anatomique</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td><td>Voie intraartérielle</td><td>artère coronaire</td><td>Infarctus inférieur transmural</td><td>(texte libre)</td></tr><tr><td>08/12/2016</td><td>Autre acte (texte libre)</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionHistoriqueDesActes].entry[0] = Reference(urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad)
+* section[sectionHistoriqueDesActes].entry[+] = Reference(urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51)
+* section[sectionAllergiesEtHypersensibilites].title = "Allergies et hypersensibilités"
+* section[sectionAllergiesEtHypersensibilites].code = $LNC#48765-2 "Allergies et hypersensibilités"
+* section[sectionAllergiesEtHypersensibilites].text.status = #generated
+* section[sectionAllergiesEtHypersensibilites].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Statut</th><th>Criticité</th><th>Certitude</th><th>Réaction(s)</th><th>Sévérité réaction(s)</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>Paracétamol</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Bronchospasme d'origine médicamenteuse<br/>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>modéré<br/>léger</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionAllergiesEtHypersensibilites].entry = Reference(urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f)
+* section[sectionEffetsIndesirables].title = "Effets indésirables prévisibles liés aux médicaments"
+* section[sectionEffetsIndesirables].code = $LNC#44939-7 "Effets indésirables prévisibles liés aux médicaments"
+* section[sectionEffetsIndesirables].text.status = #generated
+* section[sectionEffetsIndesirables].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d’administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionEffetsIndesirables].entry = Reference(urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d)
+* section[sectionTraitements].title = "Traitements"
+* section[sectionTraitements].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
+* section[sectionTraitements].text.status = #generated
+* section[sectionTraitements].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
+* section[sectionTraitements].entry = Reference(urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230)
+* section[sectionDispositifsMedicaux].title = "Dispositifs médicaux"
+* section[sectionDispositifsMedicaux].code = $LNC#46264-8 "Dispositifs médicaux"
+* section[sectionDispositifsMedicaux].text.status = #generated
+* section[sectionDispositifsMedicaux].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionDispositifsMedicaux].entry[0] = Reference(urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3)
+* section[sectionDispositifsMedicaux].entry[+] = Reference(urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9)
+* section[sectionPointsDeVigilancesNonCode].title = "Points de vigilance"
+* section[sectionPointsDeVigilancesNonCode].code = $LNC#44944-7 "Autres alertes"
+* section[sectionPointsDeVigilancesNonCode].text.status = #generated
+* section[sectionPointsDeVigilancesNonCode].text.div = "<div><p>Surveiller tension artérielle</p></div>"
+* section[sectionStatutFonctionnel].title = "Statut fonctionnel"
+* section[sectionStatutFonctionnel].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
+* section[sectionStatutFonctionnel].text.status = #generated
+* section[sectionStatutFonctionnel].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionStatutFonctionnel].entry[0] = Reference(urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b)
+* section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
+* section[sectionSignesVitaux].title = "Constantes"
+* section[sectionSignesVitaux].code = $LNC#8716-3 "Signes vitaux"
+* section[sectionSignesVitaux].text.status = #generated
+* section[sectionSignesVitaux].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionSignesVitaux].entry[0] = Reference(urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229)
+* section[sectionSignesVitaux].entry[+] = Reference(urn:uuid:44da5856-6555-4b43-b03f-176f45c29432)
+* section[sectionHabitusModeDeVie].title = "Mode de vie"
+* section[sectionHabitusModeDeVie].code = $LNC#29762-2 "Habitus, Mode de vie"
+* section[sectionHabitusModeDeVie].text.status = #generated
+* section[sectionHabitusModeDeVie].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionHabitusModeDeVie].entry[0] = Reference(urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4)
+* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b)
+* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9)
+* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:3799b968-d637-4a16-ad7b-5f79987dcdb1)
+* section[sectionFacteursDeRisqueProfessionnelsNonCode].title = "Facteurs de risques professionnels"
+* section[sectionFacteursDeRisqueProfessionnelsNonCode].code = $LNC#10161-8 "Facteurs de risques professionnels"
+* section[sectionFacteursDeRisqueProfessionnelsNonCode].text.status = #generated
+* section[sectionFacteursDeRisqueProfessionnelsNonCode].text.div = "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
+* section[sectionAntecedentFamiliaux].title = "Historique des pathologies familiales"
+* section[sectionAntecedentFamiliaux].code = $LNC#10157-6 "Historique des pathologies familiales"
+* section[sectionAntecedentFamiliaux].text.status = #generated
+* section[sectionAntecedentFamiliaux].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionAntecedentFamiliaux].entry = Reference(urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e)
+* section[sectionVaccinations].title = "Vaccinations"
+* section[sectionVaccinations].text.status = #generated
+* section[sectionVaccinations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Maladie(s) prévenue(s)</th><th>Vaccin</th><th>Lot n°</th><th>Type / Rang</th><th>Voie</th><th>Région d'administration</th><th>Réaction observée</th><th>Vaccinateur</th><th>Commentaire</th></tr></thead><tbody><tr><td>28/09/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456672</td><td>1ère série vaccinante / 2</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td></tr><tr><td>25/08/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456668</td><td>1ère série vaccinante / 1</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>-</td></tr></tbody></table></div>"
+* section[sectionVaccinations].entry[0] = Reference(urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563)
+* section[sectionVaccinations].entry[+] = Reference(urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874)
+* section[sectionHistoriqueDesGrossesses].title = "Historique des grossesses"
+* section[sectionHistoriqueDesGrossesses].code = $LNC#10162-6 "Historique des grossesses"
+* section[sectionHistoriqueDesGrossesses].text.status = #generated
+* section[sectionHistoriqueDesGrossesses].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Observation</th><th>Précision</th></tr></thead><tbody><tr><td>Statut de grossesse</td><td>patiente actuellement enceinte</td></tr><tr><td>Date prévisionnelle d'accouchement</td><td>03/09/2024</td></tr><tr><td>Nb d'enfants vivants</td><td>1</td></tr><tr><td>Nombre d'interruptions de grossesse</td><td>1</td></tr></tbody></table></div>"
+* section[sectionHistoriqueDesGrossesses].entry[0] = Reference(urn:uuid:bea6c387-6dca-4f55-93b7-7079e1c88dfb)
+* section[sectionHistoriqueDesGrossesses].entry[+] = Reference(urn:uuid:bdc0e3ae-128b-46de-b1a7-1c564cca6a61)
+* section[sectionHistoriqueDesGrossesses].entry[+] = Reference(urn:uuid:e4299828-2563-4265-9297-c27a8240b6ba)
+* section[sectionHistoriqueDesGrossesses].entry[+] = Reference(urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b)
+* section[sectionPlanDeSoins].title = "Plan de soins"
+* section[sectionPlanDeSoins].code = $LNC#18776-5 "Plan de soins"
+* section[sectionPlanDeSoins].text.status = #generated
+* section[sectionPlanDeSoins].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionPlanDeSoins].entry[0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
+* section[sectionPlanDeSoins].entry[+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
 
 Instance: patientExemple
 InstanceOf: Patient
@@ -287,7 +287,7 @@ Usage: #inline
 * address.line[+] = "Escalier A"
 * address.city = "Paris"
 * address.postalCode = "75007"
-* contact[0].relationship = $fr-core-vs-patient-contact-role#GUARD "Responsable légal"
+* contact[0].relationship = $v3-RoleCode#GUARD "Responsable légal"
 * contact[=].name.family = "NESSI"
 * contact[=].name.given = "Jeanne"
 * contact[=].name.prefix = "MME"
@@ -295,13 +295,7 @@ Usage: #inline
 * contact[=].address.type = #physical
 * contact[=].address.line = "28 Avenue de Breteuil"
 * contact[=].address.city = "Paris"
-* contact[+].relationship[0] = $JDV-J11-RelationPatient-CISIS#SIS "Soeur"
-* contact[=].relationship[+] = $fr-core-vs-patient-contact-role#ECON "Personne à prévenir en cas d'urgence"
-* contact[=].name.text = "Sophie NESSI"
-* contact[=].name.family = "NESSI"
-* contact[=].address.text = "12 rue des Lilas, 75012 Paris"
-* contact[+].relationship[0] = $JDV-J11-RelationPatient-CISIS#SIS "Soeur"
-* contact[=].relationship[+] = $jdv-role-informateur-cisis#NOK "Personne de confiance"
+* contact[+].relationship = $v3-RoleCode#SIS "Soeur"
 * contact[=].name.text = "Sophie NESSI"
 * contact[=].name.family = "NESSI"
 * contact[=].address.text = "12 rue des Lilas, 75012 Paris"
@@ -353,7 +347,7 @@ InstanceOf: Encounter
 Usage: #inline
 * meta.lastUpdated = "2024-05-07T11:28:17.000+00:00"
 * meta.profile = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document"
-* identifier.type = $fr-core-vs-encounter-identifier-type#VN "Visit Number"
+* identifier.type = $v2-0203#VN "Visit Number"
 * identifier.system = "urn:uuid:1.2.250.1.71.4.2.1"
 * identifier.value = "801234534765"
 * status = #finished
@@ -379,7 +373,7 @@ Usage: #inline
 * clinicalStatus = #active "Actif"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#6736007 "modéré"
+* severity = $SCT#6736007 "modéré"
 * code = $terminologie-cim-10#E06.3 "Thyroïdite auto-immune"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2024-01-11"
@@ -395,7 +389,7 @@ Usage: #inline
 * clinicalStatus = #active "Actif"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#6736007 "modéré"
+* severity = $SCT#6736007 "modéré"
 * code = $terminologie-cisp#T89 "Diabète insulino-dépendant"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-07-05"
@@ -411,7 +405,7 @@ Usage: #inline
 * clinicalStatus = #active "Actif"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#6736007 "modéré"
+* severity = $SCT#6736007 "modéré"
 * code = #114 "epilepsie"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-05-21"
@@ -427,7 +421,7 @@ Usage: #inline
 * clinicalStatus = #active "Actif"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#371923003 "léger à modéré"
+* severity = $SCT#371923003 "Mild to moderate"
 * code = #658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-05-21"
@@ -443,7 +437,7 @@ Usage: #inline
 * clinicalStatus = #recurrence "Récurrent"
 * verificationStatus = $condition-ver-status#unconfirmed "Non confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#255604002 "léger"
+* severity = $SCT#255604002 "Mild"
 * code = $terminologie-cim-10#R69 "Causes inconnues et non précisées de morbidité"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-05-21"
@@ -460,7 +454,7 @@ Usage: #inline
 * clinicalStatus = #resolved "Résolu"
 * verificationStatus = $condition-ver-status#unconfirmed "Non confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#6736007 "modéré"
+* severity = $SCT#6736007 "modéré"
 * code = $terminologie-cim-10#G45.9 "Accident Ischémique Cérébral Transitoire"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
@@ -477,7 +471,7 @@ Usage: #inline
 * clinicalStatus = #resolved "Résolu"
 * verificationStatus = $condition-ver-status#unconfirmed "Non confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $jdv-severite-observation-cisis#6736007 "modéré"
+* severity = $SCT#6736007 "modéré"
 * code = $terminologie-cim-10#N10 "Pyélonéphrite aiguë"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
@@ -852,6 +846,7 @@ Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "41DAC707-7C96-47B7-B600-AC63D8002142"
 * status = #completed
+* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * occurrenceDateTime = "2009-09-28"
@@ -862,6 +857,7 @@ Usage: #inline
 * performer.actor.extension[=].extension[=].valueCode = #PRF
 * performer.actor.extension[=].extension[+].url = "actor"
 * performer.actor.extension[=].extension[=].valueReference = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
+* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * performer.actor.extension[=].url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
 * performer.actor.extension[+].extension[0].url = "type"
 * performer.actor.extension[=].extension[+].url = "actor"
@@ -893,6 +889,7 @@ Usage: #inline
 * performer.actor.extension[=].extension[=].valueCode = #PRF
 * performer.actor.extension[=].extension[+].url = "actor"
 * performer.actor.extension[=].extension[=].valueReference = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
+* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * performer.actor.extension[=].url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
 * performer.actor.extension[+].extension[0].url = "type"
 * performer.actor.extension[=].extension[+].url = "actor"
@@ -1028,4 +1025,4 @@ Usage: #inline
 * extension.url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
 * extension.valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * extension.valueString.extension.valueCode = #unknown
-* code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)" */
+* code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)"

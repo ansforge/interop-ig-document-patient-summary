@@ -52,7 +52,7 @@ Description: "Synthèse médicale française, basée sur le modèle Internationa
 * entry[composition].resource only FRCompositionDocumentIPS
 
 * entry[auteur].resource only FRPractitionerDocument
-* entry[acte].resource only FRProcedureActDocument
+* entry[acte].resource only FRProcedureDocument
 * entry[allergieouhypersensibilite].resource only FRAllergyIntoleranceDocument
 * entry[antecedentfamilial].resource only FRFamilyMemberHistoryDocument
 * entry[demandedexamenoudesuivi].resource only FRServiceRequestDocument
