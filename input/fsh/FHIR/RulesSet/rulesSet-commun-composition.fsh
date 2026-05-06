@@ -8,6 +8,9 @@ RuleSet: IPSSection(short, code)
 * text 1..1
 * text ^short = "Description narrative de la section {short}"
 * entry 0..*
+* emptyReason MS
+* emptyReason from http://hl7.org/fhir/ValueSet/list-empty-reason (preferred)
+* emptyReason ^short = "Motif d'absence d'entrée dans la section"
 
 RuleSet: IPSSectionEntryReglesEnCommun
 * entry ^slicing.discriminator[0].type = #type

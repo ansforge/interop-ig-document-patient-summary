@@ -83,6 +83,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
   * insert IPSSection(Section Problèmes actifs, http://loinc.org#11450-4)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
+  * obeys ips-section-not-empty
 
 // Section Antécédents médicaux
 * section[sectionAntecedentsMedicaux]
@@ -95,12 +96,14 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
   * insert IPSSection(Section Historique des actes, http://loinc.org#47519-4)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionHistoriqueDesActesSlices
+  * obeys ips-section-not-empty
 
 // Section Allergies et hypersensibilités
 * section[sectionAllergiesEtHypersensibilites]
   * insert IPSSection(Section Allergies et hypersensibilités, http://loinc.org#48765-2)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(allergie, FRAllergyIntoleranceDocument, 1, *, Entrée Liste des allergies et hypersensibilités)
+  * obeys ips-section-not-empty
 
 // Section Effets indésirables
 * section[sectionEffetsIndesirables]
@@ -113,12 +116,14 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
   * insert IPSSection(Section Traitements, http://loinc.org#10160-0)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(traitement, FRMedicationAdministrationDocument, 1, *, Entrée Traitements)
+  * obeys ips-section-not-empty
 
 // Section Dispositifs médicaux
 * section[sectionDispositifsMedicaux]
   * insert IPSSection(Section Dispositifs médicaux, http://loinc.org#46264-8)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(dispositifMedical, FRDeviceUseStatementDocument or FRDeviceRequestDocument, 1, *, Entrée Dispositifs médicaux)
+  * obeys ips-section-not-empty
 
 // Section Points de vigilances non codés
 * section[sectionPointsDeVigilancesNonCode]
@@ -188,3 +193,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(documentAjoute, FRCompositionDocument, 1, *, Entrée Document attaché) 
 
+Invariant: ips-section-not-empty
+Description: "Une section obligatoire doit contenir au moins une entrée ou préciser un motif d'absence (emptyReason)."
+Expression: "entry.exists() or emptyReason.exists()"
+Severity: #error
