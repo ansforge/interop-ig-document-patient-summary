@@ -79,6 +79,8 @@ Usage: #example
 * entry[=].resource = Observation-Exemple-1-Evaluation
 * entry[+].fullUrl = "urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65"
 * entry[=].resource = Observation-Exemple-2-Evaluation
+* entry[+].fullUrl = "urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234"
+* entry[=].resource = Observation-Exemple-3-Evaluation
 * entry[+].fullUrl = "urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229"
 * entry[=].resource = Observation-Exemple-3-Signe-vital-observe
 * entry[+].fullUrl = "urn:uuid:44da5856-6555-4b43-b03f-176f45c29432"
@@ -123,6 +125,46 @@ Usage: #example
 * entry[=].resource = Medication-Exemple-4
 * entry[+].fullUrl = "urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e"
 * entry[=].resource = ServiceRequest-Exemple-1
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+* entry[=].resource = AdvanceDirective-IPS-1
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+* entry[=].resource = AdvanceDirective-IPS-2
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+* entry[=].resource = AdvanceDirective-IPS-3
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+* entry[=].resource = AdvanceDirective-IPS-4
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+* entry[=].resource = AdvanceDirective-IPS-5
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+* entry[=].resource = AdvanceDirective-IPS-6
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+* entry[=].resource = AdvanceDirective-IPS-7
+* entry[+].fullUrl = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+* entry[=].resource = AdvanceDirective-IPS-8
+* entry[+].fullUrl = "urn:uuid:aa001111-2222-3333-4444-555566667777"
+* entry[=].resource = DiagnosticReport-IPS-Biologie
+* entry[+].fullUrl = "urn:uuid:bb112222-3333-4444-5555-666677778888"
+* entry[=].resource = ObservationResult-IPS-1
+* entry[+].fullUrl = "urn:uuid:cc223333-4444-5555-6666-777788889999"
+* entry[=].resource = practitioner-role-IPS-4
+* entry[+].fullUrl = "urn:uuid:dd334444-5555-6666-7777-888899990000"
+* entry[=].resource = practitioner-IPS-4
+* entry[+].fullUrl = "urn:uuid:ee445555-6666-7777-8888-999900001111"
+* entry[=].resource = organization-IPS-4
+* entry[+].fullUrl = "urn:uuid:ff556666-7777-8888-9999-000011112222"
+* entry[=].resource = DiagnosticReport-IPS-Imagerie
+* entry[+].fullUrl = "urn:uuid:11667777-8888-9999-aaaa-111122223333"
+* entry[=].resource = ObservationResult-IPS-2
+* entry[+].fullUrl = "urn:uuid:22778888-9999-aaaa-bbbb-222233334444"
+* entry[=].resource = practitioner-role-IPS-5
+* entry[+].fullUrl = "urn:uuid:33889999-aaaa-bbbb-cccc-333344445555"
+* entry[=].resource = practitioner-IPS-5
+* entry[+].fullUrl = "urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666"
+* entry[=].resource = organization-IPS-5
+* entry[+].fullUrl = "urn:uuid:55aa1111-bbbb-cccc-dddd-555566660001"
+* entry[=].resource = DocumentReference-IPS-DocAjoute-1
+* entry[+].fullUrl = "urn:uuid:66bb2222-cccc-dddd-eeee-666677770002"
+* entry[=].resource = DocumentReference-IPS-DocAjoute-2
 
 Instance: Composition-IPS-FR
 InstanceOf: FRCompositionDocumentIPS
@@ -220,9 +262,10 @@ Usage: #inline
 * section[sectionStatutFonctionnel].title = "Statut fonctionnel"
 * section[sectionStatutFonctionnel].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
 * section[sectionStatutFonctionnel].text.status = #generated
-* section[sectionStatutFonctionnel].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionStatutFonctionnel].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionStatutFonctionnel].entry[0] = Reference(urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b)
 * section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
+* section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234)
 * section[sectionSignesVitaux].title = "Constantes"
 * section[sectionSignesVitaux].code = $LNC#8716-3 "Signes vitaux"
 * section[sectionSignesVitaux].text.status = #generated
@@ -265,6 +308,30 @@ Usage: #inline
 * section[sectionPlanDeSoins].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionPlanDeSoins].entry[0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
 * section[sectionPlanDeSoins].entry[+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
+* section[sectionDirectivesAnticipees].title = "Directives anticipées"
+* section[sectionDirectivesAnticipees].code = $LNC#42348-3 "Directives anticipées"
+* section[sectionDirectivesAnticipees].text.status = #generated
+* section[sectionDirectivesAnticipees].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type de directive</th><th>Procédure</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/01/2018</td><td>Maintien artificiel en vie</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Assistance respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Alimentation et hydratation artificielles</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Dialyse rénale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Réanimation cardiaque et respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Intervention chirurgicale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Sédation profonde et continue associée à un traitement de la douleur</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/04/2024</td><td>Directives anticipées</td><td>Document PDF non structuré (pdf récupérées du DMP)</td><td></td></tr></tbody></table></div>"
+* section[sectionDirectivesAnticipees].entry[0] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7)
+* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8)
+* section[sectionResultats].title = "Résultats"
+* section[sectionResultats].code = $LNC#30954-2 "Résultats d'examens"
+* section[sectionResultats].text.status = #generated
+* section[sectionResultats].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CRP</td><td>&lt;1.0 mg/L</td><td>Normal</td><td>&lt;6.0 mg/L</td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionResultats].entry[0] = Reference(urn:uuid:aa001111-2222-3333-4444-555566667777)
+* section[sectionResultats].entry[+] = Reference(urn:uuid:ff556666-7777-8888-9999-000011112222)
+* section[sectionDocumentsAjoutes].title = "Documents joints"
+* section[sectionDocumentsAjoutes].code = $LNC#55107-7 "Documents ajoutés"
+* section[sectionDocumentsAjoutes].text.status = #generated
+* section[sectionDocumentsAjoutes].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><tbody><tr><td>Attestation de la carte vitale</td></tr><tr><td>Attestation de mutuelle</td></tr></tbody></table></div>"
+* section[sectionDocumentsAjoutes].entry[0] = Reference(urn:uuid:55aa1111-bbbb-cccc-dddd-555566660001)
+* section[sectionDocumentsAjoutes].entry[+] = Reference(urn:uuid:66bb2222-cccc-dddd-eeee-666677770002)
 
 //***************Patient*********************//
 Instance: patientExemple
@@ -703,7 +770,7 @@ Usage: #inline
 * seriousness = $SCT#255604002 "gravité légère"
 * outcome = $SCT#1352007006 "Guérison sans séquelle"
 * suspectEntity.instance = Reference(urn:uuid:0409af90-4717-4a93-9800-fcf546875dc8)
-* suspectEntity.causality.assessment = $SCT#17162000 "certain(e)"
+* suspectEntity.causality.assessment = $SCT#2931005 "probable"
 
 Instance: MedicationAdministration-Exemple-1
 InstanceOf: FRMedicationAdministrationDocument
@@ -726,15 +793,12 @@ Instance: Medication-Exemple-1
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "f995f9bb-4043-45db-8b12-50dc7e9acc5a"
-* extension[0].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension[=].valueString = "AMOXICILLINE EG 1G BUV SACH 6"
-* extension[+].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification"
-* extension[=].valueCodeableConcept = $terminologie-atc#J01CA04 "amoxicilline"
-* extension[=].valueCodeableConcept.text = "amoxicilline"
+* extension[productName].valueString = "AMOXICILLINE EG 1G BUV SACH 6"
+* extension[classification].valueCodeableConcept = $terminologie-atc#J01CA04 "amoxicilline"
+* extension[classification].valueCodeableConcept.text = "amoxicilline"
 * code = $terminologie-atc#3400935186607 "AMOXICILLINE EG 1G BUV SACH 6"
-* ingredient.itemCodeableConcept.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-nom-substance"
-* ingredient.itemCodeableConcept.extension.valueString = "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000092629 "AMOXICILLINE TRIHYDRATÉE"
+* ingredient.itemCodeableConcept.text = "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.strength.numerator.value = 1.148
 * ingredient.strength.numerator.unit = "g"
 * ingredient.strength.denominator.value = 1
@@ -764,7 +828,7 @@ Usage: #inline
 * category = $v3-ActCode#DRUG "Médicament"
 * medicationReference = Reference(urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2021-12-04"
+* effectivePeriod.start = "2024-01-11"
 * reasonReference = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
 * note.text = "Le patient a pris le médicament après le petit-déjeuner"
 * dosage.route = #20053000 "Voie orale"
@@ -776,15 +840,12 @@ Instance: Medication-Exemple-2
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "fb88edae-4d3f-4b00-ae17-71c8f03adc71"
-* extension[0].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension[=].valueString = "LEVOTHYROX 75 microgrammes"
-* extension[+].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification"
-* extension[=].valueCodeableConcept = $terminologie-atc#H03AA01 "lévothyroxine sodique"
-* extension[=].valueCodeableConcept.text = "lévothyroxine sodique"
+* extension[productName].valueString = "LEVOTHYROX 75 microgrammes"
+* extension[classification].valueCodeableConcept = $terminologie-atc#H03AA01 "lévothyroxine sodique"
+* extension[classification].valueCodeableConcept.text = "lévothyroxine sodique"
 * code = $terminologie-bdpm#3400930065785 "LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)"
-* ingredient.itemCodeableConcept.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-nom-substance"
-* ingredient.itemCodeableConcept.extension.valueString = "paracetamol"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000091647 "LÉVOTHYROXINE SODIQUE"
+* ingredient.itemCodeableConcept.text = "LÉVOTHYROXINE SODIQUE"
 * ingredient.strength.numerator.value = 75
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.denominator.value = 1
@@ -814,7 +875,7 @@ Usage: #inline
 * identifier.extension.valueCode = #unknown
 * status = #active
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* timingPeriod.start = "2019-08-11"
+* timingPeriod.start = "2013-08-11"
 * device = Reference(urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9) "Autre dispositif médical"
 * note.text = "Autre DM : (texte libre)"
 
@@ -833,7 +894,9 @@ Usage: #inline
 * code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * code.extension.valueCode = #not-applicable
 * effectiveDateTime = "2018-01-14T15:06:00+00:00"
-* hasMember = Reference(urn:uuid:e102b4b3-91b6-4b89-9065-560bc68c024c)
+* hasMember[0] = Reference(urn:uuid:e102b4b3-91b6-4b89-9065-560bc68c024c)
+* hasMember[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
+* hasMember[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234)
 
 Instance: Observation-Exemple-1-Evaluation
 InstanceOf: FRObservationSurveyDocument
@@ -855,6 +918,18 @@ Usage: #inline
 * code = $icf-nl#d450 "Marcher"
 * effectiveDateTime = "2018-01-14T15:06:00+00:00"
 * valueCodeableConcept = $icf-nl#d4500.3 "Restriction modérée de la performance de marche sur de courtes distances"
+* note.text = "Texte libre"
+
+Instance: Observation-Exemple-3-Evaluation
+InstanceOf: FRObservationSurveyDocument
+Usage: #inline
+* id = "c3d4e5f6-a7b8-9012-cdef-345678901234"
+* status = #final
+* category.coding.code = #survey
+* code = $terminologie-cisis#GEN-092.04.23 "Autre statut fonctionnel"
+* effectiveDateTime = "2018-01-14T15:06:00+00:00"
+* valueCodeableConcept.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* valueCodeableConcept.extension.valueCode = #not-applicable
 * note.text = "Texte libre"
 
 Instance: Observation-Exemple-3-Signe-vital-observe
@@ -975,7 +1050,7 @@ Usage: #inline
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
 * protocolApplied.series = "1"
-* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.doseNumberPositiveInt = 2
 
 Instance: Immunizations-Exemple-2
 InstanceOf: FRImmunizationDocument
@@ -991,7 +1066,7 @@ Usage: #inline
 * status = #completed
 * vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* occurrenceDateTime = "2009-09-28"
+* occurrenceDateTime = "2009-08-25"
 * lotNumber = "4456668"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
@@ -1003,8 +1078,8 @@ Usage: #inline
 
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
-* protocolApplied.series = "2"
-* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.series = "1"
+* protocolApplied.doseNumberPositiveInt = 1
 
 Instance: practitioner-role-exemple-3
 InstanceOf: FRPractitionerRoleDocument
@@ -1132,12 +1207,10 @@ Instance: Medication-Exemple-3
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "2f861880-31d2-4969-a2ce-b78f750f430e"
-* extension.url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension.valueString = "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+* extension[productName].valueString = "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
 * code = $terminologie-atc#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
-* ingredient.itemCodeableConcept.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-nom-substance"
-* ingredient.itemCodeableConcept.extension.valueString = "ROSUVASTATINE"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000090079 "ROSUVASTATINE"
+* ingredient.itemCodeableConcept.text = "ROSUVASTATINE"
 * ingredient.strength.numerator.value = 5
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.denominator.value = 1
@@ -1146,9 +1219,8 @@ Instance: Medication-Exemple-4
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
-* extension.url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension.valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* extension.valueString.extension.valueCode = #unknown
+* extension[productName].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* extension[productName].valueString.extension.valueCode = #unknown
 * code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)"
 * ingredient.itemCodeableConcept.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * ingredient.itemCodeableConcept.extension.valueCode = #unknown
@@ -1165,3 +1237,303 @@ Usage: #inline
 * occurrenceDateTime = "2024-06-01"
 * note[finaliteExamen].text = "Suivi du traitement"
 * note[justificationDemande].text = "Contrôle de routine dans le cadre du plan de soins"
+
+//***************Directives Anticipées*********************//
+
+Instance: AdvanceDirective-IPS-1
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #deny
+* provision.code = $LNC#75789-8 "Maintien artificiel en vie"
+
+Instance: AdvanceDirective-IPS-2
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #deny
+* provision.code = $LNC#75787-2 "Assistance respiratoire"
+
+Instance: AdvanceDirective-IPS-3
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #deny
+* provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
+
+Instance: AdvanceDirective-IPS-4
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #permit
+* provision.code = $SCT#265764009 "Dialyse rénale"
+
+Instance: AdvanceDirective-IPS-5
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #deny
+* provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
+
+Instance: AdvanceDirective-IPS-6
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #permit
+* provision.code = $SCT#387713003 "Intervention chirurgicale"
+
+Instance: AdvanceDirective-IPS-7
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2018-01-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.type = #permit
+* provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
+
+Instance: AdvanceDirective-IPS-8
+InstanceOf: FRAdvanceDirectiveDocument
+Usage: #inline
+* id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
+* identifier[mainIdentifier].value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+* status = #active
+* category = $LNC#42348-3 "Directives anticipées"
+* patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* dateTime = "2024-04-01"
+* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
+* scope.coding.code = #adr
+* scope.coding.display = "Advance Directive"
+* provision.code = $LNC#42348-3 "Directives anticipées"
+* sourceAttachment.contentType = #application/pdf
+* sourceAttachment.data = "JVBERi0="
+
+//***************Résultats*********************//
+
+Instance: DiagnosticReport-IPS-Biologie
+InstanceOf: FRDiagnosticReportDocument
+Usage: #inline
+* id = "aa001111-2222-3333-4444-555566667777"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
+* status = #final
+* code = $LNC#26436-6 "Biologie polyvalente"
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* effectiveDateTime = "2024-03-29"
+* performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
+* performer = Reference(urn:uuid:cc223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
+* resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
+* resultsInterpreter = Reference(urn:uuid:cc223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
+* result = Reference(urn:uuid:bb112222-3333-4444-5555-666677778888)
+
+Instance: ObservationResult-IPS-1
+InstanceOf: FRObservationResultDocument
+Usage: #inline
+* id = "bb112222-3333-4444-5555-666677778888"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1A"
+* status = #final
+* code = $LNC#1988-5 "C Réactive protéine [Masse/Volume] Sérum/Plasma ; Numérique"
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* effectiveDateTime = "2024-03-29"
+* valueString = "<1.0 mg/L"
+* note.text = "(Texte libre)"
+
+//***************PractitionerRole / Practitioner / Org 4 : Biologie (CAMPARINI)*********************//
+Instance: practitioner-role-IPS-4
+InstanceOf: FRPractitionerRoleDocument
+Usage: #inline
+* id = "cc223333-4444-5555-6666-777788889999"
+* practitioner = Reference(urn:uuid:dd334444-5555-6666-7777-888899990000)
+* organization = Reference(urn:uuid:ee445555-6666-7777-8888-999900001111)
+
+Instance: practitioner-IPS-4
+InstanceOf: FRPractitionerDocument
+Usage: #inline
+* id = "dd334444-5555-6666-7777-888899990000"
+* identifier[rpps].system = "https://rpps.esante.gouv.fr"
+* identifier[rpps].value = "801234534765"
+* identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+* identifier[rpps].type.coding[0].code = #RPPS
+* identifier[rpps].type.coding[0].display = "Numéro du professionnel de santé"
+* name[0].family = "CAMPARINI"
+* name[0].given[0] = "Marcel"
+* name[0].prefix[0] = "M"
+* name[0].suffix[0] = "DR"
+* address.text = "8 Rue Frédéric Bastia 92100 BOULOGNE-BILLANCOURT"
+* qualification[savoirFaire].code.coding[savoirFaire].code = #SM03
+* qualification[savoirFaire].code.coding[savoirFaire].system = "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+* qualification[savoirFaire].code.coding[savoirFaire].display = "Médecin - Biologie médicale (SM)"
+* qualification[savoirFaire].issuer = Reference(urn:uuid:ee445555-6666-7777-8888-999900001111)
+
+Instance: organization-IPS-4
+InstanceOf: FROrganizationDocument
+Usage: #inline
+* id = "ee445555-6666-7777-8888-999900001111"
+* identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
+* identifier.value = "1120459876"
+* type = $TRE-A01-CadreExercice#AMBULATOIRE "Ambulatoire"
+* name = "Laboratoire des charmes"
+* address.line = "8 Rue Frédéric Bastia"
+* address.city = "BOULOGNE-BILLANCOURT"
+* address.postalCode = "92100"
+* telecom.system = #phone
+* telecom.value = "0174589607"
+
+//***************Résultats : Imagerie*********************//
+Instance: DiagnosticReport-IPS-Imagerie
+InstanceOf: FRDiagnosticReportDocument
+Usage: #inline
+* id = "ff556666-7777-8888-9999-000011112222"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
+* status = #final
+* code = $LNC#18748-4 "Imagerie"
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* effectiveDateTime = "2024-03-29"
+* performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
+* performer = Reference(urn:uuid:22778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
+* resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
+* resultsInterpreter = Reference(urn:uuid:22778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
+* result = Reference(urn:uuid:11667777-8888-9999-aaaa-111122223333)
+
+Instance: ObservationResult-IPS-2
+InstanceOf: FRObservationResultDocument
+Usage: #inline
+* id = "11667777-8888-9999-aaaa-111122223333"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1B"
+* status = #final
+* code = $LNC#24979-7 "CT rachis dorsal avec contraste IV"
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* effectiveDateTime = "2024-03-29"
+* valueString = "Pas d'embolie pulmonaire proximale"
+* bodySite = $SCT#302551006 "thorax entier"
+* note.text = "(Texte libre)"
+
+//***************PractitionerRole / Practitioner / Org 5 : Imagerie (BIDEAULT)*********************//
+Instance: practitioner-role-IPS-5
+InstanceOf: FRPractitionerRoleDocument
+Usage: #inline
+* id = "22778888-9999-aaaa-bbbb-222233334444"
+* practitioner = Reference(urn:uuid:33889999-aaaa-bbbb-cccc-333344445555)
+* organization = Reference(urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666)
+
+Instance: practitioner-IPS-5
+InstanceOf: FRPractitionerDocument
+Usage: #inline
+* id = "33889999-aaaa-bbbb-cccc-333344445555"
+* identifier[rpps].system = "https://rpps.esante.gouv.fr"
+* identifier[rpps].value = "801234560801"
+* identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+* identifier[rpps].type.coding[0].code = #RPPS
+* identifier[rpps].type.coding[0].display = "Numéro du professionnel de santé"
+* name[0].family = "BIDEAULT"
+* name[0].given[0] = "Jacques"
+* name[0].prefix[0] = "M"
+* name[0].suffix[0] = "DR"
+* address.text = "12 Rue Ambroise 75010 PARIS"
+* qualification[savoirFaire].code.coding[savoirFaire].code = #SM44
+* qualification[savoirFaire].code.coding[savoirFaire].system = "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+* qualification[savoirFaire].code.coding[savoirFaire].display = "Médecin - Radio-diagnostic (SM)"
+* qualification[savoirFaire].issuer = Reference(urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666)
+
+Instance: organization-IPS-5
+InstanceOf: FROrganizationDocument
+Usage: #inline
+* id = "4499aaaa-bbbb-cccc-dddd-444455556666"
+* identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
+* identifier.value = "101235555"
+* type = $TRE-A01-CadreExercice#AMBULATOIRE "Ambulatoire"
+* name = "Centre de radiologie Ambroise"
+* address.line = "12 Rue Ambroise"
+* address.city = "PARIS"
+* address.postalCode = "75010"
+* telecom.system = #phone
+* telecom.value = "0146000000"
+
+//***************Documents ajoutés*********************//
+Instance: DocumentReference-IPS-DocAjoute-1
+InstanceOf: FRDocumentReferenceDocument
+Usage: #inline
+* id = "55aa1111-bbbb-cccc-dddd-555566660001"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"
+* status = #current
+* docStatus = #final
+* type = $terminologie-cisis#DLU_006 "Attestation de la carte vitale"
+* content.attachment.contentType = #application/pdf
+* content.attachment.data = "JVBERi0="
+
+Instance: DocumentReference-IPS-DocAjoute-2
+InstanceOf: FRDocumentReferenceDocument
+Usage: #inline
+* id = "66bb2222-cccc-dddd-eeee-666677770002"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8C"
+* status = #current
+* docStatus = #final
+* type = $terminologie-cisis#DLU_007 "Attestation de mutuelle"
+* content.attachment.contentType = #application/pdf
+* content.attachment.data = "JVBERi0="
