@@ -30,7 +30,10 @@ dependencies:
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.uv.fhir-clinical-document: latest
   ihe.pharm.mpd: 1.0.0-comment-2 
-  ans.document.fr.core: 0.1.0-snapshot
+  #ans.document.fr.core: 0.1.0-snapshot
+  ans.fhir.fr.document-core: 0.1.0
+  ans.cda.fr.document-core: 0.1.0
+  ans.metier.fr.document-core: 0.1.0
 
 pages:
     index.md:

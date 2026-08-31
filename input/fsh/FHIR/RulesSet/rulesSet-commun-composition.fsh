@@ -38,7 +38,7 @@ RuleSet: IPSSectionPlanDeSoinsSlices
 * entry[acte] ^short = "Entrée Acte"
 * entry[demandeDexamenOuDeSuivi] only Reference(FRServiceRequestDocument)
 * entry[demandeDexamenOuDeSuivi] ^short = "Entrée Demande d examen ou de suivi"
-* entry[traitement] only Reference(FRMedicationAdministrationDocument)
+* entry[traitement] only Reference(FRMedicationRequestDocument)
 * entry[traitement] ^short = "Entrée Traitement"
 * entry[vaccinRecommande] only Reference(FRImmunizationRecommendationDocument)
 * entry[vaccinRecommande] ^short = "Entrée Vaccin recommandé"
