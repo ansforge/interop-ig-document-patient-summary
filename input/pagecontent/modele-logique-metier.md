@@ -1,8 +1,8 @@
 ## Modèles logiques du document IPS
 
-Les modèles logiques métier sont définis pour :
+Le modèle logique présenté décrit un document structuré, conçu pour offrir une synthèse des informations de santé les plus importantes d'un patient. Il a pour objectif d'être compatible avec la norme ISO International Patient Summary.
 
-- [Modèle logique - Entête document IPS](../StructureDefinition-fr-lm-entete-document-ips.html)
-- [Modèle logique - Corps document IPS](../StructureDefinition-fr-lm-corps-document-ips.html)
+Le modèle logique métier est défini pour :
 
-Ces modèles logiques fournissent une vue métier abstraite indépendante des syntaxes CDA et FHIR.
+- [Modèle logique - Document Patient Summary](../StructureDefinition-fr-lm-patient-summary-document.html)
+

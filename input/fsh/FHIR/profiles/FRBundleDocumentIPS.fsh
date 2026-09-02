@@ -7,7 +7,6 @@ Description: "Synthèse médicale française, basée sur le modèle Internationa
 * . ^short = "Modèle du document IPS-FR-2024 (Synthèse Médicale) du CI-SIS."
 * . ^definition = "Bundle représentant la synthèse médicale française basée sur le modèle International Patient Summary d'HL7."
 
-
 * entry ^short = "Entrées dans le bundle de synthèse médicale"
 * entry ^comment = "Doit contenir la Composition IPS comme première entrée (une seule instance de ressource Composition peut être incluse) et une ressource Patient. Des contraintes supplémentaires sont spécifiées dans le profil Composition IPS."
 * entry.fullUrl 1.. 
