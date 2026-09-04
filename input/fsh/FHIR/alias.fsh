@@ -39,6 +39,3 @@ Alias: $JDV-J11-RelationPatient-CISIS = https://mos.esante.gouv.fr/NOS/TRE_R216-
 Alias: $fr-core-vs-patient-contact-role = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role
 Alias: $jdv-role-informateur-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-role-informateur-cisis
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-
-// Extensions
-Alias: $composition-diagnosticReportReference = http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference

@@ -45,9 +45,6 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * extension[participant][autreCorrespondant].extension[type].valueCodeableConcept.coding.code = #CON
 * extension[participant][autreCorrespondant].extension[function].valueCodeableConcept.coding.code = #CORRE
 
-* extension contains $composition-diagnosticReportReference named diagnosticReport 0..1
-* extension[diagnosticReport].value[x] only Reference(FRDiagnosticReportDocument)
-
 * subject ^short = "Cible recordée par le document Synthèse Médicale"
 
 * section ^slicing.discriminator[0].type = #value
@@ -61,7 +58,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 // ===============================
 
 * section contains
-    sectionActiveProblems 1..1 and
+    sectionProblems 1..1 and
     sectionFamilyHistory 0..1 and
     sectionAllergyIntolerance 1..1 and
     sectionAdverseEvent 0..1 and
@@ -80,8 +77,8 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
     sectionUncodedOccupationalRiskFactors 0..1
 
 // Section Problèmes actifs
-* section[sectionActiveProblems]
-  * insert IPSSection(Section Problèmes actifs, http://loinc.org#11450-4)
+* section[sectionProblems]
+  * insert IPSSection(Section Problèmes, http://loinc.org#11450-4)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(probleme, FRConditionDocument, 1, *, Entrée Liste des problèmes)
   * obeys ips-section-not-empty
@@ -95,7 +92,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 
 // Section Allergies et hypersensibilités
 * section[sectionAllergyIntolerance]
-  * insert IPSSection(Section Allergies, Hypersensibilités non allergiques, Intolérances, Idiosyncrasies, http://loinc.org#48765-2)
+  * insert IPSSection(Section Allergies\, Hypersensibilités non allergiques\, Intolérances\, Idiosyncrasies, http://loinc.org#48765-2)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(allergie, FRAllergyIntoleranceDocument, 1, *, Entrée Liste des allergies et hypersensibilités)
   * obeys ips-section-not-empty
