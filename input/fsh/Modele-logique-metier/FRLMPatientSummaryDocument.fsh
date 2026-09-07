@@ -4,7 +4,7 @@ Parent: FRLMHeaderDocument
 Title: "Modèle logique métier - FR LM Patient Summary Document"
 Description: "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."
 	
-* identifier 1..1 Identifier "Identifiant unique du document."
+* identifier 1..1
 * problems 1..1 FRLMProblems "Section Problèmes Actifs"
 * familyHistories 0..1 FRLMFamilyMedicalHistory "Section Antécédents familiaux"
 * allergiesAndIntolerances 1..1 FRLMAllergiesAndIntolerances  "Section Allergies et hypersensibilités"

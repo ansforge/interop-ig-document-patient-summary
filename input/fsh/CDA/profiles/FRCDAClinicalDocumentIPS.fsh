@@ -97,12 +97,12 @@ contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..
 * component.structuredBody.component[sectionStatutFonctionnel].section only FRCDASectionStatutFonctionnel
 * component.structuredBody.component[sectionSignesVitaux].section only FRCDASectionSignesVitaux
 * component.structuredBody.component[sectionHabitusModeDeVie].section only FRCDASectionHabitusModeDeVie
-* component.structuredBody.component[sectionAntecedentFamiliaux].section only FRCDASectionAntecedentFamiliaux
+* component.structuredBody.component[sectionAntecedentFamiliaux].section only FRCDASectionAntecedentsFamiliaux
 * component.structuredBody.component[sectionFacteursDeRisqueProfessionnelsNonCode].section only FRCDASectionFacteursDeRisqueProfessionnelsNonCode
 * component.structuredBody.component[sectionVaccinations].section only FRCDASectionVaccinations
 * component.structuredBody.component[sectionHistoriqueDesGrossesses].section only FRCDASectionHistoriqueDesGrossesses
 * component.structuredBody.component[sectionPlanDeSoins].section only FRCDASectionPlanDeSoins
-* component.structuredBody.component[sectionDirectivesAnticipees].section only FRCDASectionDirectivesAnticipees
+//* component.structuredBody.component[sectionDirectivesAnticipees].section only FRCDASectionDirectivesAnticipees
 * component.structuredBody.component[sectionResultats].section only FRCDASectionResultats
 * component.structuredBody.component[sectionDocumentsAjoutes].section only FRCDASectionDocumentsAjoutes
 

@@ -208,120 +208,108 @@ Usage: #inline
 * event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
 * event.extension.valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * event.period.start = "2024-04-02T11:17:00+01:00"
-* section[sectionProblemesActifs].title = "Problèmes actifs"
-* section[sectionProblemesActifs].code = $LNC#11450-4 "Liste des problèmes actifs"
-* section[sectionProblemesActifs].text.status = #generated
-* section[sectionProblemesActifs].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
-* section[sectionProblemesActifs].entry[0] = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
-* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:c9d0e1f2-a3b4-5678-c034-678901234568)
-* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6789-d045-789012345679)
-* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:e1f2a3b4-c5d6-7890-e056-890123456780)
-* section[sectionProblemesActifs].entry[+] = Reference(urn:uuid:f2a3b4c5-d6e7-8901-f067-901234567891)
-* section[sectionAntecedentsMedicaux].title = "Antécédents"
-* section[sectionAntecedentsMedicaux].code = $LNC#11348-0 "Antécédents médicaux"
-* section[sectionAntecedentsMedicaux].text.status = #generated
-* section[sectionAntecedentsMedicaux].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>22/04/2018 au 30/04/2018</td><td>interprétation diagnostique</td><td>Accident Ischémique Cérébral Transitoire (CIM-10 : G45.9)</td><td>modéré</td><td>Résolu</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(Texte libre)</td><td/></tr><tr><td>14/01/2018 au 25/01/2018</td><td>interprétation diagnostique</td><td>Pyélonéphrite aiguë (CIM-10 : N10)</td><td>modéré</td><td>Résolu</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(Texte libre)</td><td/></tr></tbody></table></div>"
-* section[sectionAntecedentsMedicaux].entry[0] = Reference(urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902)
-* section[sectionAntecedentsMedicaux].entry[+] = Reference(urn:uuid:b4c5d6e7-f8a9-0123-b089-123456789013)
-* section[sectionHistoriqueDesActes].title = "Historique des actes"
-* section[sectionHistoriqueDesActes].code = $LNC#47519-4 "Historique des actes"
-* section[sectionHistoriqueDesActes].text.status = #generated
-* section[sectionHistoriqueDesActes].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Acte</th><th>Voie d'abord</th><th>Localisation anatomique</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>06/12/2024</td><td>Soins palliatifs</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td><td>Voie intraartérielle</td><td>artère coronaire</td><td>Infarctus inférieur transmural</td><td>(texte libre)</td></tr><tr><td>08/12/2016</td><td>Autre acte (texte libre)</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionHistoriqueDesActes].entry[0] = Reference(urn:uuid:c5d6e7f8-a9b0-1234-c090-234567890124)
-* section[sectionHistoriqueDesActes].entry[+] = Reference(urn:uuid:b0c1d2e3-f4a5-6789-b145-789012345679)
-* section[sectionHistoriqueDesActes].entry[+] = Reference(urn:uuid:c1d2e3f4-a5b6-7890-c156-890123456780)
-* section[sectionAllergiesEtHypersensibilites].title = "Allergies et hypersensibilités"
-* section[sectionAllergiesEtHypersensibilites].code = $LNC#48765-2 "Allergies et hypersensibilités"
-* section[sectionAllergiesEtHypersensibilites].text.status = #generated
-* section[sectionAllergiesEtHypersensibilites].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Statut</th><th>Criticité</th><th>Certitude</th><th>Réaction(s)</th><th>Sévérité réaction(s)</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>Paracétamol</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Bronchospasme d'origine médicamenteuse<br/>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>modéré<br/>léger</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionAllergiesEtHypersensibilites].entry = Reference(urn:uuid:d2e3f4a5-b6c7-8901-d167-901234567891)
-* section[sectionEffetsIndesirables].title = "Effets indésirables prévisibles liés aux médicaments"
-* section[sectionEffetsIndesirables].code = $LNC#44939-7 "Effets indésirables prévisibles liés aux médicaments"
-* section[sectionEffetsIndesirables].text.status = #generated
-* section[sectionEffetsIndesirables].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d'administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionEffetsIndesirables].entry = Reference(urn:uuid:e3f4a5b6-c7d8-9012-e178-012345678902)
-* section[sectionTraitements].title = "Traitements"
-* section[sectionTraitements].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
-* section[sectionTraitements].text.status = #generated
-* section[sectionTraitements].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>(texte libre)</td></tr></tbody></table><p><em>Traitements aigus :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/02/2022</td><td>–</td><td>COUMADINE 5 mg, comprimé sécable</td><td>4 fois/j</td><td>1 cp</td><td>toutes les 6h</td><td>Voie orale</td><td>Accident Ischémique Cérébral Transitoire</td><td>(texte libre)</td></tr><tr><td>01/12/2021</td><td>06/12/2021</td><td>PARACETAMOL MYLAN/VIATRIS 500 mg, comprimé</td><td>doses progressives</td><td>–</td><td>–</td><td>Voie orale</td><td>–</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionTraitements].entry[0] = Reference(urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346)
-* section[sectionTraitements].entry[+] = Reference(urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568)
-* section[sectionDispositifsMedicaux].title = "Dispositifs médicaux"
-* section[sectionDispositifsMedicaux].code = $LNC#46264-8 "Dispositifs médicaux"
-* section[sectionDispositifsMedicaux].text.status = #generated
-* section[sectionDispositifsMedicaux].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionDispositifsMedicaux].entry[0] = Reference(urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780)
-* section[sectionDispositifsMedicaux].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9013-c278-012345678902)
-* section[sectionPointsDeVigilancesNonCode].title = "Points de vigilance"
-* section[sectionPointsDeVigilancesNonCode].code = $LNC#44944-7 "Autres alertes"
-* section[sectionPointsDeVigilancesNonCode].text.status = #generated
-* section[sectionPointsDeVigilancesNonCode].text.div = "<div><p>(texte libre)</p></div>"
-* section[sectionStatutFonctionnel].title = "Statut fonctionnel"
-* section[sectionStatutFonctionnel].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
-* section[sectionStatutFonctionnel].text.status = #generated
-* section[sectionStatutFonctionnel].text.div = "<div><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionStatutFonctionnel].entry[0] = Reference(urn:uuid:e5f6a7b8-c9d0-1235-e290-234567890124)
-* section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:f6a7b8c9-d0e1-2346-f301-345678901235)
-* section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:a7b8c9d0-e1f2-3457-a312-456789012346)
-* section[sectionStatutFonctionnel].entry[+] = Reference(urn:uuid:b8c9d0e1-f2a3-4568-b323-567890123457)
-* section[sectionSignesVitaux].title = "Constantes"
-* section[sectionSignesVitaux].code = $LNC#8716-3 "Signes vitaux"
-* section[sectionSignesVitaux].text.status = #generated
-* section[sectionSignesVitaux].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionSignesVitaux].entry[0] = Reference(urn:uuid:c9d0e1f2-a3b4-5679-c334-678901234568)
-* section[sectionSignesVitaux].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6780-d345-789012345679)
-* section[sectionHabitusModeDeVie].title = "Mode de vie"
-* section[sectionHabitusModeDeVie].code = $LNC#29762-2 "Habitus, Mode de vie"
-* section[sectionHabitusModeDeVie].text.status = #generated
-* section[sectionHabitusModeDeVie].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionHabitusModeDeVie].entry[0] = Reference(urn:uuid:e1f2a3b4-c5d6-7891-e356-890123456780)
-* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:f2a3b4c5-d6e7-8902-f367-901234567891)
-* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:a3b4c5d6-e7f8-9013-a378-012345678902)
-* section[sectionHabitusModeDeVie].entry[+] = Reference(urn:uuid:b4c5d6e7-f8a9-0124-b389-123456789013)
-* section[sectionFacteursDeRisqueProfessionnelsNonCode].title = "Facteurs de risques professionnels"
-* section[sectionFacteursDeRisqueProfessionnelsNonCode].code = $LNC#10161-8 "Facteurs de risques professionnels"
-* section[sectionFacteursDeRisqueProfessionnelsNonCode].text.status = #generated
-* section[sectionFacteursDeRisqueProfessionnelsNonCode].text.div = "<div><p>(texte libre)</p></div>"
-* section[sectionAntecedentFamiliaux].title = "Historique des pathologies familiales"
-* section[sectionAntecedentFamiliaux].code = $LNC#10157-6 "Historique des pathologies familiales"
-* section[sectionAntecedentFamiliaux].text.status = #generated
-* section[sectionAntecedentFamiliaux].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionAntecedentFamiliaux].entry = Reference(urn:uuid:c5d6e7f8-a9b0-1235-c390-234567890124)
-* section[sectionVaccinations].title = "Vaccinations"
-* section[sectionVaccinations].text.status = #generated
-* section[sectionVaccinations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Maladie(s) prévenue(s)</th><th>Vaccin</th><th>Lot n°</th><th>Type / Rang</th><th>Voie</th><th>Région d'administration</th><th>Réaction observée</th><th>Vaccinateur</th><th>Commentaire</th></tr></thead><tbody><tr><td>28/09/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456672</td><td>1ère série vaccinante / 2</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td></tr><tr><td>25/08/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456668</td><td>1ère série vaccinante / 1</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>-</td></tr></tbody></table></div>"
-* section[sectionVaccinations].entry[0] = Reference(urn:uuid:d6e7f8a9-b0c1-2346-d401-345678901235)
-* section[sectionVaccinations].entry[+] = Reference(urn:uuid:e7f8a9b0-c1d2-3457-e412-456789012346)
-* section[sectionPlanDeSoins].title = "Plan de soins"
-* section[sectionPlanDeSoins].code = $LNC#18776-5 "Plan de soins"
-* section[sectionPlanDeSoins].text.status = #generated
-* section[sectionPlanDeSoins].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Soins palliatifs</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionPlanDeSoins].entry[0] = Reference(urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891)
-* section[sectionPlanDeSoins].entry[+] = Reference(urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902)
-* section[sectionResultats].title = "Résultats"
-* section[sectionResultats].code = $LNC#30954-2 "Résultats d'examens"
-* section[sectionResultats].text.status = #generated
-* section[sectionResultats].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>Le patient porte-t-il une bactérie multirésistante ?</td><td>Non</td><td></td><td></td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionResultats].entry[0] = Reference(urn:uuid:cc001111-2222-3333-4444-555566667777)
-* section[sectionResultats].entry[+] = Reference(urn:uuid:11556666-7777-8888-9999-000011112222)
-* section[sectionDocumentsAjoutes].title = "Documents joints"
-* section[sectionDocumentsAjoutes].code = $LNC#55107-7 "Documents ajoutés"
-* section[sectionDocumentsAjoutes].text.status = #generated
-* section[sectionDocumentsAjoutes].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><tbody><tr><td>Attestation de la carte vitale</td></tr><tr><td>Attestation de mutuelle</td></tr></tbody></table></div>"
-* section[sectionDocumentsAjoutes].entry[0] = Reference(urn:uuid:66aa1111-cccc-dddd-eeee-555566667777)
-* section[sectionDocumentsAjoutes].entry[+] = Reference(urn:uuid:77bb2222-dddd-eeee-ffff-666677778888)
-* section[sectionDirectivesAnticipees].title = "Directives anticipées"
-* section[sectionDirectivesAnticipees].code = $LNC#42348-3 "Directives anticipées"
-* section[sectionDirectivesAnticipees].text.status = #generated
-* section[sectionDirectivesAnticipees].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type de directive</th><th>Procédure</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/01/2018</td><td>Maintien artificiel en vie</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Assistance respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Alimentation et hydratation artificielles</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Dialyse rénale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Réanimation cardiaque et respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Intervention chirurgicale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Sédation profonde et continue associée à un traitement de la douleur</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/04/2024</td><td>Directives anticipées</td><td>Document PDF non structuré (pdf récupérées du DMP)</td><td></td></tr></tbody></table></div>"
-* section[sectionDirectivesAnticipees].entry[0] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7)
-* section[sectionDirectivesAnticipees].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8)
+* section[sectionProblems].title = "Problèmes actifs"
+* section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
+* section[sectionProblems].entry[0] = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
+* section[sectionProblems].entry[+] = Reference(urn:uuid:c9d0e1f2-a3b4-5678-c034-678901234568)
+* section[sectionProblems].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6789-d045-789012345679)
+* section[sectionProblems].entry[+] = Reference(urn:uuid:e1f2a3b4-c5d6-7890-e056-890123456780)
+* section[sectionProblems].entry[+] = Reference(urn:uuid:f2a3b4c5-d6e7-8901-f067-901234567891)
+* section[sectionHistoryActs].title = "Historique des actes"
+* section[sectionHistoryActs].code = $LNC#47519-4 "Historique des actes"
+* section[sectionHistoryActs].text.status = #generated
+* section[sectionHistoryActs].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Acte</th><th>Voie d'abord</th><th>Localisation anatomique</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>06/12/2024</td><td>Soins palliatifs</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td><td>Voie intraartérielle</td><td>artère coronaire</td><td>Infarctus inférieur transmural</td><td>(texte libre)</td></tr><tr><td>08/12/2016</td><td>Autre acte (texte libre)</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionHistoryActs].entry[0] = Reference(urn:uuid:c5d6e7f8-a9b0-1234-c090-234567890124)
+* section[sectionHistoryActs].entry[+] = Reference(urn:uuid:b0c1d2e3-f4a5-6789-b145-789012345679)
+* section[sectionHistoryActs].entry[+] = Reference(urn:uuid:c1d2e3f4-a5b6-7890-c156-890123456780)
+* section[sectionAllergyIntolerance].title = "Allergies et hypersensibilités"
+* section[sectionAllergyIntolerance].code = $LNC#48765-2 "Allergies et hypersensibilités"
+* section[sectionAllergyIntolerance].text.status = #generated
+* section[sectionAllergyIntolerance].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Statut</th><th>Criticité</th><th>Certitude</th><th>Réaction(s)</th><th>Sévérité réaction(s)</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>Paracétamol</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Bronchospasme d'origine médicamenteuse<br/>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>modéré<br/>léger</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionAllergyIntolerance].entry = Reference(urn:uuid:d2e3f4a5-b6c7-8901-d167-901234567891)
+* section[sectionAdverseEvent].title = "Effets indésirables prévisibles liés aux médicaments"
+* section[sectionAdverseEvent].code = $LNC#44939-7 "Effets indésirables prévisibles liés aux médicaments"
+* section[sectionAdverseEvent].text.status = #generated
+* section[sectionAdverseEvent].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d'administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionAdverseEvent].entry = Reference(urn:uuid:e3f4a5b6-c7d8-9012-e178-012345678902)
+* section[sectionMedications].title = "Traitements"
+* section[sectionMedications].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>(texte libre)</td></tr></tbody></table><p><em>Traitements aigus :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/02/2022</td><td>–</td><td>COUMADINE 5 mg, comprimé sécable</td><td>4 fois/j</td><td>1 cp</td><td>toutes les 6h</td><td>Voie orale</td><td>Accident Ischémique Cérébral Transitoire</td><td>(texte libre)</td></tr><tr><td>01/12/2021</td><td>06/12/2021</td><td>PARACETAMOL MYLAN/VIATRIS 500 mg, comprimé</td><td>doses progressives</td><td>–</td><td>–</td><td>Voie orale</td><td>–</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionMedications].entry[0] = Reference(urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346)
+* section[sectionMedications].entry[+] = Reference(urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568)
+* section[sectionMedicalDevice].title = "Dispositifs médicaux"
+* section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
+* section[sectionMedicalDevice].text.status = #generated
+* section[sectionMedicalDevice].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionMedicalDevice].entry[0] = Reference(urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780)
+* section[sectionMedicalDevice].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9013-c278-012345678902)
+* section[sectionUncodedPointsOfVigilance].title = "Points de vigilance"
+* section[sectionUncodedPointsOfVigilance].code = $LNC#44944-7 "Autres alertes"
+* section[sectionUncodedPointsOfVigilance].text.status = #generated
+* section[sectionUncodedPointsOfVigilance].text.div = "<div><p>(texte libre)</p></div>"
+* section[sectionFunctionalStatus].title = "Statut fonctionnel"
+* section[sectionFunctionalStatus].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
+* section[sectionFunctionalStatus].text.status = #generated
+* section[sectionFunctionalStatus].text.div = "<div><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFunctionalStatus].entry[0] = Reference(urn:uuid:e5f6a7b8-c9d0-1235-e290-234567890124)
+* section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:f6a7b8c9-d0e1-2346-f301-345678901235)
+* section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:a7b8c9d0-e1f2-3457-a312-456789012346)
+* section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:b8c9d0e1-f2a3-4568-b323-567890123457)
+* section[sectionVitalSigns].title = "Constantes"
+* section[sectionVitalSigns].code = $LNC#8716-3 "Signes vitaux"
+* section[sectionVitalSigns].text.status = #generated
+* section[sectionVitalSigns].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionVitalSigns].entry[0] = Reference(urn:uuid:c9d0e1f2-a3b4-5679-c334-678901234568)
+* section[sectionVitalSigns].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6780-d345-789012345679)
+* section[sectionSocialHistory].title = "Mode de vie"
+* section[sectionSocialHistory].code = $LNC#29762-2 "Habitus, Mode de vie"
+* section[sectionSocialHistory].text.status = #generated
+* section[sectionSocialHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionSocialHistory].entry[0] = Reference(urn:uuid:e1f2a3b4-c5d6-7891-e356-890123456780)
+* section[sectionSocialHistory].entry[+] = Reference(urn:uuid:f2a3b4c5-d6e7-8902-f367-901234567891)
+* section[sectionSocialHistory].entry[+] = Reference(urn:uuid:a3b4c5d6-e7f8-9013-a378-012345678902)
+* section[sectionSocialHistory].entry[+] = Reference(urn:uuid:b4c5d6e7-f8a9-0124-b389-123456789013)
+* section[sectionUncodedOccupationalRiskFactors].title = "Facteurs de risques professionnels"
+* section[sectionUncodedOccupationalRiskFactors].code = $LNC#10161-8 "Facteurs de risques professionnels"
+* section[sectionUncodedOccupationalRiskFactors].text.status = #generated
+* section[sectionUncodedOccupationalRiskFactors].text.div = "<div><p>(texte libre)</p></div>"
+* section[sectionFamilyHistory].title = "Historique des pathologies familiales"
+* section[sectionFamilyHistory].code = $LNC#10157-6 "Historique des pathologies familiales"
+* section[sectionFamilyHistory].text.status = #generated
+* section[sectionFamilyHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFamilyHistory].entry = Reference(urn:uuid:c5d6e7f8-a9b0-1235-c390-234567890124)
+* section[sectionImmunizations].title = "Vaccinations"
+* section[sectionImmunizations].text.status = #generated
+* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Maladie(s) prévenue(s)</th><th>Vaccin</th><th>Lot n°</th><th>Type / Rang</th><th>Voie</th><th>Région d'administration</th><th>Réaction observée</th><th>Vaccinateur</th><th>Commentaire</th></tr></thead><tbody><tr><td>28/09/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456672</td><td>1ère série vaccinante / 2</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td></tr><tr><td>25/08/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456668</td><td>1ère série vaccinante / 1</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>-</td></tr></tbody></table></div>"
+* section[sectionImmunizations].entry[0] = Reference(urn:uuid:d6e7f8a9-b0c1-2346-d401-345678901235)
+* section[sectionImmunizations].entry[+] = Reference(urn:uuid:e7f8a9b0-c1d2-3457-e412-456789012346)
+* section[sectionPlanOfCare].title = "Plan de soins"
+* section[sectionPlanOfCare].code = $LNC#18776-5 "Plan de soins"
+* section[sectionPlanOfCare].text.status = #generated
+* section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Soins palliatifs</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionPlanOfCare].entry[0] = Reference(urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891)
+* section[sectionPlanOfCare].entry[+] = Reference(urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902)
+* section[sectionResults].title = "Résultats"
+* section[sectionResults].code = $LNC#30954-2 "Résultats d'examens"
+* section[sectionResults].text.status = #generated
+* section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>Le patient porte-t-il une bactérie multirésistante ?</td><td>Non</td><td></td><td></td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionResults].entry[0] = Reference(urn:uuid:cc001111-2222-3333-4444-555566667777)
+* section[sectionResults].entry[+] = Reference(urn:uuid:11556666-7777-8888-9999-000011112222)
+* section[sectionAdvanceDirective].title = "Directives anticipées"
+* section[sectionAdvanceDirective].code = $LNC#42348-3 "Directives anticipées"
+* section[sectionAdvanceDirective].text.status = #generated
+* section[sectionAdvanceDirective].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type de directive</th><th>Procédure</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/01/2018</td><td>Maintien artificiel en vie</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Assistance respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Alimentation et hydratation artificielles</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Dialyse rénale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Réanimation cardiaque et respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Intervention chirurgicale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Sédation profonde et continue associée à un traitement de la douleur</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/04/2024</td><td>Directives anticipées</td><td>Document PDF non structuré (pdf récupérées du DMP)</td><td></td></tr></tbody></table></div>"
+* section[sectionAdvanceDirective].entry[0] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7)
+* section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8)
 
 //***************Patient*********************//
 
@@ -564,8 +552,8 @@ Usage: #inline
 * identifier.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * identifier.extension.valueCode = #unknown
 * status = #current
-* type.extension[dataAbsentReason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* type.extension[dataAbsentReason].valueCode = #unknown
+* type.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* type.extension.valueCode = #unknown
 * content.attachment.contentType = #application/dicom
 * content.attachment.url = "https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf"
 
@@ -693,8 +681,7 @@ Usage: #inline
 * recorder.extension.extension[+].url = "type"
 * recorder.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
 * reasonReference = Reference(urn:uuid:a9b0c1d2-e3f4-5678-a134-678901234568)
-* bodySite[ApproachSiteCode] = $SCT#229801003 "intra-arterial"
-* bodySite[TargetSiteCode] = $SCT#41801008 "artère coronaire"
+* bodySite = $SCT#41801008 "artère coronaire"
 * note.text = "texte libre"
 
 Instance: Procedure-DLU-3
@@ -707,7 +694,6 @@ Usage: #inline
 * code = $terminologie-cisis#GEN-092.04.13 "Autre acte"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * performedDateTime = "2016-12-08"
-* bodySite[ApproachSiteCode] = $SCT#229801003 "intra-arterial"
 * note.text = "texte libre"
 
 //***************Allergie*********************//
@@ -748,6 +734,7 @@ Usage: #inline
 * date = "2021-12-04"
 * detected = "2021-12-04"
 * resultingCondition = Reference(urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235)
+* severity = #mild
 * seriousness = $SCT#255604002 "gravité légère"
 * outcome = $SCT#1352007006 "Guérison sans séquelle"
 * suspectEntity.instance = Reference(urn:uuid:f4a5b6c7-d8e9-0123-f189-123456789013)
@@ -903,7 +890,7 @@ Usage: #inline
 
 //***************Statut fonctionnel*********************//
 Instance: Observation-DLU-Groupe-StatutFonctionnel
-InstanceOf: FRObservationSurveyPannelDocument
+InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "e5f6a7b8-c9d0-1235-e290-234567890124"
 * identifier.system = "urn:ietf:rfc:3986"
@@ -911,13 +898,14 @@ Usage: #inline
 * status = #final
 * code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * code.extension.valueCode = #not-applicable
+* valueString = "Groupe de questionnaires d'evaluation"
 * effectiveDateTime = "2024-05-14T00:00:00+00:00"
 * hasMember[0] = Reference(urn:uuid:f6a7b8c9-d0e1-2346-f301-345678901235)
 * hasMember[+] = Reference(urn:uuid:a7b8c9d0-e1f2-3457-a312-456789012346)
 * hasMember[+] = Reference(urn:uuid:b8c9d0e1-f2a3-4568-b323-567890123457)
 
 Instance: Observation-DLU-Eval-1
-InstanceOf: FRObservationSurveyDocument
+InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "f6a7b8c9-d0e1-2346-f301-345678901235"
 * status = #final
@@ -928,7 +916,7 @@ Usage: #inline
 * note.text = "Peut alerter : oui"
 
 Instance: Observation-DLU-Eval-2
-InstanceOf: FRObservationSurveyDocument
+InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "a7b8c9d0-e1f2-3457-a312-456789012346"
 * status = #final
@@ -939,7 +927,7 @@ Usage: #inline
 * note.text = "Déficit visuel : oui"
 
 Instance: Observation-DLU-Eval-3
-InstanceOf: FRObservationSurveyDocument
+InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "b8c9d0e1-f2a3-4568-b323-567890123457"
 * status = #final
@@ -984,7 +972,6 @@ InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "e1f2a3b4-c5d6-7891-e356-890123456780"
 * status = #final
-* category = $observation-category#social-history
 * code = $LNC#72166-2 "Statut tabagique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
@@ -997,7 +984,6 @@ InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "f2a3b4c5-d6e7-8902-f367-901234567891"
 * status = #final
-* category = $observation-category#social-history
 * code = $LNC#74011-8 "Consommation tabagique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
@@ -1010,7 +996,6 @@ InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "a3b4c5d6-e7f8-9013-a378-012345678902"
 * status = #final
-* category = $observation-category#social-history
 * code = $LNC#74013-4 "Consommation d'alcool"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
@@ -1023,7 +1008,6 @@ InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "b4c5d6e7-f8a9-0124-b389-123456789013"
 * status = #final
-* category = $observation-category#social-history
 * code = $LNC#11343-1 "Consommation de drogue non médicales"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
@@ -1050,11 +1034,8 @@ Instance: Immunizations-DLU-1
 InstanceOf: FRImmunizationDocument
 Usage: #inline
 * id = "d6e7f8a9-b0c1-2346-d401-345678901235"
-* extension[0].url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-vaccination-type-extension"
-* extension[=].valueCodeableConcept = $v3-ActCode#INITIMMUNIZ "1ère série vaccinante"
-* extension[+].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension[=].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* extension[=].valueString.extension.valueCode = #unknown
+* extension[author].extension[actor].valueReference = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
+* extension[author].extension[type].valueCode = #AUT
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d6e7f8a9-b0c1-2346-d401-345678901235"
 * status = #completed
@@ -1065,8 +1046,7 @@ Usage: #inline
 * lotNumber = "4456672"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
-* performer.actor.extension[executant].extension[type].valueCode = #PRF
-* performer.actor.extension[executant].extension[actor].valueReference = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
+* performer.actor = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
 * note.text = "Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours"
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
 * protocolApplied.series = "1"
@@ -1076,11 +1056,8 @@ Instance: Immunizations-DLU-2
 InstanceOf: FRImmunizationDocument
 Usage: #inline
 * id = "e7f8a9b0-c1d2-3457-e412-456789012346"
-* extension[0].url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-vaccination-type-extension"
-* extension[=].valueCodeableConcept = $v3-ActCode#INITIMMUNIZ "1ère série vaccinante"
-* extension[+].url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname"
-* extension[=].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* extension[=].valueString.extension.valueCode = #unknown
+* extension[author].extension[actor].valueReference = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
+* extension[author].extension[type].valueCode = #AUT
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e7f8a9b0-c1d2-3457-e412-456789012346"
 * status = #completed
@@ -1090,8 +1067,7 @@ Usage: #inline
 * lotNumber = "4456668"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
-* performer.actor.extension[executant].extension[type].valueCode = #PRF
-* performer.actor.extension[executant].extension[actor].valueReference = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
+* performer.actor = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
 * vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
@@ -1204,8 +1180,8 @@ Usage: #inline
 * code = $LNC#22748-8 "Cholestérol LDL [Moles/Volume] Sérum/Plasma ; Numérique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * occurrenceDateTime = "2024-12-01"
-* note[finaliteExamen].text = "Bilan lipidique"
-* note[justificationDemande].text = "Contrôle dans le cadre du plan de soins"
+* note[0].text = "Bilan lipidique"
+* note[+].text = "Contrôle dans le cadre du plan de soins"
 
 //***************Résultats : Biologie*********************//
 Instance: DiagnosticReport-DLU-Biologie
@@ -1215,9 +1191,12 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
 * status = #final
-* code = $LNC#26436-6 "Biologie polyvalente"
+* category = $LNC#26436-6 "Biologie polyvalente"
+* code = $LNC#11502-2 "CR d'examens biologiques"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime = "2024-03-29"
+* presentedForm.contentType = #text/plain
+* presentedForm.data = "VGhpcyByZXN1bHQgaXMgaW4gc3RydWN0dXJlZCBvYnNlcnZhdGlvbnMu"
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:ee223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
 * resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
@@ -1286,9 +1265,12 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
 * status = #final
-* code = $LNC#18748-4 "Imagerie"
+* category = $LNC#18748-4 "Imagerie"
+* code = $LNC#11502-2 "CR d'examens biologiques"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime = "2024-03-29"
+* presentedForm.contentType = #text/plain
+* presentedForm.data = "SW1hZ2luZyByZXN1bHQgc3VtbWFyeSBpcyByZWNvcmRlZCBpbiBvYnNlcnZhdGlvbi4="
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:33778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
 * resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
@@ -1381,8 +1363,8 @@ Instance: AdvanceDirective-DLU-1
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1397,8 +1379,8 @@ Instance: AdvanceDirective-DLU-2
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1413,8 +1395,8 @@ Instance: AdvanceDirective-DLU-3
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1429,8 +1411,8 @@ Instance: AdvanceDirective-DLU-4
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1445,8 +1427,8 @@ Instance: AdvanceDirective-DLU-5
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1461,8 +1443,8 @@ Instance: AdvanceDirective-DLU-6
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1477,8 +1459,8 @@ Instance: AdvanceDirective-DLU-7
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1493,8 +1475,8 @@ Instance: AdvanceDirective-DLU-8
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8"
-* identifier[mainIdentifier].system = "urn:ietf:rfc:3986"
-* identifier[mainIdentifier].value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8"
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)

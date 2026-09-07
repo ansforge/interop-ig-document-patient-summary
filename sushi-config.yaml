@@ -22,18 +22,20 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
   generate-json: 'false'
 
 dependencies:
-  hl7.cda.uv.core: 2.0.1-sd
+  hl7.cda.uv.core: 2.0.3-sd
   ans.fr.terminologies: latest
   hl7.fhir.fr.core: 2.1.0
-  hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.uv.fhir-clinical-document: latest
-  ihe.pharm.mpd: 1.0.0-comment-2 
-  #ans.document.fr.core: 0.1.0-snapshot
-  ans.fhir.fr.document-core: 0.1.0
-  ans.cda.fr.document-core: 0.1.0
-  ans.metier.fr.document-core: 0.1.0
+  ihe.pharm.mpd: 1.0.0-comment-2
+  # ans.document.fr.core: 0.1.0-snapshot
+  ans.fhir.fr.document-core: current
+  ans.fr.document-core: current
+  ans.cda.fr.document-core:
+    version: current
+    uri: https://ansforge.github.io/interop-IG-cda-document-core/main/ig/package.tgz
 
 pages:
     index.md:
@@ -101,8 +103,7 @@ groups:
   Modèles logiques métier IPS:
     name: Modèles logiques métier d'un document IPS
     resources:
-      - StructureDefinition/fr-lm-entete-document-ips
-      - StructureDefinition/fr-lm-corps-document-ips
+      - StructureDefinition/fr-lm-patient-summary-document
   
   Ressources CDA IPS:
     name: Eléments CDA d'un document IPS
