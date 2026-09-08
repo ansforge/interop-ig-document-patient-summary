@@ -16,12 +16,6 @@ releaseLabel: ci-build # le release label doit être conforme au cycle de vie de
 jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
-<<<<<<< HEAD
-  shownav: 'true'
-  excludettl: 'true'
-  generate-turtle: 'false'
-  generate-json: 'false'
-=======
     shownav: 'true'
     path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
     i18n-default-lang: fr-FR # Default language
@@ -39,7 +33,6 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
       - init #init: Messages describing the start up process (for debugging)
       - progress #progress: Overall progress messages
 
->>>>>>> 2866eb114703c40251d7ff993982f50f5091755e
 
 dependencies:
   hl7.cda.uv.core: 2.0.3-sd
@@ -90,15 +83,10 @@ pages:
         title: Autres Ressources
         securite.md:
             title: Sécurité
-<<<<<<< HEAD
-        downloads.md:
-            title: Téléchargements et usages      
-=======
         annexe-downloads.md:
             title: Téléchargements et usages
     translationinfo.md:
         title: Informations sur la traduction
->>>>>>> 2866eb114703c40251d7ff993982f50f5091755e
 
 menu:
     Accueil: index.html
