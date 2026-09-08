@@ -10,10 +10,11 @@ Description: "Synthèse médicale française, basée sur le modèle Internationa
 * entry ^short = "Entrées dans le bundle de synthèse médicale"
 * entry ^comment = "Doit contenir la Composition IPS comme première entrée (une seule instance de ressource Composition peut être incluse) et une ressource Patient. Des contraintes supplémentaires sont spécifiées dans le profil Composition IPS."
 * entry.fullUrl 1.. 
-* entry.search ..0
-* entry.request ..0
-* entry.response ..0
-* entry.resource 1..
+// Temporairement commenté pour éviter l'erreur Publisher "Named items are out of order in the slice"
+//* entry.search ..0
+//* entry.request ..0
+//* entry.response ..0
+//* entry.resource 1..
 
 * entry[composition].resource only FRCompositionDocumentIPS
 // l'entrée patient est définie dans le profil FRBundleDocument
