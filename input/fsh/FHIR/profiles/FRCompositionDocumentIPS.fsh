@@ -4,29 +4,12 @@ Id: fr-composition-document-ips
 Title: "FR Composition Document IPS"
 Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocument."
 
-* identifier ^short = "Identifiant du lot de versions du même document."
-* identifier 1..1 MS
-* status ^short = "Statut du document"
-* type ^short = "Type de document (\"Synthèse Médicale\")"
-* type = $LNC#60591-5
-* date ^short = "Date et heure de création du document Synthèse Médicale"
-* title ^short = "SYNTHESE MEDICALE"
-* encounter ^short = "Association du document à une prise en charge."
-* event ^short = "Evènement documenté et notamment le cadre d'exercice."
-* event 1..*
 * extension[informant] ^short = "Informateur ayant fourni des informations utiles"
-* extension[basedOn] ^short = "Ordonnance"
 * extension[participant] ^short = "Participant, jouant dans l'édition du document, un rôle différent de celui d'auteur, de responsable, d'opérateur de saisie, d'informateur ou de destinataire."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension[participant] contains
-    medecinTraitant 0..1 and
-    contactEHPAD 0..1 and
-    etabPreference 0..1 and
-    etabReference 0..* and
-    autrePS 0..* and
-    autreCorrespondant 0..*
+* extension[participant] contains medecinTraitant 0..1 and contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..* and autreCorrespondant 0..*
 // médecin traitant
 * extension[participant][medecinTraitant].extension[type].valueCodeableConcept.coding.code = #INF
 * extension[participant][medecinTraitant].extension[function].valueCodeableConcept.coding.code = #PCP
@@ -45,8 +28,19 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 // Autre correspondant
 * extension[participant][autreCorrespondant].extension[type].valueCodeableConcept.coding.code = #CON
 * extension[participant][autreCorrespondant].extension[function].valueCodeableConcept.coding.code = #CORRE
+* extension[basedOn] ^short = "Ordonnance"
 
+* identifier ^short = "Identifiant du lot de versions du même document."
+* identifier 1..1 MS
+* status ^short = "Statut du document"
+* type ^short = "Type de document (\"Synthèse Médicale\")"
+* type = $LNC#60591-5
+* title ^short = "SYNTHESE MEDICALE"
 * subject ^short = "Cible recordée par le document Synthèse Médicale"
+* date ^short = "Date et heure de création du document Synthèse Médicale"
+* event ^short = "Evènement documenté et notamment le cadre d'exercice."
+* event 1..*
+* encounter ^short = "Association du document à une prise en charge."
 
 * section ^slicing.discriminator[0].type = #value
 * section ^slicing.discriminator[0].path = "code"
