@@ -5,12 +5,11 @@ Title: "FR Composition Document IPS"
 Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocument."
 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-
 * extension[informant] ^short = "Informateur ayant fourni des informations utiles"
+
 * extension[participant] ^short = "Participant, jouant dans l'édition du document, un rôle différent de celui d'auteur, de responsable, d'opérateur de saisie, d'informateur ou de destinataire."
+
+// Reslicing des participants IPS
 * extension[participant] contains medecinTraitant 0..1 and contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..* and autreCorrespondant 0..*
 // médecin traitant
 * extension[participant][medecinTraitant].extension[type].valueCodeableConcept.coding.code = #INF
