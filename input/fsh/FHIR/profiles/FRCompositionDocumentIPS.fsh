@@ -20,28 +20,29 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension[participant] contains medecinTraitant 0..1
+* extension[participant] contains
+    medecinTraitant 0..1 and
+    contactEHPAD 0..1 and
+    etabPreference 0..1 and
+    etabReference 0..* and
+    autrePS 0..* and
+    autreCorrespondant 0..*
 // médecin traitant
 * extension[participant][medecinTraitant].extension[type].valueCodeableConcept.coding.code = #INF
 * extension[participant][medecinTraitant].extension[function].valueCodeableConcept.coding.code = #PCP
 // Contact EHPAD
-* extension[participant] contains contactEHPAD 0..1
 * extension[participant][contactEHPAD].extension[type].valueCodeableConcept.coding.code = #PRF
 * extension[participant][contactEHPAD].extension[function].valueCodeableConcept.coding.code = #CORRE
 // etablissement de préférence
-* extension[participant] contains etabPreference 0..1
 * extension[participant][etabPreference].extension[type].valueCodeableConcept.coding.code = #INF
 * extension[participant][etabPreference].extension[function].valueCodeableConcept.coding.code = #ES-PREF
 // etablissement de référence
-* extension[participant] contains etabReference 0..*
 * extension[participant][etabReference].extension[type].valueCodeableConcept.coding.code = #INF
 * extension[participant][etabReference].extension[function].valueCodeableConcept.coding.code = #ES-REF
 // Autre professionnel de santé
-* extension[participant] contains autrePS 0..*
 * extension[participant][autrePS].extension[type].valueCodeableConcept.coding.code = #PRF
 * extension[participant][autrePS].extension[function].valueCodeableConcept.coding.code = #353
 // Autre correspondant
-* extension[participant] contains autreCorrespondant 0..*
 * extension[participant][autreCorrespondant].extension[type].valueCodeableConcept.coding.code = #CON
 * extension[participant][autreCorrespondant].extension[function].valueCodeableConcept.coding.code = #CORRE
 
