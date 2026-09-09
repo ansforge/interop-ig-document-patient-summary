@@ -1,5 +1,13 @@
 ## Les cas d'usages
 
+Les cas d’usage décrits ci-après présentent les principaux scénarios de création, de partage et de consultation de la synthèse médicale IPS. Ils illustrent les interactions entre les professionnels de santé, les systèmes d’information et les services permettant la production et la mise à disposition de la synthèse médicale, notamment dans le cadre des échanges entre professionnels de santé et de son dépôt dans le DMP.
+
+<div style="text-align: center;">
+
+<img src="../images/Cas-d-usage-IPS.png" alt="Modélisation des cas d'usage IPS" style="max-width: 100%;">
+
+</div>
+
 ### 1. La création de la synthèse médicale par le médecin traitant
 
 Pour faciliter la prise en charge des patients et améliorer la qualité et la continuité des soins, le médecin traitant crée (ou met à jour) la synthèse médicale du patient. 
