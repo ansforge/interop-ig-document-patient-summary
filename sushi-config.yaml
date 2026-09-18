@@ -135,12 +135,13 @@ groups:
     #name: Exemples de ressources FHIR IPS
     #resources:
       #- Bundle-Bundle-IPS-FR
-
-resources: 
-  Binary/IPS-FR-2024.01:
-    name: IPS-FR
-    description: Volet International Patient Summary - France (IPS-FR_2024.01)
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
-
-  
+resources:
+  Binary/patient-summary:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/xml
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical
+        valueCanonical: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
+    name: Patient Summary
+    description: Volet International Patient Summary - France (IPS-FR)
+    exampleCanonical: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
