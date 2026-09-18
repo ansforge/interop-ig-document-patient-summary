@@ -6,7 +6,7 @@ Les exemples CDA présentent des instances concrètes de documents IPS en format
 
 ### Exemple IPS-FR
 
-**[Exemple IPS-FR 2024.01](Binary-IPS-FR-2024.01.html)**
+**[Exemple IPS-FR 2024.01](Binary-patient-summary.html)**
 
 Cet exemple montre un document IPS complet au format CDA R2 niveau 3 :
 - Structure complète d'une synthèse médicale
