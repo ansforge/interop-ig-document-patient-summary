@@ -1,0 +1,4152 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Bundle-IPS-FR",
+  "meta" : {
+    "lastUpdated" : "2025-10-09T13:28:17.000+00:00",
+    "profile" : ["https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips"]
+  },
+  "language" : "en",
+  "identifier" : {
+    "system" : "urn:oid:1.2.250.1.213.1.1.1.51.2024.1.1",
+    "value" : "2024.01"
+  },
+  "type" : "document",
+  "timestamp" : "2025-10-09T13:28:17.000+00:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "09275181-4d85-43b8-89b0-6dd68182bc52",
+      "meta" : {
+        "lastUpdated" : "2025-09-09T13:28:17.000+00:00",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version",
+        "valueString" : "2"
+      },
+      {
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code" : "INF",
+              "display" : "informant"
+            }]
+          }
+        },
+        {
+          "url" : "party",
+          "valueReference" : {
+            "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/informant-extension"
+      },
+      {
+        "extension" : [{
+          "url" : "type",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
+              "code" : "INF",
+              "display" : "Informateur"
+            }]
+          }
+        },
+        {
+          "url" : "time",
+          "valuePeriod" : {
+            "start" : "2024-04-02T07:35:00+01:00"
+          }
+        },
+        {
+          "url" : "party",
+          "valueReference" : {
+            "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+            "display" : "DR Stéphane MEDIONI"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/event-basedOn",
+        "valueReference" : {
+          "reference" : "urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e"
+        }
+      }],
+      "identifier" : {
+        "value" : "1.2.250.1.213.1.1.1.51.2024.1"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Synthèse médicale"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72"
+      },
+      "date" : "2024-09-09T14:00:00+01:00",
+      "author" : [{
+        "extension" : [{
+          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time",
+          "valueDateTime" : "2024-04-21T13:45:00+01:00"
+        }],
+        "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+        "display" : "DR Stéphane MEDIONI"
+      }],
+      "title" : "SYNTHESE MEDICALE",
+      "confidentiality" : "N",
+      "attester" : [{
+        "mode" : "legal",
+        "time" : "2024-01-04T15:00:00+01:00",
+        "party" : {
+          "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+          "display" : "DR Stéphane MEDIONI"
+        }
+      }],
+      "custodian" : {
+        "reference" : "urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5",
+        "display" : "Centre de soins le Belvédère"
+      },
+      "relatesTo" : [{
+        "code" : "replaces",
+        "targetIdentifier" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "MR",
+              "display" : "Medical record number"
+            }]
+          },
+          "system" : "urn:oid:1.2.250.1.213.1.1.1.52.2024.1.1",
+          "value" : "8D5E778C-E155-4685-95C6-5FF65A362964"
+        }
+      }],
+      "event" : [{
+        "extension" : [{
+          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event",
+          "valueReference" : {
+            "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+            "display" : "DR Stéphane MEDIONI"
+          }
+        }],
+        "period" : {
+          "start" : "2024-04-21T08:00:00+01:00"
+        }
+      }],
+      "section" : [{
+        "title" : "Problèmes actifs",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Liste des problèmes actifs"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angiœdème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
+        },
+        {
+          "reference" : "urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916"
+        },
+        {
+          "reference" : "urn:uuid:af0e13e5-d0a2-4dbc-b892-7328eca72ff4"
+        },
+        {
+          "reference" : "urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad"
+        },
+        {
+          "reference" : "urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63"
+        }]
+      },
+      {
+        "title" : "Allergies et hypersensibilités",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies et hypersensibilités"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Statut</th><th>Criticité</th><th>Certitude</th><th>Réaction(s)</th><th>Sévérité réaction(s)</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>Paracétamol</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Bronchospasme d'origine médicamenteuse<br/>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>modéré<br/>léger</td><td>(texte libre)</td></tr><tr><td>04/12/2021</td><td>Allergie médicamenteuse</td><td>feuille de millepertuis</td><td>Actif</td><td>Bas</td><td>Confirmé</td><td>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</td><td>léger</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f"
+        },
+        {
+          "reference" : "urn:uuid:d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a"
+        }]
+      },
+      {
+        "title" : "Traitements",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Historique de la prise médicamenteuse"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
+        }]
+      },
+      {
+        "title" : "Historique des actes",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47519-4",
+            "display" : "Historique des actes"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Acte</th><th>Voie d'abord</th><th>Localisation anatomique</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td><td>Voie intraartérielle</td><td>artère coronaire</td><td>Infarctus inférieur transmural</td><td>(texte libre)</td></tr><tr><td>08/12/2016</td><td>Autre acte (texte libre)</td><td>-</td><td>-</td><td>-</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad"
+        },
+        {
+          "reference" : "urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51"
+        }]
+      },
+      {
+        "title" : "Dispositifs médicaux",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "46264-8",
+            "display" : "Dispositifs médicaux"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3"
+        },
+        {
+          "reference" : "urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9"
+        }]
+      },
+      {
+        "title" : "Effets indésirables prévisibles liés aux médicaments",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "44939-7",
+            "display" : "Effets indésirables prévisibles liés aux médicaments"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d’administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d"
+        }]
+      },
+      {
+        "title" : "Points de vigilance",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "44944-7",
+            "display" : "Autres alertes"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><p>Surveiller tension artérielle</p></div>"
+        }
+      },
+      {
+        "title" : "Statut fonctionnel",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47420-5",
+            "display" : "Évaluation du statut fonctionnel"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b"
+        },
+        {
+          "reference" : "urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65"
+        },
+        {
+          "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234"
+        }]
+      },
+      {
+        "title" : "Constantes",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8716-3",
+            "display" : "Signes vitaux"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229"
+        },
+        {
+          "reference" : "urn:uuid:44da5856-6555-4b43-b03f-176f45c29432"
+        }]
+      },
+      {
+        "title" : "Mode de vie",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "29762-2",
+            "display" : "Habitus, Mode de vie"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4"
+        },
+        {
+          "reference" : "urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b"
+        },
+        {
+          "reference" : "urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9"
+        },
+        {
+          "reference" : "urn:uuid:3799b968-d637-4a16-ad7b-5f79987dcdb1"
+        }]
+      },
+      {
+        "title" : "Facteurs de risques professionnels",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10161-8",
+            "display" : "Facteurs de risques professionnels"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
+        }
+      },
+      {
+        "title" : "Historique des pathologies familiales",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10157-6",
+            "display" : "Historique des pathologies familiales"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e"
+        }]
+      },
+      {
+        "title" : "Vaccinations",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11369-9"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Maladie(s) prévenue(s)</th><th>Vaccin</th><th>Lot n°</th><th>Type / Rang</th><th>Voie</th><th>Région d'administration</th><th>Réaction observée</th><th>Vaccinateur</th><th>Commentaire</th></tr></thead><tbody><tr><td>28/09/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456672</td><td>1ère série vaccinante / 2</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours</td></tr><tr><td>25/08/2009</td><td>Diphtérie-poliomyélite-tétanos</td><td>REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes</td><td>4456668</td><td>1ère série vaccinante / 1</td><td>Voie intramusculaire</td><td>Deltoïde gauche</td><td>Fièvre due à des médicaments</td><td>Dr Charles MULLER</td><td>-</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563"
+        },
+        {
+          "reference" : "urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874"
+        }]
+      },
+      {
+        "title" : "Historique des grossesses",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10162-6",
+            "display" : "Historique des grossesses"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Observation</th><th>Précision</th></tr></thead><tbody><tr><td>Statut de grossesse</td><td>patiente actuellement enceinte</td></tr><tr><td>Date prévisionnelle d'accouchement</td><td>03/09/2024</td></tr><tr><td>Nb d'enfants vivants</td><td>1</td></tr><tr><td>Nombre d'interruptions de grossesse</td><td>1</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:bea6c387-6dca-4f55-93b7-7079e1c88dfb"
+        },
+        {
+          "reference" : "urn:uuid:bdc0e3ae-128b-46de-b1a7-1c564cca6a61"
+        },
+        {
+          "reference" : "urn:uuid:e4299828-2563-4265-9297-c27a8240b6ba"
+        },
+        {
+          "reference" : "urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b"
+        }]
+      },
+      {
+        "title" : "Plan de soins",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "18776-5",
+            "display" : "Plan de soins"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079"
+        },
+        {
+          "reference" : "urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
+        }]
+      },
+      {
+        "title" : "Directives anticipées",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "42348-3",
+            "display" : "Directives anticipées"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type de directive</th><th>Procédure</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/01/2018</td><td>Maintien artificiel en vie</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Assistance respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Alimentation et hydratation artificielles</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Dialyse rénale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Réanimation cardiaque et respiratoire</td><td>Non autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Intervention chirurgicale</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/01/2018</td><td>Sédation profonde et continue associée à un traitement de la douleur</td><td>Autorisé</td><td>texte libre</td></tr><tr><td>01/04/2024</td><td>Directives anticipées</td><td>Document PDF non structuré (pdf récupérées du DMP)</td><td/></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+        },
+        {
+          "reference" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+        }]
+      },
+      {
+        "title" : "Résultats",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "30954-2",
+            "display" : "Résultats d'examens"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CRP</td><td>&lt;1.0 mg/L</td><td>Normal</td><td>&lt;6.0 mg/L</td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:aa001111-2222-3333-4444-555566667777"
+        },
+        {
+          "reference" : "urn:uuid:ff556666-7777-8888-9999-000011112222"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "00f54e2e-22f2-4162-87b4-4826d855feac",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+            "valueCoding" : {
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "code" : "01006"
+            }
+          }],
+          "city" : "Ambléon"
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "INS-NIR"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "123456789012244"
+      }],
+      "name" : [{
+        "extension" : [{
+          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+          "valueString" : "DOMINIQUE MARIE-LOUISE"
+        }],
+        "use" : "official",
+        "family" : "PAT-TROIS",
+        "given" : ["DOMINIQUE MARIE-LOUISE"]
+      },
+      {
+        "use" : "usual",
+        "family" : "PAT-TROIS",
+        "given" : ["DOMINIQUE MARIE-LOUISE"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "01 23 24 67 89",
+        "use" : "home"
+      },
+      {
+        "system" : "phone",
+        "value" : "01 99 88 77 66",
+        "use" : "work",
+        "rank" : 1
+      },
+      {
+        "system" : "email",
+        "value" : "279035121518989@patient.mssante.fr",
+        "use" : "home",
+        "rank" : 2
+      }],
+      "gender" : "female",
+      "birthDate" : "1979-03-28",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "use" : "home",
+        "type" : "physical",
+        "line" : ["28",
+        "Avenue de Breteuil",
+        "Escalier A"],
+        "city" : "Paris",
+        "postalCode" : "75007"
+      }],
+      "contact" : [{
+        "relationship" : [{
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+            "code" : "SIS",
+            "display" : "Soeur"
+          }]
+        },
+        {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+            "code" : "ECON",
+            "display" : "Personne à prévenir en cas d'urgence"
+          }]
+        }],
+        "name" : {
+          "text" : "Sophie NESSI",
+          "family" : "NESSI"
+        },
+        "address" : {
+          "text" : "12 rue des Lilas, 75012 Paris"
+        }
+      },
+      {
+        "relationship" : [{
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+            "code" : "SIS",
+            "display" : "Soeur"
+          }]
+        },
+        {
+          "coding" : [{
+            "system" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role",
+            "code" : "NOK",
+            "display" : "Personne de confiance"
+          }]
+        }],
+        "name" : {
+          "text" : "Sophie NESSI",
+          "family" : "NESSI"
+        },
+        "address" : {
+          "text" : "12 rue des Lilas, 75012 Paris"
+        }
+      },
+      {
+        "relationship" : [{
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+            "code" : "GUARD",
+            "display" : "Responsable légal"
+          }]
+        }],
+        "name" : {
+          "family" : "NESSI",
+          "given" : ["Jeanne"],
+          "prefix" : ["MME"]
+        },
+        "address" : {
+          "use" : "home",
+          "type" : "physical",
+          "line" : ["28 Avenue de Breteuil"],
+          "city" : "Paris",
+          "postalCode" : "75007"
+        }
+      }],
+      "generalPractitioner" : [{
+        "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+        "display" : "DR Stéphane MEDIONI"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "a11d31c5-77ff-4642-91f7-66c4d10d18c9",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:b5941194-08be-4893-a629-652f97587b39"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+          "code" : "PCP",
+          "display" : "Médecin traitant"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b5941194-08be-4893-a629-652f97587b39",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "b5941194-08be-4893-a629-652f97587b39",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "RPPS",
+            "display" : "Numéro du professionnel de santé"
+          }]
+        },
+        "system" : "https://rpps.esante.gouv.fr",
+        "value" : "801234567897"
+      }],
+      "name" : [{
+        "family" : "MEDIONI",
+        "given" : ["Stéphane"],
+        "prefix" : ["M"],
+        "suffix" : ["Dr"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "0147150000",
+        "use" : "work",
+        "rank" : 1
+      },
+      {
+        "system" : "email",
+        "value" : "mailto:stephane.medioni@mssante.fr",
+        "use" : "home"
+      }],
+      "address" : [{
+        "text" : "8 Rue Petit Pont Paris 75005"
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+            "code" : "SM26",
+            "display" : "Qualifié en Médecine générale (SM)"
+          }]
+        },
+        "issuer" : {
+          "reference" : "urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "579f1274-8265-4bb1-91ba-d093a11be4f5",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "2801234567"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+          "code" : "ETABLISSEMENT",
+          "display" : "Etablissement de santé"
+        }]
+      }],
+      "name" : "Centre de soins le Belvédère",
+      "address" : [{
+        "line" : ["3 Rue Petit Pont"],
+        "city" : "PARIS",
+        "postalCode" : "75005"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "51807e91-cb17-4ca1-bc58-1efa85cf9d72",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "VN",
+            "display" : "Visit Number"
+          }]
+        },
+        "system" : "urn:uuid:1.2.250.1.71.4.2.1",
+        "value" : "801234534765"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB",
+        "display" : "ambulatoire (hors établissement)"
+      },
+      "period" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "urn:uuid:648170b7-1538-44a7-8820-df04dcc32fad"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:648170b7-1538-44a7-8820-df04dcc32fad",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "648170b7-1538-44a7-8820-df04dcc32fad",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+          "code" : "SA04",
+          "display" : "Etablissement privé non PSPH"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "257427f5-dffa-4a97-9475-4ebb988589af",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active",
+          "display" : "Actif"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "gravité modérée"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "E06.3",
+          "display" : "Thyroïdite auto-immune"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2024-01-11",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "4d6a4b74-b2a7-4ec1-8db1-8925f435a916",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active",
+          "display" : "Actif"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "gravité modérée"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-2",
+          "code" : "T89",
+          "display" : "Diabète insulino-dépendant"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2023-07-05",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:af0e13e5-d0a2-4dbc-b892-7328eca72ff4",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "af0e13e5-d0a2-4dbc-b892-7328eca72ff4",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:12DA3A06-18E7-40B7-9397-1FA5B1552472"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active",
+          "display" : "Actif"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "gravité modérée"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.sfmg.fr",
+          "code" : "114",
+          "display" : "Epilepsie"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2023-05-21",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "a4d49149-cda7-470d-a2e3-08f8d7db1bad",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active",
+          "display" : "Actif"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371923003",
+          "display" : "gravité léger à modéré"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.orphadata.com/orphanet-nomenclature-for-coding",
+          "code" : "658",
+          "display" : "Angiœdème bradykinique"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2022-02-11",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "162467007",
+            "display" : "asymptomatique"
+          }]
+        }
+      }],
+      "evidence" : [{
+        "detail" : [{
+          "reference" : "urn:uuid:c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f"
+        }]
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "unknown"
+        }]
+      }],
+      "status" : "current",
+      "type" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "unknown"
+        }]
+      },
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/dicom",
+          "url" : "https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "803caba9-c128-4faa-94a0-d344738ebc63",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "recurrence",
+          "display" : "Récurrent"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "unconfirmed",
+          "display" : "Non confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "418799008",
+          "display" : "symptôme rapporté par le patient ou le répondant"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "255604002",
+          "display" : "léger"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "R69",
+          "display" : "Causes inconnues et non précisées de morbidité"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2022-02-11",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:effd6c8a-6122-46cb-82ed-ef3f300ec17b",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "effd6c8a-6122-46cb-82ed-ef3f300ec17b",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:effd6c8a-6122-46cb-82ed-ef3f300ec17b"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "resolved",
+          "display" : "Résolu"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "gravité modérée"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "G45.9",
+          "display" : "Accident ischémique cérébral transitoire, sans précision"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2018-05-21",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:18492799-4e37-47a7-b79b-18a4d0597963",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "18492799-4e37-47a7-b79b-18a4d0597963",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:18492799-4e37-47a7-b79b-18a4d0597963"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "resolved",
+          "display" : "Résolu"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmé"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "gravité modérée"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "N10",
+          "display" : "Pyélonéphrite aiguë"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2018-05-21",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "81323004",
+            "display" : "fonction corporelle générale : normale"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "4e00844f-241b-47c0-85a4-9d612c46b3ad",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-ccam",
+          "code" : "DDAF004",
+          "display" : "Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "performedDateTime" : "2018-01-14",
+      "recorder" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "actor",
+            "valueReference" : {
+              "reference" : "urn:uuid:5b0fcb3b-91fb-4870-bd97-8faa2794ea01"
+            }
+          },
+          {
+            "url" : "type"
+          }],
+          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
+        }]
+      },
+      "reasonReference" : [{
+        "reference" : "urn:uuid:be247a4c-f8fe-4224-b51c-8c35d7124a2d"
+      }],
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "41801008",
+          "display" : "artère coronaire"
+        }]
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:5b0fcb3b-91fb-4870-bd97-8faa2794ea01",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "5b0fcb3b-91fb-4870-bd97-8faa2794ea01",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:9e55af45-e661-472f-b713-4aaa2cfd1a77"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:da9eb2be-5993-4e39-827b-728fe3943a93"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:da9eb2be-5993-4e39-827b-728fe3943a93",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "da9eb2be-5993-4e39-827b-728fe3943a93",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "2801234567"
+      }],
+      "name" : "Hôpital Lariboisière"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:9e55af45-e661-472f-b713-4aaa2cfd1a77",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "9e55af45-e661-472f-b713-4aaa2cfd1a77",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "RPPS",
+            "display" : "Numéro du professionnel de santé"
+          }]
+        },
+        "system" : "https://rpps.esante.gouv.fr",
+        "value" : "801234567897"
+      }],
+      "name" : [{
+        "family" : "PETITJEAN",
+        "given" : ["Jacques"],
+        "prefix" : ["M"],
+        "suffix" : ["PR"]
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+            "code" : "SM35",
+            "display" : "Médecin - Oncologie, opt Onco-hématologie (SM)"
+          }]
+        },
+        "issuer" : {
+          "reference" : "urn:uuid:da9eb2be-5993-4e39-827b-728fe3943a93"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:be247a4c-f8fe-4224-b51c-8c35d7124a2d",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "be247a4c-f8fe-4224-b51c-8c35d7124a2d",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:be247a4c-f8fe-4224-b51c-8c35d7124a2d"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "resolved",
+          "display" : "Résolu"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "interprétation diagnostique"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "I21.1",
+          "display" : "Infarctus transmural aigu du myocarde, de la paroi inférieure"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2018-01-14"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "3c6ec5d8-182d-4dfc-871b-59c9eb91aa51",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.04.13",
+          "display" : "Autre acte"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "performedDateTime" : "2016-12-08",
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "code" : "confirmed"
+        }]
+      },
+      "type" : "allergy",
+      "category" : ["medication"],
+      "criticality" : "low",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "416098002",
+          "display" : "allergie médicamenteuse"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetPeriod" : {
+        "start" : "2021-12-04"
+      },
+      "reaction" : [{
+        "substance" : {
+          "coding" : [{
+            "system" : "http://id.who.int/icd/release/11/mms",
+            "code" : "XM5DJ7",
+            "display" : "Paracétamol"
+          }]
+        },
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://id.who.int/icd/release/11/mms",
+            "code" : "4A80.0",
+            "display" : "Bronchospasme d'origine médicamenteuse"
+          }]
+        }],
+        "onset" : "2021-12-04",
+        "severity" : "moderate"
+      },
+      {
+        "substance" : {
+          "coding" : [{
+            "system" : "http://id.who.int/icd/release/11/mms",
+            "code" : "XM5DJ7",
+            "display" : "Paracétamol"
+          }]
+        },
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://id.who.int/icd/release/11/mms",
+            "code" : "4A82",
+            "display" : "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
+          }]
+        }],
+        "onset" : "2021-12-04",
+        "severity" : "mild",
+        "note" : [{
+          "text" : "texte libre"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "code" : "confirmed"
+        }]
+      },
+      "type" : "allergy",
+      "category" : ["medication"],
+      "criticality" : "low",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "416098002",
+          "display" : "allergie médicamenteuse"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetPeriod" : {
+        "start" : "2021-12-04"
+      },
+      "reaction" : [{
+        "substance" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "372500003",
+            "display" : "feuille de millepertuis"
+          }]
+        },
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://id.who.int/icd/release/11/mms",
+            "code" : "4A82",
+            "display" : "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
+          }]
+        }],
+        "onset" : "2021-12-04",
+        "severity" : "mild",
+        "note" : [{
+          "text" : "texte libre"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d",
+    "resource" : {
+      "resourceType" : "AdverseEvent",
+      "id" : "23f1c0a3-ce38-4817-9408-7feaeb04002d",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d"
+      },
+      "actuality" : "actual",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "79899007",
+          "display" : "interaction médicamenteuse"
+        }]
+      }],
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "date" : "2021-12-04",
+      "detected" : "2021-12-04",
+      "resultingCondition" : [{
+        "reference" : "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
+      }],
+      "seriousness" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "255604002",
+          "display" : "gravité légère"
+        }]
+      },
+      "severity" : {
+        "coding" : [{
+          "code" : "mild"
+        }]
+      },
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1352007006",
+          "display" : "Guérison sans séquelle"
+        }]
+      },
+      "suspectEntity" : [{
+        "instance" : {
+          "reference" : "urn:uuid:0409af90-4717-4a93-9800-fcf546875dc8"
+        },
+        "causality" : [{
+          "assessment" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "2931005",
+              "display" : "probable"
+            }]
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0409af90-4717-4a93-9800-fcf546875dc8",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "0409af90-4717-4a93-9800-fcf546875dc8",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency",
+        "valueTiming" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 12,
+            "periodUnit" : "h"
+          }
+        }
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:55915ED6-0682-4588-9F4A-FB71210F7015"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "DRUG",
+          "display" : "Médicament"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:uuid:f995f9bb-4043-45db-8b12-50dc7e9acc5a"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectivePeriod" : {
+        "start" : "2021-12-04"
+      },
+      "dosage" : {
+        "route" : {
+          "coding" : [{
+            "code" : "20053000",
+            "display" : "Voie orale"
+          }]
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f995f9bb-4043-45db-8b12-50dc7e9acc5a",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "f995f9bb-4043-45db-8b12-50dc7e9acc5a",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
+        "valueString" : "AMOXICILLINE EG 1G BUV SACH 6"
+      },
+      {
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.whocc.no/atc",
+            "code" : "J01CA04",
+            "display" : "amoxicilline"
+          }],
+          "text" : "amoxicilline"
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "3400935186607",
+          "display" : "AMOXICILLINE EG 1G BUV SACH 6"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-sms",
+            "code" : "100000092629",
+            "display" : "AMOXICILLINE TRIHYDRATÉE"
+          }],
+          "text" : "AMOXICILLINE TRIHYDRATÉE"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 1.148,
+            "unit" : "g"
+          },
+          "denominator" : {
+            "value" : 1
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "a4e1cafa-05e4-40c7-82dc-641f54281671",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "resolved",
+          "display" : "Résolu"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "418799008",
+          "display" : "symptôme rapporté par le patient ou le répondant"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "MD90.0",
+          "display" : "Nausée"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2018-05-21"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "1ff316e0-edde-4bb9-a5fe-822d486d8230",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency",
+        "valueTiming" : {
+          "repeat" : {
+            "frequency" : 1,
+            "periodUnit" : "d"
+          }
+        }
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "DRUG",
+          "display" : "Médicament"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-01-11"
+      },
+      "reasonReference" : [{
+        "reference" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
+      }],
+      "note" : [{
+        "text" : "Le patient a pris le médicament après le petit-déjeuner"
+      }],
+      "dosage" : {
+        "route" : {
+          "coding" : [{
+            "code" : "20053000",
+            "display" : "Voie orale"
+          }]
+        },
+        "dose" : {
+          "value" : 1,
+          "unit" : "tablet",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{tbl}"
+        },
+        "rateQuantity" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "not-applicable"
+          }]
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "fb88edae-4d3f-4b00-ae17-71c8f03adc71",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
+        "valueString" : "LEVOTHYROX 75 microgrammes"
+      },
+      {
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.whocc.no/atc",
+            "code" : "H03AA01",
+            "display" : "lévothyroxine sodique"
+          }],
+          "text" : "lévothyroxine sodique"
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
+          "code" : "3400930065785",
+          "display" : "LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-sms",
+            "code" : "100000091647",
+            "display" : "LÉVOTHYROXINE SODIQUE"
+          }],
+          "text" : "LÉVOTHYROXINE SODIQUE"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 75,
+            "unit" : "mg"
+          },
+          "denominator" : {
+            "value" : 1
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3",
+    "resource" : {
+      "resourceType" : "DeviceUseStatement",
+      "id" : "034d19b3-3c4e-488a-a7c0-9181dfc721e3",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "unknown"
+        }]
+      }],
+      "status" : "active",
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "timingPeriod" : {
+        "start" : "2019-08-11"
+      },
+      "device" : {
+        "reference" : "urn:uuid:7bb3e1f4-15bd-4c06-a587-3445c0f5a530",
+        "display" : "STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE"
+      },
+      "note" : [{
+        "text" : "Stimulateur cardiaque contrôlé et fonctionnel"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:7bb3e1f4-15bd-4c06-a587-3445c0f5a530",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "Device-Exemple-1",
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-emdn",
+          "code" : "J010104",
+          "display" : "STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:41465f6b-d169-40b9-8d84-96064b4c3d28",
+    "resource" : {
+      "resourceType" : "DeviceUseStatement",
+      "id" : "41465f6b-d169-40b9-8d84-96064b4c3d28",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "unknown"
+        }]
+      }],
+      "status" : "active",
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "timingPeriod" : {
+        "start" : "2013-08-11"
+      },
+      "device" : {
+        "reference" : "urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9",
+        "display" : "Autre dispositif médical"
+      },
+      "note" : [{
+        "text" : "Autre DM : (texte libre)"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "Device-Exemple-2",
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.02.02",
+          "display" : "Autre dispositif médical"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "960ebfbc-4b56-40b9-9990-cae5944d6e9b",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }]
+      }],
+      "code" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "effectiveDateTime" : "2018-01-14T15:06:00+00:00",
+      "valueString" : "Groupe de questionnaires d'evaluation",
+      "hasMember" : [{
+        "reference" : "urn:uuid:e102b4b3-91b6-4b89-9065-560bc68c024c"
+      },
+      {
+        "reference" : "urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65"
+      },
+      {
+        "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:e102b4b3-91b6-4b89-9065-560bc68c024c",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e102b4b3-91b6-4b89-9065-560bc68c024c",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "89247-1",
+          "display" : "Score de performance ECOG"
+        }]
+      },
+      "effectiveDateTime" : "2018-01-14T15:06:00+00:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9622-7",
+          "display" : "Capable d’une activité identique à celle précédant la maladie sans aucune restriction"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "b9bca1ce-b850-408c-966c-26a1a87adf65",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icf-nl",
+          "code" : "d450",
+          "display" : "Marcher"
+        }]
+      },
+      "effectiveDateTime" : "2018-01-14T15:06:00+00:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icf-nl",
+          "code" : "d4500.3",
+          "display" : "Restriction modérée de la performance de marche sur de courtes distances"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "c3d4e5f6-a7b8-9012-cdef-345678901234",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.04.23",
+          "display" : "Autre statut fonctionnel"
+        }]
+      },
+      "effectiveDateTime" : "2018-01-14T15:06:00+00:00",
+      "valueCodeableConcept" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ae1c9c50-9620-4755-a7a0-f72af5a82229",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Poids"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-04-02T09:58:00+00:00",
+      "valueQuantity" : {
+        "value" : 58,
+        "unit" : "kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:44da5856-6555-4b43-b03f-176f45c29432",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "44da5856-6555-4b43-b03f-176f45c29432",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:44da5856-6555-4b43-b03f-176f45c29432"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2",
+          "display" : "Taille"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-04-02T09:58:00+00:00",
+      "valueQuantity" : {
+        "value" : 1.6,
+        "unit" : "m",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "m"
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "48129cb5-0a81-4a17-aebd-8c6584b20cd4",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "72166-2",
+          "display" : "Statut tabagique"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA18976-3",
+          "display" : "Fumeur quotidien"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "3618f351-cea4-4834-8cf9-10151b74436b",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74011-8",
+          "display" : "Consommation tabagique"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 25,
+        "unit" : "pack",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{pack}/a"
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "4f0f3856-74a9-4a57-b173-e8342735d6c9",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74013-4",
+          "display" : "Consommation d'alcool"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 5,
+        "unit" : "drink",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{drink}/d"
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3799b968-d637-4a16-ad7b-5f79987dcdb1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "3799b968-d637-4a16-ad7b-5f79987dcdb1",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11343-1",
+          "display" : "Consommation de drogue non médicales"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398705004",
+          "display" : "Cannabis"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "541404fa-fc9c-4552-8d36-10adcc37f34e",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "status" : "completed",
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_date" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH",
+          "display" : "Mère"
+        }]
+      },
+      "note" : [{
+        "text" : "Texte libre"
+      }],
+      "condition" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "282291009",
+            "display" : "interprétation diagnostique"
+          }]
+        },
+        "outcome" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/sid/icd-10",
+            "code" : "D57.1",
+            "display" : "Anémie à hématies falciformes sans crises"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "7f0d585b-9a48-4605-baab-30e93603a563",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "AUT"
+        },
+        {
+          "url" : "actor",
+          "valueReference" : {
+            "reference" : "urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d"
+          }
+        }],
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563"
+      }],
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "764708002",
+          "display" : "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "occurrenceDateTime" : "2009-09-28",
+      "lotNumber" : "4456672",
+      "site" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "16217701000119102",
+          "display" : "Deltoïde gauche"
+        }]
+      },
+      "route" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+          "code" : "20035000",
+          "display" : "Voie intramusculaire"
+        }]
+      },
+      "performer" : [{
+        "actor" : {
+          "reference" : "urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d"
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }],
+      "reasonReference" : [{
+        "reference" : "urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d"
+      }],
+      "protocolApplied" : [{
+        "series" : "1",
+        "doseNumberPositiveInt" : 2
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "3a7417c1-d483-4f56-833d-43bf8e438874",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "AUT"
+        },
+        {
+          "url" : "actor",
+          "valueReference" : {
+            "reference" : "urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d"
+          }
+        }],
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874"
+      }],
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "764708002",
+          "display" : "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "occurrenceDateTime" : "2009-08-25",
+      "lotNumber" : "4456668",
+      "site" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "16217701000119102",
+          "display" : "Deltoïde gauche"
+        }]
+      },
+      "route" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+          "code" : "20035000",
+          "display" : "Voie intramusculaire"
+        }]
+      },
+      "performer" : [{
+        "actor" : {
+          "reference" : "urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d"
+        }
+      }],
+      "note" : [{
+        "text" : "texte libre"
+      }],
+      "reasonReference" : [{
+        "reference" : "urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d"
+      }],
+      "protocolApplied" : [{
+        "series" : "1",
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "f3062170-ef7b-45a7-802f-47e461a7d05d",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:ab96b0ff-374a-45c7-82e4-aaa8888a2fec"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "21750803447"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+          "code" : "AMBULATOIRE",
+          "display" : "Ambulatoire"
+        }]
+      }],
+      "name" : "Cabinet médical du Dr MULLER"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:ab96b0ff-374a-45c7-82e4-aaa8888a2fec",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "ab96b0ff-374a-45c7-82e4-aaa8888a2fec",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "RPPS",
+            "display" : "Numéro du professionnel de santé"
+          }]
+        },
+        "system" : "https://rpps.esante.gouv.fr",
+        "value" : "801234567897"
+      }],
+      "name" : [{
+        "family" : "MULLER",
+        "given" : ["Charles"],
+        "prefix" : ["M"],
+        "suffix" : ["DR"]
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+            "code" : "SM26",
+            "display" : "Qualifié en Médecine générale (SM)"
+          }]
+        },
+        "issuer" : {
+          "reference" : "urn:uuid:4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "80c62f71-7c99-458d-884d-725bc410a14d",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:F9E020E2-D219-43D4-8BF8-6B275E1F726D"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "code" : "active",
+          "display" : "Actif"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "418799008",
+          "display" : "symptôme rapporté par le patient ou le répondant"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "R50.2",
+          "display" : "Fièvre due à des médicaments"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "onsetDateTime" : "2009-09-28"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bea6c387-6dca-4f55-93b7-7079e1c88dfb",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bea6c387-6dca-4f55-93b7-7079e1c88dfb",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C25"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11449-6",
+          "display" : "Statut de grossesse"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "enceinte"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bdc0e3ae-128b-46de-b1a7-1c564cca6a61",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bdc0e3ae-128b-46de-b1a7-1c564cca6a61",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C32"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11778-8",
+          "display" : "Date estimée de l'accouchement"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueDateTime" : "2024-09-03"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:e4299828-2563-4265-9297-c27a8240b6ba",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e4299828-2563-4265-9297-c27a8240b6ba",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C65"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11638-4",
+          "display" : "Nombre d'enfants vivants"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C65"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11612-9",
+          "display" : "Nombre d'interruptions de grossesse"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "_effectiveDateTime" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "not-applicable"
+        }]
+      },
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "73af1b58-f567-4c03-a1a6-d65d3b3fd079",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
+      }],
+      "status" : "completed",
+      "medicationReference" : {
+        "reference" : "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectivePeriod" : {
+        "start" : "2021-12-04"
+      },
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "83e3e384-84ca-46dd-aa8c-c847a70b1fb5",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
+      }],
+      "status" : "completed",
+      "medicationReference" : {
+        "reference" : "urn:uuid:26349c4d2-bdba-41b1-b5d6-1ce8c359205d"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectivePeriod" : {
+        "start" : "2021-12-04"
+      },
+      "note" : [{
+        "text" : "texte libre"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "2f861880-31d2-4969-a2ce-b78f750f430e",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
+        "valueString" : "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "69473265",
+          "display" : "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-sms",
+            "code" : "100000090079",
+            "display" : "ROSUVASTATINE"
+          }],
+          "text" : "ROSUVASTATINE"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 5,
+            "unit" : "mg"
+          },
+          "denominator" : {
+            "value" : 1
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6349c4d2-bdba-41b1-b5d6-1ce8c359205d",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
+        "_valueString" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+          }]
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.03.01",
+          "display" : "Autre(s) traitement(s)"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "386053000",
+          "display" : "Procédure d'évaluation"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "GEN-092.04.20",
+          "display" : "Autre demande d'examen ou de suivi"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "occurrenceDateTime" : "2024-06-01",
+      "note" : [{
+        "text" : "Suivi du traitement"
+      },
+      {
+        "text" : "Contrôle de routine dans le cadre du plan de soins"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "deny",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "75789-8",
+            "display" : "Maintien artificiel en vie"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "deny",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "75787-2",
+            "display" : "Assistance respiratoire"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "deny",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "77352-3",
+            "display" : "Alimentation et hydratation artificielles"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "permit",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "265764009",
+            "display" : "Dialyse rénale"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "deny",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "75779-9",
+            "display" : "Réanimation cardiaque et respiratoire"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "permit",
+        "code" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "387713003",
+            "display" : "Intervention chirurgicale"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2018-01-01",
+      "provision" : {
+        "type" : "permit",
+        "code" : [{
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+            "code" : "MED-298",
+            "display" : "Sédation profonde et continue associée à un traitement de la douleur"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "42348-3",
+          "display" : "Directives anticipées"
+        }]
+      }],
+      "patient" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "dateTime" : "2024-04-01",
+      "sourceAttachment" : {
+        "contentType" : "application/pdf",
+        "data" : "JVBERi0="
+      },
+      "provision" : {
+        "code" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "42348-3",
+            "display" : "Directives anticipées"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aa001111-2222-3333-4444-555566667777",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "aa001111-2222-3333-4444-555566667777",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Biologie polyvalente"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "CR d'examens biologiques"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-03-29",
+      "performer" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "PPRF"
+            }]
+          }
+        }],
+        "reference" : "urn:uuid:cc223333-4444-5555-6666-777788889999",
+        "display" : "Dr Marcel CAMPARINI"
+      }],
+      "resultsInterpreter" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "AUT"
+            }]
+          }
+        },
+        {
+          "extension" : [{
+            "url" : "type"
+          },
+          {
+            "url" : "actor"
+          }],
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
+        }],
+        "reference" : "urn:uuid:cc223333-4444-5555-6666-777788889999",
+        "display" : "Dr Marcel CAMPARINI"
+      }],
+      "result" : [{
+        "reference" : "urn:uuid:bb112222-3333-4444-5555-666677778888"
+      }],
+      "presentedForm" : [{
+        "contentType" : "text/plain",
+        "data" : "VGhpcyByZXN1bHQgaXMgaW4gc3RydWN0dXJlZCBvYnNlcnZhdGlvbnMu"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bb112222-3333-4444-5555-666677778888",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bb112222-3333-4444-5555-666677778888",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1A"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "1988-5",
+          "display" : "C Réactive protéine [Masse/Volume] Sérum/Plasma ; Numérique"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-03-29",
+      "valueString" : "<1.0 mg/L",
+      "note" : [{
+        "text" : "(Texte libre)"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:cc223333-4444-5555-6666-777788889999",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "cc223333-4444-5555-6666-777788889999",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:dd334444-5555-6666-7777-888899990000"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:ee445555-6666-7777-8888-999900001111"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:dd334444-5555-6666-7777-888899990000",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "dd334444-5555-6666-7777-888899990000",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "RPPS",
+            "display" : "Numéro du professionnel de santé"
+          }]
+        },
+        "system" : "https://rpps.esante.gouv.fr",
+        "value" : "801234534765"
+      }],
+      "name" : [{
+        "family" : "CAMPARINI",
+        "given" : ["Marcel"],
+        "prefix" : ["M"],
+        "suffix" : ["DR"]
+      }],
+      "address" : [{
+        "text" : "8 Rue Frédéric Bastia 92100 BOULOGNE-BILLANCOURT"
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+            "code" : "SM03",
+            "display" : "Médecin - Biologie médicale (SM)"
+          }]
+        },
+        "issuer" : {
+          "reference" : "urn:uuid:ee445555-6666-7777-8888-999900001111"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:ee445555-6666-7777-8888-999900001111",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "ee445555-6666-7777-8888-999900001111",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "1120459876"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+          "code" : "AMBULATOIRE",
+          "display" : "Ambulatoire"
+        }]
+      }],
+      "name" : "Laboratoire des charmes",
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "0174589607"
+      }],
+      "address" : [{
+        "line" : ["8 Rue Frédéric Bastia"],
+        "city" : "BOULOGNE-BILLANCOURT",
+        "postalCode" : "92100"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:ff556666-7777-8888-9999-000011112222",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "ff556666-7777-8888-9999-000011112222",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "18748-4",
+          "display" : "Imagerie"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "CR d'examens biologiques"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-03-29",
+      "performer" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "PPRF"
+            }]
+          }
+        }],
+        "reference" : "urn:uuid:22778888-9999-aaaa-bbbb-222233334444",
+        "display" : "Dr Jacques BIDEAULT"
+      }],
+      "resultsInterpreter" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "AUT"
+            }]
+          }
+        },
+        {
+          "extension" : [{
+            "url" : "type"
+          },
+          {
+            "url" : "actor"
+          }],
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
+        }],
+        "reference" : "urn:uuid:22778888-9999-aaaa-bbbb-222233334444",
+        "display" : "Dr Jacques BIDEAULT"
+      }],
+      "result" : [{
+        "reference" : "urn:uuid:11667777-8888-9999-aaaa-111122223333"
+      }],
+      "presentedForm" : [{
+        "contentType" : "text/plain",
+        "data" : "SW1hZ2luZyByZXN1bHQgc3VtbWFyeSBpcyByZWNvcmRlZCBpbiBvYnNlcnZhdGlvbi4="
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:11667777-8888-9999-aaaa-111122223333",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "11667777-8888-9999-aaaa-111122223333",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1B"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "24979-7",
+          "display" : "CT rachis dorsal avec contraste IV"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectiveDateTime" : "2024-03-29",
+      "valueString" : "Pas d'embolie pulmonaire proximale",
+      "note" : [{
+        "text" : "(Texte libre)"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "302551006",
+          "display" : "thorax entier"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:22778888-9999-aaaa-bbbb-222233334444",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "22778888-9999-aaaa-bbbb-222233334444",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:33889999-aaaa-bbbb-cccc-333344445555"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:33889999-aaaa-bbbb-cccc-333344445555",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "33889999-aaaa-bbbb-cccc-333344445555",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "RPPS",
+            "display" : "Numéro du professionnel de santé"
+          }]
+        },
+        "system" : "https://rpps.esante.gouv.fr",
+        "value" : "801234560801"
+      }],
+      "name" : [{
+        "family" : "BIDEAULT",
+        "given" : ["Jacques"],
+        "prefix" : ["M"],
+        "suffix" : ["DR"]
+      }],
+      "address" : [{
+        "text" : "12 Rue Ambroise 75010 PARIS"
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+            "code" : "SM44",
+            "display" : "Médecin - Radio-diagnostic (SM)"
+          }]
+        },
+        "issuer" : {
+          "reference" : "urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "4499aaaa-bbbb-cccc-dddd-444455556666",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.250.1.71.4.2.2",
+        "value" : "101235555"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+          "code" : "AMBULATOIRE",
+          "display" : "Ambulatoire"
+        }]
+      }],
+      "name" : "Centre de radiologie Ambroise",
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "0146000000"
+      }],
+      "address" : [{
+        "line" : ["12 Rue Ambroise"],
+        "city" : "PARIS",
+        "postalCode" : "75010"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:55aa1111-bbbb-cccc-dddd-555566660001",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "55aa1111-bbbb-cccc-dddd-555566660001",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"
+      }],
+      "status" : "current",
+      "docStatus" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "DLU_006",
+          "display" : "Attestation de la carte vitale"
+        }]
+      },
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/pdf",
+          "data" : "JVBERi0="
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:66bb2222-cccc-dddd-eeee-666677770002",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "66bb2222-cccc-dddd-eeee-666677770002",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8C"
+      }],
+      "status" : "current",
+      "docStatus" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "DLU_007",
+          "display" : "Attestation de mutuelle"
+        }]
+      },
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/pdf",
+          "data" : "JVBERi0="
+        }
+      }]
+    }
+  }]
+}

@@ -1,0 +1,81 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-patient-summary-document","fr-lm-patient-summary-document","","","",0,*,"","","","null {[]} {[]}
+","Modèle logique métier - FR LM Patient Summary Document","Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-patient-summary-document.identifier","fr-lm-patient-summary-document.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant unique du document et/ou du lot de version du meme document.","Identifiant unique du document et/ou du lot de version du meme document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.identifier",1,*,"",""
+"fr-lm-patient-summary-document.documentType","fr-lm-patient-summary-document.documentType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type de document.","Type de document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.documentType",1,1,"",""
+"fr-lm-patient-summary-document.documentTitle","fr-lm-patient-summary-document.documentTitle","","","",1,1,"","","","string {[]} {[]}
+","Titre du document.","Titre du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.documentTitle",1,1,"",""
+"fr-lm-patient-summary-document.date","fr-lm-patient-summary-document.date","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de création du document.","Date de création du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.date",1,1,"",""
+"fr-lm-patient-summary-document.confidentiality","fr-lm-patient-summary-document.confidentiality","","","",1,1,"","","","code {[]} {[]}
+","Niveau de confidentialité du document.","Niveau de confidentialité du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.confidentiality",1,1,"",""
+"fr-lm-patient-summary-document.language","fr-lm-patient-summary-document.language","","","",1,1,"","","","code {[]} {[]}
+","Langue principale du document.","Langue principale du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.language",1,1,"",""
+"fr-lm-patient-summary-document.version","fr-lm-patient-summary-document.version","","","",1,1,"","","","string {[]} {[]}
+","Numéro de version du document.","Numéro de version du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.version",1,1,"",""
+"fr-lm-patient-summary-document.status","fr-lm-patient-summary-document.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Statut du document.","Statut du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.status",1,1,"",""
+"fr-lm-patient-summary-document.eventType","fr-lm-patient-summary-document.eventType","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","Evènement documenté et notamment le cadre d'exercice.","Evènement documenté et notamment le cadre d'exercice.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.eventType",1,*,"",""
+"fr-lm-patient-summary-document.subject","fr-lm-patient-summary-document.subject","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-patient {[]} {[]}
+","Patient / Usager.","Patient / Usager.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.subject",1,1,"",""
+"fr-lm-patient-summary-document.author[x]","fr-lm-patient-summary-document.author[x]","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation {[]} {[]}https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-device {[]} {[]}","Auteur du document.","Auteur du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.author[x]",1,*,"",""
+"fr-lm-patient-summary-document.dataEnterer","fr-lm-patient-summary-document.dataEnterer","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-data-enterer {[]} {[]}
+","Opérateur de saisie.","Opérateur de saisie.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.dataEnterer",0,1,"",""
+"fr-lm-patient-summary-document.informant","fr-lm-patient-summary-document.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-informant {[]} {[]}
+","Informateur ayant fourni des informations utiles à la production du document.","Informateur ayant fourni des informations utiles à la production du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.informant",0,*,"",""
+"fr-lm-patient-summary-document.custodian","fr-lm-patient-summary-document.custodian","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","Structure chargée de la conservation du document.","Structure chargée de la conservation du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.custodian",1,1,"",""
+"fr-lm-patient-summary-document.intendedRecipient","fr-lm-patient-summary-document.intendedRecipient","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-intended-recipient {[]} {[]}
+","Destinataire prévu du document.","Destinataire prévu du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.intendedRecipient",0,*,"",""
+"fr-lm-patient-summary-document.legalAuthentication","fr-lm-patient-summary-document.legalAuthentication","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-legal-authentication {[]} {[]}
+","Responsable du document.","Responsable du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.legalAuthentication",1,1,"",""
+"fr-lm-patient-summary-document.attester","fr-lm-patient-summary-document.attester","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attester {[]} {[]}
+","Professionnel attestant la validité du contenu du document.","Professionnel attestant la validité du contenu du document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.attester",0,*,"",""
+"fr-lm-patient-summary-document.participant","fr-lm-patient-summary-document.participant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-participant {[]} {[]}
+","Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.","Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.participant",0,*,"",""
+"fr-lm-patient-summary-document.order","fr-lm-patient-summary-document.order","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-order {[]} {[]}
+","Association du document à une prescription.","Association du document à une prescription.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.order",0,*,"",""
+"fr-lm-patient-summary-document.consent","fr-lm-patient-summary-document.consent","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-consent {[]} {[]}
+","Consentement associé au document.","Consentement associé au document.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.consent",0,*,"",""
+"fr-lm-patient-summary-document.encounter","fr-lm-patient-summary-document.encounter","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-encounter {[]} {[]}
+","Association du document à une prise en charge.","Association du document à une prise en charge.","","","","","","","","","",,,,,"",,,,"fr-lm-header-document.encounter",1,1,"",""
+"fr-lm-patient-summary-document.problems","fr-lm-patient-summary-document.problems","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-problems {[]} {[]}
+","Section Problèmes Actifs","Section Problèmes Actifs","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.problems",1,1,"",""
+"fr-lm-patient-summary-document.familyHistories","fr-lm-patient-summary-document.familyHistories","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-family-medical-history {[]} {[]}
+","Section Antécédents familiaux","Section Antécédents familiaux","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.familyHistories",0,1,"",""
+"fr-lm-patient-summary-document.allergiesAndIntolerances","fr-lm-patient-summary-document.allergiesAndIntolerances","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-allergies-and-intolerances {[]} {[]}
+","Section Allergies et hypersensibilités","Section Allergies et hypersensibilités","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.allergiesAndIntolerances",1,1,"",""
+"fr-lm-patient-summary-document.adverseEvents","fr-lm-patient-summary-document.adverseEvents","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction {[]} {[]}
+","Section Effets indésirables","Section Effets indésirables","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.adverseEvents",0,1,"",""
+"fr-lm-patient-summary-document.medicationSummary","fr-lm-patient-summary-document.medicationSummary","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medication-summary {[]} {[]}
+","Section Traitement","Section Traitement","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.medicationSummary",1,1,"",""
+"fr-lm-patient-summary-document.procedures","fr-lm-patient-summary-document.procedures","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-procedures {[]} {[]}
+","Section Historique des actes","Section Historique des actes","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.procedures",1,1,"",""
+"fr-lm-patient-summary-document.medicalDevicesAndImplants","fr-lm-patient-summary-document.medicalDevicesAndImplants","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medical-devices-and-implants {[]} {[]}
+","Section Dispositifs médicaux","Section Dispositifs médicaux","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.medicalDevicesAndImplants",1,1,"",""
+"fr-lm-patient-summary-document.immunisations","fr-lm-patient-summary-document.immunisations","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-immunisations {[]} {[]}
+","Section Vaccinations","Section Vaccinations","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.immunisations",0,1,"",""
+"fr-lm-patient-summary-document.results","fr-lm-patient-summary-document.results","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-observation-results {[]} {[]}
+","Section Resultats","Section Resultats","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.results",0,1,"",""
+"fr-lm-patient-summary-document.advanceDirective","fr-lm-patient-summary-document.advanceDirective","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives {[]} {[]}
+","Section Directives anticipées","Section Directives anticipées","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.advanceDirective",0,1,"",""
+"fr-lm-patient-summary-document.alerts","fr-lm-patient-summary-document.alerts","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts {[]} {[]}
+","Section Points de Vigilances non codé","Section Points de Vigilances non codé","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.alerts",0,1,"",""
+"fr-lm-patient-summary-document.functionalStatus","fr-lm-patient-summary-document.functionalStatus","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status {[]} {[]}
+","Section Statut fonctionnel","Section Statut fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.functionalStatus",0,1,"",""
+"fr-lm-patient-summary-document.pregnancyHistory","fr-lm-patient-summary-document.pregnancyHistory","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history {[]} {[]}
+","Section Historique des grossesses","Section Historique des grossesses","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.pregnancyHistory",0,1,"",""
+"fr-lm-patient-summary-document.carePlans","fr-lm-patient-summary-document.carePlans","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-care-plans {[]} {[]}
+","Section Plan de Soins","Section Plan de Soins","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.carePlans",0,1,"",""
+"fr-lm-patient-summary-document.socialHistory","fr-lm-patient-summary-document.socialHistory","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-social-history {[]} {[]}
+","Section Habitus et modes de vie","Section Habitus et modes de vie","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.socialHistory",0,1,"",""
+"fr-lm-patient-summary-document.vitalSigns","fr-lm-patient-summary-document.vitalSigns","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-vital-signs {[]} {[]}
+","Section Signes vitaux","Section Signes vitaux","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.vitalSigns",0,1,"",""
+"fr-lm-patient-summary-document.occupationalRiskFactors","fr-lm-patient-summary-document.occupationalRiskFactors","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-hazardous-working-conditions {[]} {[]}
+","Section Facteurs de risque professionnels non Codé","Section Facteurs de risque professionnels non Codé","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.occupationalRiskFactors",0,1,"",""
+"fr-lm-patient-summary-document.attachments","fr-lm-patient-summary-document.attachments","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attachments {[]} {[]}
+","Section Pièces jointes","Section Pièces jointes","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.attachments",0,1,"",""

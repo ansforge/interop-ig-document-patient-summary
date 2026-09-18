@@ -1,0 +1,192 @@
+{
+  "package": "ans.document.fr.ips",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
+  "extensions": [],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips",
+        "title": "Bundle (IPS)"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips",
+        "title": "FR Composition Document IPS"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.status|0.1.0": [
+      "Composition.status"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version|0.1.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.code",
+      "Bundle.entry.resource.date",
+      "Bundle.entry.resource.dosage.rateQuantity",
+      "Bundle.entry.resource.effectiveDateTime",
+      "Bundle.entry.resource.identifier",
+      "Bundle.entry.resource.ingredient.itemCodeableConcept",
+      "Bundle.entry.resource.period",
+      "Bundle.entry.resource.type",
+      "Bundle.entry.resource.valueCodeableConcept"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/event-basedOn": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/event-basedOn|5.3.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/event-performerFunction": [
+      "Bundle.entry.resource.performer",
+      "Bundle.entry.resource.resultsInterpreter"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/note|5.3.0": [
+      "Composition.section"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-date-format": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-date-rules": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/logical-container": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/logical-target": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/xml-name": [
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace": [
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ChangeMade|1.1.0": [
+      "Composition",
+      "Composition.section"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension|1.1.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/consent-extension|1.1.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/data-enterer-extension|1.1.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/informant-extension": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/informant-extension|1.1.0": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/information-recipient-extension|1.1.0": [
+      "Composition"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Bundle.entry.resource"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Bundle.entry.resource.name"
+    ],
+    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension": [
+      "Bundle.entry.resource.recorder"
+    ],
+    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency": [
+      "Bundle.entry.resource"
+    ],
+    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time": [
+      "Bundle.entry.resource.author"
+    ],
+    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event": [
+      "Bundle.entry.resource.event"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.resultsInterpreter"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension|0.1.0": [
+      "Composition.author"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension|0.1.0": [
+      "Composition.event"
+    ],
+    "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification": [
+      "Bundle.entry.resource"
+    ],
+    "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname": [
+      "Bundle.entry.resource"
+    ]
+  }
+}
