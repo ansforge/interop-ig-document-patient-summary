@@ -61,7 +61,7 @@ pages:
             title: Modèle logique métier
         exigences-specifiques.md:
             title: Exigences spécifiques
-    implementations.md: 
+    implementations.md:
         title: Implémentations
         cda.md:
             title: CDA
