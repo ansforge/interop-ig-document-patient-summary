@@ -141,6 +141,6 @@ resources:
     name: IPS-FR
     description: Volet International Patient Summary - France (IPS-FR_2024.01)
     exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document
+    profile: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
 
   

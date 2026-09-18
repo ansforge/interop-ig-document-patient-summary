@@ -8,8 +8,23 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * extension[informant] ^short = "Informateur ayant fourni des informations utiles"
 
 * extension[participant] ^short = "Participant, jouant dans l'édition du document, un rôle différent de celui d'auteur, de responsable, d'opérateur de saisie, d'informateur ou de destinataire."
+* extension[participant] ^definition = "Rôles attendus, identifiés par le couple (extension[type], extension[function]) : Médecin traitant (INF/PCP, 0..1), Contact EHPAD (PRF/CORRE, 0..1), Établissement de préférence (INF/ES-PREF, 0..1), Établissement de référence (INF/ES-REF, 0..*), Autre professionnel de santé (PRF/353, 0..*), Autre correspondant (CON/CORRE, 0..*)."
+ 
+// Les rôles de participant IPS sont contraints par des invariants
+* obeys fr-composition-ips-participant-medecin-traitant
+* obeys fr-composition-ips-participant-contact-ehpad
+* obeys fr-composition-ips-participant-etab-preference
+* obeys fr-composition-ips-participant-etab-reference
+* obeys fr-composition-ips-participant-autre-ps
+* obeys fr-composition-ips-participant-autre-correspondant
+/* * extension[participant] ^short = "Participant, jouant dans l'édition du document, un rôle différent de celui d'auteur, de responsable, d'opérateur de saisie, d'informateur ou de destinataire."
 
 // Reslicing des participants IPS
+* extension[participant] ^slicing.discriminator[0].type = #value
+* extension[participant] ^slicing.discriminator[0].path = "url"
+* extension[participant] ^slicing.ordered = false
+* extension[participant] ^slicing.rules = #open
+
 * extension[participant] contains medecinTraitant 0..1 and contactEHPAD 0..1 and etabPreference 0..1 and etabReference 0..* and autrePS 0..* and autreCorrespondant 0..*
 // médecin traitant
 * extension[participant][medecinTraitant].extension[type].valueCodeableConcept.coding.code = #INF
@@ -29,7 +44,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 // Autre correspondant
 * extension[participant][autreCorrespondant].extension[type].valueCodeableConcept.coding.code = #CON
 * extension[participant][autreCorrespondant].extension[function].valueCodeableConcept.coding.code = #CORRE
-* extension[basedOn] ^short = "Ordonnance"
+* extension[basedOn] ^short = "Ordonnance" */
 
 * identifier ^short = "Identifiant du lot de versions du même document."
 * identifier 1..1 MS
@@ -185,3 +200,33 @@ Invariant: ips-section-not-empty
 Description: "Une section obligatoire doit contenir au moins une entrée ou préciser un motif d'absence (emptyReason)."
 Expression: "entry.exists() or emptyReason.exists()"
 Severity: #error
+
+Invariant: fr-composition-ips-participant-medecin-traitant
+Description: "Au plus un participant de rôle Médecin traitant (extension[type]=INF, extension[function]=PCP)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'PCP').count() <= 1"
+Severity: #error
+ 
+Invariant: fr-composition-ips-participant-contact-ehpad
+Description: "Au plus un participant de rôle Contact EHPAD (extension[type]=PRF, extension[function]=CORRE)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'PRF' and extension('function').value.coding.code = 'CORRE').count() <= 1"
+Severity: #error
+ 
+Invariant: fr-composition-ips-participant-etab-preference
+Description: "Au plus un participant de rôle Établissement de préférence (extension[type]=INF, extension[function]=ES-PREF)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'ES-PREF').count() <= 1"
+Severity: #error
+
+Invariant: fr-composition-ips-participant-etab-reference
+Description: "Au plus un participant de rôle Établissement de référence (extension[type]=INF, extension[function]=ES-REF)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'ES-REF').count() <= 1"
+Severity: #error
+Invariant: fr-composition-ips-participant-autre-ps
+Description: "Au plus un participant de rôle Autre professionnel de santé (extension[type]=INF, extension[function]=AUTRE-PS)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-PS').count() <= 1"
+Severity: #error
+
+Invariant: fr-composition-ips-participant-autre-correspondant
+Description: "Au plus un participant de rôle Autre correspondant (extension[type]=INF, extension[function]=AUTRE-CORR)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-CORR').count() <= 1"
+Severity: #error
+
