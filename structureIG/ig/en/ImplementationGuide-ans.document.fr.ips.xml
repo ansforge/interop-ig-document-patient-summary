@@ -12,7 +12,7 @@
   <name value="FRIPS"/>
   <title value="ANS IG Document IPS"/>
   <status value="draft"/>
-  <date value="2026-09-18T13:56:24+00:00"/>
+  <date value="2026-09-21T13:38:34+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -835,30 +835,6 @@
           <nameUrl value="cda.html"/>
           <title value="CDA"/>
           <generation value="markdown"/>
-          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="structureCDA.html"/>
-            </extension>
-            <nameUrl value="structureCDA.html"/>
-            <title value="Structure du document IPS en CDA"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="exemplesCDA.html"/>
-            </extension>
-            <nameUrl value="exemplesCDA.html"/>
-            <title value="Exemples CDA"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="exempleIHE-XDM.html"/>
-            </extension>
-            <nameUrl value="exempleIHE-XDM.html"/>
-            <title value="Exemples IHE XDM"/>
-            <generation value="markdown"/>
-          </page>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -867,22 +843,6 @@
           <nameUrl value="fhir.html"/>
           <title value="FHIR"/>
           <generation value="markdown"/>
-          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="structureFHIR.html"/>
-            </extension>
-            <nameUrl value="structureFHIR.html"/>
-            <title value="Structure du document IPS en FHIR"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="exemplesFHIR.html"/>
-            </extension>
-            <nameUrl value="exemplesFHIR.html"/>
-            <title value="Exemples FHIR"/>
-            <generation value="markdown"/>
-          </page>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

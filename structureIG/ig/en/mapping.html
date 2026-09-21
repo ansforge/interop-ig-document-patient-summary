@@ -52,9 +52,14 @@
       <div class="container">    <!-- container -->
 
           <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
-  </div>
+<div style="display: flex; flex-direction: column;" id="family-nav">
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true">
+    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/>
+  </a>
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda" data-no-external="true">
+    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/>
+  </a>
+</div>
   <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
     <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
     <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
@@ -113,7 +118,7 @@
         <a href="cas-usage.html">Cas d'usage</a>
       </li>
       <li>
-        <a href="modele-logique-metier.html">Modèle logique métier</a>
+        <a href="StructureDefinition-fr-lm-patient-summary-document.html">Modèle logique métier</a>
       </li>
       <li>
         <a href="exigences-specifiques.html">Exigences spécifiques</a>
@@ -145,7 +150,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="https://ansforge.github.io/IG-Document-Core-ANS/ig/main/index.html" target="_blank">IG Document core</a>
+        <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/index.html" target="_blank">IG Modèle logique métier</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/fhir/document-core/index.html" target="_blank">IG FHIR</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/cda/document-core/index.html" target="_blank">IG CDA</a>
       </li>
       <li>
         <a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication" target="_blank">Espace de publication du CI-SIS</a>
@@ -177,7 +188,7 @@
       <li>
         <a href="https://interop.esante.gouv.fr/ig/documentation/index.html" target="_blank">Documentation des guides d'implémentation de l'ANS</a>
       </li>
-      <li><a name="l312">​</a>
+      <li><a name="l330">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
     </ul>
@@ -196,7 +207,7 @@
  	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
     <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
 
-    <div><a href="../fr-FR/mapping.html"><a name="l343">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></a></div>
+    <div><a href="../fr-FR/mapping.html"><a name="l361">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></a></div>
 
   </div>
 </div>
@@ -216,7 +227,7 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="exemplesFHIR.html">&lt; prev</a> | 
+            <a href="fhir.html">&lt; prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -266,143 +277,389 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#mappings---modèle-métier--cda--fhir" id="markdown-toc-mappings---modèle-métier--cda--fhir">Mappings - Modèle Métier / CDA / FHIR</a>    <ul>
-      <li><a href="#mappings-de-lentête-du-document-hérités-de-lig-document-core" id="markdown-toc-mappings-de-lentête-du-document-hérités-de-lig-document-core">Mappings de l'entête du document (hérités de l'IG Document Core)</a>        <ul>
-          <li><a href="#mappings-de-chaque-élément-dentête" id="markdown-toc-mappings-de-chaque-élément-dentête">Mappings de chaque élément d'entête</a></li>
-        </ul>
-      </li>
-      <li><a href="#mappings-des-sections-du-document-ips" id="markdown-toc-mappings-des-sections-du-document-ips">Mappings des sections du document IPS</a>        <ul>
-          <li><a href="#sections" id="markdown-toc-sections">Sections</a></li>
-        </ul>
-      </li>
-      <li><a href="#mappings-des-composants-élémentaires" id="markdown-toc-mappings-des-composants-élémentaires">Mappings des composants élémentaires</a>        <ul>
-          <li><a href="#problèmes-et-conditions" id="markdown-toc-problèmes-et-conditions">Problèmes et conditions</a></li>
-          <li><a href="#traitements-et-médicaments" id="markdown-toc-traitements-et-médicaments">Traitements et médicaments</a></li>
-          <li><a href="#actes-et-procédures" id="markdown-toc-actes-et-procédures">Actes et procédures</a></li>
-          <li><a href="#observations-et-mesures" id="markdown-toc-observations-et-mesures">Observations et mesures</a></li>
-          <li><a href="#autres-ressources" id="markdown-toc-autres-ressources">Autres ressources</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 <h1 id="mappings---modèle-métier--cda--fhir">Mappings - Modèle Métier / CDA / FHIR</h1>
 
 <p>Cette page présente les mappings entre le modèle métier, CDA et FHIR pour le document IPS-FR (Synthèse Médicale).</p>
 
-<h2 id="mappings-de-lentête-du-document-hérités-de-lig-document-core">Mappings de l'entête du document (hérités de l'IG Document Core)</h2>
-
-<p>Les mappings de l'entête du document IPS sont hérités de l'IG Document Core. Ils définissent les transformations entre le modèle métier et les implémentations CDA/FHIR.</p>
-
-<h3 id="mappings-de-chaque-élément-dentête">Mappings de chaque élément d'entête</h3>
-
-<p>Pour le détail du mapping entre le modèle métier, CDA et FHIR de chaque élément d'entête, consultez le <a href="https://ansforge.github.io/interop-IG-document-core/main/ig/artifacts.html">Document Core</a> qui fournit les ConceptMaps complets :</p>
+<p>Les mappings de l'IPS-FR sont basés sur l'IG Document Core métier publié par l'ANS :</p>
 
 <ul>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/mappingCDA-FHIR-entete.html">Mapping détaillé de l'entête</a> : consultation des transformations Métier/CDA/FHIR pour tous les éléments de l'entête</li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/mappingCDA-FHIR-corps.html">Mapping détaillé du corps</a> : consultation des transformations Métier/CDA/FHIR pour les sections et composants</li>
+  <li><strong>Modèle métier + Mappings</strong> : <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/">interop-IG-metier-document-core</a></li>
 </ul>
 
-<p>Pour les mappings spécifiques à l'IPS, les éléments d'entête suivants sont utilisés pour identifier les données administratives et organisationnelles (patient, médecin traitant, etc…) :</p>
+<p>Les tableaux ci-dessous reprennent, pour chaque élément de l'entête, chaque section et chaque composant élémentaire utilisés par l'IPS-FR, le nom et le lien de l'artefact correspondant dans l'IG « interop-IG-metier-document-core », ainsi que le lien vers le ConceptMap qui formalise la transformation.</p>
 
-<ul>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingAuteurCDAFHIR.html">Mapping Auteur</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingPatientCDAFHIR.html">Mapping Patient/Usager</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingResponsableCDAFHIR.html">Mapping Responsable du document</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingValidateurCDAFHIR.html">Mapping Validateur</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingOperateurSaisieCDAFHIR.html">Mapping Opérateur de saisie</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingInformateurCDAFHIR.html">Mapping Informateur</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingParticipantCDAFHIR.html">Mapping Participant</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingPriseEnchargeCDAFHIR.html">Mapping Prise en charge</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingEvenementCDAFHIR.html">Mapping Évènement documenté</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingDestinatairePrevuCDAFHIR.html">Mapping Destinataire prévu</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-mappingDocumentDeReferenceCDAFHIR.html">Mapping Document de référence</a></li>
-</ul>
+<h2 id="mappings-de-lentête-du-document">Mappings de l'entête du document</h2>
 
-<p><strong>Note</strong> : Pour l'IPS, les participants spécifiques définis dans le profil <code class="language-plaintext highlighter-rouge">FRCompositionDocumentIPS</code> incluent :</p>
-<ul>
-  <li>Médecin traitant (typeCode : INF, code fonction : PCP)</li>
-  <li>Contact EHPAD (typeCode : PRF, code fonction : CORRE)</li>
-  <li>Établissement de préférence (typeCode : INF, code fonction : ES-PREF)</li>
-  <li>Établissement de référence (typeCode : INF, code fonction : ES-REF)</li>
-  <li>Autre professionnel de santé (typeCode : PRF, code fonction : 353)</li>
-  <li>Autre correspondant (typeCode : CON, code fonction : CORRE)</li>
-</ul>
+<p>Le tableau ci-dessous liste le mapping entre le modèle métier, CDA et FHIR pour l'entête du document IPS-FR.</p>
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr><th>Modèle métier</th><th>CDA</th><th>FHIR</th><th>Mapping</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHeaderDocument.html">FRLMHeaderDocument</a> </code>
+</td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-clinical-document.html">FRCDAClinicalDocument</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-bundle-document.html">FRBundleDocument</a></code> / <code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRHeaderDocumentLMCDAFHIR.html">Mapping Header Document</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMPatient.html">FRLMPatient</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-record-target.html">FRCDARecordTarget</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.subject</code>) → <code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-patient-ins-document.html">FRPatientINSDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRPatientLMCDAFHIR.html">Mapping Patient</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHeaderDocument.html">FRLMHeaderDocument</a></code> (<code>FRLMHeaderDocument.author[x]</code>)</td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-author.html">FRCDAAuthor</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.author</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAuthorLMCDAFHIR.html">Mapping Author</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHeaderDocument.html">FRLMHeaderDocument</a></code> (<code>FRLMHeaderDocument.custodian</code>)</td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-custodian.html">FRCDACustodian</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.custodian</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRCustodianLMCDAFHIR.html">Mapping Custodian</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAttester.html">FRLMAttester</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-authenticator.html">FRCDAAuthenticator</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.attester</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAttesterLMCDAFHIR.html">Mapping Attester</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMLegalAuthentication.html">FRLMLegalAuthentication</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-legal-authenticator.html">FRCDALegalAuthenticator</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.attester</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRLegalAuthenticationLMCDAFHIR.html">Mapping Legal Authentication</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMDataEnterer.html">FRLMDataEnterer</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-data-enterer.html">FRCDADataEnterer</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:data-enterer</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRDataEntererLMCDAFHIR.html">Mapping Data Enterer</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMInformant.html">FRLMInformant</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-informant.html">FRCDAInformant</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:informant</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRInformantLMCDAFHIR.html">Mapping Informant</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMIntendedRecipient.html">FRLMIntendedRecipient</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-information-recipient.html">FRCDAInformationRecipient</a></code> / <code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-intended-recipient.html">FRCDAIntendedRecipient</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:information-recipient</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRIntendedRecipientLMCDAFHIR.html">Mapping Intended Recipient</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMParticipant.html">FRLMParticipant</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-participant-entete.html">FRCDAParticipantEntete</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:participant</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRParticipantHeaderLMCDAFHIR.html">Mapping Participant</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMOrder.html">FRLMOrder</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-inFulfillment-of.html">FRCDAInFulfillmentOf</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:basedOn</code> → Reference(ServiceRequest))</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FROrderLMCDAFHIR.html">Mapping Order</a></td>
+</tr>
+<tr>
+<td><code>FRLMHeaderDocument.documentReference</code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-related-document.html">FRCDARelatedDocument</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.relatesTo</code>)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMConsent.html">FRLMConsent</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-authorization.html">FRCDAAuthorization</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:consent</code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRConsentLMCDAFHIR.html">Mapping Consent</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHealthProfessional.html">FRLMHealthProfessional</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-assigned-entity.html">FRCDAAssignedEntity</a></code> / <code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-assigned-author.html">FRCDAAssignedAuthor</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-practitioner-document.html">FRPractitionerDocument</a></code> / <code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-practitionerRole-document.html">FRPractitionerRoleDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRHealthProfessionalLMCDAFHIR.html">Mapping Health Professional</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMOrganisation.html">FRLMOrganisation</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-represented-organization.html">FRCDARepresentedOrganization</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-organization-document.html">FROrganizationDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FROrganisationLMCDAFHIR.html">Mapping Organisation</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMRelatedPerson.html">FRLMRelatedPerson</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-related-entity.html">FRCDARelatedEntity</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-related-person-document.html">FRRelatedPersonDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRRelatedPersonLMCDAFHIR.html">Mapping Related Person</a></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="mappings-des-sections-du-document-ips">Mappings des sections du document IPS</h2>
 
-<p>Les mappings des sections du document IPS sont hérités de l'IG Document Core. Voici les sections spécifiques à l'IPS :</p>
+<p>Le tableau ci-dessous liste, pour chacune des 17 sections utilisées par l'IPS-FR, le modèle logique métier de la section, le profil CDA de la section correspondante, et la ressource FHIR principale qui porte le contenu de cette section. Côté FHIR, les sections ne sont pas des artefacts publiés séparément : elles sont matérialisées par des slices de <code>Composition.section</code> au sein du profil <a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html"><code>FRCompositionDocument</code></a> ; la colonne FHIR renvoie donc vers le profil de la ressource d'entrée principale de la section (par exemple <code>Condition</code> pour la section Problèmes).</p>
 
-<h3 id="sections">Sections</h3>
-
-<ul>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionActiveProblemsLMCDAFHIR.html">Mapping Problèmes actifs</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionHistoryActsLMCDAFHIR.html">Mapping Historique des actes</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionAllergyIntoleranceLMCDAFHIR.html">Mapping Allergies et hypersensibilités</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionMedicationsLMCDAFHIR.html">Mapping Traitements</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionMedicalDeviceLMCDAFHIR.html">Mapping Dispositifs médicaux</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionMedicalHistoryLMCDAFHIR.html">Mapping Antécédents médicaux</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionAdverseEventLMCDAFHIR.html">Mapping Effets indésirables</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionVitalSignsLMCDAFHIR.html">Mapping Signes vitaux</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionFunctionalStatusLMCDAFHIR.html">Mapping Statut fonctionnel</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionUncodedPointsOfVigilanceLMCDAFHIR.html">Mapping Points de vigilances non codés</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionSocialHistoryLMCDAFHIR.html">Mapping Habitus, mode de vie</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionFamilyHistoryLMCDAFHIR.html">Mapping Antécédents familiaux</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionImmunizationsLMCDAFHIR.html">Mapping Vaccinations</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionAdvanceDirectiveLMCDAFHIR.html">Mapping Directives anticipées</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionAddedDocumentsLMCDAFHIR.html">Mapping Documents ajoutés</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionResultsLMCDAFHIR.html">Mapping Résultats</a></li>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRSectionCarePlanLMCDAFHIR.html">Mapping Plan de soins</a></li>
-</ul>
+<table class="table table-striped table-bordered">
+<thead>
+<tr><th>Modèle métier</th><th>CDA</th><th>FHIR</th><th>Mapping</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMProblems.html">FRLMProblems</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-problemes-actifs.html">FRCDASectionProblemesActifs</a></code></td>
+<td><code>Composition.section:sectionProblems.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-condition-document.html">FRConditionDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionProblemsLMCDAFHIR.html">Mapping Problems</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMProcedures.html">FRLMProcedures</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-historique-des-actes.html">FRCDASectionHistoriqueDesActes</a></code></td>
+<td><code>Composition.section:sectionHistoryActs.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-procedure-document.html">FRProcedureDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionProceduresLMCDAFHIR.html">Mapping Procedures</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAllergiesAndIntolerances.html">FRLMAllergiesAndIntolerances</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-allergies-et-hypersensibilites.html">FRCDASectionAllergiesEtHypersensibilites</a></code></td>
+<td><code>Composition.section:sectionAllergyIntolerance.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-allergy-intolerance-document.html">FRAllergyIntoleranceDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionAllergiesAndIntolerancesLMCDAFHIR.html">Mapping Allergies and Intolerances</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMMedicationSummary.html">FRLMMedicationSummary</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-traitements.html">FRCDASectionTraitements</a></code></td>
+<td><code>Composition.section:sectionMedications.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-statement-document.html">FRMedicationStatementDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionMedicationSummaryLMCDAFHIR.html">Mapping Medication Summary</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMMedicalDevicesAndImplants.html">FRLMMedicalDevicesAndImplants</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-dispositifs-medicaux.html">FRCDASectionDispositifsMedicaux</a></code></td>
+<td><code>Composition.section:sectionMedicalDevice.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-device-use-statement-document.html">FRDeviceUseStatementDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionMedicalDevicesAndImplantsLMCDAFHIR.html">Mapping Medical Devices and Implants</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHistoryOfPastIllness.html">FRLMHistoryOfPastIllness</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-antecedents-medicaux.html">FRCDASectionAntecedentsMedicaux</a></code></td>
+<td><code>Composition.section:sectionProblems.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-condition-document.html">FRConditionDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionProblemsLMCDAFHIR.html">Mapping Problems</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMPredictableAdverseDrugReaction.html">FRLMPredictableAdverseDrugReaction</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-effets-indesirables.html">FRCDASectionEffetsIndesirables</a></code></td>
+<td><code>Composition.section:sectionAdverseEvent.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-adverse-event-document.html">FRAdverseEventDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionPredictableAdverseDrugReactionLMCDAFHIR.html">Mapping Predictable Adverse Drug Reaction</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMVitalSigns.html">FRLMVitalSigns</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-section-signes-vitaux.html">FRCDASectionSignesVitaux</a></code></td>
+<td><code>Composition.section:sectionVitalSigns.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-vital-signs-panel-document.html">FRObservationVitalSignsPanelDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionVitalSignsLMCDAFHIR.html">Mapping Vital Signs</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMFunctionalStatus.html">FRLMFunctionalStatus</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-statut-fonctionnel.html">FRCDASectionStatutFonctionnel</a></code></td>
+<td><code>Composition.section:sectionFunctionalStatus.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-assessment-document.html">FRObservationAssessmentDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionFunctionalStatusLMCDAFHIR.html">Mapping Functional Status</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAlerts.html">FRLMAlerts</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-points-de-vigilances-non-code.html">FRCDASectionPointsDeVigilancesNonCode</a></code></td>
+<td><code>Composition.section:sectionUncodedPointsOfVigilance</code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionAlertsLMCDAFHIR.html">Mapping Alerts</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMSocialHistory.html">FRLMSocialHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-section-habitus-mode-de-vie.html">FRCDASectionHabitusModeDeVie</a></code></td>
+<td><code>Composition.section:sectionSocialHistory.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-social-history-document.html">FRObservationSocialHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionSocialHistoryLMCDAFHIR.html">Mapping Social History</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMFamilyMedicalHistory.html">FRLMFamilyMedicalHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-section-antecedents-familiaux.html">FRCDASectionAntecedentsFamiliaux</a></code></td>
+<td><code>Composition.section:sectionFamilyHistory.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-family-member-history-document.html">FRFamilyMemberHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionFamilyMedicalHistoryLMCDAFHIR.html">Mapping Family Medical History</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMImmunisations.html">FRLMImmunisations</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-vaccinations.html">FRCDASectionVaccinations</a></code></td>
+<td><code>Composition.section:sectionImmunizations.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-immunization-document.html">FRImmunizationDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionImmunisationsLMCDAFHIR.html">Mapping Immunisations</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAdvanceDirectives.html">FRLMAdvanceDirectives</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-section-directives-anticipees.html">FRCDASectionDirectivesAnticipees</a></code></td>
+<td><code>Composition.section:sectionAdvanceDirective.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-advance-directive-document.html">FRAdvanceDirectiveDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionAdvanceDirectivesLMCDAFHIR.html">Mapping Advance Directives</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAttachments.html">FRLMAttachments</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-documents-ajoutes.html">FRCDASectionDocumentsAjoutes</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html">FRCompositionDocument</a></code> (<code>Composition.extension:diagnosticReport</code> → Reference(<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-diagnostic-report-document.html">FRDiagnosticReportDocument</a></code>).presentedForm)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionAttachmentsLMCDAFHIR.html">Mapping Attachments</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMObservationResults.html">FRLMObservationResults</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-section-resultats.html">FRCDASectionResultats</a></code></td>
+<td><code>Composition.section:sectionResults.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-diagnostic-report-document.html">FRDiagnosticReportDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionResultsLMCDAFHIR.html">Mapping Observation Results</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMCarePlans.html">FRLMCarePlans</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-plan-de-soins.html">FRCDASectionPlanDeSoins</a></code></td>
+<td><code>Composition.section:sectionPlanOfCare.entry:demandeDexamenOuDeSuivi</code> (<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-service-request-document.html">FRServiceRequestDocument</a></code>)<br/>
+<code>Composition.section:sectionPlanOfCare.entry:traitement</code> (<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-request-document.html">FRMedicationRequestDocument</a></code>)<br/>
+<code>Composition.section:sectionPlanOfCare.entry:vaccinRecommande</code> (<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-immunization-recommendation-document.html">FRImmunizationRecommendationDocument</a></code>)</td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionCarePlansLMCDAFHIR.html">Mapping Care Plans</a></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="mappings-des-composants-élémentaires">Mappings des composants élémentaires</h2>
 
-<p>Les mappings des composants élémentaires utilisés dans l'IPS sont hérités de l'IG Document Core. Les ressources FHIR suivantes sont utilisées dans les sections de l'IPS :</p>
+<p>Le tableau ci-dessous détaille, pour chaque composant élémentaire (entrée) utilisé dans les sections de l'IPS-FR, le modèle logique métier, le profil CDA et le profil FHIR correspondants, ainsi que le ConceptMap de transformation. Au-delà des composants du document de synthèse initial, quelques composants complémentaires (Médicament, Traitement en cours, Demande d'examen, Rencontre, Dispositif en tant que ressource, Plan de soins) ont été ajoutés car ils sont explicitement référencés par les ConceptMaps du modèle métier.</p>
 
-<h3 id="problèmes-et-conditions">Problèmes et conditions</h3>
-
-<ul>
-  <li><a href="https://ansforge.github.io/interop-IG-document-core/main/ig/ConceptMap-FRConditionLMCDAFHIR.html">Mapping Problème</a> → <code class="language-plaintext highlighter-rouge">FRLMProbleme</code> / <code class="language-plaintext highlighter-rouge">FRCDAProbleme</code> / <code class="language-plaintext highlighter-rouge">FRConditionDocument</code></li>
-</ul>
-
-<h3 id="traitements-et-médicaments">Traitements et médicaments</h3>
-
-<ul>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRTraitementLMCDAFHIR">Mapping Traitement</a> → <code class="language-plaintext highlighter-rouge">FRMedicationAdministrationDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRTraitementPrescritLMCDAFHIR">Mapping Traitement prescrit</a> → <code class="language-plaintext highlighter-rouge">FRMedicationRequestDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRTraitementDispenseLMCDAFHIR">Mapping Traitement dispensé</a> → <code class="language-plaintext highlighter-rouge">FRMedicationDispenseDocument</code></li>
-</ul>
-
-<h3 id="actes-et-procédures">Actes et procédures</h3>
-
-<ul>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRActeLMCDAFHIR">Mapping Acte</a> → <code class="language-plaintext highlighter-rouge">FRProcedureActDocument</code></li>
-</ul>
-
-<h3 id="observations-et-mesures">Observations et mesures</h3>
-
-<ul>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRAllergieHypersensibilitelMCDAFHIR">Mapping Allergie/Hypersensibilité</a> → <code class="language-plaintext highlighter-rouge">FRAllergyIntoleranceDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSigneVitalLMCDAFHIR">Mapping Signes vitaux</a> → <code class="language-plaintext highlighter-rouge">FRObservationVitalSignsPanelDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRHabitusModeVieLMCDAFHIR">Mapping Habitus Mode de vie</a> → <code class="language-plaintext highlighter-rouge">FRObservationSocialHistoryDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FREvaluationLMCDAFHIR">Mapping Statut fonctionnel</a> → <code class="language-plaintext highlighter-rouge">FRObservationSurveyPannelDocument</code></li>
-</ul>
-
-<h3 id="autres-ressources">Autres ressources</h3>
-
-<ul>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FREffetIndesirableLMCDAFHIR">Mapping Effet indésirable</a> → <code class="language-plaintext highlighter-rouge">FRAdverseEventDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRFamilyMemberHistoryLMCDAFHIR">Mapping Antécédent familial</a> → <code class="language-plaintext highlighter-rouge">FRFamilyMemberHistoryDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRDispositifMedicalLMCDAFHIR">Mapping Dispositif médical</a> → <code class="language-plaintext highlighter-rouge">FRDeviceUseStatementDocument</code> ou <code class="language-plaintext highlighter-rouge">FRDeviceRequestDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRVaccinationLMCDAFHIR">Mapping Vaccination</a> → <code class="language-plaintext highlighter-rouge">FRImmunizationDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRDirectiveAnticipeeLMCDAFHIR">Mapping Directive anticipée</a> → <code class="language-plaintext highlighter-rouge">FRAdvanceDirectiveDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRDocumentReferenceLMCDAFHIR">Mapping Document référencé</a> → <code class="language-plaintext highlighter-rouge">FRDocumentReferenceDocument</code></li>
-  <li><a href="https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRResultatsExamensLMCDAFHIR">Mapping Résultats</a> → <code class="language-plaintext highlighter-rouge">FRObservationResultDocument</code>, <code class="language-plaintext highlighter-rouge">FRDiagnosticReportDocument</code></li>
-</ul>
+<table class="table table-striped table-bordered">
+<thead>
+<tr><th>Modèle métier</th><th>CDA</th><th>FHIR</th><th>Mapping</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMCondition.html">FRLMCondition</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-probleme.html">FRCDAProbleme</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-condition-document.html">FRConditionDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRConditionLMCDAFHIR.html">Mapping Condition</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMMedicationAdministration.html">FRLMMedicationAdministration</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-traitement.html">FRCDATraitement</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-administration-document.html">FRMedicationAdministrationDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationAdministrationLMCDAFHIR.html">Mapping Medication Administration</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMPrescriptionItem.html">FRLMPrescriptionItem</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-traitement-prescrit.html">FRCDATraitementPrescrit</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-request-document.html">FRMedicationRequestDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationRequestLMCDAFHIR.html">Mapping Prescription Item</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMMedicationDispense.html">FRLMMedicationDispense</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-traitement-dispense.html">FRCDATraitementDispense</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-dispense-document.html">FRMedicationDispenseDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationDispenseLMCDAFHIR.html">Mapping Medication Dispense</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMMedication.html">FRLMMedication</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-produit-de-sante.html">FRCDAProduitDeSante</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-document.html">FRMedicationDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationLMCDAFHIR.html">Mapping Medication</a></td>
+</tr>
+<tr>
+<td><code>FRLMMedicationUse</code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-traitement.html">FRCDATraitement</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-statement-document.html">FRMedicationStatementDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationStatementLMCDAFHIR.html">Mapping Medication Use</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMProcedure.html">FRLMProcedure</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-acte.html">FRCDAActe</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-procedure-document.html">FRProcedureDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRProcedureLMCDAFHIR.html">Mapping Procedure</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMServiceRequest.html">FRLMServiceRequest</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-demande-d-examen-ou-de-suivi.html">FRCDADemandeDExamenOuDeSuivi</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-service-request-document.html">FRServiceRequestDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRServiceRequestLMCDAFHIR.html">Mapping Service Request</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMEncounter.html">FRLMEncounter</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-rencontre.html">FRCDARencontre</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-encounter-document.html">FREncounterDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FREncounterLMCDAFHIR.html">Mapping Encounter</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAllergyIntolerance.html">FRLMAllergyIntolerance</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html">FRCDAAllergieOuHypersensibilite</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-allergy-intolerance-document.html">FRAllergyIntoleranceDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAllergyIntoleranceLMCDAFHIR.html">Mapping Allergy Intolerance</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMObservationVitalSign.html">FRLMObservationVitalSign</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-signe-vital-observe.html">FRCDASigneVitalObserve</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-vital-signs-document.html">FRObservationVitalSignsDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRObservationVitalSignsLMCDAFHIR.html">Mapping Observation Vital Sign</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMObservationSocialHistory.html">FRLMObservationSocialHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-habitus-mode-de-vie.html">FRCDAHabitusModeDeVie</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-social-history-document.html">FRObservationSocialHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRObservationSocialHistoryLMCDAFHIR.html">Mapping Observation Social History</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMObservationAssessment.html">FRLMObservationAssessment</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-evaluation.html">FRCDAEvaluation</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-assessment-document.html">FRObservationAssessmentDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRObservationAssessmentLMCDAFHIR.html">Mapping Observation Assessment</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMObservation.html">FRLMObservation</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-resultat.html">FRCDAResultat</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-result-document.html">FRObservationResultDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRObservationResultLMCDAFHIR.html">Mapping Observation</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAdverseDrugReaction.html">FRLMAdverseDrugReaction</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-effet-indesirable.html">FRCDAEffetIndesirable</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-adverse-event-document.html">FRAdverseEventDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAdverseDrugReactionLMCDAFHIR.html">Mapping Adverse Drug Reaction</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMFamilyMemberHistory.html">FRLMFamilyMemberHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-antecedent-familial-observe.html">FRCDAAntecedentFamilialObserve</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-family-member-history-document.html">FRFamilyMemberHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRFamilyMemberHistoryLMCDAFHIR.html">Mapping Family Member History</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMDeviceUse.html">FRLMDeviceUse</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-dispositif-medical.html">FRCDADispositifMedical</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-device-use-statement-document.html">FRDeviceUseStatementDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRDeviceUseLMCDAFHIR.html">Mapping Device Use</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMDevice.html">FRLMDevice</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-dispositif-medical.html">FRCDADispositifMedical</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-device-use-statement-document.html">FRDeviceUseStatementDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRDeviceLMCDAFHIR.html">Mapping Device</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMImmunisation.html">FRLMImmunisation</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-vaccination.html">FRCDAVaccination</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-immunization-document.html">FRImmunizationDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRImmunisationLMCDAFHIR.html">Mapping Immunisation</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAdvanceDirective.html">FRLMAdvanceDirective</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-directive-anticipee.html">FRCDADirectiveAnticipee</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-advance-directive-document.html">FRAdvanceDirectiveDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAdvanceDirectiveLMCDAFHIR.html">Mapping Advance Directive</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMAttachment.html">FRLMAttachment</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-document-attache.html">FRCDADocumentAttache</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-document-reference-document.html">FRDocumentReferenceDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRAttachmentLMCDAFHIR.html">Mapping Attachment</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMCarePlan.html">FRLMCarePlan</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-reference-item-plan-traitement.html">FRCDAReferenceItemPlanTraitement</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-care-plan-document.html">FRCarePlanDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRCarePlanLMCDAFHIR.html">Mapping Care Plan</a></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -429,7 +686,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:var(--ig-left);">&nbsp;
 
-                <a href="exemplesFHIR.html">&lt; prev</a>
+                <a href="fhir.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
@@ -453,8 +710,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.document.fr.ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-18 13:56:00 +0000">
-    2026-09-18
+  <span title="2026-09-21 13:38:00 +0000">
+    2026-09-21
   </span>
 
           <br/>

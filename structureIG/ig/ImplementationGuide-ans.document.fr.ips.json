@@ -11,7 +11,7 @@
   "name" : "FRIPS",
   "title" : "ANS IG Document IPS",
   "status" : "draft",
-  "date" : "2026-09-18T13:56:24+00:00",
+  "date" : "2026-09-21T13:38:34+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1084,34 +1084,7 @@
           }],
           "nameUrl" : "cda.html",
           "title" : "CDA",
-          "generation" : "markdown",
-          "page" : [{
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "structureCDA.html"
-            }],
-            "nameUrl" : "structureCDA.html",
-            "title" : "Structure du document IPS en CDA",
-            "generation" : "markdown"
-          },
-          {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "exemplesCDA.html"
-            }],
-            "nameUrl" : "exemplesCDA.html",
-            "title" : "Exemples CDA",
-            "generation" : "markdown"
-          },
-          {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "exempleIHE-XDM.html"
-            }],
-            "nameUrl" : "exempleIHE-XDM.html",
-            "title" : "Exemples IHE XDM",
-            "generation" : "markdown"
-          }]
+          "generation" : "markdown"
         },
         {
           "extension" : [{
@@ -1120,25 +1093,7 @@
           }],
           "nameUrl" : "fhir.html",
           "title" : "FHIR",
-          "generation" : "markdown",
-          "page" : [{
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "structureFHIR.html"
-            }],
-            "nameUrl" : "structureFHIR.html",
-            "title" : "Structure du document IPS en FHIR",
-            "generation" : "markdown"
-          },
-          {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "exemplesFHIR.html"
-            }],
-            "nameUrl" : "exemplesFHIR.html",
-            "title" : "Exemples FHIR",
-            "generation" : "markdown"
-          }]
+          "generation" : "markdown"
         },
         {
           "extension" : [{

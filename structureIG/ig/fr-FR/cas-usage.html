@@ -52,9 +52,14 @@
       <div class="container">    <!-- container -->
 
           <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
-  </div>
+<div style="display: flex; flex-direction: column;" id="family-nav">
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true">
+    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/>
+  </a>
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda" data-no-external="true">
+    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/>
+  </a>
+</div>
   <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
     <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
     <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
@@ -113,7 +118,7 @@
         <a href="cas-usage.html">Cas d'usage</a>
       </li>
       <li>
-        <a href="modele-logique-metier.html">Modèle logique métier</a>
+        <a href="StructureDefinition-fr-lm-patient-summary-document.html">Modèle logique métier</a>
       </li>
       <li>
         <a href="exigences-specifiques.html">Exigences spécifiques</a>
@@ -145,7 +150,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="https://ansforge.github.io/IG-Document-Core-ANS/ig/main/index.html" target="_blank">IG Document core</a>
+        <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/index.html" target="_blank">IG Modèle logique métier</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/fhir/document-core/index.html" target="_blank">IG FHIR</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/cda/document-core/index.html" target="_blank">IG CDA</a>
       </li>
       <li>
         <a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication" target="_blank">Espace de publication du CI-SIS</a>
@@ -177,7 +188,7 @@
       <li>
         <a href="https://interop.esante.gouv.fr/ig/documentation/index.html" target="_blank">Documentation des guides d'implémentation de l'ANS</a>
       </li>
-      <li><a name="l312">​</a>
+      <li><a name="l330">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
     </ul>
@@ -190,11 +201,11 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
-    <div><a name="l328">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
+    <div><a name="l346">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
-    <div><a name="l337">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
+    <div><a name="l355">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
 
     <div><a href="../en/cas-usage.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
 
@@ -261,27 +272,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#les-cas-dusages" id="markdown-toc-les-cas-dusages">Les cas d'usages</a>    <ul>
-      <li><a href="#1-la-création-de-la-synthèse-médicale-par-le-médecin-traitant" id="markdown-toc-1-la-création-de-la-synthèse-médicale-par-le-médecin-traitant">1. La création de la synthèse médicale par le médecin traitant</a></li>
-      <li><a href="#2-la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu" id="markdown-toc-2-la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu">2. La création de la synthèse médicale d'un Dossier de liaison d'urgence (DLU)</a></li>
-      <li><a href="#3-léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé" id="markdown-toc-3-léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé">3. L'échange de la synthèse médicale avec d'autres professionnels de santé</a></li>
-      <li><a href="#4-la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé" id="markdown-toc-4-la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé">4. La mise en partage de la synthèse médicale dans le DMP (Mon espace santé)</a></li>
+  <li><a href="#cas-dusages" id="markdown-toc-cas-dusages">Cas d'usages</a>    <ul>
+      <li><a href="#la-création-de-la-synthèse-médicale-par-le-médecin-traitant" id="markdown-toc-la-création-de-la-synthèse-médicale-par-le-médecin-traitant">La création de la synthèse médicale par le médecin traitant</a></li>
+      <li><a href="#la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu" id="markdown-toc-la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu">La création de la synthèse médicale d'un Dossier de liaison d'urgence (DLU)</a></li>
+      <li><a href="#léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé" id="markdown-toc-léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé">L'échange de la synthèse médicale avec d'autres professionnels de santé</a></li>
+      <li><a href="#la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé" id="markdown-toc-la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé">La mise en partage de la synthèse médicale dans le DMP (Mon espace santé)</a></li>
     </ul>
   </li>
 </ul>
 
 </div>
-<h2 id="les-cas-dusages">Les cas d'usages</h2>
+<h2 id="cas-dusages">Cas d'usages</h2>
 
 <p>Les cas d’usage décrits ci-après présentent les principaux scénarios de création, de partage et de consultation de la synthèse médicale IPS. Ils illustrent les interactions entre les professionnels de santé, les systèmes d’information et les services permettant la production et la mise à disposition de la synthèse médicale, notamment dans le cadre des échanges entre professionnels de santé et de son dépôt dans le DMP.</p>
 
-<div style="text-align: center;"><a name="l470">​</a>
+<div style="text-align: center;">
 
-<img src="../images/Cas-d-usage-IPS.png" alt="Modélisation des cas d'usage IPS" style="max-width: 100%;"/>
+<img src="Cas-d-usage-IPS.png" alt="Modélisation des cas d'usage IPS" style="max-width: 100%;"/>
 
 </div>
 
-<h3 id="1-la-création-de-la-synthèse-médicale-par-le-médecin-traitant">1. La création de la synthèse médicale par le médecin traitant</h3>
+<h3 id="la-création-de-la-synthèse-médicale-par-le-médecin-traitant">La création de la synthèse médicale par le médecin traitant</h3>
 
 <p>Pour faciliter la prise en charge des patients et améliorer la qualité et la continuité des soins, le médecin traitant crée (ou met à jour) la synthèse médicale du patient.</p>
 
@@ -296,17 +307,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Il peut ensuite, à la demande, générer la synthèse médicale qui sera produite à partir des données contenues dans le dossier du patient. Une fois la synthèse générée à partir du dossier du patient, le médecin doit pouvoir modifier la synthèse générée (par exemple pour supprimer des informations non pertinentes) puis la valider.</p>
 
-<h3 id="2-la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu">2. La création de la synthèse médicale d'un Dossier de liaison d'urgence (DLU)</h3>
+<h3 id="la-création-de-la-synthèse-médicale-dun-dossier-de-liaison-durgence-dlu">La création de la synthèse médicale d'un Dossier de liaison d'urgence (DLU)</h3>
 
 <p>La création de la synthèse médicale d'un dossier de liaison d'urgence (DLU) suit la même logique : elle est créée à la demande à partir des informations contenues dans le dossier du patient (dans le logiciel métier de l'EHPAD par exemple).</p>
 
 <p>Les sections sont les mêmes que la synthèse médicale "classique" mais des données peuvent être soumises à des exigences complémentaires dans le cas du DLU. Par exemple, les traitements aigus seront aussi extraits du dossier patient et versés dans la synthèse.</p>
 
-<h3 id="3-léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé">3. L'échange de la synthèse médicale avec d'autres professionnels de santé</h3>
+<h3 id="léchange-de-la-synthèse-médicale-avec-dautres-professionnels-de-santé">L'échange de la synthèse médicale avec d'autres professionnels de santé</h3>
 
 <p>Le médecin traitant (ou le médecin coordonnateur pour le DLU) peut échanger la synthèse médicale avec les autres professionnels de santé (PS) qui interviennent dans la prise en charge du patient en la leur envoyant par une messagerie sécurisée de santé.</p>
 
-<h3 id="4-la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé">4. La mise en partage de la synthèse médicale dans le DMP (Mon espace santé)</h3>
+<h3 id="la-mise-en-partage-de-la-synthèse-médicale-dans-le-dmp-mon-espace-santé">La mise en partage de la synthèse médicale dans le DMP (Mon espace santé)</h3>
 
 <p>Le médecin traitant (ou le médecin coordonnateur lorsqu'il assure le suivi médical du résident) dépose ensuite la synthèse médicale dans le DMP du patient. Ainsi, les autres professionnels de santé (PS) habilités peuvent y accéder.</p>
 

@@ -127,7 +127,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-18T13:56:24+00:00",
+  "date" : "2026-09-21T13:38:34+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1205,9 +1205,9 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       }
     },
     {
-      "id" : "Composition.section:sectionPlanOfCare.entry:demandeDexamenOuDeSuivi",
+      "id" : "Composition.section:sectionPlanOfCare.entry:serviceRequest",
       "path" : "Composition.section.entry",
-      "sliceName" : "demandeDexamenOuDeSuivi",
+      "sliceName" : "serviceRequest",
       "short" : "Entrée Demande d examen ou de suivi",
       "min" : 0,
       "max" : "*",
@@ -1217,9 +1217,9 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       }]
     },
     {
-      "id" : "Composition.section:sectionPlanOfCare.entry:traitement",
+      "id" : "Composition.section:sectionPlanOfCare.entry:medicationRequest",
       "path" : "Composition.section.entry",
-      "sliceName" : "traitement",
+      "sliceName" : "medicationRequest",
       "short" : "Entrée Traitement",
       "min" : 0,
       "max" : "*",
@@ -1229,9 +1229,9 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       }]
     },
     {
-      "id" : "Composition.section:sectionPlanOfCare.entry:vaccinRecommande",
+      "id" : "Composition.section:sectionPlanOfCare.entry:immunizationRecommendation",
       "path" : "Composition.section.entry",
-      "sliceName" : "vaccinRecommande",
+      "sliceName" : "immunizationRecommendation",
       "short" : "Entrée Vaccin recommandé",
       "min" : 0,
       "max" : "*",

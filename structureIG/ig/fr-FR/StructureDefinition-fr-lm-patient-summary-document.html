@@ -52,9 +52,14 @@
       <div class="container">    <!-- container -->
 
           <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
-  </div>
+<div style="display: flex; flex-direction: column;" id="family-nav">
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true">
+    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/>
+  </a>
+  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda" data-no-external="true">
+    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/>
+  </a>
+</div>
   <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
     <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
     <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
@@ -113,7 +118,7 @@
         <a href="cas-usage.html">Cas d'usage</a>
       </li>
       <li>
-        <a href="modele-logique-metier.html">Modèle logique métier</a>
+        <a href="StructureDefinition-fr-lm-patient-summary-document.html">Modèle logique métier</a>
       </li>
       <li>
         <a href="exigences-specifiques.html">Exigences spécifiques</a>
@@ -145,7 +150,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="https://ansforge.github.io/IG-Document-Core-ANS/ig/main/index.html" target="_blank">IG Document core</a>
+        <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/index.html" target="_blank">IG Modèle logique métier</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/fhir/document-core/index.html" target="_blank">IG FHIR</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/cda/document-core/index.html" target="_blank">IG CDA</a>
       </li>
       <li>
         <a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication" target="_blank">Espace de publication du CI-SIS</a>
@@ -177,7 +188,7 @@
       <li>
         <a href="https://interop.esante.gouv.fr/ig/documentation/index.html" target="_blank">Documentation des guides d'implémentation de l'ANS</a>
       </li>
-      <li><a name="l312">​</a>
+      <li><a name="l330">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
     </ul>
@@ -190,11 +201,11 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
-    <div><a name="l328">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
+    <div><a name="l346">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
-    <div><a name="l337">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
+    <div><a name="l355">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
 
     <div><a href="../en/StructureDefinition-fr-lm-patient-summary-document.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
 
@@ -522,7 +533,7 @@ Modèle logique métier - FR LM Patient Summary Document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html">fr-lm-attachments</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Pièces jointes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // a07e1f5f-556e-4e5e-b4f7-edc2e4a55ad4
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bca1b2cd-03e9-4976-869c-648c0891050f
 document.getElementById('cbfr-lm-patient-summary-documentD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-patient-summary-documentD'), 'binding', document.getElementById('cbfr-lm-patient-summary-documentD-binding').checked, document.getElementById('ppfr-lm-patient-summary-documentD'));
 document.getElementById('cbfr-lm-patient-summary-documentD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -763,7 +774,7 @@ filterDesc(document.getElementById('fr-lm-patient-summary-documentD'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html">fr-lm-attachments</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Pièces jointes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // a07e1f5f-556e-4e5e-b4f7-edc2e4a55ad4
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bca1b2cd-03e9-4976-869c-648c0891050f
 document.getElementById('cbfr-lm-patient-summary-documentS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-patient-summary-documentS'), 'binding', document.getElementById('cbfr-lm-patient-summary-documentS-binding').checked, document.getElementById('ppfr-lm-patient-summary-documentS'));
 document.getElementById('cbfr-lm-patient-summary-documentS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -988,7 +999,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html">fr-lm-attachments</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Pièces jointes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // a07e1f5f-556e-4e5e-b4f7-edc2e4a55ad4
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bca1b2cd-03e9-4976-869c-648c0891050f
 document.getElementById('cbfr-lm-patient-summary-documentDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-patient-summary-documentDA'), 'binding', document.getElementById('cbfr-lm-patient-summary-documentDA-binding').checked, document.getElementById('ppfr-lm-patient-summary-documentDA'));
 document.getElementById('cbfr-lm-patient-summary-documentDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1226,7 +1237,7 @@ filterDesc(document.getElementById('fr-lm-patient-summary-documentDA'), 'obligat
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html">fr-lm-attachments</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Pièces jointes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // a07e1f5f-556e-4e5e-b4f7-edc2e4a55ad4
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bca1b2cd-03e9-4976-869c-648c0891050f
 document.getElementById('cbfr-lm-patient-summary-documentSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-patient-summary-documentSA'), 'binding', document.getElementById('cbfr-lm-patient-summary-documentSA-binding').checked, document.getElementById('ppfr-lm-patient-summary-documentSA'));
 document.getElementById('cbfr-lm-patient-summary-documentSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
