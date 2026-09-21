@@ -1,8 +1,8 @@
 ## Modèles logiques du document IPS
 
-Le modèle logique présenté décrit un document structuré, conçu pour offrir une synthèse des informations de santé les plus importantes d'un patient. Il a pour objectif d'être compatible avec la norme ISO International Patient Summary.
+Ce modèle logique décrit la structuration d'un document de synthèse médicale rassemblant les informations de santé les plus importantes d'un patient, dans un objectif de conformité avec la norme ISO International Patient Summary (IPS).
 
-Le modèle logique métier est défini pour :
+Le modèle logique métier couvre :
 
 - [Modèle logique - Document Patient Summary](../StructureDefinition-fr-lm-patient-summary-document.html)
 

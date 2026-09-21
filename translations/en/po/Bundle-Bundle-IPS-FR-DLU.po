@@ -1,0 +1,1051 @@
+
+# Coding.display
+#: Coding.display
+msgid "informant"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Informateur"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "DR Charles BOILEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Synthèse médicale"
+msgstr ""
+
+# Composition.title
+#: Composition.title
+msgid "SYNTHESE MEDICALE"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "EHPAD DE BOULOGNE-BILLANCOURT"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Medical record number"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Problèmes actifs"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Liste des problèmes actifs"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Allergies et hypersensibilités"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Allergies et hypersensibilités"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Traitements"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Historique de la prise médicamenteuse"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Historique des actes"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Historique des actes"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Dispositifs médicaux"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Dispositifs médicaux"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Effets indésirables prévisibles liés aux médicaments"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Effets indésirables prévisibles liés aux médicaments"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Points de vigilance"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Autres alertes"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Statut fonctionnel"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Évaluation du statut fonctionnel"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Constantes"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Signes vitaux"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Mode de vie"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Habitus, Mode de vie"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Facteurs de risques professionnels"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Facteurs de risques professionnels"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Historique des pathologies familiales"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Historique des pathologies familiales"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Vaccinations"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Plan de soins"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Plan de soins"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Résultats"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Résultats d'examens"
+msgstr ""
+
+# Composition.section.title
+#: Composition.section.title
+msgid "Directives anticipées"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Directives anticipées"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "DOMPREMY"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "PAT-TROIS"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "DOMINIQUE MARIE-LOUISE"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "28"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Avenue de Breteuil"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Escalier A"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "Paris"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "75007"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Soeur"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Personne à prévenir en cas d'urgence"
+msgstr ""
+
+# HumanName.text
+#: HumanName.text
+msgid "Sophie NESSI"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "NESSI"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Personne de confiance"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Responsable légal"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Jeanne"
+msgstr ""
+
+# HumanName.prefix
+#: HumanName.prefix
+msgid "MME"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "28 Avenue de Breteuil"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Référent - Responsable du patient dans la structure de soins"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Numéro du professionnel de santé"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "BOILEAU"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Charles"
+msgstr ""
+
+# HumanName.prefix
+#: HumanName.prefix
+msgid "M"
+msgstr ""
+
+# HumanName.suffix
+#: HumanName.suffix
+msgid "Dr"
+msgstr ""
+
+# Address.text
+#: Address.text
+msgid "142 Rue du Belvédère 92100 BOULOGNE-BILLANCOURT"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Qualifié en Médecine générale (SM)"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Etablissement pour personnes âgées"
+msgstr ""
+
+# Organization.name
+#: Organization.name
+msgid "EHPAD DE BOULOGNE-BILLANCOURT"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "142 Rue du Belvédère"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "BOULOGNE-BILLANCOURT"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "92100"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Visit Number"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "hospitalisé"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Actif"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Confirmé"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "interprétation diagnostique"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "gravité modérée"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Thyroïdite auto-immune"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "fonction corporelle générale : normale"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "texte libre"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Diabète insulino-dépendant"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Epilepsie"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "gravité léger à modéré"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Angiœdème bradykinique"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "asymptomatique"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Récurrent"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Non confirmé"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "symptôme rapporté par le patient ou le répondant"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "léger"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Causes inconnues et non précisées de morbidité"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Résolu"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Accident ischémique cérébral transitoire, sans précision"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Pyélonéphrite aiguë"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Soins palliatifs"
+msgstr ""
+
+# Organization.name
+#: Organization.name
+msgid "Hôpital Lariboisière"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "PETITJEAN"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Jacques"
+msgstr ""
+
+# HumanName.suffix
+#: HumanName.suffix
+msgid "PR"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Médecin - Oncologie, opt Onco-hématologie (SM)"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Infarctus transmural aigu du myocarde, de la paroi inférieure"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "artère coronaire"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Autre acte"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "allergie médicamenteuse"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Paracétamol"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Bronchospasme d'origine médicamenteuse"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "interaction médicamenteuse"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "gravité légère"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Guérison sans séquelle"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "probable"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Médicament"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Voie orale"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "amoxicilline"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "amoxicilline"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "AMOXICILLINE EG 1G BUV SACH 6"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "AMOXICILLINE TRIHYDRATÉE"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "AMOXICILLINE TRIHYDRATÉE"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "g"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Nausée"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "tablet"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "lévothyroxine sodique"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "lévothyroxine sodique"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "LÉVOTHYROXINE SODIQUE"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "LÉVOTHYROXINE SODIQUE"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "mg"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "warfarine"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "warfarine"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "COUMADINE 5 mg, comprimé sécable"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Warfarin sodium"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "WARFARINE SODIQUE"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Stimulateur cardiaque contrôlé et fonctionnel"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "Autre dispositif médical"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Autre DM : (texte libre)"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Autre dispositif médical"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Survey"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "capable de communiquer"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Peut alerter : oui"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "malvoyance"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Déficit visuel : oui"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "chutes"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Risque de chute : oui"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Poids"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "kg"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Texte libre"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Taille"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "m"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Social History"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Statut tabagique"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Fumeur quotidien"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Consommation tabagique"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "pack"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Consommation d'alcool"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "drink"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Consommation de drogue non médicales"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Cannabis"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Mère"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Anémie à hématies falciformes sans crises"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Diphtérie-poliomyélite-tétanos"
+msgstr ""
+
+# Immunization.lotNumber
+#: Immunization.lotNumber
+msgid "4456672"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Deltoïde gauche"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Voie intramusculaire"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours"
+msgstr ""
+
+# Immunization.protocolApplied.series
+#: Immunization.protocolApplied.series
+msgid "1"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
+msgstr ""
+
+# Immunization.lotNumber
+#: Immunization.lotNumber
+msgid "4456668"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Ambulatoire"
+msgstr ""
+
+# Organization.name
+#: Organization.name
+msgid "Cabinet médical du Dr MULLER"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "MULLER"
+msgstr ""
+
+# HumanName.suffix
+#: HumanName.suffix
+msgid "DR"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Fièvre due à des médicaments"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "ROSUVASTATINE"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "ROSUVASTATINE"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Autre(s) traitement(s)"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Procédure d'évaluation"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Cholestérol LDL [Moles/Volume] Sérum/Plasma ; Numérique"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Bilan lipidique"
+msgstr ""
+
+# Annotation.text
+#: Annotation.text
+msgid "Contrôle dans le cadre du plan de soins"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Biologie polyvalente"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "CR d'examens biologiques"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "Dr Marcel CAMPARINI"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Bactérie multirésistante [BMR]"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "CAMPARINI"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Marcel"
+msgstr ""
+
+# Address.text
+#: Address.text
+msgid "8 Rue Frédéric Bastia 92100 BOULOGNE-BILLANCOURT"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Médecin - Biologie médicale (SM)"
+msgstr ""
+
+# Organization.name
+#: Organization.name
+msgid "Laboratoire des charmes"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "8 Rue Frédéric Bastia"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Imagerie"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "Dr Jacques BIDEAULT"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "CT rachis dorsal avec contraste IV"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "thorax entier"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "BIDEAULT"
+msgstr ""
+
+# Address.text
+#: Address.text
+msgid "12 Rue Ambroise 75010 PARIS"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Médecin - Radio-diagnostic (SM)"
+msgstr ""
+
+# Organization.name
+#: Organization.name
+msgid "Centre de radiologie Ambroise"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "12 Rue Ambroise"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "PARIS"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "75010"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Attestation de la carte vitale"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Attestation de mutuelle"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Advance Directive"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Maintien artificiel en vie"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Assistance respiratoire"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Alimentation et hydratation artificielles"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Dialyse rénale"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Réanimation cardiaque et respiratoire"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Intervention chirurgicale"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Sédation profonde et continue associée à un traitement de la douleur"
+msgstr ""
+

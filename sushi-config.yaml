@@ -65,18 +65,8 @@ pages:
         title: Implémentations
         cda.md:
             title: CDA
-            structureCDA.md:
-                title: Structure du document IPS en CDA
-            exemplesCDA.md:
-                title: Exemples CDA
-            exempleIHE-XDM.md:
-                title: Exemples IHE XDM
         fhir.md:
             title: FHIR
-            structureFHIR.md:
-                title: Structure du document IPS en FHIR
-            exemplesFHIR.md:
-                title: Exemples FHIR
         mapping.md:
             title: Mapping ML/CDA/FHIR
     autres_ressources.md:
@@ -92,7 +82,7 @@ menu:
     Accueil: index.html
     Fonctionnel:
         Cas d'usage: cas-usage.html
-        Modèle logique métier: modele-logique-metier.html
+        Modèle logique métier: StructureDefinition-fr-lm-patient-summary-document.html
         Exigences spécifiques: exigences-specifiques.html
     Implémentations:
         CDA: cda.html
@@ -100,8 +90,9 @@ menu:
         Mapping ML/CDA/FHIR: mapping.html
     Ressources de conformité: artifacts.html
     Autres ressources:
-        # à modifier par le bon lien après publication de l'IG Document Core de l'ANS
-        "IG Document core": new-tab https://ansforge.github.io/IG-Document-Core-ANS/ig/main/index.html
+        "IG Modèle logique métier": new-tab https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/index.html
+        "IG FHIR": new-tab https://interop.esante.gouv.fr/ig/fhir/document-core/index.html
+        "IG CDA": new-tab https://interop.esante.gouv.fr/ig/cda/document-core/index.html
         "Espace de publication du CI-SIS" : new-tab https://esante.gouv.fr/offres-services/ci-sis/espace-publication
         "Serveur Multi-terminologies": new-tab https://smt.esante.gouv.fr/
         "Serveur Multi-terminologies / FHIR": new-tab https://smt.esante.gouv.fr/fhir

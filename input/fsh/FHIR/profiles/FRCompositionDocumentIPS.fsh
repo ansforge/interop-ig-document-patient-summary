@@ -87,7 +87,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
     sectionVitalSigns 0..1 and
     sectionUncodedOccupationalRiskFactors 0..1
 
-// Section Problèmes actifs
+// Section Problèmes (Problèmes actifs + antécédents médicaux)
 * section[sectionProblems]
   * insert IPSSection(Section Problèmes, http://loinc.org#11450-4)
   * insert IPSSectionEntryReglesEnCommun

@@ -25,13 +25,13 @@ RuleSet: IPSSectionEntrySlice(sliceName, profile, min, max, shortText)
 
 // RuleSet pour sectionPlanDeSoins avec 3 slices
 RuleSet: IPSSectionPlanDeSoinsSlices
-* entry contains  demandeDexamenOuDeSuivi 0..* and traitement 0..* and vaccinRecommande 0..*
-* entry[demandeDexamenOuDeSuivi] only Reference(FRServiceRequestDocument)
-* entry[demandeDexamenOuDeSuivi] ^short = "Entrée Demande d examen ou de suivi"
-* entry[traitement] only Reference(FRMedicationRequestDocument)
-* entry[traitement] ^short = "Entrée Traitement"
-* entry[vaccinRecommande] only Reference(FRImmunizationRecommendationDocument)
-* entry[vaccinRecommande] ^short = "Entrée Vaccin recommandé"
+* entry contains serviceRequest 0..* and medicationRequest 0..* and immunizationRecommendation 0..*
+* entry[serviceRequest] only Reference(FRServiceRequestDocument)
+* entry[serviceRequest] ^short = "Entrée Demande d examen ou de suivi"
+* entry[medicationRequest] only Reference(FRMedicationRequestDocument)
+* entry[medicationRequest] ^short = "Entrée Traitement"
+* entry[immunizationRecommendation] only Reference(FRImmunizationRecommendationDocument)
+* entry[immunizationRecommendation] ^short = "Entrée Vaccin recommandé"
 
 RuleSet: IPSSectionNoEntry(short, code)
 * ^short = "{short}"
