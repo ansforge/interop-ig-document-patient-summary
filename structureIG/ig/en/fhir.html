@@ -283,10 +283,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Les ressources FHIR définies dans ce guide permettent de représenter les synthèses médicales en utilisant le standard FHIR R4. Ces profils garantissent l'interopérabilité entre les systèmes d'information de santé tout en respectant les contraintes et exigences métier françaises.</p>
 
-<h4 id="contenu-de-cette-section">Contenu de cette section</h4>
+<h4 id="structure-du-document-ips-bundle--composition">Structure du document IPS (Bundle / Composition)</h4>
 
 <ul>
-  <li><strong><a href="StructureDefinition-fr-bundle-document-ips.html">Structure du document IPS en FHIR</a></strong> - Découvrez les profils FHIR, les ressources et les éléments de données qui définit l'ensemble des éléments de l'en-tête et du corps du volet Synthèse médicale conforme à l'International Patient Summary (IPS).</li>
+  <li>
+    <p><strong><a href="StructureDefinition-fr-bundle-document-ips.html">Bundle du document IPS</a></strong> - Bundle FHIR représentant l'ensemble du document IPS, incluant la Composition et les ressources associées.</p>
+  </li>
+  <li>
+    <p><strong><a href="StructureDefinition-fr-composition-document-ips.html">Composition du document IPS</a></strong> - Composition FHIR représentant la structure hiérarchique du document IPS, incluant les sections cliniques et administratives.</p>
+  </li>
 </ul>
 
 <h4 id="exemples-fhir">Exemples FHIR</h4>
@@ -376,7 +381,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.document.fr.ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-22 08:07:00 +0000">
+  <span title="2026-09-22 09:47:00 +0000">
     2026-09-22
   </span>
 

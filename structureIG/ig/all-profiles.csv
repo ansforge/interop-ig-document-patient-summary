@@ -4509,7 +4509,7 @@ https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organi
 "fr-lm-patient-summary-document","fr-lm-patient-summary-document.advanceDirective","fr-lm-patient-summary-document.advanceDirective","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives {[]} {[]}
 ","Section Directives anticipées","Section Directives anticipées","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.advanceDirective",0,1,"",""
 "fr-lm-patient-summary-document","fr-lm-patient-summary-document.alerts","fr-lm-patient-summary-document.alerts","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts {[]} {[]}
-","Section Points de Vigilances non codé","Section Points de Vigilances non codé","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.alerts",0,1,"",""
+","Section Points de Vigilances","Section Points de Vigilances","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.alerts",0,1,"",""
 "fr-lm-patient-summary-document","fr-lm-patient-summary-document.functionalStatus","fr-lm-patient-summary-document.functionalStatus","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status {[]} {[]}
 ","Section Statut fonctionnel","Section Statut fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-patient-summary-document.functionalStatus",0,1,"",""
 "fr-lm-patient-summary-document","fr-lm-patient-summary-document.pregnancyHistory","fr-lm-patient-summary-document.pregnancyHistory","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history {[]} {[]}

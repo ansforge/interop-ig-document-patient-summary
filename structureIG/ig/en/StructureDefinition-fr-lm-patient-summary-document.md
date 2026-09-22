@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-patient-sum
   "name" : "FRLMPatientSummaryDocument",
   "title" : "Modèle logique métier - FR LM Patient Summary Document",
   "status" : "draft",
-  "date" : "2026-09-22T08:07:02+00:00",
+  "date" : "2026-09-22T09:47:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-patient-sum
     {
       "id" : "fr-lm-patient-summary-document.alerts",
       "path" : "fr-lm-patient-summary-document.alerts",
-      "short" : "Section Points de Vigilances non codé",
-      "definition" : "Section Points de Vigilances non codé",
+      "short" : "Section Points de Vigilances",
+      "definition" : "Section Points de Vigilances",
       "min" : 0,
       "max" : "1",
       "type" : [{
