@@ -115,14 +115,14 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [ConditionVerificationStatus](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-condition-ver-status.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [Consent Scope Codes](http://terminology.hl7.org/7.3.0/CodeSystem-consentscope.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [List Empty Reasons](http://terminology.hl7.org/7.3.0/CodeSystem-list-empty-reason.html): [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.3.0/CodeSystem-observation-category.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [identifierType](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [ActCode](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [ParticipationType](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ParticipationType.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md), [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md) and [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
-* [RoleCode](http://terminology.hl7.org/7.3.0/CodeSystem-v3-RoleCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [ConditionVerificationStatus](http://terminology.hl7.org/7.4.0/CodeSystem-condition-ver-status.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Consent Scope Codes](http://terminology.hl7.org/7.4.0/CodeSystem-consentscope.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [List Empty Reasons](http://terminology.hl7.org/7.4.0/CodeSystem-list-empty-reason.html): [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.4.0/CodeSystem-observation-category.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [identifierType](http://terminology.hl7.org/7.4.0/CodeSystem-v2-0203.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [ActCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [ParticipationType](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ParticipationType.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md), [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md) and [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
+* [RoleCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-RoleCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 
 
 Les terminologies publiées sur le [Serveur Multi-terminologies (SMT)](https://smt.esante.gouv.fr/) de l'ANS précisent la licence d'utilisation associée.

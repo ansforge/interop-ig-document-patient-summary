@@ -190,7 +190,7 @@
     "oids" : ["2.16.840.1.113883.5.6"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer",
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer",
     "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass"
   },
   {
@@ -203,7 +203,7 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActMood",
@@ -227,7 +227,7 @@
     "oids" : ["2.16.840.1.113883.5.1002"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActRelationshipHasComponent.html" : "ActRelationshipHasComponent"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActRelationshipHasComponent.html" : "ActRelationshipHasComponent"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActStatus",
@@ -239,7 +239,7 @@
     "oids" : ["2.16.840.1.113883.5.14"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActStatus.html" : "ActStatus"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActStatus.html" : "ActStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
@@ -287,7 +287,7 @@
     "oids" : ["2.16.840.1.113883.5.88"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ParticipationFunction.html" : "ParticipationFunction"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ParticipationFunction.html" : "ParticipationFunction"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",
@@ -383,7 +383,7 @@
     "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages"
+    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages",
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
   }]
 }

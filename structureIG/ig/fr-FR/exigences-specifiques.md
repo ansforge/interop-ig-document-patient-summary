@@ -2,8 +2,6 @@
 
 ## Exigences spécifiques
 
-## Exigences spécifiques
-
 ### Exigences générales des documents dématérialisés
 
 La dématérialisation d'un document médical ou médico-social à des fins de partage (par exemple dans Mon espace santé) ou d'échange (via messagerie sécurisée de santé) pour améliorer la continuité et la coordination des soins est soumise à un certain nombre d'exigences :
