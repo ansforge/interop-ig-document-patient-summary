@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="fr-lm-patient-summary-document"/>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : DéfinitionStructure fr-lm-patient-summary-document</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document" title="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives.">fr-lm-patient-summary-document</a><a name="fr-lm-patient-summary-document"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html">FRLMHeaderDocument(0.1.0)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modèle logique métier - FR LM Patient Summary Document<br/><br/>Éléments définis dans les ancêtres :<a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Identifiant unique du document et/ou du lot de version du meme document.">identifier</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Type de document.">documentType</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Titre du document.">documentTitle</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Date de création du document.">date</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Niveau de confidentialité du document.">confidentiality</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Langue principale du document.">language</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Numéro de version du document.">version</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Statut du document.">status</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Evènement documenté et notamment le cadre d'exercice.">eventType</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Patient / Usager.">subject</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Auteur du document.">author[x]</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Opérateur de saisie.">dataEnterer</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Informateur ayant fourni des informations utiles à la production du document.">informant</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Structure chargée de la conservation du document.">custodian</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Destinataire prévu du document.">intendedRecipient</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Responsable du document.">legalAuthentication</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Professionnel attestant la validité du contenu du document.">attester</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.">participant</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Association du document à une prescription.">order</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Consentement associé au document.">consent</a>, <a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html" title="Association du document à une prise en charge.">encounter</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.identifier">identifier</a><a name="fr-lm-patient-summary-document.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span>..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identifiant unique du document et/ou du lot de version du meme document.</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.problems" title="Section Problèmes Actifs">problems</a><a name="fr-lm-patient-summary-document.problems"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-problems.html">fr-lm-problems</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Problèmes Actifs</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.familyHistories" title="Section Antécédents familiaux">familyHistories</a><a name="fr-lm-patient-summary-document.familyHistories"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-family-medical-history.html">fr-lm-family-medical-history</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Antécédents familiaux</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.allergiesAndIntolerances" title="Section Allergies et hypersensibilités">allergiesAndIntolerances</a><a name="fr-lm-patient-summary-document.allergiesAndIntolerances"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-allergies-and-intolerances.html">fr-lm-allergies-and-intolerances</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Allergies et hypersensibilités</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.adverseEvents" title="Section Effets indésirables">adverseEvents</a><a name="fr-lm-patient-summary-document.adverseEvents"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-predictable-adverse-drug-reaction.html">fr-lm-predictable-adverse-drug-reaction</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Effets indésirables</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.medicationSummary" title="Section Traitement">medicationSummary</a><a name="fr-lm-patient-summary-document.medicationSummary"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-medication-summary.html">fr-lm-medication-summary</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Traitement</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.procedures" title="Section Historique des actes">procedures</a><a name="fr-lm-patient-summary-document.procedures"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-procedures.html">fr-lm-procedures</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Historique des actes</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.medicalDevicesAndImplants" title="Section Dispositifs médicaux">medicalDevicesAndImplants</a><a name="fr-lm-patient-summary-document.medicalDevicesAndImplants"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-medical-devices-and-implants.html">fr-lm-medical-devices-and-implants</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Dispositifs médicaux</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.immunisations" title="Section Vaccinations">immunisations</a><a name="fr-lm-patient-summary-document.immunisations"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-immunisations.html">fr-lm-immunisations</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Vaccinations</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.results" title="Section Resultats">results</a><a name="fr-lm-patient-summary-document.results"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-observation-results.html">fr-lm-observation-results</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Resultats</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.advanceDirective" title="Section Directives anticipées">advanceDirective</a><a name="fr-lm-patient-summary-document.advanceDirective"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-advance-directives.html">fr-lm-advance-directives</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Directives anticipées</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.alerts" title="Section Points de Vigilances non codé">alerts</a><a name="fr-lm-patient-summary-document.alerts"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-alerts.html">fr-lm-alerts</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Points de Vigilances non codé</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.functionalStatus" title="Section Statut fonctionnel">functionalStatus</a><a name="fr-lm-patient-summary-document.functionalStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-functional-status.html">fr-lm-functional-status</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Statut fonctionnel</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.pregnancyHistory" title="Section Historique des grossesses">pregnancyHistory</a><a name="fr-lm-patient-summary-document.pregnancyHistory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-section-pregnancy-history.html">fr-lm-section-pregnancy-history</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Historique des grossesses</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.carePlans" title="Section Plan de Soins">carePlans</a><a name="fr-lm-patient-summary-document.carePlans"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-care-plans.html">fr-lm-care-plans</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Plan de Soins</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.socialHistory" title="Section Habitus et modes de vie">socialHistory</a><a name="fr-lm-patient-summary-document.socialHistory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-social-history.html">fr-lm-social-history</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Habitus et modes de vie</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.vitalSigns" title="Section Signes vitaux">vitalSigns</a><a name="fr-lm-patient-summary-document.vitalSigns"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-vital-signs.html">fr-lm-vital-signs</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Signes vitaux</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.occupationalRiskFactors" title="Section Facteurs de risque professionnels non Codé">occupationalRiskFactors</a><a name="fr-lm-patient-summary-document.occupationalRiskFactors"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-hazardous-working-conditions.html">fr-lm-hazardous-working-conditions</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Facteurs de risque professionnels non Codé</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.attachments" title="Section Pièces jointes">attachments</a><a name="fr-lm-patient-summary-document.attachments"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html">fr-lm-attachments</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section Pièces jointes</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document"/>
+  <version value="0.1.0"/>
+  <name value="FRLMPatientSummaryDocument"/>
+  <title value="Modèle logique métier - FR LM Patient Summary Document"/>
+  <status value="draft"/>
+  <date value="2026-09-22T08:07:02+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document"/>
+  <baseDefinition value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-header-document|0.1.0"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.1.0"/>
+    </extension>
+    <element id="fr-lm-patient-summary-document">
+      <path value="fr-lm-patient-summary-document"/>
+      <short value="Modèle logique métier - FR LM Patient Summary Document"/>
+      <definition value="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="fr-lm-patient-summary-document.identifier">
+      <path value="fr-lm-patient-summary-document.identifier"/>
+      <short value="Identifiant unique du document et/ou du lot de version du meme document."/>
+      <definition value="Identifiant unique du document et/ou du lot de version du meme document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.identifier"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.documentType">
+      <path value="fr-lm-patient-summary-document.documentType"/>
+      <short value="Type de document."/>
+      <definition value="Type de document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.documentTitle">
+      <path value="fr-lm-patient-summary-document.documentTitle"/>
+      <short value="Titre du document."/>
+      <definition value="Titre du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.date">
+      <path value="fr-lm-patient-summary-document.date"/>
+      <short value="Date de création du document."/>
+      <definition value="Date de création du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.confidentiality">
+      <path value="fr-lm-patient-summary-document.confidentiality"/>
+      <short value="Niveau de confidentialité du document."/>
+      <definition value="Niveau de confidentialité du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.confidentiality"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.language">
+      <path value="fr-lm-patient-summary-document.language"/>
+      <short value="Langue principale du document."/>
+      <definition value="Langue principale du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.language"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.version">
+      <path value="fr-lm-patient-summary-document.version"/>
+      <short value="Numéro de version du document."/>
+      <definition value="Numéro de version du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.version"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.status">
+      <path value="fr-lm-patient-summary-document.status"/>
+      <short value="Statut du document."/>
+      <definition value="Statut du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.eventType">
+      <path value="fr-lm-patient-summary-document.eventType"/>
+      <short value="Evènement documenté et notamment le cadre d'exercice."/>
+      <definition value="Evènement documenté et notamment le cadre d'exercice."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.eventType"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.subject">
+      <path value="fr-lm-patient-summary-document.subject"/>
+      <short value="Patient / Usager."/>
+      <definition value="Patient / Usager."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-patient"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.author[x]">
+      <path value="fr-lm-patient-summary-document.author[x]"/>
+      <short value="Auteur du document."/>
+      <definition value="Auteur du document."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.author[x]"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-health-professional"/>
+      </type>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation"/>
+      </type>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-device"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.dataEnterer">
+      <path value="fr-lm-patient-summary-document.dataEnterer"/>
+      <short value="Opérateur de saisie."/>
+      <definition value="Opérateur de saisie."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.dataEnterer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-data-enterer"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.informant">
+      <path value="fr-lm-patient-summary-document.informant"/>
+      <short value="Informateur ayant fourni des informations utiles à la production du document."/>
+      <definition value="Informateur ayant fourni des informations utiles à la production du document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.informant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-informant"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.custodian">
+      <path value="fr-lm-patient-summary-document.custodian"/>
+      <short value="Structure chargée de la conservation du document."/>
+      <definition value="Structure chargée de la conservation du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.custodian"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.intendedRecipient">
+      <path value="fr-lm-patient-summary-document.intendedRecipient"/>
+      <short value="Destinataire prévu du document."/>
+      <definition value="Destinataire prévu du document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.intendedRecipient"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-intended-recipient"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.legalAuthentication">
+      <path value="fr-lm-patient-summary-document.legalAuthentication"/>
+      <short value="Responsable du document."/>
+      <definition value="Responsable du document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.legalAuthentication"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-legal-authentication"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.attester">
+      <path value="fr-lm-patient-summary-document.attester"/>
+      <short value="Professionnel attestant la validité du contenu du document."/>
+      <definition value="Professionnel attestant la validité du contenu du document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.attester"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attester"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.participant">
+      <path value="fr-lm-patient-summary-document.participant"/>
+      <short value="Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire."/>
+      <definition value="Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.participant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-participant"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.order">
+      <path value="fr-lm-patient-summary-document.order"/>
+      <short value="Association du document à une prescription."/>
+      <definition value="Association du document à une prescription."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.order"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-order"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.consent">
+      <path value="fr-lm-patient-summary-document.consent"/>
+      <short value="Consentement associé au document."/>
+      <definition value="Consentement associé au document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="fr-lm-header-document.consent"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-consent"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.encounter">
+      <path value="fr-lm-patient-summary-document.encounter"/>
+      <short value="Association du document à une prise en charge."/>
+      <definition value="Association du document à une prise en charge."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-header-document.encounter"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-encounter"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.problems">
+      <path value="fr-lm-patient-summary-document.problems"/>
+      <short value="Section Problèmes Actifs"/>
+      <definition value="Section Problèmes Actifs"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.problems"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-problems"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.familyHistories">
+      <path value="fr-lm-patient-summary-document.familyHistories"/>
+      <short value="Section Antécédents familiaux"/>
+      <definition value="Section Antécédents familiaux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.familyHistories"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-family-medical-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.allergiesAndIntolerances">
+      <path value="fr-lm-patient-summary-document.allergiesAndIntolerances"/>
+      <short value="Section Allergies et hypersensibilités"/>
+      <definition value="Section Allergies et hypersensibilités"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.allergiesAndIntolerances"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-allergies-and-intolerances"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.adverseEvents">
+      <path value="fr-lm-patient-summary-document.adverseEvents"/>
+      <short value="Section Effets indésirables"/>
+      <definition value="Section Effets indésirables"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.adverseEvents"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.medicationSummary">
+      <path value="fr-lm-patient-summary-document.medicationSummary"/>
+      <short value="Section Traitement"/>
+      <definition value="Section Traitement"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.medicationSummary"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medication-summary"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.procedures">
+      <path value="fr-lm-patient-summary-document.procedures"/>
+      <short value="Section Historique des actes"/>
+      <definition value="Section Historique des actes"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.procedures"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-procedures"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.medicalDevicesAndImplants">
+      <path value="fr-lm-patient-summary-document.medicalDevicesAndImplants"/>
+      <short value="Section Dispositifs médicaux"/>
+      <definition value="Section Dispositifs médicaux"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.medicalDevicesAndImplants"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medical-devices-and-implants"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.immunisations">
+      <path value="fr-lm-patient-summary-document.immunisations"/>
+      <short value="Section Vaccinations"/>
+      <definition value="Section Vaccinations"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.immunisations"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-immunisations"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.results">
+      <path value="fr-lm-patient-summary-document.results"/>
+      <short value="Section Resultats"/>
+      <definition value="Section Resultats"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.results"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-observation-results"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.advanceDirective">
+      <path value="fr-lm-patient-summary-document.advanceDirective"/>
+      <short value="Section Directives anticipées"/>
+      <definition value="Section Directives anticipées"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.advanceDirective"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.alerts">
+      <path value="fr-lm-patient-summary-document.alerts"/>
+      <short value="Section Points de Vigilances non codé"/>
+      <definition value="Section Points de Vigilances non codé"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.alerts"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.functionalStatus">
+      <path value="fr-lm-patient-summary-document.functionalStatus"/>
+      <short value="Section Statut fonctionnel"/>
+      <definition value="Section Statut fonctionnel"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.functionalStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.pregnancyHistory">
+      <path value="fr-lm-patient-summary-document.pregnancyHistory"/>
+      <short value="Section Historique des grossesses"/>
+      <definition value="Section Historique des grossesses"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.pregnancyHistory"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.carePlans">
+      <path value="fr-lm-patient-summary-document.carePlans"/>
+      <short value="Section Plan de Soins"/>
+      <definition value="Section Plan de Soins"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.carePlans"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-care-plans"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.socialHistory">
+      <path value="fr-lm-patient-summary-document.socialHistory"/>
+      <short value="Section Habitus et modes de vie"/>
+      <definition value="Section Habitus et modes de vie"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.socialHistory"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-social-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.vitalSigns">
+      <path value="fr-lm-patient-summary-document.vitalSigns"/>
+      <short value="Section Signes vitaux"/>
+      <definition value="Section Signes vitaux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.vitalSigns"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-vital-signs"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.occupationalRiskFactors">
+      <path value="fr-lm-patient-summary-document.occupationalRiskFactors"/>
+      <short value="Section Facteurs de risque professionnels non Codé"/>
+      <definition value="Section Facteurs de risque professionnels non Codé"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.occupationalRiskFactors"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-hazardous-working-conditions"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.attachments">
+      <path value="fr-lm-patient-summary-document.attachments"/>
+      <short value="Section Pièces jointes"/>
+      <definition value="Section Pièces jointes"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="fr-lm-patient-summary-document.attachments"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attachments"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="fr-lm-patient-summary-document">
+      <path value="fr-lm-patient-summary-document"/>
+      <short value="Modèle logique métier - FR LM Patient Summary Document"/>
+      <definition value="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."/>
+    </element>
+    <element id="fr-lm-patient-summary-document.identifier">
+      <path value="fr-lm-patient-summary-document.identifier"/>
+      <max value="1"/>
+    </element>
+    <element id="fr-lm-patient-summary-document.problems">
+      <path value="fr-lm-patient-summary-document.problems"/>
+      <short value="Section Problèmes Actifs"/>
+      <definition value="Section Problèmes Actifs"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-problems"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.familyHistories">
+      <path value="fr-lm-patient-summary-document.familyHistories"/>
+      <short value="Section Antécédents familiaux"/>
+      <definition value="Section Antécédents familiaux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-family-medical-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.allergiesAndIntolerances">
+      <path value="fr-lm-patient-summary-document.allergiesAndIntolerances"/>
+      <short value="Section Allergies et hypersensibilités"/>
+      <definition value="Section Allergies et hypersensibilités"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-allergies-and-intolerances"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.adverseEvents">
+      <path value="fr-lm-patient-summary-document.adverseEvents"/>
+      <short value="Section Effets indésirables"/>
+      <definition value="Section Effets indésirables"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.medicationSummary">
+      <path value="fr-lm-patient-summary-document.medicationSummary"/>
+      <short value="Section Traitement"/>
+      <definition value="Section Traitement"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medication-summary"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.procedures">
+      <path value="fr-lm-patient-summary-document.procedures"/>
+      <short value="Section Historique des actes"/>
+      <definition value="Section Historique des actes"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-procedures"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.medicalDevicesAndImplants">
+      <path value="fr-lm-patient-summary-document.medicalDevicesAndImplants"/>
+      <short value="Section Dispositifs médicaux"/>
+      <definition value="Section Dispositifs médicaux"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medical-devices-and-implants"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.immunisations">
+      <path value="fr-lm-patient-summary-document.immunisations"/>
+      <short value="Section Vaccinations"/>
+      <definition value="Section Vaccinations"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-immunisations"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.results">
+      <path value="fr-lm-patient-summary-document.results"/>
+      <short value="Section Resultats"/>
+      <definition value="Section Resultats"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-observation-results"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.advanceDirective">
+      <path value="fr-lm-patient-summary-document.advanceDirective"/>
+      <short value="Section Directives anticipées"/>
+      <definition value="Section Directives anticipées"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.alerts">
+      <path value="fr-lm-patient-summary-document.alerts"/>
+      <short value="Section Points de Vigilances non codé"/>
+      <definition value="Section Points de Vigilances non codé"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.functionalStatus">
+      <path value="fr-lm-patient-summary-document.functionalStatus"/>
+      <short value="Section Statut fonctionnel"/>
+      <definition value="Section Statut fonctionnel"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.pregnancyHistory">
+      <path value="fr-lm-patient-summary-document.pregnancyHistory"/>
+      <short value="Section Historique des grossesses"/>
+      <definition value="Section Historique des grossesses"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.carePlans">
+      <path value="fr-lm-patient-summary-document.carePlans"/>
+      <short value="Section Plan de Soins"/>
+      <definition value="Section Plan de Soins"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-care-plans"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.socialHistory">
+      <path value="fr-lm-patient-summary-document.socialHistory"/>
+      <short value="Section Habitus et modes de vie"/>
+      <definition value="Section Habitus et modes de vie"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-social-history"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.vitalSigns">
+      <path value="fr-lm-patient-summary-document.vitalSigns"/>
+      <short value="Section Signes vitaux"/>
+      <definition value="Section Signes vitaux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-vital-signs"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.occupationalRiskFactors">
+      <path value="fr-lm-patient-summary-document.occupationalRiskFactors"/>
+      <short value="Section Facteurs de risque professionnels non Codé"/>
+      <definition value="Section Facteurs de risque professionnels non Codé"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-hazardous-working-conditions"/>
+      </type>
+    </element>
+    <element id="fr-lm-patient-summary-document.attachments">
+      <path value="fr-lm-patient-summary-document.attachments"/>
+      <short value="Section Pièces jointes"/>
+      <definition value="Section Pièces jointes"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attachments"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

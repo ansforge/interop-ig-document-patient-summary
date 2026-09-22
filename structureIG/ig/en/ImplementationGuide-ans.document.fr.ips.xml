@@ -4,7 +4,7 @@
   <id value="ans.document.fr.ips"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name="en-ans.document.fr.ips"> </a><a name="en-hcans.document.fr.ips"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr-FR</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Description du projet</p>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name="en-ans.document.fr.ips"> </a><a name="en-hcans.document.fr.ips"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Description du projet</p>
 </div></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips"/>
@@ -12,7 +12,7 @@
   <name value="FRIPS"/>
   <title value="ANS IG Document IPS"/>
   <status value="draft"/>
-  <date value="2026-09-22T08:01:04+00:00"/>
+  <date value="2026-09-22T08:07:02+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -26,7 +26,7 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="FR"/>
-      <display value="FRANCE"/>
+      <display value="France (la)"/>
     </coding>
   </jurisdiction>
   <packageId value="ans.document.fr.ips"/>
@@ -130,34 +130,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="i18n-default-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="fr-FR"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="i18n-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="en"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="translation-sources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/translations/en"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="pin-canonicals"/>
       </extension>
       <extension url="value">
         <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -170,7 +154,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
+        <valueString value="show-inherited-invariants"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -214,6 +198,38 @@
       </extension>
       <extension url="value">
         <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -262,14 +278,6 @@
       </extension>
       <extension url="value">
         <valueString value="output"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/ignoreWarnings.txt"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -426,34 +434,18 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="i18n-default-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="fr-FR"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="i18n-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="en"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="translation-sources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/translations/en"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="pin-canonicals"/>
       </extension>
       <extension url="value">
         <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -466,7 +458,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
+        <valueCode value="show-inherited-invariants"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -510,6 +502,38 @@
       </extension>
       <extension url="value">
         <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -558,14 +582,6 @@
       </extension>
       <extension url="value">
         <valueString value="output"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="path-suppressed-warnings"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/ignoreWarnings.txt"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

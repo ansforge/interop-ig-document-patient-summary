@@ -1,43 +1,43 @@
-# ans.document.fr.ips#0.1.0: ANS IG Document IPS(fr-FR)
+# ans.document.fr.ips#0.1.0: ANS IG Document IPS(fr)
 
 ## Pages
 
-* [Accueil](fr-FR/index.md)
-* [Mapping ML/CDA/FHIR](fr-FR/mapping.md)
-* [Autres Ressources](fr-FR/autres_ressources.md)
-* [Exigences spécifiques](fr-FR/exigences-specifiques.md)
-* [Fonctionnel](fr-FR/fonctionnel.md)
-* [Sécurité](fr-FR/securite.md)
-* [CDA](fr-FR/cda.md)
-* [Artifacts Summary](fr-FR/artifacts.md)
-* [Téléchargements et usages](fr-FR/annexe-downloads.md)
-* [Cas d'usage](fr-FR/cas-usage.md)
-* [Modèle logique métier](fr-FR/modele-logique-metier.md)
-* [FHIR](fr-FR/fhir.md)
-* [Informations sur la traduction](fr-FR/translationinfo.md)
-* [Implémentations](fr-FR/implementations.md)
+* [Accueil](fr/index.md)
+* [Mapping ML/CDA/FHIR](fr/mapping.md)
+* [Autres Ressources](fr/autres_ressources.md)
+* [Exigences spécifiques](fr/exigences-specifiques.md)
+* [Fonctionnel](fr/fonctionnel.md)
+* [Sécurité](fr/securite.md)
+* [CDA](fr/cda.md)
+* [Résumé des artefacts](fr/artifacts.md)
+* [Téléchargements et usages](fr/annexe-downloads.md)
+* [Cas d'usage](fr/cas-usage.md)
+* [Modèle logique métier](fr/modele-logique-metier.md)
+* [FHIR](fr/fhir.md)
+* [Informations sur la traduction](fr/translationinfo.md)
+* [Implémentations](fr/implementations.md)
 
 ## Resources
 
 ### Logicals
 
-* [Modèle logique métier - FR LM Patient Summary Document](fr-FR/StructureDefinition-fr-lm-patient-summary-document.md)
+* [Modèle logique métier - FR LM Patient Summary Document](fr/StructureDefinition-fr-lm-patient-summary-document.md)
 
 ### Logical Profiles
 
-* [CDA - clinicalDocument IPS](fr-FR/StructureDefinition-fr-cda-clinical-document-ips.md)
+* [CDA - clinicalDocument IPS](fr/StructureDefinition-fr-cda-clinical-document-ips.md)
 
 ### Resource Profiles
 
-* [Bundle (IPS)](fr-FR/StructureDefinition-fr-bundle-document-ips.md)
-* [FR Composition Document IPS](fr-FR/StructureDefinition-fr-composition-document-ips.md)
+* [Bundle (IPS)](fr/StructureDefinition-fr-bundle-document-ips.md)
+* [FR Composition Document IPS](fr/StructureDefinition-fr-composition-document-ips.md)
 
 ### ImplementationGuides
 
-* [ANS IG Document IPS](fr-FR/ImplementationGuide-ans.document.fr.ips.md)
+* [ANS IG Document IPS](fr/ImplementationGuide-ans.document.fr.ips.md)
 
 ### Examples
 
-* [patient-summary (Binary)](fr-FR/Binary-patient-summary.md)
-* [Bundle-IPS-FR-DLU (Bundle)](fr-FR/Bundle-Bundle-IPS-FR-DLU.md)
-* [Bundle-IPS-FR (Bundle)](fr-FR/Bundle-Bundle-IPS-FR.md)
+* [patient-summary (Binary)](fr/Binary-patient-summary.md)
+* [Bundle-IPS-FR-DLU (Bundle)](fr/Bundle-Bundle-IPS-FR-DLU.md)
+* [Bundle-IPS-FR (Bundle)](fr/Bundle-Bundle-IPS-FR.md)

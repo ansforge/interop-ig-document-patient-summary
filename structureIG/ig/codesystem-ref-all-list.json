@@ -190,8 +190,8 @@
     "oids" : ["2.16.840.1.113883.5.6"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass",
-    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",

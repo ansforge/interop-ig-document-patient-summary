@@ -11,14 +11,14 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name=\"en-ans.document.fr.ips\"> </a><a name=\"en-hcans.document.fr.ips\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Description du projet</p>\n</div></div>"
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name=\"en-ans.document.fr.ips\"> </a><a name=\"en-hcans.document.fr.ips\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Description du projet</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "FRIPS"] ;
   fhir:ImplementationGuide.title [ fhir:value "ANS IG Document IPS"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-22T08:01:04+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-22T08:07:02+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -36,7 +36,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
        fhir:Coding.code [ fhir:value "FR" ] ;
-       fhir:Coding.display [ fhir:value "FRANCE" ]
+       fhir:Coding.display [ fhir:value "France (la)" ]
      ]
   ] ;
   fhir:ImplementationGuide.packageId [ fhir:value "ans.document.fr.ips"] ;
@@ -213,47 +213,23 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "i18n-default-lang" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "fr-FR" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "i18n-lang" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "en" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "translation-sources" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/translations/en" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
          fhir:Extension.valueString [ fhir:value "pin-canonicals" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "pin-all" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -273,7 +249,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -338,6 +314,54 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "progress" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "fr" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "i18n-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "translation-sources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/translations/en" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -410,18 +434,6 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "output" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -656,47 +668,23 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "fr-FR" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "i18n-lang" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "en" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "translation-sources" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/translations/en" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
          fhir:Extension.valueCode [ fhir:value "pin-canonicals" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "pin-all" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -716,7 +704,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+         fhir:Extension.valueCode [ fhir:value "show-inherited-invariants" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -781,6 +769,54 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "progress" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "fr" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "translation-sources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/translations/en" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -853,18 +889,6 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
          fhir:Extension.valueString [ fhir:value "output" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
