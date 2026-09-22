@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/list-empty-reason,4.0.1,draft,"2.16.840.1.113883.4.642.3.322",ListEmptyReasons,List Empty Reasons,"General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).","StructureDefinition/fr-composition-document-ips","THO"

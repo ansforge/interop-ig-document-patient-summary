@@ -1,0 +1,389 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "01",
+    "status" : "active",
+    "name" : "DICOM Controlled Terminology Definitions",
+    "title" : null,
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+  },
+  {
+    "url" : "http://hl7.org/fhir/bundle-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "BundleType",
+    "title" : "BundleType",
+    "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+    "oids" : ["2.16.840.1.113883.4.642.4.621"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.239"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/http-verb",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "HTTPVerb",
+    "title" : "HTTPVerb",
+    "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+    "oids" : ["2.16.840.1.113883.4.642.4.625"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-entry-mode",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchEntryMode",
+    "title" : "SearchEntryMode",
+    "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+    "oids" : ["2.16.840.1.113883.4.642.4.623"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActClass",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActClass",
+    "title" : "ActClass",
+    "description" : "A code specifying the major type of Act that this Act-instance represents.\r\n\r\n*Constraints:* The classCode domain is a tightly controlled vocabulary, not an external or user-defined vocabulary.\r\n\r\nEvery Act-instance must have a classCode. If the act class is not further specified, the most general Act.classCode (ACT) is used.\r\n\r\nThe Act.classCode must be a generalization of the specific Act concept (e.g., as expressed in Act.code), in other words, the Act concepts conveyed in an Act must be specializations of the Act.classCode. Especially, Act.code is not a \"modifier\" that can alter the meaning of a class code. (See Act.code for contrast.)",
+    "oids" : ["2.16.840.1.113883.5.6"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass",
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "11.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActMood",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActMood",
+    "title" : "ActMood",
+    "description" : "OpenIssue: In Ballot 2009May, a strong Negative vote was lodged against several of the concept definitions in the vocabulary used for Act.moodCode. The vote was found \"Persuasive With Mod\", with the understanding that M and M would undertake a detailed review of these concept definitions for a future release of the RIM.",
+    "oids" : ["2.16.840.1.113883.5.1001"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActMood.html" : "CDAActMood"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActRelationshipType",
+    "title" : "ActRelationshipType",
+    "description" : "The source is an excerpt from the target.",
+    "oids" : ["2.16.840.1.113883.5.1002"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActRelationshipHasComponent.html" : "ActRelationshipHasComponent"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActStatus",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActStatus",
+    "title" : "ActStatus",
+    "description" : "Codes representing the defined possible states of an Act, as defined by the Act class state machine.",
+    "oids" : ["2.16.840.1.113883.5.14"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActStatus.html" : "ActStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ContextControl",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ContextControl",
+    "title" : "ContextControl",
+    "description" : "A code that specifies how an ActRelationship or Participation contributes to the context of an Act, and whether it may be propagated to descendent Acts whose association allows such propagation (see also attributes Participation.contextControlCode, ActRelationship.contextControlCode, ActRelationship.contextConductionInd).",
+    "oids" : ["2.16.840.1.113883.5.1057"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAContextControl.html" : "CDAContextControl"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "NullFlavor",
+    "title" : "NullFlavor",
+    "description" : "A collection of codes specifying why a valid value is not present.",
+    "oids" : ["2.16.840.1.113883.5.1008"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDANullFlavor.html" : "CDANullFlavor"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ParticipationFunction",
+    "title" : "ParticipationFunction",
+    "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+    "oids" : ["2.16.840.1.113883.5.88"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ParticipationFunction.html" : "ParticipationFunction"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "ParticipationType",
+    "title" : "ParticipationType",
+    "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "SetOperator",
+    "title" : "SetOperator",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.1069"],
+    "uses" : {
+    },
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDASetOperator.html" : "CDASetOperator"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_A13_HL7ParticipationType",
+    "title" : null,
+    "description" : "HL7 Type de participation",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J144-ParticipationType-CISIS.html" : "JDV_J144_ParticipationType_CISIS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_R258_RelationPriseCharge",
+    "title" : null,
+    "description" : "Relation dans la prise en charge du patient",
+    "oids" : ["1.2.250.1.213.1.1.4.2.280"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R259_HL7ParticipationFunction",
+    "title" : null,
+    "description" : "Rôles fonctionnels HL7",
+    "oids" : ["2.16.840.1.113883.5.88"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+    "version" : "20260505120000",
+    "status" : "active",
+    "name" : "TRE_R85_RolePriseCharge",
+    "title" : null,
+    "description" : "Rôle dans la prise en charge des patients ou des usagers",
+    "oids" : ["1.2.250.1.213.1.6.1.107"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "version" : "202606190000",
+    "status" : "active",
+    "name" : "TerminologieCISIS",
+    "title" : "TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies",
+    "description" : "Terminologie multi-domaines créée et maintenue par l'ANS contenant les termes non trouvés dans les autres terminologies internationales ou nationales.",
+    "oids" : ["1.2.250.1.213.1.1.4.322"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages",
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  }]
+}
