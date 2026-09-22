@@ -1,5 +1,3 @@
-# Mappings - Modèle Métier / CDA / FHIR
-
 Cette page présente les mappings entre le modèle métier, CDA et FHIR pour le document IPS-FR (Synthèse Médicale).
 
 Les mappings de l'IPS-FR sont basés sur l'IG Document Core métier publié par l'ANS :

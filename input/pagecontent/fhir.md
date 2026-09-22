@@ -16,7 +16,7 @@ Les exemples FHIR présentent des instances concrètes de documents IPS en forma
 
 ##### Exemple Bundle IPS-FR
 
-**[Exemple IPS-FR Bundle](Bundle-IPS-FR.html)**
+**[Exemple IPS-FR Bundle](Bundle-Bundle-IPS-FR.html)**
 
 Cet exemple montre un Bundle complet contenant une synthèse médicale au format FHIR :
 - Structure complète avec Composition et ressources associées
@@ -27,7 +27,7 @@ Cet exemple montre un Bundle complet contenant une synthèse médicale au format
 
 ##### Exemple Bundle IPS-FR-DLU
 
-**[Exemple IPS-FR-DLU Bundle](Bundle-IPS-FR-DLU.html)**
+**[Exemple IPS-FR-DLU Bundle](Bundle-Bundle-IPS-FR-DLU.html)**
 
 Cet exemple montre un Bundle complet contenant une synthèse médicale de type DLU au format FHIR :
 - Structure complète avec Composition et ressources associées
