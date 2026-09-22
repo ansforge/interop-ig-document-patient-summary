@@ -52,14 +52,9 @@
       <div class="container">    <!-- container -->
 
           <!-- Placeholder for child template header declarations -->
-<div style="display: flex; flex-direction: column;" id="family-nav">
-  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true">
-    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/>
-  </a>
-  <a style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda" data-no-external="true">
-    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/>
-  </a>
-</div>
+<div id="family-nav">
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
   <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
     <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
     <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
@@ -188,7 +183,7 @@
       <li>
         <a href="https://interop.esante.gouv.fr/ig/documentation/index.html" target="_blank">Documentation des guides d'implémentation de l'ANS</a>
       </li>
-      <li><a name="l330">​</a>
+      <li><a name="l324">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
     </ul>
@@ -201,11 +196,11 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
-    <div><a name="l346">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
+    <div><a name="l340">​</a><img src="assets/images/lang-fr-FR.png" alt="flag en" class="flag"/></div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
-    <div><a name="l355">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
+    <div><a name="l349">​</a><img src="assets/images/lang-fr-FR.png" alt="flag fr-FR" class="flag"/></div>
 
     <div><a href="../en/StructureDefinition-fr-bundle-document-ips.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
 
@@ -468,7 +463,7 @@ Bundle (IPS)
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-composition-document-ips.html" title="Composition">FRCompositionDocumentIPS(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A set of resources composed into a single coherent clinical statement with clinical attestation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // f18d107f-276e-437b-ab49-f3fa2301b8ee
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5909b55b-ed94-4289-9200-203b926ba93a
 document.getElementById('cbfr-bundle-document-ipsD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-bundle-document-ipsD'), 'binding', document.getElementById('cbfr-bundle-document-ipsD-binding').checked, document.getElementById('ppfr-bundle-document-ipsD'));
 document.getElementById('cbfr-bundle-document-ipsD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2284,7 +2279,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Digital Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // f18d107f-276e-437b-ab49-f3fa2301b8ee
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5909b55b-ed94-4289-9200-203b926ba93a
 document.getElementById('cbfr-bundle-document-ipsS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-bundle-document-ipsS'), 'binding', document.getElementById('cbfr-bundle-document-ipsS-binding').checked, document.getElementById('ppfr-bundle-document-ipsS'));
 document.getElementById('cbfr-bundle-document-ipsS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3235,7 +3230,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-composition-document-ips.html" title="Composition">FRCompositionDocumentIPS(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A set of resources composed into a single coherent clinical statement with clinical attestation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // f18d107f-276e-437b-ab49-f3fa2301b8ee
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5909b55b-ed94-4289-9200-203b926ba93a
 document.getElementById('cbfr-bundle-document-ipsDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-bundle-document-ipsDA'), 'binding', document.getElementById('cbfr-bundle-document-ipsDA-binding').checked, document.getElementById('ppfr-bundle-document-ipsDA'));
 document.getElementById('cbfr-bundle-document-ipsDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5048,7 +5043,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Digital Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // f18d107f-276e-437b-ab49-f3fa2301b8ee
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 5909b55b-ed94-4289-9200-203b926ba93a
 document.getElementById('cbfr-bundle-document-ipsSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-bundle-document-ipsSA'), 'binding', document.getElementById('cbfr-bundle-document-ipsSA-binding').checked, document.getElementById('ppfr-bundle-document-ipsSA'));
 document.getElementById('cbfr-bundle-document-ipsSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
