@@ -1,0 +1,1513 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="fr-FR" target-language="en" id="Bundle-Bundle-IPS-FR" original="Resource Bundle-Bundle-IPS-FR" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>informant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Informateur</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>DR Stéphane MEDIONI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Synthèse médicale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.title">
+             <notes>
+               <note id="n1">Composition.title</note>
+             </notes>
+        <source>SYNTHESE MEDICALE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Centre de soins le Belvédère</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Medical record number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Problèmes actifs</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Liste des problèmes actifs</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Allergies et hypersensibilités</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Allergies et hypersensibilités</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Traitements</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Historique de la prise médicamenteuse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Historique des actes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Historique des actes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Dispositifs médicaux</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Dispositifs médicaux</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Effets indésirables prévisibles liés aux médicaments</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Effets indésirables prévisibles liés aux médicaments</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Points de vigilance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autres alertes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Statut fonctionnel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Évaluation du statut fonctionnel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Constantes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Signes vitaux</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Mode de vie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Habitus, Mode de vie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Facteurs de risques professionnels</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Facteurs de risques professionnels</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Historique des pathologies familiales</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Historique des pathologies familiales</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Vaccinations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Historique des grossesses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Historique des grossesses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Plan de soins</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Plan de soins</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Directives anticipées</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Directives anticipées</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">
+             <notes>
+               <note id="n1">Composition.section.title</note>
+             </notes>
+        <source>Résultats</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Résultats d'examens</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>Ambléon</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>PAT-TROIS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>DOMINIQUE MARIE-LOUISE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>28</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Avenue de Breteuil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Escalier A</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>75007</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Soeur</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Personne à prévenir en cas d'urgence</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.text">
+             <notes>
+               <note id="n1">HumanName.text</note>
+             </notes>
+        <source>Sophie NESSI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>NESSI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.text">
+             <notes>
+               <note id="n1">Address.text</note>
+             </notes>
+        <source>12 rue des Lilas, 75012 Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Personne de confiance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Responsable légal</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Jeanne</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.prefix">
+             <notes>
+               <note id="n1">HumanName.prefix</note>
+             </notes>
+        <source>MME</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>28 Avenue de Breteuil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Médecin traitant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Numéro du professionnel de santé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>MEDIONI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Stéphane</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.prefix">
+             <notes>
+               <note id="n1">HumanName.prefix</note>
+             </notes>
+        <source>M</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.suffix">
+             <notes>
+               <note id="n1">HumanName.suffix</note>
+             </notes>
+        <source>Dr</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.text">
+             <notes>
+               <note id="n1">Address.text</note>
+             </notes>
+        <source>8 Rue Petit Pont Paris 75005</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Qualifié en Médecine générale (SM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Etablissement de santé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Organization.name">
+             <notes>
+               <note id="n1">Organization.name</note>
+             </notes>
+        <source>Centre de soins le Belvédère</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>3 Rue Petit Pont</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>PARIS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>75005</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Visit Number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>ambulatoire (hors établissement)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Etablissement privé non PSPH</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Actif</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Confirmé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>interprétation diagnostique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>gravité modérée</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Thyroïdite auto-immune</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>fonction corporelle générale : normale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>texte libre</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Diabète insulino-dépendant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Epilepsie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>gravité léger à modéré</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Angiœdème bradykinique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>asymptomatique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Récurrent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Non confirmé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>symptôme rapporté par le patient ou le répondant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>léger</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Causes inconnues et non précisées de morbidité</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Résolu</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Accident ischémique cérébral transitoire, sans précision</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Pyélonéphrite aiguë</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>artère coronaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Organization.name">
+             <notes>
+               <note id="n1">Organization.name</note>
+             </notes>
+        <source>Hôpital Lariboisière</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>PETITJEAN</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Jacques</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.suffix">
+             <notes>
+               <note id="n1">HumanName.suffix</note>
+             </notes>
+        <source>PR</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Médecin - Oncologie, opt Onco-hématologie (SM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Infarctus transmural aigu du myocarde, de la paroi inférieure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autre acte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>allergie médicamenteuse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Paracétamol</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Bronchospasme d'origine médicamenteuse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>feuille de millepertuis</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>interaction médicamenteuse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>gravité légère</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Guérison sans séquelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>probable</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Médicament</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Voie orale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>amoxicilline</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>amoxicilline</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>AMOXICILLINE EG 1G BUV SACH 6</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>AMOXICILLINE TRIHYDRATÉE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>AMOXICILLINE TRIHYDRATÉE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>g</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Nausée</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Le patient a pris le médicament après le petit-déjeuner</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>tablet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>lévothyroxine sodique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>lévothyroxine sodique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>LÉVOTHYROXINE SODIQUE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>LÉVOTHYROXINE SODIQUE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>mg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Stimulateur cardiaque contrôlé et fonctionnel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Autre dispositif médical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Autre DM : (texte libre)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autre dispositif médical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Survey</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Score de performance ECOG</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Capable d’une activité identique à celle précédant la maladie sans aucune restriction</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Texte libre</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Marcher</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Restriction modérée de la performance de marche sur de courtes distances</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autre statut fonctionnel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Poids</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>kg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Taille</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>m</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Social History</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Statut tabagique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Fumeur quotidien</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Consommation tabagique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>pack</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Consommation d'alcool</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>drink</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Consommation de drogue non médicales</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Cannabis</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Mère</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Anémie à hématies falciformes sans crises</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Immunization.lotNumber">
+             <notes>
+               <note id="n1">Immunization.lotNumber</note>
+             </notes>
+        <source>4456672</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Deltoïde gauche</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Voie intramusculaire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Immunization.protocolApplied.series">
+             <notes>
+               <note id="n1">Immunization.protocolApplied.series</note>
+             </notes>
+        <source>1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Immunization.lotNumber">
+             <notes>
+               <note id="n1">Immunization.lotNumber</note>
+             </notes>
+        <source>4456668</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Ambulatoire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Organization.name">
+             <notes>
+               <note id="n1">Organization.name</note>
+             </notes>
+        <source>Cabinet médical du Dr MULLER</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>MULLER</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Charles</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.suffix">
+             <notes>
+               <note id="n1">HumanName.suffix</note>
+             </notes>
+        <source>DR</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Fièvre due à des médicaments</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Statut de grossesse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>enceinte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Date estimée de l'accouchement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Nombre d'enfants vivants</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Nombre d'interruptions de grossesse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>ROSUVASTATINE EG 5 mg, comprimé pelliculé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>ROSUVASTATINE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>ROSUVASTATINE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autre(s) traitement(s)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Procédure d'évaluation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Autre demande d'examen ou de suivi</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Suivi du traitement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>Contrôle de routine dans le cadre du plan de soins</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Advance Directive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Maintien artificiel en vie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Assistance respiratoire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Alimentation et hydratation artificielles</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Dialyse rénale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Réanimation cardiaque et respiratoire</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Intervention chirurgicale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Sédation profonde et continue associée à un traitement de la douleur</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Biologie polyvalente</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CR d'examens biologiques</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Dr Marcel CAMPARINI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>C Réactive protéine [Masse/Volume] Sérum/Plasma ; Numérique</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Annotation.text">
+             <notes>
+               <note id="n1">Annotation.text</note>
+             </notes>
+        <source>(Texte libre)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>CAMPARINI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Marcel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.text">
+             <notes>
+               <note id="n1">Address.text</note>
+             </notes>
+        <source>8 Rue Frédéric Bastia 92100 BOULOGNE-BILLANCOURT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Médecin - Biologie médicale (SM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Organization.name">
+             <notes>
+               <note id="n1">Organization.name</note>
+             </notes>
+        <source>Laboratoire des charmes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>8 Rue Frédéric Bastia</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>BOULOGNE-BILLANCOURT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>92100</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Imagerie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Dr Jacques BIDEAULT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CT rachis dorsal avec contraste IV</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>thorax entier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>BIDEAULT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.text">
+             <notes>
+               <note id="n1">Address.text</note>
+             </notes>
+        <source>12 Rue Ambroise 75010 PARIS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Médecin - Radio-diagnostic (SM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Organization.name">
+             <notes>
+               <note id="n1">Organization.name</note>
+             </notes>
+        <source>Centre de radiologie Ambroise</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>12 Rue Ambroise</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>75010</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Attestation de la carte vitale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Attestation de mutuelle</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
