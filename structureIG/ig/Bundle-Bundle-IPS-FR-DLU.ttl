@@ -486,14 +486,14 @@
   ] ;
   fhir:Composition.section [
      fhir:index 0 ;
-     fhir:Composition.section.title [ fhir:value "Problèmes actifs" ] ;
+     fhir:Composition.section.title [ fhir:value "Problèmes (problèmes actifs et antécédents médicaux)" ] ;
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
          a loinc:11450-4 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "11450-4" ] ;
-         fhir:Coding.display [ fhir:value "Liste des problèmes actifs" ]
+         fhir:Coding.display [ fhir:value "Liste des problèmes" ]
        ]
      ] ;
      fhir:Composition.section.text [

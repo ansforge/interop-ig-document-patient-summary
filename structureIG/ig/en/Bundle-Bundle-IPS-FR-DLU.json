@@ -147,12 +147,12 @@
         }
       }],
       "section" : [{
-        "title" : "Problèmes actifs",
+        "title" : "Problèmes (problèmes actifs et antécédents médicaux)",
         "code" : {
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "11450-4",
-            "display" : "Liste des problèmes actifs"
+            "display" : "Liste des problèmes"
           }]
         },
         "text" : {
