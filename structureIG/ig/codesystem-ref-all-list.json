@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",
@@ -383,7 +383,7 @@
     "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages"
+    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages",
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
   }]
 }

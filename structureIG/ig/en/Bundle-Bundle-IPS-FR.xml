@@ -137,12 +137,12 @@
           </period>
         </event>
         <section>
-          <title value="Problèmes actifs"/>
+          <title value="Problèmes (problèmes actifs et antécédents médicaux)"/>
           <code>
             <coding>
               <system value="http://loinc.org"/>
               <code value="11450-4"/>
-              <display value="Liste des problèmes actifs"/>
+              <display value="Liste des problèmes"/>
             </coding>
           </code>
           <text>

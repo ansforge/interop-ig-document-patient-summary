@@ -1,11 +1,11 @@
 FRIPS : Validation Results
 =========================================
 
-err = 709, warn = 460, info = 1860
+err = 711, warn = 460, info = 1860
 $--
 Generated $--. FHIR version $-- for ans.document.fr.ips#$-- (canonical = https://interop.esante.gouv.fr/ig/document/ips)
  Build Errors : 173 / 6 / 1
- /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR : 325 / 108 / 500
+ /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR : 327 / 108 / 500
  /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR-DLU : 316 / 103 / 495
  /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/ImplementationGuide-ans.document.fr.ips : 6 / 4 / 6
  /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/StructureDefinition-fr-bundle-document-ips : 0 / 9 / 6
@@ -291,7 +291,7 @@ INFORMATION: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/0927518
 WARNING: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.relatesTo[0].target.ofType(Identifier).system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.1.1.52.2024.1.1'
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.event[0].extension[0]: The extension https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event could not be found so is not allowed here
 WARNING: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.event[0].extension[0].url: No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event'
-ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.section[0].code.coding[0].display: Wrong Display Name 'Liste des problèmes actifs' for http://loinc.org#11450-4. There are no valid display names found for language(s) 'fr'. Default display is 'Problem list - Reported'
+ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.section[0].code.coding[0].display: Wrong Display Name 'Liste des problèmes' for http://loinc.org#11450-4. There are no valid display names found for language(s) 'fr'. Default display is 'Problem list - Reported'
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.section[1].code.coding[0].display: Wrong Display Name 'Allergies et hypersensibilités' for http://loinc.org#48765-2. There are no valid display names found for language(s) 'fr'. Default display is 'Allergies and adverse reactions Document'
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.section[2].code.coding[0].display: Wrong Display Name 'Historique de la prise médicamenteuse' for http://loinc.org#10160-0. There are no valid display names found for language(s) 'fr'. Default display is 'History of Medication use Narrative'
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource/*Composition/09275181-4d85-43b8-89b0-6dd68182bc52*/.section[3].code.coding[0].display: Wrong Display Name 'Historique des actes' for http://loinc.org#47519-4. There are no valid display names found for language(s) 'fr'. Default display is 'History of Procedures Document'
@@ -339,6 +339,8 @@ ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.attester[0].party: Unable 
 INFORMATION: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.attester[0].party: Details for urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9 matching against profile https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0
 INFORMATION: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.event[0].extension[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0]: Problem processing expression 'not(exists(f:entry) and exists(f:section))' in profile 'https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips|0.1.0' at path 'Bundle.entry[0].resource.section[0]': Error @1, 14: The token : is not expected here - either a "," or a ")" expected
+ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0].code.coding[0].display: Wrong Display Name 'Liste des problèmes' for http://loinc.org#11450-4. Valid display is 'Liste des problèmes actifs' (for the language(s) 'fr')
+ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0].code: None of the codings provided are in the value set 'JDV Section Document CISIS' (https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis|20260619134042), and a coding from this value set is required) (codes = http://loinc.org#11450-4)
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0].entry[0]: Unable to find a profile match for urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af among choices: https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0
 INFORMATION: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af matching against profile https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0
 ERROR: Bundle/Bundle-IPS-FR: Bundle.entry[0].resource.section[0].entry[1]: Unable to find a profile match for urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916 among choices: https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0
