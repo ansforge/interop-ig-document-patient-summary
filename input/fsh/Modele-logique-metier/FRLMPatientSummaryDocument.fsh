@@ -15,7 +15,7 @@ Description: "Éléments d'en-tête et de corps d'une Synthèse Médicale (Inter
 * immunisations 0..1 FRLMImmunisations "Section Vaccinations"
 * results 0..1 FRLMObservationResults "Section Resultats"
 * advanceDirective 0..1 FRLMAdvanceDirectives "Section Directives anticipées"
-* alerts 0..1 FRLMAlerts "Section Points de Vigilances non codé"
+* alerts 0..1 FRLMAlerts "Section Points de Vigilances"
 * functionalStatus 0..1 FRLMFunctionalStatus "Section Statut fonctionnel"
 * pregnancyHistory 0..1 FRLMSectionPregnancyHistory "Section Historique des grossesses"
 * carePlans 0..1 FRLMCarePlans "Section Plan de Soins"

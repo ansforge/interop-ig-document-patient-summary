@@ -6,9 +6,11 @@ Cette section présente l'implémentation FHIR (Fast Healthcare Interoperability
 
 Les ressources FHIR définies dans ce guide permettent de représenter les synthèses médicales en utilisant le standard FHIR R4. Ces profils garantissent l'interopérabilité entre les systèmes d'information de santé tout en respectant les contraintes et exigences métier françaises.
 
-#### Contenu de cette section
+#### Structure du document IPS (Bundle / Composition)
 
-* **[Structure du document IPS en FHIR](StructureDefinition-fr-bundle-document-ips.html)** - Découvrez les profils FHIR, les ressources et les éléments de données qui définit l'ensemble des éléments de l'en-tête et du corps du volet Synthèse médicale conforme à l'International Patient Summary (IPS).
+* **[Bundle du document IPS](StructureDefinition-fr-bundle-document-ips.html)** - Bundle FHIR représentant l'ensemble du document IPS, incluant la Composition et les ressources associées.
+
+* **[Composition du document IPS](StructureDefinition-fr-composition-document-ips.html)** - Composition FHIR représentant la structure hiérarchique du document IPS, incluant les sections cliniques et administratives.
 
 #### Exemples FHIR
 
