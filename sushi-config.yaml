@@ -106,7 +106,7 @@ menu:
         "Standard CDA": new-tab https://hl7.org/cda/stds/online-navigation/index.html
         "Standard FHIR": new-tab https://hl7.org/fhir/R4/index.html
         "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html 
-        Téléchargements et usage: downloads.html
+        Téléchargements et usage: annexe-downloads.html
         
 groups:
   Modèles logiques métier IPS:
