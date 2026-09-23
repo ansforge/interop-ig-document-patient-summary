@@ -3,7 +3,7 @@ FRIPS : Validation Results
 
 err = 683, warn = 460, info = 1860
 IG Publisher Version: 2.3.4
-Generated Wed Sep 23 11:57:17 UTC 2026. FHIR version 4.0.1 for ans.document.fr.ips#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/ips)
+Generated Wed Sep 23 11:58:18 UTC 2026. FHIR version 4.0.1 for ans.document.fr.ips#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/document/ips)
  Build Errors : 11 / 6 / 1
  /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR : 327 / 108 / 500
  /__w/interop-ig-document-patient-summary/interop-ig-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR-DLU : 318 / 103 / 495

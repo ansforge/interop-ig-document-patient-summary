@@ -14,7 +14,7 @@
   "name" : "FRIPS",
   "title" : "ANS IG Document IPS",
   "status" : "draft",
-  "date" : "2026-09-23T11:53:17+00:00",
+  "date" : "2026-09-23T11:53:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
