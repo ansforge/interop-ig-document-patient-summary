@@ -56,6 +56,13 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * date ^short = "Date et heure de création du document Synthèse Médicale"
 * event ^short = "Evènement documenté et notamment le cadre d'exercice."
 * event 1..*
+// Redéfinition du discriminateur de slicing hérité de FRCompositionDocument :
+// le discriminateur #value sur $this ne peut pas être évalué (aucune valeur fixe/pattern/binding
+// sur event[principalEvent]), ce qui fait échouer le slicing de Bundle.entry:composition.
+// On le remplace par un discriminateur #exists sur l'extension performer, obligatoire (1..1)
+// uniquement pour principalEvent.
+* event ^slicing.discriminator.type = #exists
+* event ^slicing.discriminator.path = "extension('https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension').exists()"
 * encounter ^short = "Association du document à une prise en charge."
 
 * section ^slicing.discriminator[0].type = #value
