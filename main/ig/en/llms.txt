@@ -1,21 +1,21 @@
-# ans.document.fr.ips#0.1.0: ANS IG Document IPS(en)
+# ans.document.fr.ips#0.1.0: Volet de Synthèse Médicale (International Patient Summary)(en)
 
 ## Pages
 
 * [Accueil](index.md)
-* [Mapping ML/CDA/FHIR](mapping.md)
-* [Autres Ressources](autres_ressources.md)
-* [Exigences spécifiques](exigences-specifiques.md)
-* [Fonctionnel](fonctionnel.md)
-* [Sécurité](securite.md)
-* [CDA](cda.md)
-* [Artifacts Summary](artifacts.md)
 * [Téléchargements et usages](annexe-downloads.md)
-* [Cas d'usage](cas-usage.md)
-* [Modèle logique métier](modele-logique-metier.md)
 * [FHIR](fhir.md)
 * [Informations sur la traduction](translationinfo.md)
+* [Mapping ML/CDA/FHIR](mapping.md)
+* [Modèle logique métier](modele-logique-metier.md)
+* [Artifacts Summary](artifacts.md)
+* [Fonctionnel](fonctionnel.md)
+* [Cas d'usage](cas-usage.md)
+* [Autres Ressources](autres_ressources.md)
+* [Exigences spécifiques](exigences-specifiques.md)
+* [Sécurité](securite.md)
 * [Implémentations](implementations.md)
+* [CDA](cda.md)
 
 ## Resources
 
@@ -34,7 +34,7 @@
 
 ### ImplementationGuides
 
-* [ANS IG Document IPS](ImplementationGuide-ans.document.fr.ips.md)
+* [Volet de Synthèse Médicale (International Patient Summary)](ImplementationGuide-ans.document.fr.ips.md)
 
 ### Examples
 

@@ -1,4 +1,4 @@
-# Mapping ML/CDA/FHIR - ANS IG Document IPS v0.1.0
+# Mapping ML/CDA/FHIR - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Mapping ML/CDA/FHIR
 

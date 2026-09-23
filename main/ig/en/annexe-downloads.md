@@ -1,4 +1,4 @@
-# Téléchargements et usages - ANS IG Document IPS v0.1.0
+# Téléchargements et usages - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Téléchargements et usages
 

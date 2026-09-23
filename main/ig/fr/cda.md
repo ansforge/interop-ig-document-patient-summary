@@ -1,4 +1,4 @@
-# CDA - ANS IG Document IPS v0.1.0
+# CDA - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## CDA
 

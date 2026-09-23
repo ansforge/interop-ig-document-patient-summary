@@ -1,4 +1,4 @@
-# Cas d'usage - ANS IG Document IPS v0.1.0
+# Cas d'usage - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Cas d'usage
 

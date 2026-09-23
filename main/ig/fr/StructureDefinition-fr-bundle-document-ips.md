@@ -1,4 +1,4 @@
-# Bundle (IPS) - ANS IG Document IPS v0.1.0
+# Bundle (IPS) - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Profil de ressource: Bundle (IPS) 
 
@@ -84,7 +84,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-bundle-docum
   "name" : "FRBundleDocumentIPS",
   "title" : "Bundle (IPS)",
   "status" : "draft",
-  "date" : "2026-09-23T11:53:51+00:00",
+  "date" : "2026-09-23T15:21:41+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
