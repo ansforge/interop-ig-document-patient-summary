@@ -148,7 +148,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-23T09:05:57+00:00",
+  "date" : "2026-09-23T11:48:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
