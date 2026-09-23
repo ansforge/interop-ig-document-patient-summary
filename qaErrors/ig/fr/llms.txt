@@ -1,0 +1,43 @@
+# ans.document.fr.ips#0.1.0: ANS IG Document IPS(fr)
+
+## Pages
+
+* [Accueil](index.md)
+* [Téléchargements et usages](annexe-downloads.md)
+* [FHIR](fhir.md)
+* [Informations sur la traduction](translationinfo.md)
+* [Mapping ML/CDA/FHIR](mapping.md)
+* [Modèle logique métier](modele-logique-metier.md)
+* [Résumé des artefacts](artifacts.md)
+* [Fonctionnel](fonctionnel.md)
+* [Cas d'usage](cas-usage.md)
+* [Autres Ressources](autres_ressources.md)
+* [Exigences spécifiques](exigences-specifiques.md)
+* [Sécurité](securite.md)
+* [Implémentations](implementations.md)
+* [CDA](cda.md)
+
+## Resources
+
+### Logicals
+
+* [Modèle logique métier - FR LM Patient Summary Document](StructureDefinition-fr-lm-patient-summary-document.md)
+
+### Logical Profiles
+
+* [CDA - clinicalDocument IPS](StructureDefinition-fr-cda-clinical-document-ips.md)
+
+### Resource Profiles
+
+* [Bundle (IPS)](StructureDefinition-fr-bundle-document-ips.md)
+* [FR Composition Document IPS](StructureDefinition-fr-composition-document-ips.md)
+
+### ImplementationGuides
+
+* [ANS IG Document IPS](ImplementationGuide-ans.document.fr.ips.md)
+
+### Examples
+
+* [patient-summary (Binary)](Binary-patient-summary.md)
+* [Bundle-IPS-FR-DLU (Bundle)](Bundle-Bundle-IPS-FR-DLU.md)
+* [Bundle-IPS-FR (Bundle)](Bundle-Bundle-IPS-FR.md)

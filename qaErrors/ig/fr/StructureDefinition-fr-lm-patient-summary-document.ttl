@@ -1,0 +1,979 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-lm-patient-summary-document"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure fr-lm-patient-summary-document</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document\" title=\"Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives.\">fr-lm-patient-summary-document</a><a name=\"fr-lm-patient-summary-document\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\">FRLMHeaderDocument(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Modèle logique métier - FR LM Patient Summary Document<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Identifiant unique du document et/ou du lot de version du meme document.\">identifier</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Type de document.\">documentType</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Titre du document.\">documentTitle</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Date de création du document.\">date</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Niveau de confidentialité du document.\">confidentiality</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Langue principale du document.\">language</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Numéro de version du document.\">version</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Statut du document.\">status</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Evènement documenté et notamment le cadre d'exercice.\">eventType</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Patient / Usager.\">subject</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Auteur du document.\">author[x]</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Opérateur de saisie.\">dataEnterer</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Informateur ayant fourni des informations utiles à la production du document.\">informant</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Structure chargée de la conservation du document.\">custodian</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Destinataire prévu du document.\">intendedRecipient</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Responsable du document.\">legalAuthentication</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Professionnel attestant la validité du contenu du document.\">attester</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.\">participant</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Association du document à une prescription.\">order</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Consentement associé au document.\">consent</a>, <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-header-document.html\" title=\"Association du document à une prise en charge.\">encounter</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.identifier\">identifier</a><a name=\"fr-lm-patient-summary-document.identifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identifiant unique du document et/ou du lot de version du meme document.</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.problems\" title=\"Section Problèmes Actifs\">problems</a><a name=\"fr-lm-patient-summary-document.problems\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-problems.html\">fr-lm-problems</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Problèmes Actifs</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.familyHistories\" title=\"Section Antécédents familiaux\">familyHistories</a><a name=\"fr-lm-patient-summary-document.familyHistories\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-family-medical-history.html\">fr-lm-family-medical-history</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Antécédents familiaux</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.allergiesAndIntolerances\" title=\"Section Allergies et hypersensibilités\">allergiesAndIntolerances</a><a name=\"fr-lm-patient-summary-document.allergiesAndIntolerances\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-allergies-and-intolerances.html\">fr-lm-allergies-and-intolerances</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Allergies et hypersensibilités</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.adverseEvents\" title=\"Section Effets indésirables\">adverseEvents</a><a name=\"fr-lm-patient-summary-document.adverseEvents\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-predictable-adverse-drug-reaction.html\">fr-lm-predictable-adverse-drug-reaction</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Effets indésirables</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.medicationSummary\" title=\"Section Traitement\">medicationSummary</a><a name=\"fr-lm-patient-summary-document.medicationSummary\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-medication-summary.html\">fr-lm-medication-summary</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Traitement</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.procedures\" title=\"Section Historique des actes\">procedures</a><a name=\"fr-lm-patient-summary-document.procedures\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-procedures.html\">fr-lm-procedures</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Historique des actes</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.medicalDevicesAndImplants\" title=\"Section Dispositifs médicaux\">medicalDevicesAndImplants</a><a name=\"fr-lm-patient-summary-document.medicalDevicesAndImplants\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-medical-devices-and-implants.html\">fr-lm-medical-devices-and-implants</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Dispositifs médicaux</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.immunisations\" title=\"Section Vaccinations\">immunisations</a><a name=\"fr-lm-patient-summary-document.immunisations\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-immunisations.html\">fr-lm-immunisations</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Vaccinations</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.results\" title=\"Section Resultats\">results</a><a name=\"fr-lm-patient-summary-document.results\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-observation-results.html\">fr-lm-observation-results</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Resultats</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.advanceDirective\" title=\"Section Directives anticipées\">advanceDirective</a><a name=\"fr-lm-patient-summary-document.advanceDirective\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-advance-directives.html\">fr-lm-advance-directives</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Directives anticipées</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.alerts\" title=\"Section Points de Vigilances\">alerts</a><a name=\"fr-lm-patient-summary-document.alerts\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-alerts.html\">fr-lm-alerts</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Points de Vigilances</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.functionalStatus\" title=\"Section Statut fonctionnel\">functionalStatus</a><a name=\"fr-lm-patient-summary-document.functionalStatus\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-functional-status.html\">fr-lm-functional-status</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Statut fonctionnel</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.pregnancyHistory\" title=\"Section Historique des grossesses\">pregnancyHistory</a><a name=\"fr-lm-patient-summary-document.pregnancyHistory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-section-pregnancy-history.html\">fr-lm-section-pregnancy-history</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Historique des grossesses</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.carePlans\" title=\"Section Plan de Soins\">carePlans</a><a name=\"fr-lm-patient-summary-document.carePlans\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-care-plans.html\">fr-lm-care-plans</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Plan de Soins</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.socialHistory\" title=\"Section Habitus et modes de vie\">socialHistory</a><a name=\"fr-lm-patient-summary-document.socialHistory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-social-history.html\">fr-lm-social-history</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Habitus et modes de vie</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.vitalSigns\" title=\"Section Signes vitaux\">vitalSigns</a><a name=\"fr-lm-patient-summary-document.vitalSigns\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-vital-signs.html\">fr-lm-vital-signs</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Signes vitaux</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.occupationalRiskFactors\" title=\"Section Facteurs de risque professionnels non Codé\">occupationalRiskFactors</a><a name=\"fr-lm-patient-summary-document.occupationalRiskFactors\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-hazardous-working-conditions.html\">fr-lm-hazardous-working-conditions</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Facteurs de risque professionnels non Codé</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-lm-patient-summary-document-definitions.html#fr-lm-patient-summary-document.attachments\" title=\"Section Pièces jointes\">attachments</a><a name=\"fr-lm-patient-summary-document.attachments\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/ansforge/interop-IG-metier-document-core/StructureDefinition-fr-lm-attachments.html\">fr-lm-attachments</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Section Pièces jointes</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:StructureDefinition.name [ fhir:value "FRLMPatientSummaryDocument"] ;
+  fhir:StructureDefinition.title [ fhir:value "Modèle logique métier - FR LM Patient Summary Document"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-09-23T10:07:47+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-header-document|0.1.0" ;
+     fhir:link <https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-header-document|0.1.0>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "0.1.0" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Modèle logique métier - FR LM Patient Summary Document" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant unique du document et/ou du lot de version du meme document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant unique du document et/ou du lot de version du meme document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.identifier" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.documentType" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.documentType" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.documentType" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.documentTitle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.documentTitle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Titre du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Titre du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.documentTitle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.date" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.date" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de création du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de création du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.date" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.confidentiality" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.confidentiality" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Niveau de confidentialité du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Niveau de confidentialité du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.confidentiality" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.language" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.language" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Langue principale du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Langue principale du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.language" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Numéro de version du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Numéro de version du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.version" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.status" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.status" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.status" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.eventType" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.eventType" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evènement documenté et notamment le cadre d'exercice." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evènement documenté et notamment le cadre d'exercice." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.eventType" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.subject" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.subject" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Patient / Usager." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Patient / Usager." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.subject" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-patient" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.author[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.author[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Auteur du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Auteur du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.author[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-health-professional" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-device" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.dataEnterer" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.dataEnterer" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Opérateur de saisie." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Opérateur de saisie." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.dataEnterer" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-data-enterer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.informant" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.informant" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informateur ayant fourni des informations utiles à la production du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informateur ayant fourni des informations utiles à la production du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.informant" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-informant" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.custodian" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.custodian" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Structure chargée de la conservation du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Structure chargée de la conservation du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.custodian" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-organisation" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.intendedRecipient" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.intendedRecipient" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Destinataire prévu du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Destinataire prévu du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.intendedRecipient" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-intended-recipient" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.legalAuthentication" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.legalAuthentication" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Responsable du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Responsable du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.legalAuthentication" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-legal-authentication" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.attester" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.attester" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Professionnel attestant la validité du contenu du document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Professionnel attestant la validité du contenu du document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.attester" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attester" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.participant" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.participant" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.participant" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-participant" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.order" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.order" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Association du document à une prescription." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Association du document à une prescription." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.order" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-order" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.consent" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.consent" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Consentement associé au document." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Consentement associé au document." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.consent" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-consent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.encounter" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.encounter" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Association du document à une prise en charge." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Association du document à une prise en charge." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-header-document.encounter" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-encounter" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.problems" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.problems" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Problèmes Actifs" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Problèmes Actifs" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.problems" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-problems" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.familyHistories" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.familyHistories" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Antécédents familiaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Antécédents familiaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.familyHistories" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-family-medical-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.allergiesAndIntolerances" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.allergiesAndIntolerances" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Allergies et hypersensibilités" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Allergies et hypersensibilités" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.allergiesAndIntolerances" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-allergies-and-intolerances" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.adverseEvents" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.adverseEvents" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Effets indésirables" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Effets indésirables" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.adverseEvents" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.medicationSummary" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.medicationSummary" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Traitement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Traitement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.medicationSummary" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medication-summary" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.procedures" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.procedures" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Historique des actes" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Historique des actes" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.procedures" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-procedures" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.medicalDevicesAndImplants" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.medicalDevicesAndImplants" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Dispositifs médicaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Dispositifs médicaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.medicalDevicesAndImplants" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medical-devices-and-implants" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.immunisations" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.immunisations" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Vaccinations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Vaccinations" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.immunisations" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-immunisations" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.results" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.results" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Resultats" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Resultats" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.results" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-observation-results" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.advanceDirective" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.advanceDirective" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Directives anticipées" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Directives anticipées" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.advanceDirective" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.alerts" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.alerts" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Points de Vigilances" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Points de Vigilances" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.alerts" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.functionalStatus" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.functionalStatus" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Statut fonctionnel" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Statut fonctionnel" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.functionalStatus" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.pregnancyHistory" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.pregnancyHistory" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Historique des grossesses" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Historique des grossesses" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.pregnancyHistory" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.carePlans" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.carePlans" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Plan de Soins" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Plan de Soins" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.carePlans" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-care-plans" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.socialHistory" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.socialHistory" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Habitus et modes de vie" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Habitus et modes de vie" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.socialHistory" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-social-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.vitalSigns" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.vitalSigns" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Signes vitaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Signes vitaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.vitalSigns" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-vital-signs" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.occupationalRiskFactors" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.occupationalRiskFactors" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Facteurs de risque professionnels non Codé" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Facteurs de risque professionnels non Codé" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.occupationalRiskFactors" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-hazardous-working-conditions" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.attachments" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.attachments" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Pièces jointes" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Pièces jointes" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "fr-lm-patient-summary-document.attachments" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attachments" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Modèle logique métier - FR LM Patient Summary Document" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.identifier" ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.problems" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.problems" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Problèmes Actifs" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Problèmes Actifs" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-problems" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.familyHistories" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.familyHistories" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Antécédents familiaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Antécédents familiaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-family-medical-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.allergiesAndIntolerances" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.allergiesAndIntolerances" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Allergies et hypersensibilités" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Allergies et hypersensibilités" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-allergies-and-intolerances" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.adverseEvents" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.adverseEvents" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Effets indésirables" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Effets indésirables" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.medicationSummary" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.medicationSummary" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Traitement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Traitement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medication-summary" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.procedures" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.procedures" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Historique des actes" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Historique des actes" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-procedures" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.medicalDevicesAndImplants" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.medicalDevicesAndImplants" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Dispositifs médicaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Dispositifs médicaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-medical-devices-and-implants" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.immunisations" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.immunisations" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Vaccinations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Vaccinations" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-immunisations" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.results" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.results" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Resultats" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Resultats" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-observation-results" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.advanceDirective" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.advanceDirective" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Directives anticipées" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Directives anticipées" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-advance-directives" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.alerts" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.alerts" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Points de Vigilances" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Points de Vigilances" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-alerts" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.functionalStatus" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.functionalStatus" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Statut fonctionnel" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Statut fonctionnel" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-functional-status" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.pregnancyHistory" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.pregnancyHistory" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Historique des grossesses" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Historique des grossesses" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-section-pregnancy-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.carePlans" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.carePlans" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Plan de Soins" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Plan de Soins" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-care-plans" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.socialHistory" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.socialHistory" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Habitus et modes de vie" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Habitus et modes de vie" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-social-history" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.vitalSigns" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.vitalSigns" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Signes vitaux" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Signes vitaux" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-vital-signs" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.occupationalRiskFactors" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.occupationalRiskFactors" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Facteurs de risque professionnels non Codé" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Facteurs de risque professionnels non Codé" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-hazardous-working-conditions" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "fr-lm-patient-summary-document.attachments" ] ;
+       fhir:ElementDefinition.path [ fhir:value "fr-lm-patient-summary-document.attachments" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Section Pièces jointes" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Section Pièces jointes" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/document-core/StructureDefinition/fr-lm-attachments" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
