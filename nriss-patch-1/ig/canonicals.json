@@ -1,0 +1,35 @@
+[{
+  "id" : "ans.document.fr.ips",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips",
+  "version" : "0.1.0",
+  "name" : "FRIPS"
+},
+{
+  "id" : "fr-bundle-document-ips",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips",
+  "version" : "0.1.0",
+  "name" : "FRBundleDocumentIPS"
+},
+{
+  "id" : "fr-cda-clinical-document-ips",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-cda-clinical-document-ips",
+  "version" : "0.1.0",
+  "name" : "FRCDAClinicalDocumentIPS"
+},
+{
+  "id" : "fr-composition-document-ips",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips",
+  "version" : "0.1.0",
+  "name" : "FRCompositionDocumentIPS"
+},
+{
+  "id" : "fr-lm-patient-summary-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-lm-patient-summary-document",
+  "version" : "0.1.0",
+  "name" : "FRLMPatientSummaryDocument"
+}]
