@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
-  <file source-language="fr-FR" target-language="en" id="ImplementationGuide-ans.document.fr.ips" original="Resource ImplementationGuide-ans.document.fr.ips" datatype="KEYVALUEJSON">
+  <file source-language="fr" target-language="en" id="ImplementationGuide-ans.document.fr.ips" original="Resource ImplementationGuide-ans.document.fr.ips" datatype="KEYVALUEJSON">
     <body>
       <trans-unit id="ImplementationGuide-ans.document.fr.ips" resname="ImplementationGuide.name">
              <notes>
@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>FRANCE</source>
+        <source>France (la)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-ans.document.fr.ips" resname="ImplementationGuide.definition.grouping.name">

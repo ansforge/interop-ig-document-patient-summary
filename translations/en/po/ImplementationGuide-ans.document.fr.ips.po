@@ -26,7 +26,7 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "FRANCE"
+msgid "France (la)"
 msgstr ""
 
 # ImplementationGuide.definition.grouping.name

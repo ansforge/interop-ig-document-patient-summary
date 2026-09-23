@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
-  <file source-language="fr-FR" target-language="en" id="Bundle-Bundle-IPS-FR" original="Resource Bundle-Bundle-IPS-FR" datatype="KEYVALUEJSON">
+  <file source-language="fr" target-language="en" id="Bundle-Bundle-IPS-FR" original="Resource Bundle-Bundle-IPS-FR" datatype="KEYVALUEJSON">
     <body>
       <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
              <notes>
@@ -56,14 +56,14 @@
              <notes>
                <note id="n1">Composition.section.title</note>
              </notes>
-        <source>Problèmes actifs</source>
+        <source>Problèmes (problèmes actifs et antécédents médicaux)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-Bundle-IPS-FR" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>Liste des problèmes actifs</source>
+        <source>Liste des problèmes</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-Bundle-IPS-FR" resname="Composition.section.title">

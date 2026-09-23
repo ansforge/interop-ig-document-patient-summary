@@ -1,6 +1,6 @@
 {
   "id" : "StructureDefinition-fr-cda-clinical-document-ips",
-  "baseLang" : "fr-FR",
+  "baseLang" : "fr",
   "languages" : [{
     "targetLang" : "en",
     "entries" : [{

@@ -1,6 +1,6 @@
 {
   "id" : "StructureDefinition-fr-bundle-document-ips",
-  "baseLang" : "fr-FR",
+  "baseLang" : "fr",
   "languages" : [{
     "targetLang" : "en",
     "entries" : [{

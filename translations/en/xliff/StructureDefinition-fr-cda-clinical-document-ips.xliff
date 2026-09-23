@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
-  <file source-language="fr-FR" target-language="en" id="StructureDefinition-fr-cda-clinical-document-ips" original="Resource StructureDefinition-fr-cda-clinical-document-ips" datatype="KEYVALUEJSON">
+  <file source-language="fr" target-language="en" id="StructureDefinition-fr-cda-clinical-document-ips" original="Resource StructureDefinition-fr-cda-clinical-document-ips" datatype="KEYVALUEJSON">
     <body>
       <trans-unit id="StructureDefinition-fr-cda-clinical-document-ips" resname="StructureDefinition.name">
              <notes>

@@ -1,6 +1,6 @@
 {
   "id" : "ImplementationGuide-ans.document.fr.ips",
-  "baseLang" : "fr-FR",
+  "baseLang" : "fr",
   "languages" : [{
     "targetLang" : "en",
     "entries" : [{
@@ -36,7 +36,7 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "FRANCE",
+      "source" : "France (la)",
       "target" : null
     },
     {

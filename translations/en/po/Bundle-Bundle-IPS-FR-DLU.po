@@ -36,12 +36,12 @@ msgstr ""
 
 # Composition.section.title
 #: Composition.section.title
-msgid "Problèmes actifs"
+msgid "Problèmes (problèmes actifs et antécédents médicaux)"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "Liste des problèmes actifs"
+msgid "Liste des problèmes"
 msgstr ""
 
 # Composition.section.title

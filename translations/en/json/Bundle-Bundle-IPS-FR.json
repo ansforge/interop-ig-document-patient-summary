@@ -1,6 +1,6 @@
 {
   "id" : "Bundle-Bundle-IPS-FR",
-  "baseLang" : "fr-FR",
+  "baseLang" : "fr",
   "languages" : [{
     "targetLang" : "en",
     "entries" : [{
@@ -48,13 +48,13 @@
     {
       "id" : "Composition.section.title",
       "context" : "Composition.section.title",
-      "source" : "Problèmes actifs",
+      "source" : "Problèmes (problèmes actifs et antécédents médicaux)",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "Liste des problèmes actifs",
+      "source" : "Liste des problèmes",
       "target" : null
     },
     {

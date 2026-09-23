@@ -182,7 +182,7 @@ Usage: #inline
 
 // Participant :  Médecin traitant
 * extension[participant].extension[type].url = "type"
-* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"
+* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * extension[participant].extension[type].valueCodeableConcept.coding[0].code = #INF
 * extension[participant].extension[type].valueCodeableConcept.coding[0].display = "Informateur"
 * extension[participant].extension[time].valuePeriod.start = "2024-04-02T07:35:00+01:00"
@@ -194,7 +194,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * encounter = Reference(urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72)
 * date = "2024-09-09T14:00:00+01:00"
-* author.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time"
+* author.extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension"
 * author.extension.valueDateTime = "2024-04-21T13:45:00+01:00"
 * author = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * title = "SYNTHESE MEDICALE"
@@ -209,8 +209,8 @@ Usage: #inline
 * relatesTo[replaced_document].targetIdentifier.system = "urn:oid:1.2.250.1.213.1.1.1.52.2024.1.1"
 * relatesTo[replaced_document].targetIdentifier.value = "8D5E778C-E155-4685-95C6-5FF65A362964"
 * extension[basedOn].valueReference = Reference(urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e)
-* event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
-* event.extension.valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* event[principalEvent].extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
+* event[principalEvent].extension.valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * event.period.start = "2024-04-21T08:00:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes"
@@ -246,30 +246,30 @@ Usage: #inline
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
-* section[sectionMedicalDevice].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionMedicalDevice].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionMedicalDevice].entry[0] = Reference(urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3)
 * section[sectionMedicalDevice].entry[+] = Reference(urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9)
 * section[sectionUncodedPointsOfVigilance].title = "Points de vigilance"
 * section[sectionUncodedPointsOfVigilance].code = $LNC#44944-7 "Autres alertes"
 * section[sectionUncodedPointsOfVigilance].text.status = #generated
-* section[sectionUncodedPointsOfVigilance].text.div = "<div><p>Surveiller tension artérielle</p></div>"
+* section[sectionUncodedPointsOfVigilance].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Surveiller tension artérielle</p></div>"
 * section[sectionFunctionalStatus].title = "Statut fonctionnel"
 * section[sectionFunctionalStatus].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
 * section[sectionFunctionalStatus].text.status = #generated
-* section[sectionFunctionalStatus].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFunctionalStatus].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFunctionalStatus].entry[0] = Reference(urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234)
 * section[sectionVitalSigns].title = "Constantes"
 * section[sectionVitalSigns].code = $LNC#8716-3 "Signes vitaux"
 * section[sectionVitalSigns].text.status = #generated
-* section[sectionVitalSigns].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionVitalSigns].entry[0] = Reference(urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229)
 * section[sectionVitalSigns].entry[+] = Reference(urn:uuid:44da5856-6555-4b43-b03f-176f45c29432)
 * section[sectionSocialHistory].title = "Mode de vie"
 * section[sectionSocialHistory].code = $LNC#29762-2 "Habitus, Mode de vie"
 * section[sectionSocialHistory].text.status = #generated
-* section[sectionSocialHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionSocialHistory].entry[0] = Reference(urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9)
@@ -277,11 +277,11 @@ Usage: #inline
 * section[sectionUncodedOccupationalRiskFactors].title = "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].code = $LNC#10161-8 "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].text.status = #generated
-* section[sectionUncodedOccupationalRiskFactors].text.div = "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
+* section[sectionUncodedOccupationalRiskFactors].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
 * section[sectionFamilyHistory].title = "Historique des pathologies familiales"
 * section[sectionFamilyHistory].code = $LNC#10157-6 "Historique des pathologies familiales"
 * section[sectionFamilyHistory].text.status = #generated
-* section[sectionFamilyHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFamilyHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFamilyHistory].entry = Reference(urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e)
 * section[sectionImmunizations].title = "Vaccinations"
 * section[sectionImmunizations].text.status = #generated

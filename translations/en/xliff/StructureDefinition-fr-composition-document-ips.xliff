@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
-  <file source-language="fr-FR" target-language="en" id="StructureDefinition-fr-composition-document-ips" original="Resource StructureDefinition-fr-composition-document-ips" datatype="KEYVALUEJSON">
+  <file source-language="fr" target-language="en" id="StructureDefinition-fr-composition-document-ips" original="Resource StructureDefinition-fr-composition-document-ips" datatype="KEYVALUEJSON">
     <body>
       <trans-unit id="StructureDefinition-fr-composition-document-ips" resname="StructureDefinition.name">
              <notes>
