@@ -3,8 +3,8 @@
 id: ans.document.fr.ips
 canonical: https://interop.esante.gouv.fr/ig/document/ips # the last part of canonical and id must be the same
 name: FR-IPS # Should be an acronym
-title: ANS IG Document IPS
-description: Description du projet
+title: Volet de Synthèse Médicale (International Patient Summary)
+description: Volet de Synthèse Médicale
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
