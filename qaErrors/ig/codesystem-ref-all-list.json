@@ -128,9 +128,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
     "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",
