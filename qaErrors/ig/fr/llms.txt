@@ -1,4 +1,4 @@
-# ans.document.fr.ips#0.1.0: ANS IG Document IPS(fr)
+# ans.document.fr.ips#0.1.0: Volet de Synthèse Médicale (International Patient Summary)(fr)
 
 ## Pages
 
@@ -34,7 +34,7 @@
 
 ### ImplementationGuides
 
-* [ANS IG Document IPS](ImplementationGuide-ans.document.fr.ips.md)
+* [Volet de Synthèse Médicale (International Patient Summary)](ImplementationGuide-ans.document.fr.ips.md)
 
 ### Examples
 

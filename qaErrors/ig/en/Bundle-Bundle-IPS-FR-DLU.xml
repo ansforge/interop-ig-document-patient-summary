@@ -126,7 +126,7 @@
           </targetIdentifier>
         </relatesTo>
         <event>
-          <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event">
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension">
             <valueReference>
               <reference value="urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902"/>
               <display value="DR Charles BOILEAU"/>
@@ -487,7 +487,7 @@
           <valueAddress>
             <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
               <valueCoding>
-                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"/>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"/>
                 <code value="51215"/>
               </valueCoding>
             </extension>
@@ -649,6 +649,13 @@
             <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
             <code value="ATTPHYS"/>
             <display value="Référent - Responsable du patient dans la structure de soins"/>
+          </coding>
+        </code>
+        <code>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
           </coding>
         </code>
       </PractitionerRole>

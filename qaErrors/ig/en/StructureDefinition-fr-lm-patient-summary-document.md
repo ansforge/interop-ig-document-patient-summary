@@ -1,4 +1,4 @@
-# Modèle logique métier - FR LM Patient Summary Document - ANS IG Document IPS v0.1.0
+# Modèle logique métier - FR LM Patient Summary Document - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Logical Model: Modèle logique métier - FR LM Patient Summary Document 
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-patient-sum
   "name" : "FRLMPatientSummaryDocument",
   "title" : "Modèle logique métier - FR LM Patient Summary Document",
   "status" : "draft",
-  "date" : "2026-09-23T12:07:40+00:00",
+  "date" : "2026-09-24T11:21:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

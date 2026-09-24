@@ -1,4 +1,4 @@
-# Resource ANS IG Document IPS
+# Resource Volet de Synthèse Médicale (International Patient Summary)
 
 
 
@@ -12,9 +12,9 @@
   "url" : "https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips",
   "version" : "0.1.0",
   "name" : "FRIPS",
-  "title" : "ANS IG Document IPS",
+  "title" : "Volet de Synthèse Médicale (International Patient Summary)",
   "status" : "draft",
-  "date" : "2026-09-23T12:07:40+00:00",
+  "date" : "2026-09-24T11:21:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -23,7 +23,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Description du projet",
+  "description" : "Volet de Synthèse Médicale",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

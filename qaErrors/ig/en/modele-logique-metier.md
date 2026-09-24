@@ -1,4 +1,4 @@
-# Modèle logique métier - ANS IG Document IPS v0.1.0
+# Modèle logique métier - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Modèle logique métier
 

@@ -1,4 +1,4 @@
-# Exigences spécifiques - ANS IG Document IPS v0.1.0
+# Exigences spécifiques - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Exigences spécifiques
 

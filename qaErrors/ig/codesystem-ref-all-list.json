@@ -128,8 +128,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
     "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
     "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
@@ -190,8 +190,8 @@
     "oids" : ["2.16.840.1.113883.5.6"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer",
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass"
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAActClass.html" : "CDAActClass",
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassRecordOrganizer.html" : "ActClassRecordOrganizer"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

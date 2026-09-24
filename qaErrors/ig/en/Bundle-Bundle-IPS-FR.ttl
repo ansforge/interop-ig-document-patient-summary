@@ -390,7 +390,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index -1 ;
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType" ] ;
            fhir:Coding.code [ fhir:value "INF" ] ;
            fhir:Coding.display [ fhir:value "Informateur" ]
          ]
@@ -935,7 +935,7 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
          fhir:Extension.valueCoding [
-           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune" ] ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
            fhir:Coding.code [ fhir:value "01006" ]
          ]
        ] ;
@@ -1132,6 +1132,14 @@
        fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction" ] ;
        fhir:Coding.code [ fhir:value "PCP" ] ;
        fhir:Coding.display [ fhir:value "Médecin traitant" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+       fhir:Coding.code [ fhir:value "PROV" ] ;
+       fhir:Coding.display [ fhir:value "Professionnel de santé" ]
      ]
   ] .
 

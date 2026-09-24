@@ -474,7 +474,7 @@
      fhir:index -1 ;
      fhir:Element.extension [
        fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event" ] ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension" ] ;
        fhir:Extension.valueReference [
          fhir:Reference.reference [ fhir:value "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902" ] ;
          fhir:Reference.display [ fhir:value "DR Charles BOILEAU" ]
@@ -904,7 +904,7 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
          fhir:Extension.valueCoding [
-           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune" ] ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
            fhir:Coding.code [ fhir:value "51215" ]
          ]
        ] ;
@@ -1109,6 +1109,14 @@
        fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction" ] ;
        fhir:Coding.code [ fhir:value "ATTPHYS" ] ;
        fhir:Coding.display [ fhir:value "Référent - Responsable du patient dans la structure de soins" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+       fhir:Coding.code [ fhir:value "PROV" ] ;
+       fhir:Coding.display [ fhir:value "Professionnel de santé" ]
      ]
   ] .
 

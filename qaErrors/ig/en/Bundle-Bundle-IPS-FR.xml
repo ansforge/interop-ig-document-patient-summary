@@ -49,7 +49,7 @@
           <extension url="type">
             <valueCodeableConcept>
               <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"/>
                 <code value="INF"/>
                 <display value="Informateur"/>
               </coding>
@@ -506,7 +506,7 @@
           <valueAddress>
             <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
               <valueCoding>
-                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"/>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"/>
                 <code value="01006"/>
               </valueCoding>
             </extension>
@@ -663,6 +663,13 @@
             <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
             <code value="PCP"/>
             <display value="Médecin traitant"/>
+          </coding>
+        </code>
+        <code>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
           </coding>
         </code>
       </PractitionerRole>

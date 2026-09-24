@@ -168,9 +168,6 @@
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time": [
       "Bundle.entry.resource.author"
     ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event": [
-      "Bundle.entry.resource.event"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension": [
       "Bundle.entry.resource",
       "Bundle.entry.resource.resultsInterpreter"

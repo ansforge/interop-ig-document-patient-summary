@@ -4,14 +4,14 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name=\"en-ans.document.fr.ips\"> </a><a name=\"en-hcans.document.fr.ips\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Description du projet</p>\n</div></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.document.fr.ips</b></p><a name=\"en-ans.document.fr.ips\"> </a><a name=\"en-hcans.document.fr.ips\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><h2>FRIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips</pre><div><p>Volet de Synthèse Médicale</p>\n</div></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/document/ips/ImplementationGuide/ans.document.fr.ips",
   "version" : "0.1.0",
   "name" : "FRIPS",
-  "title" : "ANS IG Document IPS",
+  "title" : "Volet de Synthèse Médicale (International Patient Summary)",
   "status" : "draft",
-  "date" : "2026-09-23T12:07:40+00:00",
+  "date" : "2026-09-24T11:21:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -20,7 +20,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Description du projet",
+  "description" : "Volet de Synthèse Médicale",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

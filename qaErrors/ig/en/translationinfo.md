@@ -1,4 +1,4 @@
-# Informations sur la traduction - ANS IG Document IPS v0.1.0
+# Informations sur la traduction - Volet de Synthèse Médicale (International Patient Summary) v0.1.0
 
 ## Informations sur la traduction
 
