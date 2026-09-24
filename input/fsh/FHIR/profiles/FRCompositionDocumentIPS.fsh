@@ -172,7 +172,8 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * section[sectionPregnancyHistory]
   * insert IPSSection(Section Historique des grossesses, http://loinc.org#10162-6)
   * insert IPSSectionEntryReglesEnCommun
-  * insert IPSSectionEntrySlice(historiqueGrossesse, FRObservationPregnancyDocument or FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses ou Observation sur la grossesse)
+  * insert IPSSectionEntrySlice(historiqueGrossesse, FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses)
+  * insert IPSSectionEntrySlice(observationGrossesse, FRObservationPregnancyDocument, 0, *, Entrée Observation sur la grossesse)
   * obeys ips-section-not-empty
 
 // Section Plan de soins

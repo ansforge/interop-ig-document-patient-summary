@@ -182,7 +182,7 @@ Usage: #inline
 
 // Participant :  Médecin traitant
 * extension[participant].extension[type].url = "type"
-* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"
 * extension[participant].extension[type].valueCodeableConcept.coding[0].code = #INF
 * extension[participant].extension[type].valueCodeableConcept.coding[0].display = "Informateur"
 * extension[participant].extension[time].valuePeriod.start = "2024-04-02T07:35:00+01:00"
@@ -209,9 +209,9 @@ Usage: #inline
 * relatesTo[replaced_document].targetIdentifier.system = "urn:oid:1.2.250.1.213.1.1.1.52.2024.1.1"
 * relatesTo[replaced_document].targetIdentifier.value = "8D5E778C-E155-4685-95C6-5FF65A362964"
 * extension[basedOn].valueReference = Reference(urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e)
-* event[principalEvent].extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
-* event[principalEvent].extension.valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
-* event.period.start = "2024-04-21T08:00:00+01:00"
+* event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
+* event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* event[principalEvent].period.start = "2024-04-21T08:00:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes"
 * section[sectionProblems].text.status = #generated
@@ -383,7 +383,7 @@ Description: "Patient"
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.city = "Ambléon"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
-* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"
+* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.code = #01006
 
 // Extension: Fiabilité de l'identité
@@ -436,7 +436,8 @@ Usage: #inline
 * id = "a11d31c5-77ff-4642-91f7-66c4d10d18c9"
 * practitioner = Reference(urn:uuid:b5941194-08be-4893-a629-652f97587b39)
 * organization = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5)
-* code = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
+* code[functionCode] = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
+* code[classCode] = $TRE-R260-HL7RoleClass#PROV "Professionnel de santé"
 
 Instance: practitioner-exemple-1
 InstanceOf: FRPractitionerDocument

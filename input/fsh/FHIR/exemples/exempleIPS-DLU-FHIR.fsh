@@ -205,9 +205,9 @@ Usage: #inline
 * relatesTo[replaced_document].targetIdentifier.system = "urn:oid:1.2.250.1.213.1.1.1.51.2024.2"
 * relatesTo[replaced_document].targetIdentifier.value = "AA2F476F-CA64-47BF-AED1-852692B493D9"
 * extension[basedOn].valueReference = Reference(urn:uuid:b6c7d8e9-f0a1-2346-b501-345678901235)
-* event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
-* event.extension.valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
-* event.period.start = "2024-04-02T11:17:00+01:00"
+* event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
+* event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* event[principalEvent].period.start = "2024-04-02T11:17:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes"
 * section[sectionProblems].text.status = #generated
@@ -369,7 +369,7 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.city = "DOMPREMY"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
-* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"
+* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.code = #51215
 
 // Extension: Fiabilité de l'identité
@@ -426,7 +426,8 @@ Usage: #inline
 * id = "c3d4e5f6-a7b8-9012-cdef-012345678902"
 * practitioner = Reference(urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013)
 * organization = Reference(urn:uuid:e5f6a7b8-c9d0-1234-ef01-234567890124)
-* code = $TRE-R259-HL7ParticipationFunction#ATTPHYS "Référent - Responsable du patient dans la structure de soins"
+* code[functionCode] = $TRE-R259-HL7ParticipationFunction#ATTPHYS "Référent - Responsable du patient dans la structure de soins"
+* code[classCode] = $TRE-R260-HL7RoleClass#PROV "Professionnel de santé"
 
 Instance: practitioner-DLU-1
 InstanceOf: FRPractitionerDocument
