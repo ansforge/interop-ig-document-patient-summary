@@ -493,7 +493,7 @@
          a loinc:11450-4 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "11450-4" ] ;
-         fhir:Coding.display [ fhir:value "Liste des problèmes" ]
+         fhir:Coding.display [ fhir:value "Liste des problèmes actifs" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -545,7 +545,7 @@
          a loinc:10160-0 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "10160-0" ] ;
-         fhir:Coding.display [ fhir:value "Historique de la prise médicamenteuse" ]
+         fhir:Coding.display [ fhir:value "Traitements" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -767,9 +767,9 @@
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         a loinc:11369-9 ;
+         a loinc:11369-6 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
-         fhir:Coding.code [ fhir:value "11369-9" ]
+         fhir:Coding.code [ fhir:value "11369-6" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -815,7 +815,7 @@
          a loinc:30954-2 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "30954-2" ] ;
-         fhir:Coding.display [ fhir:value "Résultats d'examens" ]
+         fhir:Coding.display [ fhir:value "Résultats d’examens" ]
        ]
      ] ;
      fhir:Composition.section.text [

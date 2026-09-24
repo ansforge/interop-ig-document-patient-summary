@@ -141,7 +141,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="11450-4"/>
-              <display value="Liste des problèmes"/>
+              <display value="Liste des problèmes actifs"/>
             </coding>
           </code>
           <text>
@@ -188,7 +188,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="10160-0"/>
-              <display value="Historique de la prise médicamenteuse"/>
+              <display value="Traitements"/>
             </coding>
           </code>
           <text>
@@ -365,7 +365,7 @@
           <code>
             <coding>
               <system value="http://loinc.org"/>
-              <code value="11369-9"/>
+              <code value="11369-6"/>
             </coding>
           </code>
           <text>
@@ -465,7 +465,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="30954-2"/>
-              <display value="Résultats d'examens"/>
+              <display value="Résultats d’examens"/>
             </coding>
           </code>
           <text>

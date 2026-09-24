@@ -161,7 +161,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "11450-4",
-            "display" : "Liste des problèmes"
+            "display" : "Liste des problèmes actifs"
           }]
         },
         "text" : {
@@ -210,7 +210,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "10160-0",
-            "display" : "Historique de la prise médicamenteuse"
+            "display" : "Traitements"
           }]
         },
         "text" : {
@@ -397,7 +397,7 @@
         "code" : {
           "coding" : [{
             "system" : "http://loinc.org",
-            "code" : "11369-9"
+            "code" : "11369-6"
           }]
         },
         "text" : {
@@ -501,7 +501,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "30954-2",
-            "display" : "Résultats d'examens"
+            "display" : "Résultats d’examens"
           }]
         },
         "text" : {

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-24T11:21:48+00:00",
+  "date" : "2026-09-24T12:14:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -717,7 +717,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "11369-9"
+          "code" : "11369-6"
         }]
       }
     },
@@ -1038,7 +1038,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "path" : "Composition.section.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
+          "type" : "profile",
           "path" : "resolve()"
         }],
         "ordered" : false,
