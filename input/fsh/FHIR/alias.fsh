@@ -30,6 +30,7 @@ Alias: $fr-core-cs-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v
 Alias: $TRE-R13-Commune = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM
 Alias: $TRE-R38-SpecialiteOrdinale = https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale
 Alias: $TRE-R259-HL7ParticipationFunction = https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction
+Alias: $TRE-R260-HL7RoleClass = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass
 
 // French Value Sets (JDVs)
 Alias: $jdv-severite-observation-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis

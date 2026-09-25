@@ -205,11 +205,11 @@ Usage: #inline
 * relatesTo[replaced_document].targetIdentifier.system = "urn:oid:1.2.250.1.213.1.1.1.51.2024.2"
 * relatesTo[replaced_document].targetIdentifier.value = "AA2F476F-CA64-47BF-AED1-852692B493D9"
 * extension[basedOn].valueReference = Reference(urn:uuid:b6c7d8e9-f0a1-2346-b501-345678901235)
-* event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
-* event.extension.valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
-* event.period.start = "2024-04-02T11:17:00+01:00"
+* event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
+* event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* event[principalEvent].period.start = "2024-04-02T11:17:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
-* section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes"
+* section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
 * section[sectionProblems].entry[0] = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
@@ -235,7 +235,7 @@ Usage: #inline
 * section[sectionAdverseEvent].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d'administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionAdverseEvent].entry = Reference(urn:uuid:e3f4a5b6-c7d8-9012-e178-012345678902)
 * section[sectionMedications].title = "Traitements"
-* section[sectionMedications].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
+* section[sectionMedications].code = $LNC#10160-0 "Traitements"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>(texte libre)</td></tr></tbody></table><p><em>Traitements aigus :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/02/2022</td><td>–</td><td>COUMADINE 5 mg, comprimé sécable</td><td>4 fois/j</td><td>1 cp</td><td>toutes les 6h</td><td>Voie orale</td><td>Accident Ischémique Cérébral Transitoire</td><td>(texte libre)</td></tr><tr><td>01/12/2021</td><td>06/12/2021</td><td>PARACETAMOL MYLAN/VIATRIS 500 mg, comprimé</td><td>doses progressives</td><td>–</td><td>–</td><td>Voie orale</td><td>–</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionMedications].entry[0] = Reference(urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346)
@@ -293,7 +293,7 @@ Usage: #inline
 * section[sectionPlanOfCare].entry[0] = Reference(urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891)
 * section[sectionPlanOfCare].entry[+] = Reference(urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902)
 * section[sectionResults].title = "Résultats"
-* section[sectionResults].code = $LNC#30954-2 "Résultats d'examens"
+* section[sectionResults].code = $LNC#30954-2 "Résultats d’examens"
 * section[sectionResults].text.status = #generated
 * section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>Le patient porte-t-il une bactérie multirésistante ?</td><td>Non</td><td></td><td></td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionResults].entry[0] = Reference(urn:uuid:cc001111-2222-3333-4444-555566667777)
@@ -369,7 +369,7 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.city = "DOMPREMY"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
-* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"
+* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.code = #51215
 
 // Extension: Fiabilité de l'identité
@@ -426,7 +426,8 @@ Usage: #inline
 * id = "c3d4e5f6-a7b8-9012-cdef-012345678902"
 * practitioner = Reference(urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013)
 * organization = Reference(urn:uuid:e5f6a7b8-c9d0-1234-ef01-234567890124)
-* code = $TRE-R259-HL7ParticipationFunction#ATTPHYS "Référent - Responsable du patient dans la structure de soins"
+* code[functionCode] = $TRE-R259-HL7ParticipationFunction#ATTPHYS "Référent - Responsable du patient dans la structure de soins"
+* code[classCode] = $TRE-R260-HL7RoleClass#PROV "Professionnel de santé"
 
 Instance: practitioner-DLU-1
 InstanceOf: FRPractitionerDocument

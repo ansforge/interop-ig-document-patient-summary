@@ -194,7 +194,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * encounter = Reference(urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72)
 * date = "2024-09-09T14:00:00+01:00"
-* author.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time"
+* author.extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension"
 * author.extension.valueDateTime = "2024-04-21T13:45:00+01:00"
 * author = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * title = "SYNTHESE MEDICALE"
@@ -209,11 +209,11 @@ Usage: #inline
 * relatesTo[replaced_document].targetIdentifier.system = "urn:oid:1.2.250.1.213.1.1.1.52.2024.1.1"
 * relatesTo[replaced_document].targetIdentifier.value = "8D5E778C-E155-4685-95C6-5FF65A362964"
 * extension[basedOn].valueReference = Reference(urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e)
-* event.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event"
-* event.extension.valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
-* event.period.start = "2024-04-21T08:00:00+01:00"
+* event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
+* event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* event[principalEvent].period.start = "2024-04-21T08:00:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
-* section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes"
+* section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
 * section[sectionProblems].entry[0] = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
@@ -239,37 +239,37 @@ Usage: #inline
 * section[sectionAdverseEvent].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Agent responsable</th><th>Substance(s) incriminée(s)</th><th>Posologie</th><th>Voie d’administration</th><th>Réaction(s)</th><th>Imputabilité</th><th>Gravité</th><th>Evolution</th><th>Commentaire</th></tr></thead><tbody><tr><td>04/12/2021</td><td>interaction médicamenteuse</td><td>AMOXICILLINE EG 1G BUV SACH 6</td><td>AMOXICILLINE TRIHYDRATÉE</td><td>1 g / 2 fois par jour</td><td>voie orale</td><td>nausées</td><td>probable</td><td>Non grave</td><td>Guérison sans séquelle</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionAdverseEvent].entry = Reference(urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d)
 * section[sectionMedications].title = "Traitements"
-* section[sectionMedications].code = $LNC#10160-0 "Historique de la prise médicamenteuse"
+* section[sectionMedications].code = $LNC#10160-0 "Traitements"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
 * section[sectionMedications].entry = Reference(urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230)
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
-* section[sectionMedicalDevice].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionMedicalDevice].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionMedicalDevice].entry[0] = Reference(urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3)
 * section[sectionMedicalDevice].entry[+] = Reference(urn:uuid:f38b1772-ca78-4578-be14-f7a493b2cbb9)
 * section[sectionUncodedPointsOfVigilance].title = "Points de vigilance"
 * section[sectionUncodedPointsOfVigilance].code = $LNC#44944-7 "Autres alertes"
 * section[sectionUncodedPointsOfVigilance].text.status = #generated
-* section[sectionUncodedPointsOfVigilance].text.div = "<div><p>Surveiller tension artérielle</p></div>"
+* section[sectionUncodedPointsOfVigilance].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Surveiller tension artérielle</p></div>"
 * section[sectionFunctionalStatus].title = "Statut fonctionnel"
 * section[sectionFunctionalStatus].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
 * section[sectionFunctionalStatus].text.status = #generated
-* section[sectionFunctionalStatus].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFunctionalStatus].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFunctionalStatus].entry[0] = Reference(urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:b9bca1ce-b850-408c-966c-26a1a87adf65)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-345678901234)
 * section[sectionVitalSigns].title = "Constantes"
 * section[sectionVitalSigns].code = $LNC#8716-3 "Signes vitaux"
 * section[sectionVitalSigns].text.status = #generated
-* section[sectionVitalSigns].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionVitalSigns].entry[0] = Reference(urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229)
 * section[sectionVitalSigns].entry[+] = Reference(urn:uuid:44da5856-6555-4b43-b03f-176f45c29432)
 * section[sectionSocialHistory].title = "Mode de vie"
 * section[sectionSocialHistory].code = $LNC#29762-2 "Habitus, Mode de vie"
 * section[sectionSocialHistory].text.status = #generated
-* section[sectionSocialHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionSocialHistory].entry[0] = Reference(urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:3618f351-cea4-4834-8cf9-10151b74436b)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:4f0f3856-74a9-4a57-b173-e8342735d6c9)
@@ -277,11 +277,11 @@ Usage: #inline
 * section[sectionUncodedOccupationalRiskFactors].title = "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].code = $LNC#10161-8 "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].text.status = #generated
-* section[sectionUncodedOccupationalRiskFactors].text.div = "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
+* section[sectionUncodedOccupationalRiskFactors].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
 * section[sectionFamilyHistory].title = "Historique des pathologies familiales"
 * section[sectionFamilyHistory].code = $LNC#10157-6 "Historique des pathologies familiales"
 * section[sectionFamilyHistory].text.status = #generated
-* section[sectionFamilyHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFamilyHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFamilyHistory].entry = Reference(urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e)
 * section[sectionImmunizations].title = "Vaccinations"
 * section[sectionImmunizations].text.status = #generated
@@ -315,7 +315,7 @@ Usage: #inline
 * section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7)
 * section[sectionAdvanceDirective].entry[+] = Reference(urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8)
 * section[sectionResults].title = "Résultats"
-* section[sectionResults].code = $LNC#30954-2 "Résultats d'examens"
+* section[sectionResults].code = $LNC#30954-2 "Résultats d’examens"
 * section[sectionResults].text.status = #generated
 * section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Biologie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Interprétation</th><th>Valeur de référence</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CRP</td><td>&lt;1.0 mg/L</td><td>Normal</td><td>&lt;6.0 mg/L</td><td>(Texte libre)</td></tr></tbody></table><p><em>Imagerie :</em></p><table border=\"0\"><thead><tr><th>Date</th><th>Examen</th><th>Résultat</th><th>Localisation anatomique</th><th>Commentaire</th></tr></thead><tbody><tr><td>29/03/2024</td><td>CT rachis dorsal avec contraste IV</td><td>Pas d'embolie pulmonaire proximale</td><td>Thorax entier</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionResults].entry[0] = Reference(urn:uuid:aa001111-2222-3333-4444-555566667777)
@@ -383,7 +383,7 @@ Description: "Patient"
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[birthPlace].valueAddress.city = "Ambléon"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
-* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"
+* extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.system = "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
 * extension[birthPlace].valueAddress.extension[fr-core-address-insee-code].valueCoding.code = #01006
 
 // Extension: Fiabilité de l'identité
@@ -436,7 +436,8 @@ Usage: #inline
 * id = "a11d31c5-77ff-4642-91f7-66c4d10d18c9"
 * practitioner = Reference(urn:uuid:b5941194-08be-4893-a629-652f97587b39)
 * organization = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5)
-* code = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
+* code[functionCode] = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
+* code[classCode] = $TRE-R260-HL7RoleClass#PROV "Professionnel de santé"
 
 Instance: practitioner-exemple-1
 InstanceOf: FRPractitionerDocument

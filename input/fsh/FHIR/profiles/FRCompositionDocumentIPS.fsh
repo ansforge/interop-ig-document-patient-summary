@@ -56,6 +56,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * date ^short = "Date et heure de création du document Synthèse Médicale"
 * event ^short = "Evènement documenté et notamment le cadre d'exercice."
 * event 1..*
+
 * encounter ^short = "Association du document à une prise en charge."
 
 * section ^slicing.discriminator[0].type = #value
@@ -138,7 +139,7 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 
 // Section Vaccinations
 * section[sectionImmunizations]
-  * insert IPSSection(Section Vaccinations, http://loinc.org#11369-9)
+  * insert IPSSection(Section Vaccinations, http://loinc.org#11369-6)
   * insert IPSSectionEntryReglesEnCommun
   * insert IPSSectionEntrySlice(vaccination, FRImmunizationDocument, 0, *, Entrée Vaccinations)
   * obeys ips-section-not-empty
@@ -171,7 +172,10 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 * section[sectionPregnancyHistory]
   * insert IPSSection(Section Historique des grossesses, http://loinc.org#10162-6)
   * insert IPSSectionEntryReglesEnCommun
-  * insert IPSSectionEntrySlice(historiqueGrossesse, FRObservationPregnancyDocument or FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses ou Observation sur la grossesse)
+  // Deux slices Observation : le discriminateur "type" ne les distingue pas, on discrimine par profil
+  * entry ^slicing.discriminator[0].type = #profile
+  * insert IPSSectionEntrySlice(historiqueGrossesse,FRObservationPregnancyHistoryDocument, 0, *, Entrée Historique des grossesses)
+  * insert IPSSectionEntrySlice(observationGrossesse, FRObservationPregnancyDocument, 0, *, Entrée Observation sur la grossesse)
   * obeys ips-section-not-empty
 
 // Section Plan de soins

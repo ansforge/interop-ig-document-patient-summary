@@ -1,3 +1,3 @@
-* [CDA](./ressourcesCDA.html)
-* [FHIR](./ressourcesFHIR.html)
+* [CDA](./cda.html)
+* [FHIR](./fhir.html)
 * [Mapping ML / CDA / FHIR](./mapping.html)
