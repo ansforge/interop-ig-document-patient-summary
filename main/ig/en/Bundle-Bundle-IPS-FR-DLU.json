@@ -136,7 +136,7 @@
       }],
       "event" : [{
         "extension" : [{
-          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event",
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension",
           "valueReference" : {
             "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902",
             "display" : "DR Charles BOILEAU"
@@ -152,7 +152,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "11450-4",
-            "display" : "Liste des problèmes"
+            "display" : "Liste des problèmes actifs"
           }]
         },
         "text" : {
@@ -198,7 +198,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "10160-0",
-            "display" : "Historique de la prise médicamenteuse"
+            "display" : "Traitements"
           }]
         },
         "text" : {
@@ -394,7 +394,7 @@
         "code" : {
           "coding" : [{
             "system" : "http://loinc.org",
-            "code" : "11369-9"
+            "code" : "11369-6"
           }]
         },
         "text" : {
@@ -434,7 +434,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "30954-2",
-            "display" : "Résultats d'examens"
+            "display" : "Résultats d’examens"
           }]
         },
         "text" : {
@@ -516,7 +516,7 @@
           "extension" : [{
             "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
             "valueCoding" : {
-              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
               "code" : "51215"
             }
           }],
@@ -678,6 +678,13 @@
           "system" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
           "code" : "ATTPHYS",
           "display" : "Référent - Responsable du patient dans la structure de soins"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "PROV",
+          "display" : "Professionnel de santé"
         }]
       }]
     }

@@ -58,8 +58,8 @@ Cette structure fait référence à ces autres structures:
 * [DiagnosticReport - FR Diagnostic Report Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html)
 * [Consent - FR Advance directive Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-advance-directive-document.html)
 * [Observation - FR Observation Assessment Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-assessment-document.html)
-* [Observation - FR Observation Pregnancy Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-document.html)
 * [Observation - FR Observation Pregnancy History Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-history-document.html)
+* [Observation - FR Observation Pregnancy Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-document.html)
 * [ServiceRequest - FR Service Request Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-service-request-document.html)
 * [MedicationRequest - FR Medication Request Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html)
 * [ImmunizationRecommendation - FR Immunization Recommendation Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-recommendation-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-recommendation-document.html)
@@ -116,8 +116,8 @@ Cette structure fait référence à ces autres structures:
 * [DiagnosticReport - FR Diagnostic Report Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html)
 * [Consent - FR Advance directive Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-advance-directive-document.html)
 * [Observation - FR Observation Assessment Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-assessment-document.html)
-* [Observation - FR Observation Pregnancy Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-document.html)
 * [Observation - FR Observation Pregnancy History Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-history-document.html)
+* [Observation - FR Observation Pregnancy Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-pregnancy-document.html)
 * [ServiceRequest - FR Service Request Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-service-request-document.html)
 * [MedicationRequest - FR Medication Request Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html)
 * [ImmunizationRecommendation - FR Immunization Recommendation Document (https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-recommendation-document|0.1.0)](https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-recommendation-document.html)
@@ -148,7 +148,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-23T15:21:41+00:00",
+  "date" : "2026-09-25T08:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -833,7 +833,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "11369-9"
+          "code" : "11369-6"
         }]
       }
     },
@@ -1154,7 +1154,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "path" : "Composition.section.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
+          "type" : "profile",
           "path" : "resolve()"
         }],
         "ordered" : false,
@@ -1165,13 +1165,24 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "id" : "Composition.section:sectionPregnancyHistory.entry:historiqueGrossesse",
       "path" : "Composition.section.entry",
       "sliceName" : "historiqueGrossesse",
-      "short" : "Entrée Historique des grossesses ou Observation sur la grossesse",
+      "short" : "Entrée Historique des grossesses",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0",
-        "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Composition.section:sectionPregnancyHistory.entry:observationGrossesse",
+      "path" : "Composition.section.entry",
+      "sliceName" : "observationGrossesse",
+      "short" : "Entrée Observation sur la grossesse",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"]
       }]
     },
     {

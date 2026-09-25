@@ -14,7 +14,7 @@
   "name" : "FRIPS",
   "title" : "Volet de Synthèse Médicale (International Patient Summary)",
   "status" : "draft",
-  "date" : "2026-09-23T15:21:41+00:00",
+  "date" : "2026-09-25T08:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

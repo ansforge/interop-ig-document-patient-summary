@@ -129,8 +129,8 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",

@@ -450,8 +450,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-fr-cda-clinical-document-ips.html" : "CDA - clinicalDocument IPS",
-    "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
+    "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS",
+    "StructureDefinition-fr-cda-clinical-document-ips.html" : "CDA - clinicalDocument IPS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis",

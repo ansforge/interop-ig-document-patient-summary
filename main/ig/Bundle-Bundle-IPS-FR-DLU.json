@@ -136,7 +136,7 @@
       }],
       "event" : [{
         "extension" : [{
-          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event",
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension",
           "valueReference" : {
             "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902",
             "display" : "DR Charles BOILEAU"
@@ -152,7 +152,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "11450-4",
-            "display" : "Liste des problèmes"
+            "display" : "Liste des problèmes actifs"
           }]
         },
         "text" : {
@@ -198,7 +198,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "10160-0",
-            "display" : "Historique de la prise médicamenteuse"
+            "display" : "Traitements"
           }]
         },
         "text" : {
@@ -394,7 +394,7 @@
         "code" : {
           "coding" : [{
             "system" : "http://loinc.org",
-            "code" : "11369-9"
+            "code" : "11369-6"
           }]
         },
         "text" : {
@@ -434,7 +434,7 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "30954-2",
-            "display" : "Résultats d'examens"
+            "display" : "Résultats d’examens"
           }]
         },
         "text" : {
@@ -516,7 +516,7 @@
           "extension" : [{
             "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
             "valueCoding" : {
-              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
               "code" : "51215"
             }
           }],
@@ -665,7 +665,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole c3d4e5f6-a7b8-9012-cdef-012345678902</b></p><a name=\"c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><a name=\"hcc3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d4e5f6a7-b8c9-0123-def0-123456789013\">Practitioner Charles BOILEAU </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-e5f6a7b8-c9d0-1234-ef01-234567890124\">Organization EHPAD DE BOULOGNE-BILLANCOURT</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction ATTPHYS}\">Référent - Responsable du patient dans la structure de soins</span></p></div></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole c3d4e5f6-a7b8-9012-cdef-012345678902</b></p><a name=\"c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><a name=\"hcc3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d4e5f6a7-b8c9-0123-def0-123456789013\">Practitioner Charles BOILEAU </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-e5f6a7b8-c9d0-1234-ef01-234567890124\">Organization EHPAD DE BOULOGNE-BILLANCOURT</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction ATTPHYS}\">Référent - Responsable du patient dans la structure de soins</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass PROV}\">Professionnel de santé</span></p></div></div>"
       },
       "practitioner" : {
         "reference" : "urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013"
@@ -678,6 +678,13 @@
           "system" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
           "code" : "ATTPHYS",
           "display" : "Référent - Responsable du patient dans la structure de soins"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "PROV",
+          "display" : "Professionnel de santé"
         }]
       }]
     }

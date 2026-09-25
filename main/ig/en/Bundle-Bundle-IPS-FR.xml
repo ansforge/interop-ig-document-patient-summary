@@ -91,7 +91,7 @@
         </encounter>
         <date value="2024-09-09T14:00:00+01:00"/>
         <author>
-          <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time">
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension">
             <valueDateTime value="2024-04-21T13:45:00+01:00"/>
           </extension>
           <reference value="urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9"/>
@@ -126,7 +126,7 @@
           </targetIdentifier>
         </relatesTo>
         <event>
-          <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event">
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension">
             <valueReference>
               <reference value="urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9"/>
               <display value="DR Stéphane MEDIONI"/>
@@ -142,7 +142,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="11450-4"/>
-              <display value="Liste des problèmes"/>
+              <display value="Liste des problèmes actifs"/>
             </coding>
           </code>
           <text>
@@ -189,7 +189,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="10160-0"/>
-              <display value="Historique de la prise médicamenteuse"/>
+              <display value="Traitements"/>
             </coding>
           </code>
           <text>
@@ -228,7 +228,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3"/>
@@ -263,7 +263,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><p>Surveiller tension artérielle</p></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Surveiller tension artérielle</p></div>
           </text>
         </section>
         <section>
@@ -276,7 +276,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b"/>
@@ -298,7 +298,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229"/>
@@ -317,7 +317,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:48129cb5-0a81-4a17-aebd-8c6584b20cd4"/>
@@ -342,7 +342,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Contact répété avec solvants organiques (atelier peinture)</p></div>
           </text>
         </section>
         <section>
@@ -355,7 +355,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:541404fa-fc9c-4552-8d36-10adcc37f34e"/>
@@ -366,7 +366,7 @@
           <code>
             <coding>
               <system value="http://loinc.org"/>
-              <code value="11369-9"/>
+              <code value="11369-6"/>
             </coding>
           </code>
           <text>
@@ -466,7 +466,7 @@
             <coding>
               <system value="http://loinc.org"/>
               <code value="30954-2"/>
-              <display value="Résultats d'examens"/>
+              <display value="Résultats d’examens"/>
             </coding>
           </code>
           <text>
@@ -506,7 +506,7 @@
           <valueAddress>
             <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
               <valueCoding>
-                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"/>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"/>
                 <code value="01006"/>
               </valueCoding>
             </extension>
@@ -663,6 +663,13 @@
             <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
             <code value="PCP"/>
             <display value="Médecin traitant"/>
+          </coding>
+        </code>
+        <code>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
           </coding>
         </code>
       </PractitionerRole>

@@ -475,7 +475,7 @@
      fhir:index -1 ;
      fhir:Element.extension [
        fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event" ] ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension" ] ;
        fhir:Extension.valueReference [
          fhir:Reference.reference [ fhir:value "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902" ] ;
          fhir:Reference.display [ fhir:value "DR Charles BOILEAU" ]
@@ -494,7 +494,7 @@
          a loinc:11450-4 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "11450-4" ] ;
-         fhir:Coding.display [ fhir:value "Liste des problèmes" ]
+         fhir:Coding.display [ fhir:value "Liste des problèmes actifs" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -546,7 +546,7 @@
          a loinc:10160-0 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "10160-0" ] ;
-         fhir:Coding.display [ fhir:value "Historique de la prise médicamenteuse" ]
+         fhir:Coding.display [ fhir:value "Traitements" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -768,9 +768,9 @@
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         a loinc:11369-9 ;
+         a loinc:11369-6 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
-         fhir:Coding.code [ fhir:value "11369-9" ]
+         fhir:Coding.code [ fhir:value "11369-6" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -816,7 +816,7 @@
          a loinc:30954-2 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "30954-2" ] ;
-         fhir:Coding.display [ fhir:value "Résultats d'examens" ]
+         fhir:Coding.display [ fhir:value "Résultats d’examens" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -906,7 +906,7 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
          fhir:Extension.valueCoding [
-           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune" ] ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
            fhir:Coding.code [ fhir:value "51215" ]
          ]
        ] ;
@@ -1097,7 +1097,7 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole c3d4e5f6-a7b8-9012-cdef-012345678902</b></p><a name=\"c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><a name=\"hcc3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d4e5f6a7-b8c9-0123-def0-123456789013\">Practitioner Charles BOILEAU </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-e5f6a7b8-c9d0-1234-ef01-234567890124\">Organization EHPAD DE BOULOGNE-BILLANCOURT</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction ATTPHYS}\">Référent - Responsable du patient dans la structure de soins</span></p></div>"
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole c3d4e5f6-a7b8-9012-cdef-012345678902</b></p><a name=\"c3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><a name=\"hcc3d4e5f6-a7b8-9012-cdef-012345678902\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d4e5f6a7-b8c9-0123-def0-123456789013\">Practitioner Charles BOILEAU </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-e5f6a7b8-c9d0-1234-ef01-234567890124\">Organization EHPAD DE BOULOGNE-BILLANCOURT</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction ATTPHYS}\">Référent - Responsable du patient dans la structure de soins</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass PROV}\">Professionnel de santé</span></p></div>"
   ] ;
   fhir:PractitionerRole.practitioner [
      fhir:Reference.reference [ fhir:value "urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013" ]
@@ -1112,6 +1112,14 @@
        fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction" ] ;
        fhir:Coding.code [ fhir:value "ATTPHYS" ] ;
        fhir:Coding.display [ fhir:value "Référent - Responsable du patient dans la structure de soins" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+       fhir:Coding.code [ fhir:value "PROV" ] ;
+       fhir:Coding.display [ fhir:value "Professionnel de santé" ]
      ]
   ] .
 

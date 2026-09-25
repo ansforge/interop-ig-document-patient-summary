@@ -442,7 +442,7 @@
      fhir:index -1 ;
      fhir:Element.extension [
        fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time" ] ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension" ] ;
        fhir:Extension.valueDateTime [ fhir:value "2024-04-21T13:45:00+01:00"^^xsd:dateTime ]
      ] ;
      fhir:Reference.reference [ fhir:value "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9" ] ;
@@ -483,7 +483,7 @@
      fhir:index -1 ;
      fhir:Element.extension [
        fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event" ] ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension" ] ;
        fhir:Extension.valueReference [
          fhir:Reference.reference [ fhir:value "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9" ] ;
          fhir:Reference.display [ fhir:value "DR Stéphane MEDIONI" ]
@@ -502,7 +502,7 @@
          a loinc:11450-4 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "11450-4" ] ;
-         fhir:Coding.display [ fhir:value "Liste des problèmes" ]
+         fhir:Coding.display [ fhir:value "Liste des problèmes actifs" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -557,7 +557,7 @@
          a loinc:10160-0 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "10160-0" ] ;
-         fhir:Coding.display [ fhir:value "Historique de la prise médicamenteuse" ]
+         fhir:Coding.display [ fhir:value "Traitements" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -605,7 +605,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -648,7 +648,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><p>Surveiller tension artérielle</p></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Surveiller tension artérielle</p></div>"
      ]
   ], [
      fhir:index -1 ;
@@ -664,7 +664,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>14/01/2018</td><td>Score de performance ECOG</td><td>Capable d’une activité identique à celle précédant la maladie sans aucune restriction (LOINC : LA9622-7)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Marcher</td><td>Restriction modérée de la performance de marche sur de courtes distances (CIF : d4500.3)</td><td>(texte libre)</td></tr><tr><td>14/01/2018</td><td>Autre statut fonctionnel : (texte libre)</td><td>(texte libre)</td><td>(texte libre)</td></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -690,7 +690,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -713,7 +713,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -742,7 +742,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
      ]
   ], [
      fhir:index -1 ;
@@ -758,7 +758,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -770,9 +770,9 @@
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         a loinc:11369-9 ;
+         a loinc:11369-6 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
-         fhir:Coding.code [ fhir:value "11369-9" ]
+         fhir:Coding.code [ fhir:value "11369-6" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -888,7 +888,7 @@
          a loinc:30954-2 ;
          fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
          fhir:Coding.code [ fhir:value "30954-2" ] ;
-         fhir:Coding.display [ fhir:value "Résultats d'examens" ]
+         fhir:Coding.display [ fhir:value "Résultats d’examens" ]
        ]
      ] ;
      fhir:Composition.section.text [
@@ -937,7 +937,7 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
          fhir:Extension.valueCoding [
-           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune" ] ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
            fhir:Coding.code [ fhir:value "01006" ]
          ]
        ] ;
@@ -1120,7 +1120,7 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_a11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole a11d31c5-77ff-4642-91f7-66c4d10d18c9</b></p><a name=\"a11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><a name=\"hca11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR.html#urn-uuid-b5941194-08be-4893-a629-652f97587b39\">Practitioner Stéphane MEDIONI </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR.html#urn-uuid-579f1274-8265-4bb1-91ba-d093a11be4f5\">Organization Centre de soins le Belvédère</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction PCP}\">Médecin traitant</span></p></div>"
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><a name=\"PractitionerRole_a11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole a11d31c5-77ff-4642-91f7-66c4d10d18c9</b></p><a name=\"a11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><a name=\"hca11d31c5-77ff-4642-91f7-66c4d10d18c9\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-Bundle-IPS-FR.html#urn-uuid-b5941194-08be-4893-a629-652f97587b39\">Practitioner Stéphane MEDIONI </a></p><p><b>organization</b>: <a href=\"Bundle-Bundle-IPS-FR.html#urn-uuid-579f1274-8265-4bb1-91ba-d093a11be4f5\">Organization Centre de soins le Belvédère</a></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction PCP}\">Médecin traitant</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass PROV}\">Professionnel de santé</span></p></div>"
   ] ;
   fhir:PractitionerRole.practitioner [
      fhir:Reference.reference [ fhir:value "urn:uuid:b5941194-08be-4893-a629-652f97587b39" ]
@@ -1135,6 +1135,14 @@
        fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction" ] ;
        fhir:Coding.code [ fhir:value "PCP" ] ;
        fhir:Coding.display [ fhir:value "Médecin traitant" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+       fhir:Coding.code [ fhir:value "PROV" ] ;
+       fhir:Coding.display [ fhir:value "Professionnel de santé" ]
      ]
   ] .
 

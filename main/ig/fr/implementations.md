@@ -2,7 +2,7 @@
 
 ## Implémentations
 
-* [CDA](./ressourcesCDA.md)
-* [FHIR](./ressourcesFHIR.md)
+* [CDA](./cda.md)
+* [FHIR](./fhir.md)
 * [Mapping ML / CDA / FHIR](./mapping.md)
 

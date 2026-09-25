@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-23T15:21:41+00:00",
+  "date" : "2026-09-25T08:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -717,7 +717,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "11369-9"
+          "code" : "11369-6"
         }]
       }
     },
@@ -1038,7 +1038,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "path" : "Composition.section.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
+          "type" : "profile",
           "path" : "resolve()"
         }],
         "ordered" : false,
@@ -1049,13 +1049,24 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "id" : "Composition.section:sectionPregnancyHistory.entry:historiqueGrossesse",
       "path" : "Composition.section.entry",
       "sliceName" : "historiqueGrossesse",
-      "short" : "Entrée Historique des grossesses ou Observation sur la grossesse",
+      "short" : "Entrée Historique des grossesses",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0",
-        "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-history-document|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Composition.section:sectionPregnancyHistory.entry:observationGrossesse",
+      "path" : "Composition.section.entry",
+      "sliceName" : "observationGrossesse",
+      "short" : "Entrée Observation sur la grossesse",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"]
       }]
     },
     {
