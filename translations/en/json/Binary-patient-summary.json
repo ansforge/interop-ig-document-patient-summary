@@ -1,7 +1,0 @@
-{
-  "id" : "Binary-patient-summary",
-  "baseLang" : "fr",
-  "languages" : [{
-    "targetLang" : "en"
-  }]
-}
