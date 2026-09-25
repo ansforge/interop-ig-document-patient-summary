@@ -3,19 +3,19 @@
 ## Pages
 
 * [Accueil](fr/index.md)
-* [Mapping ML/CDA/FHIR](fr/mapping.md)
-* [Autres Ressources](fr/autres_ressources.md)
-* [Exigences spécifiques](fr/exigences-specifiques.md)
-* [Fonctionnel](fr/fonctionnel.md)
-* [Sécurité](fr/securite.md)
-* [CDA](fr/cda.md)
-* [Résumé des artefacts](fr/artifacts.md)
 * [Téléchargements et usages](fr/annexe-downloads.md)
-* [Cas d'usage](fr/cas-usage.md)
-* [Modèle logique métier](fr/modele-logique-metier.md)
 * [FHIR](fr/fhir.md)
 * [Informations sur la traduction](fr/translationinfo.md)
+* [Mapping ML/CDA/FHIR](fr/mapping.md)
+* [Modèle logique métier](fr/modele-logique-metier.md)
+* [Résumé des artefacts](fr/artifacts.md)
+* [Fonctionnel](fr/fonctionnel.md)
+* [Cas d'usage](fr/cas-usage.md)
+* [Autres Ressources](fr/autres_ressources.md)
+* [Exigences spécifiques](fr/exigences-specifiques.md)
+* [Sécurité](fr/securite.md)
 * [Implémentations](fr/implementations.md)
+* [CDA](fr/cda.md)
 
 ## Resources
 
