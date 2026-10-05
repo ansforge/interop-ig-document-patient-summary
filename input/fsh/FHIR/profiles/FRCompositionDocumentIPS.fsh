@@ -4,6 +4,10 @@ Id: fr-composition-document-ips
 Title: "FR Composition Document IPS"
 Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocument."
 
+* meta.profile contains canonicalIPS 1..1
+
+* meta.profile[canonicalIPS] ^short = "Conformité au profil Composition IPS"
+* meta.profile[canonicalIPS] = Canonical(fr-composition-document-ips)
 
 * extension[informant] ^short = "Informateur ayant fourni des informations utiles"
 

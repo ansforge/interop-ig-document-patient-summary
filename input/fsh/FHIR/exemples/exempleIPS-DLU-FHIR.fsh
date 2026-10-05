@@ -1,7 +1,6 @@
 Instance: Bundle-IPS-FR-DLU
 InstanceOf: FRBundleDocumentIPS
 Usage: #example
-* meta.lastUpdated = "2024-04-02T11:17:00+01:00"
 * meta.profile = Canonical(FRBundleDocumentIPS)
 * identifier.system = "urn:oid:1.2.250.1.213.1.1.1.51.2024.2.1"
 * identifier.value = "2024.02"
@@ -165,12 +164,10 @@ Usage: #example
 Instance: Composition-IPS-FR-DLU
 InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
-* meta.lastUpdated = "2024-04-02T11:17:00+01:00"
 * id = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 * language = #fr-FR
-* extension[R5-Composition-version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
-* extension[R5-Composition-version].valueString = "2"
-
+* extension[version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
+* extension[version].valueString = "2"
 // Informant
 * extension[informant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * extension[informant].extension[type].valueCodeableConcept.coding[0].code = #INF
@@ -187,17 +184,18 @@ Usage: #inline
 * identifier.value = "1.2.250.1.213.1.1.1.51.2024.2"
 * status = #final
 * type = $LNC#60591-5 "Synthèse médicale"
+* category[classCode] = https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument#11 "Synthèse"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * encounter = Reference(urn:uuid:f6a7b8c9-d0e1-2345-f012-345678901235)
 * date = "2024-04-02T11:17:00+01:00"
-* author.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time"
+* author.extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension"
 * author.extension.valueDateTime = "2024-04-02T11:17:00+01:00"
 * author = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
-* attester[legal_attester].mode = #legal
-* attester[legal_attester].time = "2024-04-02T11:17:00+01:00"
-* attester[legal_attester].party = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* attester[legalAuthenticator].mode = #legal
+* attester[legalAuthenticator].time = "2024-04-02T11:17:00+01:00"
+* attester[legalAuthenticator].party = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * custodian = Reference(urn:uuid:e5f6a7b8-c9d0-1234-ef01-234567890124) "EHPAD DE BOULOGNE-BILLANCOURT"
 // Document de référence (remplace version 1)
 * relatesTo[replaced_document].code = #replaces
@@ -207,6 +205,8 @@ Usage: #inline
 * extension[basedOn].valueReference = Reference(urn:uuid:b6c7d8e9-f0a1-2346-b501-345678901235)
 * event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
 * event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* event[principalEvent].extension[isPrincipal].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension"
+* event[principalEvent].extension[isPrincipal].valueBoolean = true
 * event[principalEvent].period.start = "2024-04-02T11:17:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
@@ -380,24 +380,24 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 
 // Contact 1 : Personne à prévenir en cas d'urgence
 * contact[0].name.text = "Sophie NESSI"
-* contact[0].relationship[RelationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"
-* contact[0].relationship[RelationType].coding[0].code = #SIS
-* contact[0].relationship[RelationType].coding[0].display = "Soeur"
-* contact[0].relationship[Role].coding[0].system = "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
-* contact[0].relationship[Role].coding[0].code = #ECON
-* contact[0].relationship[Role].coding[0].display = "Personne à prévenir en cas d'urgence"
+* contact[0].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+* contact[0].relationship[relationType].coding[0].code = #SIS
+* contact[0].relationship[relationType].coding[0].display = "Soeur"
+* contact[0].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[0].relationship[role].coding[0].code = #ECON
+* contact[0].relationship[role].coding[0].display = "Personne à prévenir en cas d'urgence"
 * contact[0].name[0].family = "NESSI"
 * contact[0].telecom.system = #phone
 * contact[0].telecom.value = "0647150100"
 
 // Contact 2 : Personne de confiance
 * contact[1].name.text = "Sophie NESSI"
-* contact[1].relationship[RelationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"
-* contact[1].relationship[RelationType].coding[0].code = #SIS
-* contact[1].relationship[RelationType].coding[0].display = "Soeur"
-* contact[1].relationship[Role].coding[0].system = "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role"
-* contact[1].relationship[Role].coding[0].code = #NOK
-* contact[1].relationship[Role].coding[0].display = "Personne de confiance"
+* contact[1].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+* contact[1].relationship[relationType].coding[0].code = #SIS
+* contact[1].relationship[relationType].coding[0].display = "Soeur"
+* contact[1].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[1].relationship[role].coding[0].code = #NOK
+* contact[1].relationship[role].coding[0].display = "Personne de confiance"
 * contact[1].name[0].family = "NESSI"
 * contact[1].telecom.system = #phone
 * contact[1].telecom.value = "0647150100"
@@ -406,9 +406,9 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 * contact[2].name.family = "NESSI"
 * contact[2].name.given = "Jeanne"
 * contact[2].name.prefix = #MME
-* contact[2].relationship[Role].coding[0].system = "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
-* contact[2].relationship[Role].coding[0].code = #GUARD
-* contact[2].relationship[Role].coding[0].display = "Responsable légal"
+* contact[2].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[2].relationship[role].coding[0].code = #GUARD
+* contact[2].relationship[role].coding[0].display = "Responsable légal"
 * contact[2].address.use = #home
 * contact[2].address.type = #physical
 * contact[2].address.line = "28 Avenue de Breteuil"
@@ -1189,6 +1189,8 @@ Instance: DiagnosticReport-DLU-Biologie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "cc001111-2222-3333-4444-555566667777"
+* extension[composition].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension"
+* extension[composition].valueReference = Reference(urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
 * status = #final
@@ -1263,6 +1265,8 @@ Instance: DiagnosticReport-DLU-Imagerie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "11556666-7777-8888-9999-000011112222"
+* extension[composition].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension"
+* extension[composition].valueReference = Reference(urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
 * status = #final
@@ -1372,7 +1376,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75789-8 "Maintien artificiel en vie"
 
@@ -1388,7 +1392,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75787-2 "Assistance respiratoire"
 
@@ -1404,7 +1408,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
 
@@ -1420,7 +1424,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#265764009 "Dialyse rénale"
 
@@ -1436,7 +1440,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
 
@@ -1452,7 +1456,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#387713003 "Intervention chirurgicale"
 
@@ -1468,7 +1472,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
 
@@ -1484,7 +1488,7 @@ Usage: #inline
 * dateTime = "2024-04-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="

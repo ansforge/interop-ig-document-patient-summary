@@ -1,7 +1,6 @@
 Instance: Bundle-IPS-FR
 InstanceOf: FRBundleDocumentIPS
 Usage: #example
-* meta.lastUpdated = "2025-10-09T13:28:17.000+00:00"
 * meta.profile = Canonical(FRBundleDocumentIPS)
 * identifier.system = "urn:oid:1.2.250.1.213.1.1.1.51.2024.1.1"
 * identifier.value = "2024.01"
@@ -169,11 +168,10 @@ Usage: #example
 Instance: Composition-IPS-FR
 InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
-* meta.lastUpdated = "2025-09-09T13:28:17.000+00:00"
 * id = "09275181-4d85-43b8-89b0-6dd68182bc52"
 * language = #fr-FR
-* extension[R5-Composition-version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
-* extension[R5-Composition-version].valueString = "2"
+* extension[version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
+* extension[version].valueString = "2"
 
 // Informant
 * extension[informant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
@@ -191,6 +189,7 @@ Usage: #inline
 * identifier.value = "1.2.250.1.213.1.1.1.51.2024.1"
 * status = #final
 * type = $LNC#60591-5 "Synthèse médicale"
+* category[classCode] = https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument#11 "Synthèse"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * encounter = Reference(urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72)
 * date = "2024-09-09T14:00:00+01:00"
@@ -199,9 +198,9 @@ Usage: #inline
 * author = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
-* attester[legal_attester].mode = #legal
-* attester[legal_attester].time = "2024-01-04T15:00:00+01:00"
-* attester[legal_attester].party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* attester[legalAuthenticator].mode = #legal
+* attester[legalAuthenticator].time = "2024-01-04T15:00:00+01:00"
+* attester[legalAuthenticator].party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * custodian = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5) "Centre de soins le Belvédère"
 // 	Document de référence
 * relatesTo[replaced_document].code = #replaces
@@ -211,6 +210,8 @@ Usage: #inline
 * extension[basedOn].valueReference = Reference(urn:uuid:d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e)
 * event[principalEvent].extension[performer].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-performer-event-extension"
 * event[principalEvent].extension[performer].valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* event[principalEvent].extension[isPrincipal].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension"
+* event[principalEvent].extension[isPrincipal].valueBoolean = true
 * event[principalEvent].period.start = "2024-04-21T08:00:00+01:00"
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
@@ -394,23 +395,23 @@ Description: "Patient"
 
 // Contact 1
 * contact[0].name.text = "Sophie NESSI"
-* contact[0].relationship[RelationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"
-* contact[0].relationship[RelationType].coding[0].code = #SIS
-* contact[0].relationship[RelationType].coding[0].display = "Soeur"
-* contact[0].relationship[Role].coding[0].system = "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
-* contact[0].relationship[Role].coding[0].code = #ECON
-* contact[0].relationship[Role].coding[0].display = "Personne à prévenir en cas d'urgence"
+* contact[0].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+* contact[0].relationship[relationType].coding[0].code = #SIS
+* contact[0].relationship[relationType].coding[0].display = "Soeur"
+* contact[0].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[0].relationship[role].coding[0].code = #ECON
+* contact[0].relationship[role].coding[0].display = "Personne à prévenir en cas d'urgence"
 * contact[0].name[0].family = "NESSI"
 * contact[0].address.text = "12 rue des Lilas, 75012 Paris"
 
 // Contact 2
 * contact[1].name.text = "Sophie NESSI"
-* contact[1].relationship[RelationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"
-* contact[1].relationship[RelationType].coding[0].code = #SIS
-* contact[1].relationship[RelationType].coding[0].display = "Soeur"
-* contact[1].relationship[Role].coding[0].system = "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role"
-* contact[1].relationship[Role].coding[0].code = #NOK
-* contact[1].relationship[Role].coding[0].display = "Personne de confiance"
+* contact[1].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+* contact[1].relationship[relationType].coding[0].code = #SIS
+* contact[1].relationship[relationType].coding[0].display = "Soeur"
+* contact[1].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[1].relationship[role].coding[0].code = #NOK
+* contact[1].relationship[role].coding[0].display = "Personne de confiance"
 
 * contact[1].name[0].family = "NESSI"
 * contact[1].address.text = "12 rue des Lilas, 75012 Paris"
@@ -420,9 +421,9 @@ Description: "Patient"
 * contact[2].name.given  = "Jeanne"
 * contact[2].name.prefix  = #MME
  
-* contact[2].relationship[Role].coding[0].system = "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
-* contact[2].relationship[Role].coding[0].code = #GUARD
-* contact[2].relationship[Role].coding[0].display = "Responsable légal"
+* contact[2].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[2].relationship[role].coding[0].code = #GUARD
+* contact[2].relationship[role].coding[0].display = "Responsable légal"
 * contact[2].address.use = #home
 * contact[2].address.type = #physical
 * contact[2].address.line = "28 Avenue de Breteuil"
@@ -1229,7 +1230,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75789-8 "Maintien artificiel en vie"
 
@@ -1245,7 +1246,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75787-2 "Assistance respiratoire"
 
@@ -1261,7 +1262,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
 
@@ -1277,7 +1278,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#265764009 "Dialyse rénale"
 
@@ -1293,7 +1294,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
 
@@ -1309,7 +1310,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#387713003 "Intervention chirurgicale"
 
@@ -1325,7 +1326,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
 
@@ -1341,7 +1342,7 @@ Usage: #inline
 * dateTime = "2024-04-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="
@@ -1352,6 +1353,8 @@ Instance: DiagnosticReport-IPS-Biologie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "aa001111-2222-3333-4444-555566667777"
+* extension[composition].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension"
+* extension[composition].valueReference = Reference(urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
 * status = #final
@@ -1426,6 +1429,8 @@ Instance: DiagnosticReport-IPS-Imagerie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "ff556666-7777-8888-9999-000011112222"
+* extension[composition].url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension"
+* extension[composition].valueReference = Reference(urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
 * status = #final
