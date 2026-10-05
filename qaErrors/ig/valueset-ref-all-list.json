@@ -411,27 +411,28 @@
     "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/ValueSet/fr-doc-vs-participation-type",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/ValueSet/fr-doc-vs-participation-type-participant",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "FRValueSetParticipationType",
-    "title" : "FR ValueSet Participation Type",
-    "description" : "Type de participation : destinataire",
+    "name" : "FrValueSetParticipationTypeParticipant",
+    "title" : "FR ValueSet Participation Type Participant",
+    "description" : "Type de participation : participant",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
     "uses" : {
     },
     "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
   },
   {
-    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J144-ParticipationType-CISIS/FHIR/JDV-J144-ParticipationType-CISIS",
-    "version" : "20210326120000",
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS",
+    "version" : "20230922120000",
     "status" : "active",
-    "name" : "JDV_J144_ParticipationType_CISIS",
+    "name" : "JDV_J06_XdsClassCode_CISIS",
     "title" : null,
-    "description" : "Type de participation CI-SIS",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"],
-    "oids" : ["1.2.250.1.213.1.1.5.591"],
-    "sources" : ["1.2.250.1.213.1.1.5.591"],
+    "description" : "XDS classCode CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
+    "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument"],
+    "oids" : ["1.2.250.1.213.1.1.5.462"],
+    "sources" : ["1.2.250.1.213.1.1.5.462"],
     "uses" : {
     },
     "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
@@ -450,12 +451,12 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS",
-    "StructureDefinition-fr-cda-clinical-document-ips.html" : "CDA - clinicalDocument IPS"
+    "StructureDefinition-fr-cda-clinical-document-ips.html" : "CDA - clinicalDocument IPS",
+    "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis",
-    "version" : "20260619134042",
+    "version" : "20260916095455",
     "status" : "active",
     "name" : "JdvSectionDocumentCisis",
     "title" : "JDV Section Document CISIS",

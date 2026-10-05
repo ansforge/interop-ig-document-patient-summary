@@ -202,7 +202,7 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag English" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
@@ -311,7 +311,6 @@
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
   "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "Bundle-IPS-FR",
   "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-10-09T13:28:17.000+00:00",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-fr-bundle-document-ips.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips"
     ]
@@ -330,9 +329,11 @@
         "<a href="http://hl7.org/fhir/R4/composition.html">resourceType</a>" : "Composition",
         "<a href="http://hl7.org/fhir/R4/resource.html#Composition.id">id</a>" : "09275181-4d85-43b8-89b0-6dd68182bc52",
         "<a href="http://hl7.org/fhir/R4/resource.html#Composition.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-09-09T13:28:17.000+00:00",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            <a href="StructureDefinition-fr-composition-document-ips.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"
+            <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-composition-eu-core.html" style="color: Maroon">&#x1F517;</a> "http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0"<a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-composition-document.html" style="color: Maroon">&#x1F517;</a> ,
+            "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0"<a href="http://hl7.org/fhir/uv/fhir-clinical-document/STU1.1/StructureDefinition-clinical-document-composition.html" style="color: Maroon">&#x1F517;</a> ,
+            "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0"<a href="StructureDefinition-fr-composition-document-ips.html" style="color: Maroon">&#x1F517;</a> ,
+            "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"
           ]
         },
         "<a href="http://hl7.org/fhir/R4/resource.html#Composition.language">language</a>" : "en",
@@ -417,6 +418,17 @@
             }
           ]
         },
+        "<a href="http://hl7.org/fhir/R4/composition.html#Composition.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Synthèse"
+              }
+            ]
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
         },
@@ -479,6 +491,10 @@
                   "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
                   "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "DR Stéphane MEDIONI"
                 }
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
               }
             ],
             "<a href="http://hl7.org/fhir/R4/composition.html#Composition.event.period">period</a>" : {
@@ -930,18 +946,6 @@
         },
         "<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "identityStatus",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VALI"
-                }
-              }
-            ],
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
-          },
-          {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueAddress</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">extension</a>" : [
@@ -955,6 +959,18 @@
               ],
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Ambléon"
             }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "identityStatus",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VALI"
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
@@ -1033,18 +1049,28 @@
           {
             "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.relationship">relationship</a>" : [
               {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+                  }
+                ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SIS",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Soeur"
                   }
                 ]
               },
               {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+                  }
+                ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ECON",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Personne à prévenir en cas d'urgence"
                   }
@@ -1062,18 +1088,28 @@
           {
             "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.relationship">relationship</a>" : [
               {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+                  }
+                ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SIS",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Soeur"
                   }
                 ]
               },
               {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+                  }
+                ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NOK",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Personne de confiance"
                   }
@@ -1091,9 +1127,14 @@
           {
             "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.relationship">relationship</a>" : [
               {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+                  }
+                ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "GUARD",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Responsable légal"
                   }
@@ -4504,7 +4545,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4565,7 +4606,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4626,7 +4667,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4687,7 +4728,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4748,7 +4789,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4809,7 +4850,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4870,7 +4911,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4931,7 +4972,7 @@
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "adr",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance Directive"
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advanced Care Directive"
             }
           ]
         },
@@ -4983,6 +5024,14 @@
         "<a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
         },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"
+            }
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
@@ -5267,6 +5316,14 @@
         "<a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
         },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"
+            }
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
@@ -5683,8 +5740,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.document.fr.ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-25 08:12:00 +0000">
-    2026-09-25
+  <span title="2026-10-05 09:04:00 +0000">
+    2026-10-05
   </span>
 
           <br/>

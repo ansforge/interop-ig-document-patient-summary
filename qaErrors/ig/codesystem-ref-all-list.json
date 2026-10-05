@@ -9,7 +9,7 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "http://hl7.org/fhir/bundle-type",
@@ -128,9 +128,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -299,8 +299,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type-participant.html" : "FR ValueSet Participation Type Participant",
+    "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDAParticipationType.html" : "CDAParticipationType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-SetOperator",
@@ -315,16 +315,28 @@
     "http://hl7.org/cda/stds/core/2.0.3-sd/ValueSet-CDASetOperator.html" : "CDASetOperator"
   },
   {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
     "version" : "20231215120000",
     "status" : "active",
-    "name" : "TRE_A13_HL7ParticipationType",
+    "name" : "TRE_A03_ClasseDocument",
     "title" : null,
-    "description" : "HL7 Type de participation",
-    "oids" : ["2.16.840.1.113883.5.90"],
+    "description" : "Classe de document",
+    "oids" : ["1.2.250.1.213.1.1.4.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J144-ParticipationType-CISIS.html" : "JDV_J144_ParticipationType_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_A10_NomenclatureURN",
+    "title" : null,
+    "description" : "Nomenclature identifiée par URN",
+    "oids" : ["URN"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
@@ -336,7 +348,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.2.280"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
@@ -348,7 +360,7 @@
     "oids" : ["2.16.840.1.113883.5.88"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
@@ -360,11 +372,11 @@
     "oids" : ["1.2.250.1.213.1.6.1.107"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J47-FunctionCode-CISIS.html" : "JDV_J47_FunctionCode_CISIS"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-    "version" : "202606190000",
+    "version" : "202609211638",
     "status" : "active",
     "name" : "TerminologieCISIS",
     "title" : "TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies",
@@ -372,7 +384,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "urn:ietf:bcp:47",
@@ -383,7 +395,7 @@
     "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages",
-    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+    "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages"
   }]
 }

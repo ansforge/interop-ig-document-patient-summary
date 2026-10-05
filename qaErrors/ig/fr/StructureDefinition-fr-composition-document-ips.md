@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Composition Document IPS 
 
- 
-Profil Composition du document IPS-FR, derive de FRCompositionDocument. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [Bundle (IPS)](StructureDefinition-fr-bundle-document-ips.md)
@@ -39,7 +36,7 @@ Cette structure est dérivée de [FRCompositionDocument](https://build.fhir.org/
 
 ** Résumé **
 
-Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 12 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 15 éléments
  Interdit : 2 éléments
 
@@ -97,7 +94,7 @@ Cette structure est dérivée de [FRCompositionDocument](https://build.fhir.org/
 
 ** Résumé **
 
-Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 12 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 15 éléments
  Interdit : 2 éléments
 
@@ -143,12 +140,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
 {
   "resourceType" : "StructureDefinition",
   "id" : "fr-composition-document-ips",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+    "valueCanonical" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0"
+  }],
   "url" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips",
   "version" : "0.1.0",
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-25T08:12:06+00:00",
+  "date" : "2026-10-05T09:04:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -244,6 +245,20 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       }]
     },
     {
+      "id" : "Composition.meta.profile",
+      "path" : "Composition.meta.profile",
+      "min" : 4
+    },
+    {
+      "id" : "Composition.meta.profile:canonicalIPS",
+      "path" : "Composition.meta.profile",
+      "sliceName" : "canonicalIPS",
+      "short" : "Conformité au profil Composition IPS",
+      "min" : 1,
+      "max" : "1",
+      "patternCanonical" : "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips|0.1.0"
+    },
+    {
       "id" : "Composition.extension:informant",
       "path" : "Composition.extension",
       "sliceName" : "informant",
@@ -255,11 +270,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "sliceName" : "participant",
       "short" : "Participant, jouant dans l'édition du document, un rôle différent de celui d'auteur, de responsable, d'opérateur de saisie, d'informateur ou de destinataire.",
       "definition" : "Rôles attendus, identifiés par le couple (extension[type], extension[function]) : Médecin traitant (INF/PCP, 0..1), Contact EHPAD (PRF/CORRE, 0..1), Établissement de préférence (INF/ES-PREF, 0..1), Établissement de référence (INF/ES-REF, 0..*), Autre professionnel de santé (PRF/353, 0..*), Autre correspondant (CON/CORRE, 0..*)."
-    },
-    {
-      "id" : "Composition.identifier",
-      "path" : "Composition.identifier",
-      "short" : "Identifiant du lot de versions du même document."
     },
     {
       "id" : "Composition.type",
@@ -278,11 +288,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "short" : "Cible recordée par le document Synthèse Médicale"
     },
     {
-      "id" : "Composition.encounter",
-      "path" : "Composition.encounter",
-      "short" : "Association du document à une prise en charge."
-    },
-    {
       "id" : "Composition.date",
       "path" : "Composition.date",
       "short" : "Date et heure de création du document Synthèse Médicale"
@@ -291,11 +296,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       "id" : "Composition.title",
       "path" : "Composition.title",
       "short" : "SYNTHESE MEDICALE"
-    },
-    {
-      "id" : "Composition.event",
-      "path" : "Composition.event",
-      "short" : "Evènement documenté et notamment le cadre d'exercice."
     },
     {
       "id" : "Composition.section",

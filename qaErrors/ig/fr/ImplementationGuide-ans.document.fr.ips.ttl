@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRIPS"] ;
   fhir:ImplementationGuide.title [ fhir:value "Volet de Synthèse Médicale (International Patient Summary)"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-25T08:12:06+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-05T09:04:22+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -61,6 +61,51 @@
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
   ], [
      fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_fr_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core" ;
+       fhir:link <https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.fr.core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_eu_base" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base" ;
+       fhir:link <http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.eu.base" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_extensions_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.2.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_extensions" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4" ;
+       fhir:link <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.xver-r5.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
+  ], [
+     fhir:index -1 ;
      fhir:Element.id [ fhir:value "hl7_cda_uv_core" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core" ;
@@ -76,34 +121,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.13.0" ]
-  ], [
-     fhir:index -1 ;
-     fhir:Element.id [ fhir:value "hl7_fhir_fr_core" ] ;
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core" ;
-       fhir:link <https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core>
-     ] ;
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.fr.core" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.0" ]
-  ], [
-     fhir:index -1 ;
-     fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4" ;
-       fhir:link <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
-     ] ;
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.xver-r5.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
-  ], [
-     fhir:index -1 ;
-     fhir:Element.id [ fhir:value "hl7_fhir_uv_extensions_r4" ] ;
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
-       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
-     ] ;
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.14.0" ]
   ], [
      fhir:index -1 ;
      fhir:Element.id [ fhir:value "ans_fhir_fr_annuaire" ] ;

@@ -2,9 +2,6 @@
 
 ## Resource Profile: Bundle (IPS) 
 
- 
-Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7. 
-
 **Usages:**
 
 * Examples for this Profile: [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md) and [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-bundle-documen
   "name" : "FRBundleDocumentIPS",
   "title" : "Bundle (IPS)",
   "status" : "draft",
-  "date" : "2026-09-25T08:12:06+00:00",
+  "date" : "2026-10-05T09:04:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

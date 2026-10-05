@@ -11,7 +11,7 @@
   "name" : "FRIPS",
   "title" : "Volet de Synthèse Médicale (International Patient Summary)",
   "status" : "draft",
-  "date" : "2026-09-25T08:12:06+00:00",
+  "date" : "2026-10-05T09:04:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -42,6 +42,36 @@
     "version" : "7.4.0"
   },
   {
+    "id" : "hl7_fhir_fr_core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
+    "packageId" : "hl7.fhir.fr.core",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_eu_base",
+    "uri" : "http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base",
+    "packageId" : "hl7.fhir.eu.base",
+    "version" : "2.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions_r4",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "hl7_cda_uv_core",
     "uri" : "http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core",
     "packageId" : "hl7.cda.uv.core",
@@ -51,25 +81,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.13.0"
-  },
-  {
-    "id" : "hl7_fhir_fr_core",
-    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
-    "packageId" : "hl7.fhir.fr.core",
-    "version" : "2.1.0"
-  },
-  {
-    "id" : "hl7_fhir_uv_xver_r5_r4",
-    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
-    "packageId" : "hl7.fhir.uv.xver-r5.r4",
-    "version" : "0.1.0"
-  },
-  {
-    "id" : "hl7_fhir_uv_extensions_r4",
-    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-    "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0"
+    "version" : "1.14.0"
   },
   {
     "id" : "ans_fhir_fr_annuaire",

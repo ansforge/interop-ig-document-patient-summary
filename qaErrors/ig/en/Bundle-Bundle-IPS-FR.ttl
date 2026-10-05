@@ -11,7 +11,6 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Bundle-IPS-FR"] ;
   fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2025-10-09T13:28:17.000+00:00"^^xsd:dateTime ] ;
      fhir:Meta.profile [
        fhir:value "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips" ;
        fhir:index -1 ;
@@ -346,8 +345,19 @@
 <urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52> a fhir:Composition ;
   fhir:Resource.id [ fhir:value "09275181-4d85-43b8-89b0-6dd68182bc52"] ;
   fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2025-09-09T13:28:17.000+00:00"^^xsd:dateTime ] ;
      fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0>
+     ], [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0>
+     ], [
        fhir:value "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips" ;
        fhir:index -1 ;
        fhir:link <https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips>
@@ -430,6 +440,15 @@
        fhir:Coding.display [ fhir:value "Synthèse médicale" ]
      ]
   ] ;
+  fhir:Composition.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument" ] ;
+       fhir:Coding.code [ fhir:value "11" ] ;
+       fhir:Coding.display [ fhir:value "Synthèse" ]
+     ]
+  ] ;
   fhir:Composition.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac" ]
   ] ;
@@ -487,6 +506,10 @@
          fhir:Reference.reference [ fhir:value "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9" ] ;
          fhir:Reference.display [ fhir:value "DR Stéphane MEDIONI" ]
        ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ] ;
      fhir:Composition.event.period [
        fhir:Period.start [ fhir:value "2024-04-21T08:00:00+01:00"^^xsd:dateTime ]
@@ -918,17 +941,6 @@
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
-     fhir:Element.extension [
-       fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "identityStatus" ] ;
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445" ] ;
-         fhir:Coding.code [ fhir:value "VALI" ]
-       ]
-     ] ;
-     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability" ]
-  ], [
-     fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
      fhir:Extension.valueAddress [
        fhir:Element.extension [
@@ -941,6 +953,17 @@
        ] ;
        fhir:Address.city [ fhir:value "Ambléon" ]
      ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "identityStatus" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445" ] ;
+         fhir:Coding.code [ fhir:value "VALI" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability" ]
   ] ;
   fhir:Patient.identifier [
      fhir:index -1 ;
@@ -1019,17 +1042,25 @@
      fhir:index -1 ;
      fhir:Patient.contact.relationship [
        fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ]
+       ] ;
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS" ] ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode" ] ;
          fhir:Coding.code [ fhir:value "SIS" ] ;
          fhir:Coding.display [ fhir:value "Soeur" ]
        ]
      ], [
        fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ]
+       ] ;
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role" ] ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleClass" ] ;
          fhir:Coding.code [ fhir:value "ECON" ] ;
          fhir:Coding.display [ fhir:value "Personne à prévenir en cas d'urgence" ]
        ]
@@ -1045,17 +1076,25 @@
      fhir:index -1 ;
      fhir:Patient.contact.relationship [
        fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ]
+       ] ;
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS" ] ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode" ] ;
          fhir:Coding.code [ fhir:value "SIS" ] ;
          fhir:Coding.display [ fhir:value "Soeur" ]
        ]
      ], [
        fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ]
+       ] ;
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role" ] ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleClass" ] ;
          fhir:Coding.code [ fhir:value "NOK" ] ;
          fhir:Coding.display [ fhir:value "Personne de confiance" ]
        ]
@@ -1071,9 +1110,13 @@
      fhir:index -1 ;
      fhir:Patient.contact.relationship [
        fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ]
+       ] ;
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role" ] ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleClass" ] ;
          fhir:Coding.code [ fhir:value "GUARD" ] ;
          fhir:Coding.display [ fhir:value "Responsable légal" ]
        ]
@@ -4124,7 +4167,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4179,7 +4222,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4234,7 +4277,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4289,7 +4332,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4344,7 +4387,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4399,7 +4442,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4454,7 +4497,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4508,7 +4551,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
        fhir:Coding.code [ fhir:value "adr" ] ;
-       fhir:Coding.display [ fhir:value "Advance Directive" ]
+       fhir:Coding.display [ fhir:value "Advanced Care Directive" ]
      ]
   ] ;
   fhir:Consent.category [
@@ -4554,6 +4597,13 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension" ] ;
+     fhir:Extension.valueReference [
+       fhir:Reference.reference [ fhir:value "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52" ]
+     ]
   ] ;
   fhir:DiagnosticReport.identifier [
      fhir:index -1 ;
@@ -4808,6 +4858,13 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension" ] ;
+     fhir:Extension.valueReference [
+       fhir:Reference.reference [ fhir:value "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52" ]
+     ]
   ] ;
   fhir:DiagnosticReport.identifier [
      fhir:index -1 ;

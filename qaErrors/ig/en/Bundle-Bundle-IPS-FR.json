@@ -2,7 +2,6 @@
   "resourceType" : "Bundle",
   "id" : "Bundle-IPS-FR",
   "meta" : {
-    "lastUpdated" : "2025-10-09T13:28:17.000+00:00",
     "profile" : ["https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-bundle-document-ips"]
   },
   "language" : "en",
@@ -18,8 +17,10 @@
       "resourceType" : "Composition",
       "id" : "09275181-4d85-43b8-89b0-6dd68182bc52",
       "meta" : {
-        "lastUpdated" : "2025-09-09T13:28:17.000+00:00",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"]
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0",
+        "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0",
+        "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0",
+        "https://interop.esante.gouv.fr/ig/document/ips/StructureDefinition/fr-composition-document-ips"]
       },
       "language" : "en",
       "text" : {
@@ -91,6 +92,13 @@
           "display" : "Synthèse médicale"
         }]
       },
+      "category" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
+          "code" : "11",
+          "display" : "Synthèse"
+        }]
+      }],
       "subject" : {
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
@@ -141,6 +149,10 @@
             "reference" : "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9",
             "display" : "DR Stéphane MEDIONI"
           }
+        },
+        {
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension",
+          "valueBoolean" : true
         }],
         "period" : {
           "start" : "2024-04-21T08:00:00+01:00"
@@ -521,16 +533,6 @@
         "status" : "generated"
       },
       "extension" : [{
-        "extension" : [{
-          "url" : "identityStatus",
-          "valueCoding" : {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
-            "code" : "VALI"
-          }
-        }],
-        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
         "valueAddress" : {
           "extension" : [{
@@ -542,6 +544,16 @@
           }],
           "city" : "Ambléon"
         }
+      },
+      {
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
       }],
       "identifier" : [{
         "use" : "official",
@@ -599,15 +611,21 @@
       }],
       "contact" : [{
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+          }],
           "coding" : [{
-            "system" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
             "code" : "SIS",
             "display" : "Soeur"
           }]
         },
         {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+          }],
           "coding" : [{
-            "system" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "ECON",
             "display" : "Personne à prévenir en cas d'urgence"
           }]
@@ -622,15 +640,21 @@
       },
       {
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+          }],
           "coding" : [{
-            "system" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
             "code" : "SIS",
             "display" : "Soeur"
           }]
         },
         {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+          }],
           "coding" : [{
-            "system" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role",
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "NOK",
             "display" : "Personne de confiance"
           }]
@@ -645,8 +669,11 @@
       },
       {
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category"
+          }],
           "coding" : [{
-            "system" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "GUARD",
             "display" : "Responsable légal"
           }]
@@ -3301,7 +3328,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3348,7 +3375,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3395,7 +3422,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3442,7 +3469,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3489,7 +3516,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3536,7 +3563,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3583,7 +3610,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3630,7 +3657,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3671,6 +3698,12 @@
       "text" : {
         "status" : "generated"
       },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+        "valueReference" : {
+          "reference" : "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"
+        }
+      }],
       "identifier" : [{
         "system" : "urn:ietf:rfc:3986",
         "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
@@ -3883,6 +3916,12 @@
       "text" : {
         "status" : "generated"
       },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+        "valueReference" : {
+          "reference" : "urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"
+        }
+      }],
       "identifier" : [{
         "system" : "urn:ietf:rfc:3986",
         "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - clinicalDocument IPS 
 
- 
-L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément racine d’un document médical IPS (International Patient Summary). 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-clinical-d
   "name" : "FRCDAClinicalDocumentIPS",
   "title" : "CDA - clinicalDocument IPS",
   "status" : "draft",
-  "date" : "2026-09-25T08:12:06+00:00",
+  "date" : "2026-10-05T09:04:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
